@@ -1,0 +1,264 @@
+//
+//  LF.pch
+//  品多多
+//
+//  Created by 蔡路飞 on 2017/12/6.
+//  Copyright © 2017年 cailufei. All rights reserved.
+//
+#ifdef __OBJC__
+#import "HeaderFile.h"
+#endif
+#ifndef LF_pch
+#define LF_pch
+
+#define login [LFAccountTool account]
+#define loginToken login.token
+#define loginUid login.userId
+#define huanchatId login.huanId
+#define loginTokenlength loginToken.length
+#define loginOpenId login.sUid
+#define loginMe [LFAccountTool accountMe]
+
+#define ATSKIPTOOl [ATSkipTool sharedInstance]
+
+
+#define LFNSNOTI [NSNotificationCenter defaultCenter]
+
+
+#define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define USER_DEFAULT [NSUserDefaults standardUserDefaults]
+
+#define diction  [NSMutableDictionary dictionary];
+
+
+#define LFscreenH [UIScreen mainScreen].bounds.size.height
+#define LFscreenW [UIScreen mainScreen].bounds.size.width
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+
+
+
+
+
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5s (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+
+
+#define  bagColor [SVGloble colorWithHexString:@"#f4f4f4"]
+#define  bagColor1 [SVGloble colorWithHexString:@"#f2f2f2"]
+#define  assistColor [SVGloble colorWithHexString:@"#F13274"]
+#define  orangebagColor [SVGloble colorWithHexString:@"#DBBB85"]
+#define  bkColor [SVGloble colorWithHexString:@"#2a2a2a"]
+#define  deepGrayColor [SVGloble colorWithHexString:@"#999999"]
+
+#define itemtitleColor [SVGloble colorWithHexString:@"#B27E3E"]
+#define  naverBagColor [SVGloble colorWithHexString:@"#404652"]
+#define  naverTextColor [SVGloble colorWithHexString:@"#ffffff"]
+#define textReadColor [SVGloble colorWithHexString:@"#FF3737"]
+#define noSelectColor [SVGloble colorWithHexString:@"#444444"]
+
+#define  grayBgColor [SVGloble colorWithHexString:@"#D8D8D8"]
+#define  blackTextColor [SVGloble colorWithHexString:@"#474747"]
+#define  grayProgressColor [SVGloble colorWithHexString:@"#E6E6E6"]
+
+#define publishTextColor [SVGloble colorWithHexString:@"#39404E"]
+#define yellowBoderColor [SVGloble colorWithHexString:@"#FF9F20"]
+#define groBoderColor [SVGloble colorWithHexString:@"#cccccc"]
+#define  blackBColor [SVGloble colorWithHexString:@"#222222"]
+
+//wuboyi 新增
+#define  color484848 [SVGloble colorWithHexString:@"#484848"]
+#define  color101010 [SVGloble colorWithHexString:@"#101010"]
+#define  color002323 [SVGloble colorWithHexString:@"#002323"]
+#define  colorE5E7E9 [SVGloble colorWithHexString:@"#E5E7E9"]
+#define  colorB378D5 [SVGloble colorWithHexString:@"#B378D5"]
+#define  color7B7B7B [SVGloble colorWithHexString:@"#7B7B7B"]
+#define  color717171 [SVGloble colorWithHexString:@"#717171"]
+#define  colorD35353 [SVGloble colorWithHexString:@"#D35353"]
+#define  color9164D6 [SVGloble colorWithHexString:@"#9164D6"]
+#define  color000000 [SVGloble colorWithHexString:@"#000000"]
+#define  color5E4FC9 [SVGloble colorWithHexString:@"#5E4FC9"]
+#define  colorC483FB [SVGloble colorWithHexString:@"#C483FB"]
+#define  colorB0ADFC [SVGloble colorWithHexString:@"#B0ADFC"]
+#define  color2B73EE [SVGloble colorWithHexString:@"#2B73EE"]
+#define  color414754 [SVGloble colorWithHexString:@"#414754"]
+#define  color200000 [SVGloble colorWithHexString:@"#200000"]
+#define  colorEE3517 [SVGloble colorWithHexString:@"#EE3517"]
+#define  color808080 [SVGloble colorWithHexString:@"#808080"]
+#define  colorF0F0F0 [SVGloble colorWithHexString:@"#F0F0F0"]
+#define  color6D6D72 [SVGloble colorWithHexString:@"#6D6D72"]
+#define  color636161 [SVGloble colorWithHexString:@"#636161"]
+#define  colorA354D0 [SVGloble colorWithHexString:@"#A354D0"]
+#define  color919191 [SVGloble colorWithHexString:@"#919191"]
+#define  color504C53 [SVGloble colorWithHexString:@"#504C53"]
+#define  color506CCD [SVGloble colorWithHexString:@"#506CCD"]
+#define  colorDEC0FF [SVGloble colorWithHexString:@"#DEC0FF"]
+#define  colorB23AF6 [SVGloble colorWithHexString:@"#B23AF6"]
+#define  color5D1C90 [SVGloble colorWithHexString:@"#5D1C90"]
+#define  color5E5858 [SVGloble colorWithHexString:@"#5E5858"]
+#define  color9884AF [SVGloble colorWithHexString:@"#9884AF"]
+#define  color686868 [SVGloble colorWithHexString:@"#686868"]
+#define  color6237A6 [SVGloble colorWithHexString:@"#6237A6"]
+#define  color8D35D3 [SVGloble colorWithHexString:@"#8D35D3"]
+#define  color4DAFEA [SVGloble colorWithHexString:@"#4DAFEA"]
+
+
+
+
+
+
+
+
+
+
+/****wuboyi****/
+
+
+/************************字符串格式化定义************************/
+#define ZZString(str)             [NSString stringWithFormat:@"%@",str]
+#define ZZPingString(str1,str2)             [NSString stringWithFormat:@"%@%@",str1,str2]
+
+#define ZZUrlString(urlStr) [NSURL URLWithString:urlStr]
+#define ZZImageName(image)   [UIImage imageNamed:image]
+#define ZZUserDefaults                [NSUserDefaults standardUserDefaults]
+#define ZZGetValueDefaults(str)      [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@",str]];
+
+/************************颜色定义************************/
+
+#define kFileManager [NSFileManager defaultManager]
+#define kUserDefaults   [NSUserDefaults standardUserDefaults]
+#define kWindow         [[UIApplication sharedApplication] keyWindow]
+#define IOS8            ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0)
+
+//文字
+// 字体大小(常规/粗体)
+#define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
+#define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
+#define FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
+
+// 微软雅黑
+#define HL_YAHEI_FONT(FONTSIZE) [UIFont fontWithName:@"MicrosoftYaHei" size:(FONTSIZE)]
+// 英文 和 数字
+#define HL_ENGLISH_FONT(FONTSIZE) [UIFont fontWithName:@"Helvetica Light" size:(FONTSIZE)]
+// 随机颜色(RGB)
+#define RandomColor             [UIColor colorWithRed:arc4random_uniform(256)/255.0 \
+green:arc4random_uniform(256)/255.0 \
+blue:arc4random_uniform(256)/255.0 alpha:1.0]
+#define RGBCOLOR(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBACOLOR(r, g, b, a)   [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define CI_RGBACOLOR(r, g, b, a)   [CIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+// View 圆角和加边框
+#define ViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+// View 圆角
+#define ViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+/** 弱引用 */
+/*******__weak 和 __strong变量,可以在__weak之前加 autoreleasepool{}，就可以使用@符号*********/
+#define WEAKSelf             typeof(self) __weak selfWeak = self;
+#define STRONGSelf           typeof(self) __strong selfStrong = selfWeak;
+#define WEAKObject(object)   __weak typeof(object) object##Weak = object;
+#define STRONGObject(object) __strong typeof(object) object##Strong = object##Weak;
+#define HLWeakSelf __weak typeof(self) weakSelf = self;
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+
+//系统版本号
+#define _DEVICE_SYSTEM_VERSION_  [[[UIDevice currentDevice] systemVersion]floatValue]
+
+//书评
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height == 568) ? YES : NO)
+#define IS_IPhone6 (([[UIScreen mainScreen] bounds].size.height == 667) ? YES : NO)
+#define IS_IPhone6plus ([[UIScreen mainScreen] bounds].size.height == 736) ? YES : NO)
+#define IS_IPhoneX (([[UIScreen mainScreen] bounds].size.height == 812) ? YES : NO)
+
+#define SXRealValue(value) IS_IPHONE5 ? ((value)*0.85) : (IS_IPhone6 ? ((value)*1) : ((value)*1.1))
+#define SYRealValue(value) IS_IPHONE5 ? ((value)*(568/667.0f)) : (IS_IPhone6 ? ((value) * 1 ) : ((value)*(736/667.0f)))
+
+//横屏
+//#define L_IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.width == 568) ? YES : NO)
+//#define L_IS_IPhone6 (([[UIScreen mainScreen] bounds].size.width == 667) ? YES : NO)
+//#define L_IS_IPhone6plus (([[UIScreen mainScreen] bounds].size.width == 736) ? YES : NO)
+//#define L_SYRealValue(value) L_IS_IPHONE5 ? ((value)*0.85) : (L_IS_IPhone6 ? ((value)*1) : ((value)*1.1))
+//#define L_SXRealValue(value) L_IS_IPHONE5 ? ((value)*(568/667.0f)) : (L_IS_IPhone6 ? ((value) * 1 ) : ((value)*(736/667.0f)))
+
+//#define SXRealValue(value) IS_IPHONE5 ? ((value)*0.85) : IS_IPhone6 ? ((value)*1) : (IS_IPhoneX ? ((value) *1.22) : ((value)*1.1))
+//#define SYRealValue(value)  IS_IPHONE5 ? ((value)*(568/667.0f)) : IS_IPhone6 ? ((value) * 1 ) : (IS_IPhoneX ? ((value) *(812/667.0f)) : ((value)*(736/667.0f)))
+
+//屏幕高、宽
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+//弹框
+#define SHOW_ALERT(_msg_)  [[[UIAlertView alloc] initWithTitle:@"提示" message:_msg_ delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil]show];\
+//字符串是否为空
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
+
+
+
+
+#endif /* LF_pch */
+
+
+#ifdef DEBUG
+#define LFLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define LFLog(...)
+#endif
+
+/************************自定义Log************************/
+// Debug模式下输出日志，release模式下不输出
+#ifdef DEBUG
+#define DLog(format, ...) \
+do { \
+fprintf(stderr, \
+"*******************DEBUG Message*******************\n"\
+"[文件信息]:                                         \n"\
+"<%s - 第%d行>\n"\
+"[方法名]:                                           \n"\
+"%s\n"\
+"[输出信息]:====>                                    \n"\
+"%s\n"\
+"\n===================================================\n", \
+[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],\
+__LINE__, __func__, \
+[[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);\
+} while (0)
+#else
+# define DLog(...)
+#endif
+
+//设置DEBUG模式下打印
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+

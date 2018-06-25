@@ -8,7 +8,7 @@
 
 #import "BCLoginController.h"
 #import "BCCodeAlertView.h"
-#import "BCMeModel.h"
+
 
 #define timeCount 60
 
@@ -61,7 +61,7 @@
     self.phoneTf.delegate =  self.codeTf.delegate =  self.nameTf.delegate =  self.invitationCodeTf.delegate =  self;
     self.count = timeCount;
     [self.getCodeBt addTarget:self action:@selector(getCodeBtCilck) forControlEvents:UIControlEventTouchUpInside];
-     [self.loginBt addTarget:self action:@selector(logingBtClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.loginBt addTarget:self action:@selector(logingBtClick) forControlEvents:UIControlEventTouchUpInside];
     [self.agreementLb addTarget:self action:@selector(agreementBtClick) forControlEvents:UIControlEventTouchUpInside];
     [self.sureBt addTarget:self action:@selector(sureBtClick:) forControlEvents:UIControlEventTouchUpInside];
    
@@ -188,83 +188,23 @@
         loginDict[@"mobile"] = self.phoneTf.text;
         loginDict[@"smsCode"] =self.codeTf.text;
                 
-//        if ([self.phoneTf.text isEqualToString:@"18519059080"]) {//如果是我的账号，直接登录成功，不走接口
-//            NSDictionary *dict = @{@"token":@"RkY2MTE4NTJEQzkzOUE5QkExMjdGQTVCQjFGMkU4RjI="};
-//            SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:dict];
-//            [LFAccountTool save:loginmodel];
-//            [MBManager hideAlert];
-//            [LKControllerTool chooseRootViewController];
-//            [MBManager showBriefAlert:@"登陆成功"];
-//            [self loadUpData];
-//        }else{//不是我的账户
+
             [YWRequestData userLoginDict:loginDict success:^(id responseObj) {
                 [MBManager showBriefAlert:@"登陆成功"];
                 SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"data"]];
                 [LFAccountTool save:loginmodel];
                 [MBManager hideAlert];
                 [LKControllerTool chooseRootViewController];
-                [self loadUpData];
+               
             }];
-//        }
+
        
-    }else{
-        if (self.phoneTf.text.length<=0) {
-            [MBManager showBriefAlert:@"手机号不能为空" ];
-            return;
-        }else if(self.codeTf.text.length<=0){
-            [MBManager showBriefAlert:@"验证码不能为空"];
-            return;
-        }else if(self.nameTf.text.length<=0){
-            [MBManager showBriefAlert:@"名字不能为空"];
-            return;
-        }
-        if (!self.sureBt.selected) {
-            [MBManager showBriefAlert:@"同意协议才可注册"];
-            return;
-        }
-        NSMutableDictionary * registDict = diction;
-        registDict[@"mobile"] = self.phoneTf.text;
-        registDict[@"smsCode"] = self.codeTf.text;
-        registDict[@"name"] = self.nameTf.text;
-        registDict[@"code"] = self.invitationCodeTf.text;
-        
-        
-        [YWRequestData registUserDict:registDict success:^(id responseObj) {
-            SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"data"]];
-            loginmodel.mobile =self.phoneTf.text;
-            [LFAccountTool save:loginmodel];
-            [MBManager showBriefAlert:@"注册成功"];
-             [self loadUpData];
-         
-               [LKControllerTool chooseRootViewController];
-//            NSMutableDictionary * loginDict = diction;
-//            loginDict[@"mobile"] = self.phoneTf.text;
-//            loginDict[@"smsCode"] =self.codeTf.text;
-//            [YWRequestData userLoginDict:loginDict success:^(id responseObj) {
-//
-//                [MBManager showBriefAlert:@"登陆成功"];
-//                SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"data"]];
-//                [LFAccountTool save:loginmodel];
-//                [MBManager hideAlert];
-//
-//                 [self loadUpData];
-//            }];
-        }];
     }
 
    
 
 }
--(void)loadUpData{
-    NSMutableDictionary * candyDict = diction;
-    candyDict[@"token"] = loginToken;
-    [BCRequestData getUser_InfoDict:candyDict success:^(id responseObject) {
-        BCMeModel *model = [BCMeModel mj_objectWithKeyValues:REQUEST_DATA];
-        [LFAccountTool saveMe:model];
-    } erorr:^(id error) {//请求失败
-       
-    }];
-}
+
 -(void)timerFireMethod{
     if (self.count<=0){
         self.getCodeBt.userInteractionEnabled = YES;

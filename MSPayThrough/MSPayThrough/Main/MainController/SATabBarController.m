@@ -9,9 +9,9 @@
 #import "SATabBarController.h"
 #import "SANavigationController.h"
 #import "SATabBar.h"
-#import "BCHomeViewController.h"
-#import "BCMeViewController.h"
-
+#import "MSMeViewController.h"
+#import "MSHomeViewController.h"
+#import "MSBillViewController.h"
 
 
 @interface SATabBarController ()<UITabBarControllerDelegate,tabBaruDelegate>
@@ -90,8 +90,10 @@
     
 }
 -(void)setupChildViewControllers{
-    [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[BCHomeViewController alloc] init]]  title:@"糖果屋" image:@"糖豆" selectedImage:@"糖豆－点击"];
-      [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[BCMeViewController alloc] init]]  title:@"我的糖果包" image:@"我的" selectedImage:@"我的-点击"];
+
+    [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSHomeViewController alloc] init]]  title:@"糖果屋" image:@"糖豆" selectedImage:@"糖豆－点击"];
+      [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSBillViewController alloc] init]]  title:@"我的糖果包" image:@"我的" selectedImage:@"我的-点击"];
+       [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSMeViewController alloc] init]]  title:@"我的糖果包" image:@"我的" selectedImage:@"我的-点击"];
 }
 -(void)setupOneChildViewController:(UIViewController *)vc title:(NSString *)title image:(NSString*)image selectedImage:(NSString *)selectedImage{
     

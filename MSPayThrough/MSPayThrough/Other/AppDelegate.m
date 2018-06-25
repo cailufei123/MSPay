@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SATabBarController.h"
-#import "DataBase.h"
+
 #import <UMShare/UMShare.h>
 #import <UserNotifications/UserNotifications.h>
 #import <UMPush/UMessage.h>
@@ -162,24 +162,7 @@
     NSDictionary * userInfo = notification.request.content.userInfo;
     if([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
 
-        //应用处于前台时的远程推送接受
-        [UMessage setAutoAlert:NO];
-        //必须加这句代码
-        [UMessage didReceiveRemoteNotification:userInfo];
-        LFLog(@"%@",userInfo);
-        LFLog(@"%@",[userInfo[@"custom"] mj_JSONObject ]);
-        NSString * msg_id = [self currentTimeStr];
-        SAMessageModel * messageModel = [SAMessageModel mj_objectWithKeyValues:[userInfo[@"aps"][@"custom"] mj_JSONObject ]];
-        messageModel.bageVlue = @"0";
-           messageModel.msg_id = msg_id;
-        NSDate * data  =[NSDate date];
-        NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
-        fmt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
-        fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-        NSString *dateStr = [fmt stringFromDate:data];
-        messageModel.timeStr = dateStr;
-        [[DataBase sharedDataBase] addMessage:messageModel];
-        // [[NSNotificationCenter defaultCenter] postNotificationName:pushRefresh object:nil];
+       
     }else{
         
         //应用处于前台时的本地推送接受
@@ -207,27 +190,7 @@
 //            SATabBarController * tabar =  (SATabBarController * )self.window.rootViewController;
 //            tabar.selectedIndex = 0;
         }else{
-            LFLog(@"%@",userInfo);
-               NSString * msg_id = [self currentTimeStr];
-            SAMessageModel * messageModel = [SAMessageModel mj_objectWithKeyValues:[userInfo[@"aps"][@"custom"] mj_JSONObject ]];
-            
-            NSArray * allarray = [[DataBase sharedDataBase] getAllMessage];
-            for ( SAMessageModel * messageMode  in allarray) {
-                if ([messageMode. msg_id isEqualToString:messageModel.msg_id]) {
-                    return;
-                }
-            }
-           
-            messageModel.bageVlue = @"0";
-            messageModel.msg_id = msg_id;
-            NSDate * data  =[NSDate date];
-            NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
-            fmt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
-            fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-            NSString *dateStr = [fmt stringFromDate:data];
-            messageModel.timeStr = dateStr;
-            [[DataBase sharedDataBase] addMessage:messageModel];
- 
+          
             
             
          

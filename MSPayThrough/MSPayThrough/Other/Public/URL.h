@@ -19,9 +19,11 @@
 /**  API*/
 #if Mode_Value
 
-#define SERVER_ADDR @"http://101.200.74.83:8080"
+//#define SERVER_ADDR @"http://101.200.74.83:8080"
 //#define USER_SERVER_ADDR @"http://182.92.205.236"
 //#define PAY_SERVER_ADDR  @"http://182.92.205.236"
+#define SERVER_ADDR @"https://39.106.10.113/tendpay.acquiring.api/gateway"
+
 #else
 
 

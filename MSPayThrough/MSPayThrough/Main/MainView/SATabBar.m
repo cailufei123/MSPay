@@ -33,7 +33,7 @@
         [publishButton setImage:[UIImage imageNamed:@"tabBar_data_publish_add"] forState:UIControlStateNormal];
         [publishButton setImage:[UIImage imageNamed:@"tabBar_data_publish_add"] forState:UIControlStateHighlighted];
         [publishButton addTarget:self action:@selector(publishButtonClick) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:publishButton];
+//        [self addSubview:publishButton];
         _publishButton = publishButton;
         _publishButton.titleLabel.font = [UIFont systemFontOfSize:13];
 
@@ -67,10 +67,10 @@
         if (subview.class != NSClassFromString(@"UITabBarButton"))continue;
         // 设置frame
         CGFloat tabBarButtonX = tabBarButtonIndex *buttonW;
-        if (tabBarButtonIndex >= 2) {
-//            tabBarButtonX += buttonW;
-//            [subview addSubview: self.publishButton];
-        }
+//        if (tabBarButtonIndex >= 2) {
+////            tabBarButtonX += buttonW;
+////            [subview addSubview: self.publishButton];
+//        }
         
         subview.frame = CGRectMake(tabBarButtonX, buttonY, buttonW, buttonH);
         tabBarButtonIndex++;

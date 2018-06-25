@@ -39,27 +39,6 @@
     
     [USER_DEFAULT setObject:iosUrl forKey:@"appshenghe"];
 }
-//+(void)savebaseMessage:(LKBasseDataModel *)baseMessageModel{
-//
-//    // 归档
-//    [NSKeyedArchiver archiveRootObject:baseMessageModel toFile:messageFilepath];
-//}
-//
-//+(LKBasseDataModel*)baseMessage
-//{
-//
-//  LKBasseDataModel *baseMessageModel = [NSKeyedUnarchiver unarchiveObjectWithFile:messageFilepath];
-//     return baseMessageModel;
-//}
-/**存储用户模型*/
-+(void)saveMe:(BCMeModel *)accountMe{
-    // 归档
-    [NSKeyedArchiver archiveRootObject:accountMe toFile:LFAccountFilepathMe];
- 
-}
-/**存储用户模型*/
-+(BCMeModel *)accountMe{
-      BCMeModel *lfoauthModel = [NSKeyedUnarchiver unarchiveObjectWithFile:LFAccountFilepathMe];
-      return lfoauthModel;
-}
+
+
 @end

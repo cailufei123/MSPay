@@ -1212,10 +1212,10 @@
 		AD624E2020E091450095F0E9 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				AD624E2120E091450095F0E9 /* MBProgressHUD.m */,
-				AD624E2220E091450095F0E9 /* MBProgressHUD+Add.m */,
 				AD624E2320E091450095F0E9 /* MBProgressHUD.h */,
+				AD624E2120E091450095F0E9 /* MBProgressHUD.m */,
 				AD624E2420E091450095F0E9 /* MBProgressHUD+Add.h */,
+				AD624E2220E091450095F0E9 /* MBProgressHUD+Add.m */,
 			);
 			path = MBProgressHUD;
 			sourceTree = "<group>";

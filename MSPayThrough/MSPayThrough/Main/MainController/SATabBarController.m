@@ -138,10 +138,10 @@
     if (tabBarController.selectedIndex == 0) {
 
     }else if (tabBarController.selectedIndex == 1){
-        if (!loginTokenlength) {
-            tabBarController.selectedIndex = self.oldSelectIndex;
-            [ATSKIPTOOl loginAction:self];return;
-        }
+//        if (!loginTokenlength) {
+//            tabBarController.selectedIndex = self.oldSelectIndex;
+//            [ATSKIPTOOl loginAction:self];return;
+//        }
     }
 }
 -(void)longinseccous{

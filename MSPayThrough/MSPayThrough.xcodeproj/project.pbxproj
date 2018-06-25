@@ -207,11 +207,6 @@
 		AD62500020E09B020095F0E9 /* YYLRefreshNoNetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD624FDE20E09B010095F0E9 /* YYLRefreshNoNetworkView.m */; };
 		AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD624FE320E09B010095F0E9 /* RefreshTableView.bundle */; };
 		AD62500220E09B020095F0E9 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AD624FE420E09B010095F0E9 /* .gitkeep */; };
-		AD62500F20E09B400095F0E9 /* SALoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62500620E09B400095F0E9 /* SALoginModel.m */; };
-		AD62501020E09B400095F0E9 /* BCLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62500820E09B400095F0E9 /* BCLoginController.xib */; };
-		AD62501120E09B400095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62500A20E09B400095F0E9 /* BCLoginController.m */; };
-		AD62501220E09B400095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62500C20E09B400095F0E9 /* BCCodeAlertView.xib */; };
-		AD62501320E09B400095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62500D20E09B400095F0E9 /* BCCodeAlertView.m */; };
 		AD62501520E09C180095F0E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD62501420E09C180095F0E9 /* Info.plist */; };
 		AD62501A20E09C860095F0E9 /* MSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62501920E09C860095F0E9 /* MSHomeViewController.m */; };
 		AD62502420E09D230095F0E9 /* MSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62502320E09D230095F0E9 /* MSMeViewController.m */; };
@@ -222,6 +217,11 @@
 		AD62503020E09F8C0095F0E9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62502F20E09F8C0095F0E9 /* libz.tbd */; };
 		AD62503220E09F9F0095F0E9 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62503120E09F9F0095F0E9 /* libc++abi.tbd */; };
 		AD62503420E09FA70095F0E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62503320E09FA70095F0E9 /* UIKit.framework */; };
+		AD62504120E0FF190095F0E9 /* SALoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503820E0FF190095F0E9 /* SALoginModel.m */; };
+		AD62504220E0FF190095F0E9 /* BCLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503A20E0FF190095F0E9 /* BCLoginController.xib */; };
+		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
+		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
+		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -649,14 +649,6 @@
 		AD624FE120E09B010095F0E9 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		AD624FE320E09B010095F0E9 /* RefreshTableView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RefreshTableView.bundle; sourceTree = "<group>"; };
 		AD624FE420E09B010095F0E9 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AD62500520E09B400095F0E9 /* SALoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALoginModel.h; sourceTree = "<group>"; };
-		AD62500620E09B400095F0E9 /* SALoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALoginModel.m; sourceTree = "<group>"; };
-		AD62500820E09B400095F0E9 /* BCLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCLoginController.xib; sourceTree = "<group>"; };
-		AD62500920E09B400095F0E9 /* BCLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLoginController.h; sourceTree = "<group>"; };
-		AD62500A20E09B400095F0E9 /* BCLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLoginController.m; sourceTree = "<group>"; };
-		AD62500C20E09B400095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
-		AD62500D20E09B400095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
-		AD62500E20E09B400095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
 		AD62501420E09C180095F0E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD62501820E09C860095F0E9 /* MSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeViewController.h; sourceTree = "<group>"; };
 		AD62501920E09C860095F0E9 /* MSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeViewController.m; sourceTree = "<group>"; };
@@ -670,6 +662,14 @@
 		AD62502F20E09F8C0095F0E9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		AD62503120E09F9F0095F0E9 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		AD62503320E09FA70095F0E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD62503720E0FF190095F0E9 /* SALoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALoginModel.h; sourceTree = "<group>"; };
+		AD62503820E0FF190095F0E9 /* SALoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALoginModel.m; sourceTree = "<group>"; };
+		AD62503A20E0FF190095F0E9 /* BCLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCLoginController.xib; sourceTree = "<group>"; };
+		AD62503B20E0FF190095F0E9 /* BCLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLoginController.h; sourceTree = "<group>"; };
+		AD62503C20E0FF190095F0E9 /* BCLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLoginController.m; sourceTree = "<group>"; };
+		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
+		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
+		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -739,6 +739,7 @@
 		AD624D3720E087270095F0E9 /* MSPayThrough */ = {
 			isa = PBXGroup;
 			children = (
+				AD62503520E0FF190095F0E9 /* BCLogin */,
 				AD62502020E09D100095F0E9 /* MSBill */,
 				AD62501E20E09D100095F0E9 /* MSMe */,
 				AD62501620E09C4D0095F0E9 /* MSHome */,
@@ -1363,7 +1364,6 @@
 		AD624EFB20E099FE0095F0E9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				AD62500320E09B400095F0E9 /* BCLogin */,
 				AD624F9720E09B010095F0E9 /* Tools */,
 				AD624F5820E099FE0095F0E9 /* Public */,
 				AD624EFD20E099FE0095F0E9 /* Category */,
@@ -1726,45 +1726,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		AD62500320E09B400095F0E9 /* BCLogin */ = {
-			isa = PBXGroup;
-			children = (
-				AD62500420E09B400095F0E9 /* BCLoginModel */,
-				AD62500720E09B400095F0E9 /* BCLoginController */,
-				AD62500B20E09B400095F0E9 /* BCLoginView */,
-			);
-			path = BCLogin;
-			sourceTree = "<group>";
-		};
-		AD62500420E09B400095F0E9 /* BCLoginModel */ = {
-			isa = PBXGroup;
-			children = (
-				AD62500520E09B400095F0E9 /* SALoginModel.h */,
-				AD62500620E09B400095F0E9 /* SALoginModel.m */,
-			);
-			path = BCLoginModel;
-			sourceTree = "<group>";
-		};
-		AD62500720E09B400095F0E9 /* BCLoginController */ = {
-			isa = PBXGroup;
-			children = (
-				AD62500820E09B400095F0E9 /* BCLoginController.xib */,
-				AD62500920E09B400095F0E9 /* BCLoginController.h */,
-				AD62500A20E09B400095F0E9 /* BCLoginController.m */,
-			);
-			path = BCLoginController;
-			sourceTree = "<group>";
-		};
-		AD62500B20E09B400095F0E9 /* BCLoginView */ = {
-			isa = PBXGroup;
-			children = (
-				AD62500C20E09B400095F0E9 /* BCCodeAlertView.xib */,
-				AD62500D20E09B400095F0E9 /* BCCodeAlertView.m */,
-				AD62500E20E09B400095F0E9 /* BCCodeAlertView.h */,
-			);
-			path = BCLoginView;
-			sourceTree = "<group>";
-		};
 		AD62501620E09C4D0095F0E9 /* MSHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -1827,6 +1788,45 @@
 				AD62502920E09F5C0095F0E9 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD62503520E0FF190095F0E9 /* BCLogin */ = {
+			isa = PBXGroup;
+			children = (
+				AD62503620E0FF190095F0E9 /* BCLoginModel */,
+				AD62503920E0FF190095F0E9 /* BCLoginController */,
+				AD62503D20E0FF190095F0E9 /* BCLoginView */,
+			);
+			path = BCLogin;
+			sourceTree = "<group>";
+		};
+		AD62503620E0FF190095F0E9 /* BCLoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD62503720E0FF190095F0E9 /* SALoginModel.h */,
+				AD62503820E0FF190095F0E9 /* SALoginModel.m */,
+			);
+			path = BCLoginModel;
+			sourceTree = "<group>";
+		};
+		AD62503920E0FF190095F0E9 /* BCLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				AD62503A20E0FF190095F0E9 /* BCLoginController.xib */,
+				AD62503B20E0FF190095F0E9 /* BCLoginController.h */,
+				AD62503C20E0FF190095F0E9 /* BCLoginController.m */,
+			);
+			path = BCLoginController;
+			sourceTree = "<group>";
+		};
+		AD62503D20E0FF190095F0E9 /* BCLoginView */ = {
+			isa = PBXGroup;
+			children = (
+				AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */,
+				AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */,
+				AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */,
+			);
+			path = BCLoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1932,19 +1932,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD62501020E09B400095F0E9 /* BCLoginController.xib in Resources */,
+				AD62504220E0FF190095F0E9 /* BCLoginController.xib in Resources */,
 				AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */,
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
+				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
-				AD62501220E09B400095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1973,6 +1973,7 @@
 				AD624F9420E099FF0095F0E9 /* YWRequestData.m in Sources */,
 				AD624E7D20E091450095F0E9 /* MJExtensionConst.m in Sources */,
 				AD624FED20E09B020095F0E9 /* SDCycleScrollView.m in Sources */,
+				AD62504120E0FF190095F0E9 /* SALoginModel.m in Sources */,
 				AD624ED220E091460095F0E9 /* FLAnimatedImage.m in Sources */,
 				AD624F6920E099FF0095F0E9 /* NSDate+Category.m in Sources */,
 				AD624E8020E091460095F0E9 /* NSString+MJExtension.m in Sources */,
@@ -2001,6 +2002,7 @@
 				AD624EDC20E091460095F0E9 /* SDAnimatedImageRep.m in Sources */,
 				AD624EAF20E091460095F0E9 /* IQTextView.m in Sources */,
 				AD624FF020E09B020095F0E9 /* TADotView.m in Sources */,
+				AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */,
 				AD624E9320E091460095F0E9 /* MJRefreshHeader.m in Sources */,
 				AD624E9D20E091460095F0E9 /* View+MASAdditions.m in Sources */,
 				AD624F9320E099FF0095F0E9 /* SVGloble.m in Sources */,
@@ -2008,7 +2010,6 @@
 				AD624E8F20E091460095F0E9 /* MJRefreshNormalHeader.m in Sources */,
 				AD624F6A20E099FF0095F0E9 /* NSString+WBStringExtension.m in Sources */,
 				AD624F7820E099FF0095F0E9 /* UIBarButtonItem+WHBarButtonItem.m in Sources */,
-				AD62501120E09B400095F0E9 /* BCLoginController.m in Sources */,
 				AD624F8120E099FF0095F0E9 /* UINavigationController+WHNavigationController.m in Sources */,
 				AD624F7F20E099FF0095F0E9 /* UIButton+LWB.m in Sources */,
 				AD624E9620E091460095F0E9 /* MJRefreshComponent.m in Sources */,
@@ -2102,7 +2103,6 @@
 				AD624ED920E091460095F0E9 /* SDWebImagePrefetcher.m in Sources */,
 				AD624EB720E091460095F0E9 /* IQNSArray+Sort.m in Sources */,
 				AD624E9920E091460095F0E9 /* MASCompositeConstraint.m in Sources */,
-				AD62500F20E09B400095F0E9 /* SALoginModel.m in Sources */,
 				AD624F9020E099FF0095F0E9 /* BCRefreshAutoGifFooter.m in Sources */,
 				AD62502720E09D6C0095F0E9 /* MSBillViewController.m in Sources */,
 				AD624FE720E09B020095F0E9 /* LFHttpTool.m in Sources */,
@@ -2127,6 +2127,7 @@
 				AD62501A20E09C860095F0E9 /* MSHomeViewController.m in Sources */,
 				AD624EDB20E091460095F0E9 /* NSButton+WebCache.m in Sources */,
 				AD624EE220E091460095F0E9 /* NSImage+WebCache.m in Sources */,
+				AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */,
 				AD624F6B20E099FF0095F0E9 /* NSString+WHString.m in Sources */,
 				AD624EC320E091460095F0E9 /* MBProgressHUD.m in Sources */,
 				AD624E9B20E091460095F0E9 /* MASLayoutConstraint.m in Sources */,
@@ -2142,7 +2143,6 @@
 				AD624E9520E091460095F0E9 /* MJRefreshAutoFooter.m in Sources */,
 				AD624E9820E091460095F0E9 /* ViewController+MASAdditions.m in Sources */,
 				AD624EBD20E091460095F0E9 /* AFURLResponseSerialization.m in Sources */,
-				AD62501320E09B400095F0E9 /* BCCodeAlertView.m in Sources */,
 				AD624ED420E091460095F0E9 /* SDWebImageDownloader.m in Sources */,
 				AD624FF720E09B020095F0E9 /* GKCover.m in Sources */,
 				AD624E8420E091460095F0E9 /* MJRefreshConst.m in Sources */,

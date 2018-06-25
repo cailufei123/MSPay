@@ -91,9 +91,10 @@
 }
 -(void)setupChildViewControllers{
 
-    [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSHomeViewController alloc] init]]  title:@"糖果屋" image:@"糖豆" selectedImage:@"糖豆－点击"];
-      [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSBillViewController alloc] init]]  title:@"我的糖果包" image:@"我的" selectedImage:@"我的-点击"];
-       [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSMeViewController alloc] init]]  title:@"我的糖果包" image:@"我的" selectedImage:@"我的-点击"];
+    [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSHomeViewController alloc] init]]  title:@"首页" image:@"糖豆" selectedImage:@"糖豆－点击"];
+      [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSBillViewController alloc] init]]  title:@"账单" image:@"我的" selectedImage:@"我的-点击"];
+    
+       [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSMeViewController alloc] init]]  title:@"我的" image:@"我的" selectedImage:@"我的-点击"];
 }
 -(void)setupOneChildViewController:(UIViewController *)vc title:(NSString *)title image:(NSString*)image selectedImage:(NSString *)selectedImage{
     

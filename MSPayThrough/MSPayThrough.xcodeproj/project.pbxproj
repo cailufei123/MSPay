@@ -221,10 +221,10 @@
 		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
 		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
-		AF61850520E2082100791FF0 /* MSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6184FC20E2081F00791FF0 /* MSMeViewController.xib */; };
+		AD918C3520E20ECE008FC6C7 /* MSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD918C3220E20ECE008FC6C7 /* MSMeViewController.xib */; };
+		AD918C3620E20ECE008FC6C7 /* MSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD918C3420E20ECE008FC6C7 /* MSMeViewController.m */; };
 		AF61850620E2082100791FF0 /* MSUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6184FD20E2081F00791FF0 /* MSUserController.xib */; };
 		AF61850720E2082100791FF0 /* MSCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6184FE20E2081F00791FF0 /* MSCardController.m */; };
-		AF61850820E2082100791FF0 /* MSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6184FF20E2082000791FF0 /* MSMeViewController.m */; };
 		AF61850920E2082100791FF0 /* MSCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61850120E2082000791FF0 /* MSCardController.xib */; };
 		AF61850A20E2082100791FF0 /* MSUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61850320E2082000791FF0 /* MSUserController.m */; };
 /* End PBXBuildFile section */
@@ -673,11 +673,11 @@
 		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
 		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
 		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
-		AF6184FC20E2081F00791FF0 /* MSMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSMeViewController.xib; path = ../../../../../asPay/MSPayThrough/MSPayThrough/MSMe/MSMeController/MSMeViewController.xib; sourceTree = "<group>"; };
+		AD918C3220E20ECE008FC6C7 /* MSMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSMeViewController.xib; sourceTree = "<group>"; };
+		AD918C3320E20ECE008FC6C7 /* MSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMeViewController.h; sourceTree = "<group>"; };
+		AD918C3420E20ECE008FC6C7 /* MSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMeViewController.m; sourceTree = "<group>"; };
 		AF6184FD20E2081F00791FF0 /* MSUserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSUserController.xib; sourceTree = "<group>"; };
 		AF6184FE20E2081F00791FF0 /* MSCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCardController.m; sourceTree = "<group>"; };
-		AF6184FF20E2082000791FF0 /* MSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMeViewController.m; path = ../../../../../asPay/MSPayThrough/MSPayThrough/MSMe/MSMeController/MSMeViewController.m; sourceTree = "<group>"; };
-		AF61850020E2082000791FF0 /* MSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMeViewController.h; path = ../../../../../asPay/MSPayThrough/MSPayThrough/MSMe/MSMeController/MSMeViewController.h; sourceTree = "<group>"; };
 		AF61850120E2082000791FF0 /* MSCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSCardController.xib; sourceTree = "<group>"; };
 		AF61850220E2082000791FF0 /* MSUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserController.h; sourceTree = "<group>"; };
 		AF61850320E2082000791FF0 /* MSUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUserController.m; sourceTree = "<group>"; };
@@ -1766,12 +1766,12 @@
 		AD62501F20E09D100095F0E9 /* MSMeController */ = {
 			isa = PBXGroup;
 			children = (
+				AD918C3320E20ECE008FC6C7 /* MSMeViewController.h */,
+				AD918C3420E20ECE008FC6C7 /* MSMeViewController.m */,
+				AD918C3220E20ECE008FC6C7 /* MSMeViewController.xib */,
 				AF61850420E2082100791FF0 /* MSCardController.h */,
 				AF6184FE20E2081F00791FF0 /* MSCardController.m */,
 				AF61850120E2082000791FF0 /* MSCardController.xib */,
-				AF61850020E2082000791FF0 /* MSMeViewController.h */,
-				AF6184FF20E2082000791FF0 /* MSMeViewController.m */,
-				AF6184FC20E2081F00791FF0 /* MSMeViewController.xib */,
 				AF61850220E2082000791FF0 /* MSUserController.h */,
 				AF61850320E2082000791FF0 /* MSUserController.m */,
 				AF6184FD20E2081F00791FF0 /* MSUserController.xib */,
@@ -1954,10 +1954,10 @@
 				AD62504220E0FF190095F0E9 /* BCLoginController.xib in Resources */,
 				AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */,
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
+				AD918C3520E20ECE008FC6C7 /* MSMeViewController.xib in Resources */,
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
-				AF61850520E2082100791FF0 /* MSMeViewController.xib in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
 				AF61850620E2082100791FF0 /* MSUserController.xib in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
@@ -2007,6 +2007,7 @@
 				AD624EB020E091460095F0E9 /* IQToolbar.m in Sources */,
 				AD624EDD20E091460095F0E9 /* SDImageCache.m in Sources */,
 				AD624E7C20E091450095F0E9 /* NSObject+MJCoding.m in Sources */,
+				AD918C3620E20ECE008FC6C7 /* MSMeViewController.m in Sources */,
 				AD624ED620E091460095F0E9 /* UIImage+MultiFormat.m in Sources */,
 				AD624FE920E09B020095F0E9 /* MBManager.m in Sources */,
 				AD624FF520E09B020095F0E9 /* LKControllerTool.m in Sources */,
@@ -2090,7 +2091,6 @@
 				AD624ECF20E091460095F0E9 /* UIImage+ForceDecode.m in Sources */,
 				AD624F8620E099FF0095F0E9 /* NSDateFormatter+Category.m in Sources */,
 				AD624F8820E099FF0095F0E9 /* UIBarButtonItem+LFExtension.m in Sources */,
-				AF61850820E2082100791FF0 /* MSMeViewController.m in Sources */,
 				AD624FE620E09B020095F0E9 /* ATSkipTool.m in Sources */,
 				AD624F8920E099FF0095F0E9 /* NSFileManager+WHFileManager.m in Sources */,
 				AD624EB220E091460095F0E9 /* IQBarButtonItem.m in Sources */,

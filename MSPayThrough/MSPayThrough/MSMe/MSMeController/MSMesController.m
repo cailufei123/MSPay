@@ -13,14 +13,26 @@
 #import "MSAboutController.h"
 
 @interface MSMesController ()
+@property (weak, nonatomic) IBOutlet UIImageView *backImageView;
 
 @end
 
 @implementation MSMesController
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
 }
 
 //点击头像

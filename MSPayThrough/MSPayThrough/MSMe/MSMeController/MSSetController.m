@@ -11,6 +11,7 @@
 #import "MSCardController.h"
 
 @interface MSSetController ()
+@property (weak, nonatomic) IBOutlet UIButton *commteBtn;
 
 @end
 
@@ -20,6 +21,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"设置";
+    [self.commteBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
 }
 
 //点击修改密码

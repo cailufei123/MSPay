@@ -22,6 +22,9 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKy-ve-IGV">
                     <rect key="frame" x="0.0" y="60" width="375" height="80"/>
+                    <connections>
+                        <action selector="clicTopBtn" destination="-1" eventType="touchUpInside" id="d7A-Gy-MY6"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cys-ZV-jdQ" userLabel="topView">
                     <rect key="frame" x="0.0" y="140" width="375" height="164"/>
@@ -51,6 +54,9 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4I-ye-Zsm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                    <connections>
+                                        <action selector="clickFeiLvBtn" destination="-1" eventType="touchUpInside" id="SEY-k9-bIc"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,6 +99,9 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-0r-b0h">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                    <connections>
+                                        <action selector="clickBankBtn" destination="-1" eventType="touchUpInside" id="oN5-LB-88l"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,6 +138,9 @@
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwm-0l-6L4">
                             <rect key="frame" x="0.0" y="109" width="375" height="55"/>
+                            <connections>
+                                <action selector="clickGongGaoBtn" destination="-1" eventType="touchUpInside" id="c7g-mm-zcI"/>
+                            </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_notice" translatesAutoresizingMaskIntoConstraints="NO" id="8eP-DO-veQ">
                             <rect key="frame" x="15" y="127" width="20" height="20"/>
@@ -216,6 +228,9 @@
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kza-dv-nw7">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                            <connections>
+                                <action selector="clickShareBtn" destination="-1" eventType="touchUpInside" id="X4w-rL-CNQ"/>
+                            </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_share" translatesAutoresizingMaskIntoConstraints="NO" id="tIl-qM-11F">
                             <rect key="frame" x="15" y="17" width="20" height="20"/>
@@ -250,6 +265,9 @@
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wan-Rj-gUi">
                             <rect key="frame" x="0.0" y="54" width="375" height="56"/>
+                            <connections>
+                                <action selector="clickVipBtn" destination="-1" eventType="touchUpInside" id="xYf-ce-c9o"/>
+                            </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_vip" translatesAutoresizingMaskIntoConstraints="NO" id="Ox8-eE-BZ0">
                             <rect key="frame" x="15" y="72" width="20" height="20"/>
@@ -284,6 +302,9 @@
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvr-pT-6a1">
                             <rect key="frame" x="0.0" y="109" width="375" height="56"/>
+                            <connections>
+                                <action selector="clickKeFuBtn" destination="-1" eventType="touchUpInside" id="MQz-92-cTh"/>
+                            </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_plan" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-GT-krW">
                             <rect key="frame" x="15" y="127" width="20" height="20"/>
@@ -318,6 +339,9 @@
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll7-dZ-e2B">
                             <rect key="frame" x="0.0" y="164" width="375" height="55"/>
+                            <connections>
+                                <action selector="clickSetBtn" destination="-1" eventType="touchUpInside" id="gbp-ox-ytc"/>
+                            </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_setup" translatesAutoresizingMaskIntoConstraints="NO" id="is2-fw-qQd">
                             <rect key="frame" x="15" y="182" width="20" height="20"/>
@@ -395,7 +419,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vlC-dD-GkY" firstAttribute="top" secondItem="eR1-H2-MRA" secondAttribute="top" id="30t-s4-3K7"/>
                 <constraint firstItem="PKy-ve-IGV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Sg-7w-b8G"/>
@@ -423,7 +447,7 @@
                 <constraint firstItem="Cys-ZV-jdQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v4T-8G-kdb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <point key="canvasLocation" x="159" y="-190"/>
         </view>
     </objects>
     <resources>

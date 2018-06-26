@@ -223,6 +223,12 @@
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
 		AF61852220E2206C00791FF0 /* MSMesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852020E2206C00791FF0 /* MSMesController.m */; };
 		AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852120E2206C00791FF0 /* MSMesController.xib */; };
+		AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852420E2241A00791FF0 /* MSVerifyCardController.m */; };
+		AF61852E20E2241C00791FF0 /* MSUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852520E2241A00791FF0 /* MSUserController.m */; };
+		AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852620E2241B00791FF0 /* MSCardController.xib */; };
+		AF61853020E2241C00791FF0 /* MSCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852820E2241B00791FF0 /* MSCardController.m */; };
+		AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852B20E2241C00791FF0 /* MSUserController.xib */; };
+		AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852C20E2241C00791FF0 /* MSVerifyCardController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -672,6 +678,15 @@
 		AF61851F20E2206C00791FF0 /* MSMesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMesController.h; sourceTree = "<group>"; };
 		AF61852020E2206C00791FF0 /* MSMesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMesController.m; sourceTree = "<group>"; };
 		AF61852120E2206C00791FF0 /* MSMesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMesController.xib; sourceTree = "<group>"; };
+		AF61852420E2241A00791FF0 /* MSVerifyCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSVerifyCardController.m; sourceTree = "<group>"; };
+		AF61852520E2241A00791FF0 /* MSUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUserController.m; sourceTree = "<group>"; };
+		AF61852620E2241B00791FF0 /* MSCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSCardController.xib; sourceTree = "<group>"; };
+		AF61852720E2241B00791FF0 /* MSCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCardController.h; sourceTree = "<group>"; };
+		AF61852820E2241B00791FF0 /* MSCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCardController.m; sourceTree = "<group>"; };
+		AF61852920E2241B00791FF0 /* MSUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserController.h; sourceTree = "<group>"; };
+		AF61852A20E2241B00791FF0 /* MSVerifyCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSVerifyCardController.h; sourceTree = "<group>"; };
+		AF61852B20E2241C00791FF0 /* MSUserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSUserController.xib; sourceTree = "<group>"; };
+		AF61852C20E2241C00791FF0 /* MSVerifyCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSVerifyCardController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1759,6 +1774,15 @@
 				AF61851F20E2206C00791FF0 /* MSMesController.h */,
 				AF61852020E2206C00791FF0 /* MSMesController.m */,
 				AF61852120E2206C00791FF0 /* MSMesController.xib */,
+				AF61852920E2241B00791FF0 /* MSUserController.h */,
+				AF61852520E2241A00791FF0 /* MSUserController.m */,
+				AF61852B20E2241C00791FF0 /* MSUserController.xib */,
+				AF61852720E2241B00791FF0 /* MSCardController.h */,
+				AF61852820E2241B00791FF0 /* MSCardController.m */,
+				AF61852620E2241B00791FF0 /* MSCardController.xib */,
+				AF61852A20E2241B00791FF0 /* MSVerifyCardController.h */,
+				AF61852420E2241A00791FF0 /* MSVerifyCardController.m */,
+				AF61852C20E2241C00791FF0 /* MSVerifyCardController.xib */,
 			);
 			path = MSMeController;
 			sourceTree = "<group>";
@@ -1938,7 +1962,9 @@
 			files = (
 				AD62504220E0FF190095F0E9 /* BCLoginController.xib in Resources */,
 				AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */,
+				AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */,
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
+				AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */,
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
@@ -1948,6 +1974,7 @@
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
+				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
@@ -2034,6 +2061,7 @@
 				AD624E9720E091460095F0E9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				AD624E7B20E091450095F0E9 /* MJProperty.m in Sources */,
 				AD624F8B20E099FF0095F0E9 /* UIView+XMGExtension.m in Sources */,
+				AF61853020E2241C00791FF0 /* MSCardController.m in Sources */,
 				AD624E8220E091460095F0E9 /* MJFoundation.m in Sources */,
 				AD624F8E20E099FF0095F0E9 /* UIViewController+WHVC.m in Sources */,
 				AD624EC420E091460095F0E9 /* MBProgressHUD+Add.m in Sources */,
@@ -2123,6 +2151,7 @@
 				AD624FEE20E09B020095F0E9 /* UIView+SDExtension.m in Sources */,
 				AD624E8620E091460095F0E9 /* UIScrollView+MJExtension.m in Sources */,
 				AD624E8A20E091460095F0E9 /* MJRefreshBackStateFooter.m in Sources */,
+				AF61852E20E2241C00791FF0 /* MSUserController.m in Sources */,
 				AD624E8C20E091460095F0E9 /* MJRefreshAutoStateFooter.m in Sources */,
 				AD624F7A20E099FF0095F0E9 /* NSDate+WHDate.m in Sources */,
 				AD624E9F20E091460095F0E9 /* MASViewConstraint.m in Sources */,
@@ -2145,6 +2174,7 @@
 				AD624ED120E091460095F0E9 /* FLAnimatedImageView+WebCache.m in Sources */,
 				AD624EF720E096B80095F0E9 /* SANavigationController.m in Sources */,
 				AD624F9520E099FF0095F0E9 /* SARefreshGifHeader.m in Sources */,
+				AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */,
 				AD624E9520E091460095F0E9 /* MJRefreshAutoFooter.m in Sources */,
 				AD624E9820E091460095F0E9 /* ViewController+MASAdditions.m in Sources */,
 				AD624EBD20E091460095F0E9 /* AFURLResponseSerialization.m in Sources */,

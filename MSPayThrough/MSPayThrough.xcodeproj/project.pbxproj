@@ -221,6 +221,8 @@
 		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
 		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
+		AF61852220E2206C00791FF0 /* MSMesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852020E2206C00791FF0 /* MSMesController.m */; };
+		AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852120E2206C00791FF0 /* MSMesController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -667,6 +669,9 @@
 		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
 		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
 		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
+		AF61851F20E2206C00791FF0 /* MSMesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMesController.h; sourceTree = "<group>"; };
+		AF61852020E2206C00791FF0 /* MSMesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMesController.m; sourceTree = "<group>"; };
+		AF61852120E2206C00791FF0 /* MSMesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMesController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1751,6 +1756,9 @@
 		AD62501F20E09D100095F0E9 /* MSMeController */ = {
 			isa = PBXGroup;
 			children = (
+				AF61851F20E2206C00791FF0 /* MSMesController.h */,
+				AF61852020E2206C00791FF0 /* MSMesController.m */,
+				AF61852120E2206C00791FF0 /* MSMesController.xib */,
 			);
 			path = MSMeController;
 			sourceTree = "<group>";
@@ -1941,6 +1949,7 @@
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
+				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2078,6 +2087,7 @@
 				AD624EE420E091460095F0E9 /* SDImageCacheConfig.m in Sources */,
 				AD624EB620E091460095F0E9 /* IQKeyboardManager.m in Sources */,
 				AD624F9620E099FF0095F0E9 /* AppDelegate.m in Sources */,
+				AF61852220E2206C00791FF0 /* MSMesController.m in Sources */,
 				AD624F7320E099FF0095F0E9 /* UITextField+WBTextField.m in Sources */,
 				AD624D4820E0872A0095F0E9 /* main.m in Sources */,
 				AD624F7020E099FF0095F0E9 /* UIImageView+WBY.m in Sources */,

@@ -209,7 +209,6 @@
 		AD62500220E09B020095F0E9 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AD624FE420E09B010095F0E9 /* .gitkeep */; };
 		AD62501520E09C180095F0E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD62501420E09C180095F0E9 /* Info.plist */; };
 		AD62501A20E09C860095F0E9 /* MSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62501920E09C860095F0E9 /* MSHomeViewController.m */; };
-		AD62502420E09D230095F0E9 /* MSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62502320E09D230095F0E9 /* MSMeViewController.m */; };
 		AD62502720E09D6C0095F0E9 /* MSBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62502620E09D6C0095F0E9 /* MSBillViewController.m */; };
 		AD62502A20E09F5C0095F0E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62502920E09F5C0095F0E9 /* SystemConfiguration.framework */; };
 		AD62502C20E09F6E0095F0E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62502B20E09F6E0095F0E9 /* CoreTelephony.framework */; };
@@ -222,6 +221,8 @@
 		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
 		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
+		AF6184F020E1D28300791FF0 /* MSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6184ED20E1D28200791FF0 /* MSMeViewController.xib */; };
+		AF6184F120E1D28300791FF0 /* MSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6184EF20E1D28200791FF0 /* MSMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -652,8 +653,6 @@
 		AD62501420E09C180095F0E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD62501820E09C860095F0E9 /* MSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeViewController.h; sourceTree = "<group>"; };
 		AD62501920E09C860095F0E9 /* MSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeViewController.m; sourceTree = "<group>"; };
-		AD62502220E09D230095F0E9 /* MSMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeViewController.h; sourceTree = "<group>"; };
-		AD62502320E09D230095F0E9 /* MSMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeViewController.m; sourceTree = "<group>"; };
 		AD62502520E09D6C0095F0E9 /* MSBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBillViewController.h; sourceTree = "<group>"; };
 		AD62502620E09D6C0095F0E9 /* MSBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSBillViewController.m; sourceTree = "<group>"; };
 		AD62502920E09F5C0095F0E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -670,6 +669,9 @@
 		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
 		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
 		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
+		AF6184ED20E1D28200791FF0 /* MSMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSMeViewController.xib; sourceTree = "<group>"; };
+		AF6184EE20E1D28200791FF0 /* MSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMeViewController.h; sourceTree = "<group>"; };
+		AF6184EF20E1D28200791FF0 /* MSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1551,13 +1553,13 @@
 			children = (
 				AD624F9820E09B010095F0E9 /* DWImagePicker */,
 				AD624F9B20E09B010095F0E9 /* ATSkipTool.m */,
-				AD624F9C20E09B010095F0E9 /* LFHttpTool.m */,
 				AD624F9E20E09B010095F0E9 /* MBManager.m */,
 				AD624F9F20E09B010095F0E9 /* LFAccountTool.m */,
 				AD624FA020E09B010095F0E9 /* LKControllerTool.h */,
 				AD624FA120E09B010095F0E9 /* 跑马灯 */,
 				AD624FA720E09B010095F0E9 /* ATSkipTool.h */,
 				AD624FA920E09B010095F0E9 /* LFHttpTool.h */,
+				AD624F9C20E09B010095F0E9 /* LFHttpTool.m */,
 				AD624FAA20E09B010095F0E9 /* GzwScrollViewExtension */,
 				AD624FAE20E09B010095F0E9 /* SDCycleScrollView */,
 				AD624FBE20E09B010095F0E9 /* WBAudioPlayerHelper */,
@@ -1754,8 +1756,9 @@
 		AD62501F20E09D100095F0E9 /* MSMeController */ = {
 			isa = PBXGroup;
 			children = (
-				AD62502220E09D230095F0E9 /* MSMeViewController.h */,
-				AD62502320E09D230095F0E9 /* MSMeViewController.m */,
+				AF6184EE20E1D28200791FF0 /* MSMeViewController.h */,
+				AF6184EF20E1D28200791FF0 /* MSMeViewController.m */,
+				AF6184ED20E1D28200791FF0 /* MSMeViewController.xib */,
 			);
 			path = MSMeController;
 			sourceTree = "<group>";
@@ -1938,6 +1941,7 @@
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
+				AF6184F020E1D28300791FF0 /* MSMeViewController.xib in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
@@ -1993,6 +1997,7 @@
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
 				AD624F7220E099FF0095F0E9 /* UIView+CLFExtension.m in Sources */,
+				AF6184F120E1D28300791FF0 /* MSMeViewController.m in Sources */,
 				AD624FEC20E09B020095F0E9 /* UITableView+Gzw.m in Sources */,
 				AD624E8E20E091460095F0E9 /* MJRefreshAutoNormalFooter.m in Sources */,
 				AD624FEF20E09B020095F0E9 /* SDCollectionViewCell.m in Sources */,
@@ -2019,7 +2024,6 @@
 				AD624F9220E099FF0095F0E9 /* BCRequestData.m in Sources */,
 				AD624FF220E09B020095F0E9 /* TAAnimatedDotView.m in Sources */,
 				AD624ECD20E091460095F0E9 /* UIImageView+HighlightedWebCache.m in Sources */,
-				AD62502420E09D230095F0E9 /* MSMeViewController.m in Sources */,
 				AD624EE720E091460095F0E9 /* SDWebImageImageIOCoder.m in Sources */,
 				AD624F7C20E099FF0095F0E9 /* UIImageView+PlayGIF.m in Sources */,
 				AD624F8020E099FF0095F0E9 /* UIButton+Extensions.m in Sources */,

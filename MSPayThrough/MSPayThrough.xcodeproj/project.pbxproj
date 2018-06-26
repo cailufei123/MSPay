@@ -221,10 +221,6 @@
 		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
 		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
-		AF61850620E2082100791FF0 /* MSUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6184FD20E2081F00791FF0 /* MSUserController.xib */; };
-		AF61850720E2082100791FF0 /* MSCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6184FE20E2081F00791FF0 /* MSCardController.m */; };
-		AF61850920E2082100791FF0 /* MSCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61850120E2082000791FF0 /* MSCardController.xib */; };
-		AF61850A20E2082100791FF0 /* MSUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61850320E2082000791FF0 /* MSUserController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -671,12 +667,6 @@
 		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
 		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
 		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
-		AF6184FD20E2081F00791FF0 /* MSUserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSUserController.xib; sourceTree = "<group>"; };
-		AF6184FE20E2081F00791FF0 /* MSCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCardController.m; sourceTree = "<group>"; };
-		AF61850120E2082000791FF0 /* MSCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSCardController.xib; sourceTree = "<group>"; };
-		AF61850220E2082000791FF0 /* MSUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserController.h; sourceTree = "<group>"; };
-		AF61850320E2082000791FF0 /* MSUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUserController.m; sourceTree = "<group>"; };
-		AF61850420E2082100791FF0 /* MSCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCardController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1761,12 +1751,6 @@
 		AD62501F20E09D100095F0E9 /* MSMeController */ = {
 			isa = PBXGroup;
 			children = (
-				AF61850220E2082000791FF0 /* MSUserController.h */,
-				AF61850320E2082000791FF0 /* MSUserController.m */,
-				AF6184FD20E2081F00791FF0 /* MSUserController.xib */,
-				AF61850420E2082100791FF0 /* MSCardController.h */,
-				AF6184FE20E2081F00791FF0 /* MSCardController.m */,
-				AF61850120E2082000791FF0 /* MSCardController.xib */,
 			);
 			path = MSMeController;
 			sourceTree = "<group>";
@@ -1951,13 +1935,11 @@
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
-				AF61850620E2082100791FF0 /* MSUserController.xib in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
-				AF61850920E2082100791FF0 /* MSCardController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
 			);
@@ -2121,7 +2103,6 @@
 				AD624FE720E09B020095F0E9 /* LFHttpTool.m in Sources */,
 				AD624ECB20E091460095F0E9 /* MKAnnotationView+WebCache.m in Sources */,
 				AD624ED520E091460095F0E9 /* UIImage+GIF.m in Sources */,
-				AF61850720E2082100791FF0 /* MSCardController.m in Sources */,
 				AD624F7720E099FF0095F0E9 /* UIImageView+WHImageView.m in Sources */,
 				AD624F7620E099FF0095F0E9 /* UIView+WHView.m in Sources */,
 				AD624F7D20E099FF0095F0E9 /* NSArray+decription.m in Sources */,
@@ -2131,7 +2112,6 @@
 				AD624E8B20E091460095F0E9 /* MJRefreshBackNormalFooter.m in Sources */,
 				AD624FEE20E09B020095F0E9 /* UIView+SDExtension.m in Sources */,
 				AD624E8620E091460095F0E9 /* UIScrollView+MJExtension.m in Sources */,
-				AF61850A20E2082100791FF0 /* MSUserController.m in Sources */,
 				AD624E8A20E091460095F0E9 /* MJRefreshBackStateFooter.m in Sources */,
 				AD624E8C20E091460095F0E9 /* MJRefreshAutoStateFooter.m in Sources */,
 				AD624F7A20E099FF0095F0E9 /* NSDate+WHDate.m in Sources */,

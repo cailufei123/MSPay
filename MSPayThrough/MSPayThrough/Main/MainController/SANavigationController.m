@@ -31,9 +31,9 @@
 
      @{NSFontAttributeName:[UIFont boldSystemFontOfSize:17],
 
-       NSForegroundColorAttributeName:naverTextColor}];
+       NSForegroundColorAttributeName:blackTextColor}];
      self.navigationBar.barTintColor = naverTextColor;
-  [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"millcolorGrad"] forBarMetrics:UIBarMetricsDefault];
+//  [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"millcolorGrad"] forBarMetrics:UIBarMetricsDefault];
 //   [UIApplication sharedApplication].statusBarStyle=UIStatusBarStyleLightContent;
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
@@ -44,8 +44,8 @@
         
       
         UIButton * backItem = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backItem setImage:[UIImage imageNamed:@"btn_back_titlebar"] forState:UIControlStateNormal];
-        [backItem setImage:[UIImage imageNamed:@"btn_back_titlebar"] forState:UIControlStateHighlighted];
+        [backItem setImage:[UIImage imageNamed:@"icon_back"] forState:UIControlStateNormal];
+        [backItem setImage:[UIImage imageNamed:@"icon_back"] forState:UIControlStateHighlighted];
         
         [backItem setTitle:@"" forState:UIControlStateNormal];
         [backItem setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];

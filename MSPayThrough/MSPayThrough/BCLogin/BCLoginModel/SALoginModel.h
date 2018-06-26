@@ -12,40 +12,9 @@
 
 @property(nonatomic,strong)NSString * loginName;
 
-
-
-/**
- * 登陆用户的密码
- */
-@property(nonatomic,strong)NSString * logPassWord;
-/**
- * 登陆用户的密码
- */
-@property(nonatomic,strong)NSString * logPassWordMd5;
-
-/**
- * 登陆放回的标示符
- */
-
-@property(nonatomic,strong)NSString * token;
-/**
- *  登陆成功 失败的返回值
- */
-@property(nonatomic,strong)NSString * message;
-
-/**
- *  USERID
- */
-@property(nonatomic,strong)NSString * userId;
-@property(nonatomic,strong)NSString * mobile;
-
-/**
- *  用户名字
- */
-@property(nonatomic,strong)NSString * name;
-@property(nonatomic,strong)NSString * source;//微信是2QQ是3
-@property(nonatomic,strong)NSString * huanId;
-@property(nonatomic,strong)NSString * sUid;
+@property(nonatomic,strong)NSString * merchant_key;
+@property(nonatomic,strong)NSString * merchant_id;
+@property(nonatomic,strong)NSString * random_str;
 
 
 

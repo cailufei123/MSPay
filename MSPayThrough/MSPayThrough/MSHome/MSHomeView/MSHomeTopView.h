@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MSHomeTopView : UIView
-
++(instancetype)loadNameHomeTopViewXib ;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleViewLyout;
+@property (weak, nonatomic) IBOutlet UIView *bagView;
 @end

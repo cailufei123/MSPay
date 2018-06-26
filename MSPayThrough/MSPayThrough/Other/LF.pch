@@ -12,11 +12,11 @@
 #define LF_pch
 
 #define login [LFAccountTool account]
-#define loginToken login.token
-#define loginUid login.userId
-#define huanchatId login.huanId
-#define loginTokenlength loginToken.length
-#define loginOpenId login.sUid
+#define loginMerchant_key login.merchant_key
+#define loginerchant_id login.merchant_id
+
+#define loginTokenlength loginMerchant_key.length
+
 #define loginMe [LFAccountTool accountMe]
 
 #define ATSKIPTOOl [ATSkipTool sharedInstance]

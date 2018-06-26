@@ -9,13 +9,15 @@
 #import "MSHomeTopView.h"
 
 @implementation MSHomeTopView
+-(void)awakeFromNib{
+    [super awakeFromNib];
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+     self.titleViewLyout.constant = 50+kStatusBarHeight;
+    
+    [self.bagView gradientFreme: CGRectMake(0, 0, LFscreenW, 230+kStatusBarHeight) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
 }
-*/
++(instancetype)loadNameHomeTopViewXib {
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
+}
 
 @end

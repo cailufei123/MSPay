@@ -221,6 +221,11 @@
 		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
 		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
+		AD89ECDC20E22A8E00AB38C2 /* MSHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECDB20E22A8E00AB38C2 /* MSHomeTopView.m */; };
+		AD89ECDE20E22A9800AB38C2 /* MSHomeTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89ECDD20E22A9800AB38C2 /* MSHomeTopView.xib */; };
+		AD89ECE120E22C4900AB38C2 /* ATHomeFavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECE020E22C4900AB38C2 /* ATHomeFavButton.m */; };
+		AD89ECE520E2382F00AB38C2 /* MSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */; };
+		AD89ECE620E2382F00AB38C2 /* MSHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */; };
 		AF61852220E2206C00791FF0 /* MSMesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852020E2206C00791FF0 /* MSMesController.m */; };
 		AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852120E2206C00791FF0 /* MSMesController.xib */; };
 /* End PBXBuildFile section */
@@ -669,6 +674,14 @@
 		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
 		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
 		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
+		AD89ECDA20E22A8E00AB38C2 /* MSHomeTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeTopView.h; sourceTree = "<group>"; };
+		AD89ECDB20E22A8E00AB38C2 /* MSHomeTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeTopView.m; sourceTree = "<group>"; };
+		AD89ECDD20E22A9800AB38C2 /* MSHomeTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSHomeTopView.xib; sourceTree = "<group>"; };
+		AD89ECDF20E22C4800AB38C2 /* ATHomeFavButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHomeFavButton.h; sourceTree = "<group>"; };
+		AD89ECE020E22C4900AB38C2 /* ATHomeFavButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHomeFavButton.m; sourceTree = "<group>"; };
+		AD89ECE220E2382F00AB38C2 /* MSHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeTableViewCell.h; sourceTree = "<group>"; };
+		AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeTableViewCell.m; sourceTree = "<group>"; };
+		AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSHomeTableViewCell.xib; sourceTree = "<group>"; };
 		AF61851F20E2206C00791FF0 /* MSMesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMesController.h; sourceTree = "<group>"; };
 		AF61852020E2206C00791FF0 /* MSMesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMesController.m; sourceTree = "<group>"; };
 		AF61852120E2206C00791FF0 /* MSMesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMesController.xib; sourceTree = "<group>"; };
@@ -1731,6 +1744,7 @@
 		AD62501620E09C4D0095F0E9 /* MSHome */ = {
 			isa = PBXGroup;
 			children = (
+				AD89ECD920E22A6C00AB38C2 /* MSHomeView */,
 				AD62501720E09C4D0095F0E9 /* MSHomeController */,
 			);
 			path = MSHome;
@@ -1830,6 +1844,21 @@
 				AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */,
 			);
 			path = BCLoginView;
+			sourceTree = "<group>";
+		};
+		AD89ECD920E22A6C00AB38C2 /* MSHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				AD89ECDF20E22C4800AB38C2 /* ATHomeFavButton.h */,
+				AD89ECE020E22C4900AB38C2 /* ATHomeFavButton.m */,
+				AD89ECDA20E22A8E00AB38C2 /* MSHomeTopView.h */,
+				AD89ECDB20E22A8E00AB38C2 /* MSHomeTopView.m */,
+				AD89ECDD20E22A9800AB38C2 /* MSHomeTopView.xib */,
+				AD89ECE220E2382F00AB38C2 /* MSHomeTableViewCell.h */,
+				AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */,
+				AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */,
+			);
+			path = MSHomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1945,11 +1974,13 @@
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
+				AD89ECDE20E22A9800AB38C2 /* MSHomeTopView.xib in Resources */,
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
+				AD89ECE620E2382F00AB38C2 /* MSHomeTableViewCell.xib in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1976,6 +2007,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD624F9420E099FF0095F0E9 /* YWRequestData.m in Sources */,
+				AD89ECDC20E22A8E00AB38C2 /* MSHomeTopView.m in Sources */,
 				AD624E7D20E091450095F0E9 /* MJExtensionConst.m in Sources */,
 				AD624FED20E09B020095F0E9 /* SDCycleScrollView.m in Sources */,
 				AD62504120E0FF190095F0E9 /* SALoginModel.m in Sources */,
@@ -2122,6 +2154,7 @@
 				AD624E8B20E091460095F0E9 /* MJRefreshBackNormalFooter.m in Sources */,
 				AD624FEE20E09B020095F0E9 /* UIView+SDExtension.m in Sources */,
 				AD624E8620E091460095F0E9 /* UIScrollView+MJExtension.m in Sources */,
+				AD89ECE520E2382F00AB38C2 /* MSHomeTableViewCell.m in Sources */,
 				AD624E8A20E091460095F0E9 /* MJRefreshBackStateFooter.m in Sources */,
 				AD624E8C20E091460095F0E9 /* MJRefreshAutoStateFooter.m in Sources */,
 				AD624F7A20E099FF0095F0E9 /* NSDate+WHDate.m in Sources */,
@@ -2141,6 +2174,7 @@
 				AD624E9120E091460095F0E9 /* MJRefreshGifHeader.m in Sources */,
 				AD624EE020E091460095F0E9 /* NSData+ImageContentType.m in Sources */,
 				AD624EF920E096B80095F0E9 /* SATabBarController.m in Sources */,
+				AD89ECE120E22C4900AB38C2 /* ATHomeFavButton.m in Sources */,
 				AD624EB120E091460095F0E9 /* IQTitleBarButtonItem.m in Sources */,
 				AD624ED120E091460095F0E9 /* FLAnimatedImageView+WebCache.m in Sources */,
 				AD624EF720E096B80095F0E9 /* SANavigationController.m in Sources */,

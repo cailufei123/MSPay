@@ -199,31 +199,27 @@
 
 - (void)logingBtClick {
 
-//        if (self.phoneTf.text.length<=0) {
-//            [MBManager showBriefAlert:@"手机号不能为空" ];
-//            return;
-//        }else if(self.codeTf.text.length<=0){
-//            [MBManager showBriefAlert:@"验证码不能为空"];
-//            return;
-//        }
+        if (self.phoneTf.text.length<=0) {
+            [MBManager showBriefAlert:@"手机号不能为空" ];
+            return;
+        }else if(self.codeTf.text.length<=0){
+            [MBManager showBriefAlert:@"验证码不能为空"];
+            return;
+        }
         NSMutableDictionary * loginDict = diction;
-//        loginDict[@"mobile"] = self.phoneTf.text;
-//        loginDict[@"smsCode"] =self.codeTf.text;
-        loginDict[@"random_str"] =  @"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT";
-        loginDict[@"user_name"] = @"18923447852";
-        loginDict[@"user_pwd"] =@"qwe123";
-        loginDict[@"smsCode"] = @"1002";
-   
-   
-//        loginDict[@"command"] =@"1002";
-    
-        
+        loginDict[@"user_name"] = self.phoneTf.text;
+        loginDict[@"user_pwd"] =self.codeTf.text;
+        loginDict[@"command"] = @"1002";
+
             [YWRequestData userLoginDict:loginDict success:^(id responseObj) {
-                [MBManager showBriefAlert:@"登陆成功"];
-                SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"data"]];
-                [LFAccountTool save:loginmodel];
-                [MBManager hideAlert];
-                [LKControllerTool chooseRootViewController];
+                if (responseObj[@"body"]) {
+                    [MBManager showBriefAlert:@"登陆成功"];
+                    SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"body"]];
+                    [LFAccountTool save:loginmodel];
+                    [MBManager hideAlert];
+                    [LKControllerTool chooseRootViewController];
+                }
+              
                
             }];
 

@@ -22,9 +22,9 @@
      self.interactivePopGestureRecognizer.delegate = self;
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
     normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:18];
-    normalAttrs[NSForegroundColorAttributeName] = naverTextColor;
+    normalAttrs[NSForegroundColorAttributeName] = blackTextColor;
 //    self.navigationBar.translucent = NO;
-    self.navigationBar.barTintColor = naverBagColor;
+    self.navigationBar.barTintColor = naverTextColor;
     self.navigationBar.titleTextAttributes = normalAttrs;
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"millcolorGrad"] forBarMetrics:UIBarMetricsDefault];
 
@@ -35,8 +35,8 @@
         
         
         UIButton * backItem = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backItem setImage:[UIImage imageNamed:@"btn_back_titlebar"] forState:UIControlStateNormal];
-        [backItem setImage:[UIImage imageNamed:@"btn_back_titlebar"] forState:UIControlStateHighlighted];
+        [backItem setImage:[UIImage imageNamed:@"icon_back"] forState:UIControlStateNormal];
+        [backItem setImage:[UIImage imageNamed:@"icon_back"] forState:UIControlStateHighlighted];
         
         [backItem setTitle:@"" forState:UIControlStateNormal];
         [backItem setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];

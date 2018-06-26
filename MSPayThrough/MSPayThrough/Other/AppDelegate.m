@@ -55,12 +55,12 @@
 }
 
 -(void)taskeEveryDay{
-    NSMutableDictionary * taskeEveryDayDict = diction;
-    taskeEveryDayDict[@"token"] = loginToken;
-    taskeEveryDayDict[@"taskId"] = @"1012";
-    [YWRequestData taskeEveryDayDict:taskeEveryDayDict success:^(id responseObj) {
-        
-    }];
+//    NSMutableDictionary * taskeEveryDayDict = diction;
+//    taskeEveryDayDict[@"token"] = loginToken;
+//    taskeEveryDayDict[@"taskId"] = @"1012";
+//    [YWRequestData taskeEveryDayDict:taskeEveryDayDict success:^(id responseObj) {
+//        
+//    }];
 }
 
 - (void)configUSharePlatforms
@@ -92,23 +92,23 @@
 {
     // 1.2.7版本开始不需要用户再手动注册devicetoken，SDK会自动注册
     //[UMessage registerDeviceToken:deviceToken];
-    NSString *devicToken = [[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<" withString: @""]
-                             stringByReplacingOccurrencesOfString: @">" withString: @""]
-                            stringByReplacingOccurrencesOfString: @" " withString: @""];
-    NSUserDefaults * userdevice = [NSUserDefaults standardUserDefaults];
-    [userdevice setObject:devicToken forKey:userdevicToken];
-    NSMutableDictionary * dict = [NSMutableDictionary dictionary];
-    dict[@"deviceId"] = devicToken;
-    dict[@"token"] = loginToken;
-    dict[@"type"] = @"1";
-    LFLog(@"%@",devicToken);
-    LFLog(@"%@",login.userId);
-    [LFHttpTool post:PUSH_DEVICEID params:dict progress:^(id downloadProgress) {
-        
-    } success:^(id responseObj) {
-    } failure:^(NSError *error) {
-        
-    }];
+//    NSString *devicToken = [[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<" withString: @""]
+//                             stringByReplacingOccurrencesOfString: @">" withString: @""]
+//                            stringByReplacingOccurrencesOfString: @" " withString: @""];
+//    NSUserDefaults * userdevice = [NSUserDefaults standardUserDefaults];
+//    [userdevice setObject:devicToken forKey:userdevicToken];
+//    NSMutableDictionary * dict = [NSMutableDictionary dictionary];
+//    dict[@"deviceId"] = devicToken;
+//    dict[@"token"] = loginToken;
+//    dict[@"type"] = @"1";
+//    LFLog(@"%@",devicToken);
+//    LFLog(@"%@",login.userId);
+//    [LFHttpTool post:PUSH_DEVICEID params:dict progress:^(id downloadProgress) {
+//        
+//    } success:^(id responseObj) {
+//    } failure:^(NSError *error) {
+//        
+//    }];
     
     
     

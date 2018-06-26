@@ -77,13 +77,13 @@
 
     headDict[@"version"] =   [LFHttpTool getAppVersion];
     headDict[@"channel"] =  @"1";;
-    headDict[@"merchant_id"] = loginUid;
+//    headDict[@"merchant_id"] = loginUid;
     headDict[@"format"] =  @"JSON";
     headDict[@"charset"] =  @"utf-8";
     headDict[@"sign_type"] =  @"MD5";
     headDict[@"timestamp"] =  [LFHttpTool currentTimeStr];
     headDict[@"command"] =  params[@"command"];
-    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@",[params mj_JSONString],loginUid] toMD5];
+//    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@",[params mj_JSONString],loginUid] toMD5];
     dict[@"head"] = headDict;
     dict[@"body"] = params;
     allDict[@"jsondata"] = [dict mj_JSONString];

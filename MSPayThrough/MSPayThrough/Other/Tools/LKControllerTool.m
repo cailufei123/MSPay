@@ -10,7 +10,7 @@
 #import "SATabBarController.h"
 #import "BCLoginController.h"
 #import "AppDelegate.h"
-#import "MSMeViewController.h"
+//#import "MSMeViewController.h"
 
 @implementation LKControllerTool
 
@@ -46,11 +46,11 @@
 ////        [defaults setObject:currentVersion forKey:versionKey];
 ////        [defaults synchronize];
 //    }
-    if (loginTokenlength) {
-        [LKControllerTool rootController];
-    }else{
-          [LKControllerTool LoginRegistController];
-    }
+//    if (loginTokenlength) {
+//        [LKControllerTool rootController];
+//    }else{
+//          [LKControllerTool LoginRegistController];
+//    }
 //      [LKControllerTool rootController];
     
    
@@ -63,9 +63,9 @@
    
 }
 +(void)LoginRegistController{
-//    BCLoginController * registVc = [[BCLoginController alloc] init];
-    MSMeViewController *meVc = [[MSMeViewController alloc] init];
-    SALoginRegistNavController *naVc = [[SALoginRegistNavController alloc] initWithRootViewController:meVc];
+    BCLoginController * registVc = [[BCLoginController alloc] init];
+//    MSMeViewController *meVc = [[MSMeViewController alloc] init];
+    SALoginRegistNavController *naVc = [[SALoginRegistNavController alloc] initWithRootViewController:registVc];
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
   
     window.rootViewController = naVc;

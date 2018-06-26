@@ -27,36 +27,36 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuO-Eg-2sX" userLabel="fangfanView">
-                    <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="160" width="375" height="50"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_help" translatesAutoresizingMaskIntoConstraints="NO" id="IVH-Yr-Fhf">
-                            <rect key="frame" x="15" y="12" width="20" height="20"/>
+                            <rect key="frame" x="15" y="15" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="gmG-kC-PHZ"/>
                                 <constraint firstAttribute="height" constant="20" id="ygi-lG-cpt"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="XCO-in-hlw">
-                            <rect key="frame" x="352" y="14.5" width="8" height="15"/>
+                            <rect key="frame" x="352" y="17.5" width="8" height="15"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="15" id="Sbu-LP-iIt"/>
                                 <constraint firstAttribute="width" constant="8" id="kb6-fy-7wZ"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8l-3K-cuF">
-                            <rect key="frame" x="304" y="15.5" width="40" height="16"/>
+                            <rect key="frame" x="304" y="18.5" width="40" height="16"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwA-od-GaF">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <connections>
                                 <action selector="clickIdentityCardBtn" destination="-1" eventType="touchUpInside" id="Bk8-an-FmK"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="防范身份证信息被冒用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjk-E0-Bb8">
-                            <rect key="frame" x="45" y="15.5" width="123" height="14.5"/>
+                            <rect key="frame" x="45" y="18.5" width="123" height="14.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -71,7 +71,7 @@
                         <constraint firstItem="DwA-od-GaF" firstAttribute="top" secondItem="TuO-Eg-2sX" secondAttribute="top" id="LO6-XW-4Hu"/>
                         <constraint firstItem="IVH-Yr-Fhf" firstAttribute="centerY" secondItem="TuO-Eg-2sX" secondAttribute="centerY" id="Voe-IS-ek4"/>
                         <constraint firstItem="DwA-od-GaF" firstAttribute="leading" secondItem="TuO-Eg-2sX" secondAttribute="leading" id="aEk-sV-YL8"/>
-                        <constraint firstAttribute="height" constant="44" id="dZm-eN-MLO"/>
+                        <constraint firstAttribute="height" constant="50" id="dZm-eN-MLO"/>
                         <constraint firstAttribute="trailing" secondItem="XCO-in-hlw" secondAttribute="trailing" constant="15" id="hud-oX-FRR"/>
                         <constraint firstAttribute="bottom" secondItem="DwA-od-GaF" secondAttribute="bottom" id="kiv-WM-fV4"/>
                         <constraint firstItem="Zjk-E0-Bb8" firstAttribute="leading" secondItem="IVH-Yr-Fhf" secondAttribute="trailing" constant="10" id="tdB-hP-Tb3"/>
@@ -80,32 +80,32 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6p-Bi-xll" userLabel="yinhkView">
-                    <rect key="frame" x="0.0" y="212" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="218" width="375" height="50"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="QVc-1V-8b7">
-                            <rect key="frame" x="352" y="14.5" width="8" height="15"/>
+                            <rect key="frame" x="352" y="17.5" width="8" height="15"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="8" id="GgT-63-xAn"/>
                                 <constraint firstAttribute="height" constant="15" id="JTK-o9-wJJ"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定到账储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whG-Ou-kI9">
-                            <rect key="frame" x="45" y="15" width="86" height="14.5"/>
+                            <rect key="frame" x="45" y="18" width="86" height="14.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-so-HJF">
-                            <rect key="frame" x="304" y="15" width="40" height="16"/>
+                            <rect key="frame" x="304" y="18" width="40" height="16"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_help" translatesAutoresizingMaskIntoConstraints="NO" id="rpe-vL-pO2">
-                            <rect key="frame" x="15" y="12" width="20" height="20"/>
+                            <rect key="frame" x="15" y="15" width="20" height="20"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kT-PL-znZ">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <connections>
                                 <action selector="clickBankCardBtn" destination="-1" eventType="touchUpInside" id="ipC-63-yvb"/>
                             </connections>
@@ -114,7 +114,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="4kT-PL-znZ" firstAttribute="leading" secondItem="f6p-Bi-xll" secondAttribute="leading" id="1tv-Fc-KVW"/>
-                        <constraint firstAttribute="height" constant="44" id="4KT-Ew-vqo"/>
+                        <constraint firstAttribute="height" constant="50" id="4KT-Ew-vqo"/>
                         <constraint firstItem="QVc-1V-8b7" firstAttribute="leading" secondItem="Dhm-so-HJF" secondAttribute="trailing" constant="8" id="AXa-s8-zZi"/>
                         <constraint firstAttribute="trailing" secondItem="QVc-1V-8b7" secondAttribute="trailing" constant="15" id="Bkp-K0-0Ta"/>
                         <constraint firstItem="whG-Ou-kI9" firstAttribute="leading" secondItem="rpe-vL-pO2" secondAttribute="trailing" constant="10" id="MCu-RD-g65"/>

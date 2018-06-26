@@ -7,6 +7,7 @@
 //
 
 #import "MSCardController.h"
+#import "MSVerifyCardController.h"
 
 @interface MSCardController ()
 
@@ -21,7 +22,8 @@
 }
 //点击防范身份证
 - (IBAction)clickIdentityCardBtn {
-    
+    MSVerifyCardController *verifyVc = [[MSVerifyCardController alloc] init];
+    [self.navigationController pushViewController:verifyVc animated:YES];
 }
 //点击绑定储蓄卡
 - (IBAction)clickBankCardBtn {

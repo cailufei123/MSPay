@@ -17,19 +17,13 @@
 @property (weak, nonatomic) IBOutlet UITextField *phoneTf;
 
 @property (weak, nonatomic) IBOutlet UITextField *codeTf;
-@property (weak, nonatomic) IBOutlet UIButton *getCodeBt;
+
 @property (weak, nonatomic) IBOutlet UIButton *loginBt;
-@property (weak, nonatomic) IBOutlet UITextField *nameTf;
-@property (weak, nonatomic) IBOutlet UITextField *invitationCodeTf;
-@property (weak, nonatomic) IBOutlet UILabel *invitationLb;
-@property (weak, nonatomic) IBOutlet UIButton *agreementLb;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollow;
 @property(nonatomic,strong)NSTimer * timer;
 @property(nonatomic,assign)NSInteger count;
-@property (weak, nonatomic) IBOutlet UIView *invitationView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *invitationLyout;
-@property (weak, nonatomic) IBOutlet UIButton *noCodeBt;
-@property (weak, nonatomic) IBOutlet UIButton *sureBt;
+
 @end
 
 @implementation BCLoginController
@@ -105,48 +99,44 @@
 //     self.scrollow
 //      self.scrollow.automaticallyAdjustsScrollViewInsets = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.phoneTf.borderStyle = self.codeTf.borderStyle = self.nameTf.borderStyle = self.invitationCodeTf.borderStyle = UITextBorderStyleNone;
-    self.phoneTf.delegate =  self.codeTf.delegate =  self.nameTf.delegate =  self.invitationCodeTf.delegate =  self;
+    self.phoneTf.borderStyle = self.codeTf.borderStyle =  UITextBorderStyleNone;
+    self.phoneTf.delegate =  self.codeTf.delegate =  self;
     self.count = timeCount;
-    [self.getCodeBt addTarget:self action:@selector(getCodeBtCilck) forControlEvents:UIControlEventTouchUpInside];
+  
     [self.loginBt addTarget:self action:@selector(logingBtClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.agreementLb addTarget:self action:@selector(agreementBtClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.sureBt addTarget:self action:@selector(sureBtClick:) forControlEvents:UIControlEventTouchUpInside];
-   
+ 
     WeakSelf(weakSelf)
     self.timer = [NSTimer wh_scheduledTimerWithTimeInterval:1 repeats:YES callback:^(NSTimer *timer) {
-        [weakSelf timerFireMethod];
+//        [weakSelf timerFireMethod];
     }];
     [self.timer pauseTimer];
 //    [self addNoticeForKeyboard];
-    // 下划线
-    self.invitationView.hidden = YES;
-    self.invitationLyout.constant = 40;
-    NSString * agreementStr = @"我已阅读并同意《用户协议》";
-    NSRange agreement = [agreementStr rangeOfString:@"《用户协议》"];
-    NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
-    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:agreementStr ];
-    
-    [attribtStr addAttributes:attribtDic range:agreement];
-    
-    self.agreementLb.titleLabel.attributedText = attribtStr;
-    
-    NSString * invitationStr = @"使用邀请码额外获得10紫钻，没有邀请码？";
-    NSRange invitationRange = [invitationStr rangeOfString:@"没有邀请码？"];
-    NSDictionary *invitationDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
-    NSMutableAttributedString *invitationstr = [[NSMutableAttributedString alloc]initWithString:invitationStr ];
+//    // 下划线
+//    self.invitationView.hidden = YES;
+//    self.invitationLyout.constant = 40;
+//    NSString * agreementStr = @"我已阅读并同意《用户协议》";
+//    NSRange agreement = [agreementStr rangeOfString:@"《用户协议》"];
+//    NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+//    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:agreementStr ];
 //
-    [invitationstr addAttributes:invitationDic range:invitationRange];
+//    [attribtStr addAttributes:attribtDic range:agreement];
 //
-    self.invitationLb.attributedText = invitationstr;
-    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(wwww)];
-    [self.invitationLb addGestureRecognizer:tap];
+//    self.agreementLb.titleLabel.attributedText = attribtStr;
+//
+//    NSString * invitationStr = @"使用邀请码额外获得10紫钻，没有邀请码？";
+//    NSRange invitationRange = [invitationStr rangeOfString:@"没有邀请码？"];
+//    NSDictionary *invitationDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+//    NSMutableAttributedString *invitationstr = [[NSMutableAttributedString alloc]initWithString:invitationStr ];
+////
+//    [invitationstr addAttributes:invitationDic range:invitationRange];
+////
+//    self.invitationLb.attributedText = invitationstr;
+//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(wwww)];
+//    [self.invitationLb addGestureRecognizer:tap];
   
     
 }
--(void)wwww{
-    
-}
+
 -(void)sureBtClick:(UIButton * )bt{
     if (bt.selected) {
         bt.selected = NO;
@@ -206,23 +196,7 @@
     [self.view endEditing:YES];
     
 }
-- (IBAction)registBt:(UIButton *)sender {//点击注册
-    
-    if (self.phoneTf.text.length<=0) {
-        [MBManager showBriefAlert:@"手机号不能为空" ];
-        return;
-    }else if(self.codeTf.text.length<=0){
-        [MBManager showBriefAlert:@"验证码不能为空"];
-        return;
-    }else if(self.nameTf.text.length<=0){
-        [MBManager showBriefAlert:@"名字不能为空"];
-        return;
-    }else if(self.nameTf.text.length<=0){
-        [MBManager showBriefAlert:@"名字不能为空"];
-        return;
-    }
-   
-}
+
 - (void)logingBtClick {
 
 //        if (self.phoneTf.text.length<=0) {
@@ -233,12 +207,13 @@
 //            return;
 //        }
         NSMutableDictionary * loginDict = diction;
-        loginDict[@"mobile"] = self.phoneTf.text;
-        loginDict[@"smsCode"] =self.codeTf.text;
-      loginDict[@"random_str"] =  @"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT";
+//        loginDict[@"mobile"] = self.phoneTf.text;
+//        loginDict[@"smsCode"] =self.codeTf.text;
+        loginDict[@"random_str"] =  @"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT";
         loginDict[@"user_name"] = @"18923447852";
         loginDict[@"user_pwd"] =@"qwe123";
-    
+        loginDict[@"smsCode"] = @"1002";
+   
    
 //        loginDict[@"command"] =@"1002";
     
@@ -259,28 +234,27 @@
 
 }
 
--(void)timerFireMethod{
-    if (self.count<=0){
-        self.getCodeBt.userInteractionEnabled = YES;
-        self.getCodeBt.selected = NO;
-        [self.getCodeBt setTitle:@"发送验证码" forState:UIControlStateNormal];
-        [self.timer pauseTimer];
-    }else{
-        self.getCodeBt.selected = YES;
-        self.getCodeBt.userInteractionEnabled = NO;
-        [self.getCodeBt setTitle:[NSString stringWithFormat:@"(%02ld秒)可重发", self.count-- ] forState:UIControlStateNormal];
-    }
-    
-    
-}
+//-(void)timerFireMethod{
+//    if (self.count<=0){
+//        self.getCodeBt.userInteractionEnabled = YES;
+//        self.getCodeBt.selected = NO;
+//        [self.getCodeBt setTitle:@"发送验证码" forState:UIControlStateNormal];
+//        [self.timer pauseTimer];
+//    }else{
+//        self.getCodeBt.selected = YES;
+//        self.getCodeBt.userInteractionEnabled = NO;
+//        [self.getCodeBt setTitle:[NSString stringWithFormat:@"(%02ld秒)可重发", self.count-- ] forState:UIControlStateNormal];
+//    }
+//
+//
+//}
 -(void)getCodeBtCilck{
     self.count = timeCount;
     NSMutableDictionary * dic = [NSMutableDictionary dictionary];
     dic[@"mobile"] = self.phoneTf.text;
     [YWRequestData registUserSendcodeDict:dic success:^(id responseObject) {
         if ([responseObject[@"status"] isEqual:@(19)]) {
-            self.invitationView.hidden = NO;
-            self.invitationLyout.constant = 200;
+         
             
         }
        

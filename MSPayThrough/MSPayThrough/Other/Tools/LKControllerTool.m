@@ -51,7 +51,7 @@
     }else{
           [LKControllerTool LoginRegistController];
     }
-      [LKControllerTool rootController];
+  
     
    
 }

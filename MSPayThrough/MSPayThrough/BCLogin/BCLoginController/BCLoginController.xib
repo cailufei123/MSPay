@@ -29,7 +29,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="380" height="681"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDW-Uv-6SW">
-                            <rect key="frame" x="0.0" y="0.0" width="380" height="681"/>
+                            <rect key="frame" x="0.0" y="0.0" width="380" height="711"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="nsa-7j-Egs">
                                     <rect key="frame" x="0.0" y="0.0" width="380" height="220"/>
@@ -153,7 +153,7 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="fDW-Uv-6SW" firstAttribute="leading" secondItem="EJN-cs-vuq" secondAttribute="leading" id="KSY-Dp-mhQ"/>
-                        <constraint firstItem="fDW-Uv-6SW" firstAttribute="height" secondItem="EJN-cs-vuq" secondAttribute="height" id="Ln2-GH-zWb"/>
+                        <constraint firstItem="fDW-Uv-6SW" firstAttribute="height" secondItem="EJN-cs-vuq" secondAttribute="height" constant="30" id="Ln2-GH-zWb"/>
                         <constraint firstAttribute="bottom" secondItem="fDW-Uv-6SW" secondAttribute="bottom" id="dT4-Dq-9U4"/>
                         <constraint firstItem="fDW-Uv-6SW" firstAttribute="centerX" secondItem="EJN-cs-vuq" secondAttribute="centerX" id="fjs-13-qvR"/>
                         <constraint firstItem="fDW-Uv-6SW" firstAttribute="top" secondItem="EJN-cs-vuq" secondAttribute="top" id="huY-XO-ZlD"/>
@@ -163,10 +163,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="EJN-cs-vuq" secondAttribute="bottom" id="BI0-fG-qkR"/>
-                <constraint firstItem="EJN-cs-vuq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="KvY-x6-h4A"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="EJN-cs-vuq" secondAttribute="trailing" id="cVB-2U-IM6"/>
-                <constraint firstItem="EJN-cs-vuq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qNg-AK-nSF"/>
+                <constraint firstItem="EJN-cs-vuq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="08F-pm-aDu"/>
+                <constraint firstAttribute="bottom" secondItem="EJN-cs-vuq" secondAttribute="bottom" id="jYb-fk-ocM"/>
+                <constraint firstItem="EJN-cs-vuq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jz1-qM-5QC"/>
+                <constraint firstAttribute="trailing" secondItem="EJN-cs-vuq" secondAttribute="trailing" id="v5k-Ik-Spf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

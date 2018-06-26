@@ -33,6 +33,46 @@
 @end
 
 @implementation BCLoginController
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+      [self.navigationController setNavigationBarHidden:YES animated:NO];
+//self.navigationController.navigationBar.translucent = YES;
+}
+
+
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+
+
+}
+//
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//
+//    [self setNaviTouMingImage];
+//
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated {
+//    [super viewWillDisappear:animated];
+//
+//    [self setNaviImage];
+//}
+
+////设置导航图片为透明
+//-(void)setNaviTouMingImage{
+//    //去掉背景图片
+//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    //去掉底部线条
+//    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+//}
+////设置导航图片
+//-(void)setNaviImage{
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"millcolorGrad"] forBarMetrics:UIBarMetricsDefault];
+//}
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
@@ -54,9 +94,17 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-     
+    if (@available(iOS 11.0, *)) {
+        self.scrollow.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//        self.scrollow.estimatedRowHeight = 0;
+//        self.scrollow.estimatedSectionHeaderHeight = 0;
+//        self.scrollow.estimatedSectionFooterHeight = 0;
+    }
     self.navigationItem.title = @"登录";
     self.scrollow.delegate = self;
+//     self.scrollow
+//      self.scrollow.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.phoneTf.borderStyle = self.codeTf.borderStyle = self.nameTf.borderStyle = self.invitationCodeTf.borderStyle = UITextBorderStyleNone;
     self.phoneTf.delegate =  self.codeTf.delegate =  self.nameTf.delegate =  self.invitationCodeTf.delegate =  self;
     self.count = timeCount;
@@ -176,19 +224,25 @@
    
 }
 - (void)logingBtClick {
-    if (self.invitationLyout.constant <200) {
-        if (self.phoneTf.text.length<=0) {
-            [MBManager showBriefAlert:@"手机号不能为空" ];
-            return;
-        }else if(self.codeTf.text.length<=0){
-            [MBManager showBriefAlert:@"验证码不能为空"];
-            return;
-        }
-        NSMutableDictionary * loginDict = diction;
-        loginDict[@"mobile"] = self.phoneTf.text;
-        loginDict[@"smsCode"] =self.codeTf.text;
-                
 
+//        if (self.phoneTf.text.length<=0) {
+//            [MBManager showBriefAlert:@"手机号不能为空" ];
+//            return;
+//        }else if(self.codeTf.text.length<=0){
+//            [MBManager showBriefAlert:@"验证码不能为空"];
+//            return;
+//        }
+        NSMutableDictionary * loginDict = diction;
+//        loginDict[@"mobile"] = self.phoneTf.text;
+//        loginDict[@"smsCode"] =self.codeTf.text;
+      loginDict[@"random_str"] =  @"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT";
+        loginDict[@"user_name"] = @"18923447852";
+        loginDict[@"user_pwd"] =@"qwe123";
+    
+   
+//        loginDict[@"command"] =@"1002";
+    
+        
             [YWRequestData userLoginDict:loginDict success:^(id responseObj) {
                 [MBManager showBriefAlert:@"登陆成功"];
                 SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"data"]];
@@ -199,7 +253,7 @@
             }];
 
        
-    }
+    
 
    
 

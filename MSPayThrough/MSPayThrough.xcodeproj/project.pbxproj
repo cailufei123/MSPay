@@ -222,6 +222,82 @@
 		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
 		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
+		AD6250A220E107400095F0E9 /* MerchantAccountInfo.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62504F20E1073F0095F0E9 /* MerchantAccountInfo.java */; };
+		AD6250A320E107400095F0E9 /* Resp99006.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505020E107400095F0E9 /* Resp99006.java */; };
+		AD6250A420E107400095F0E9 /* MerchantCorporationInfo.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505120E107400095F0E9 /* MerchantCorporationInfo.java */; };
+		AD6250A520E107400095F0E9 /* MerchantContactsInfo.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505220E107400095F0E9 /* MerchantContactsInfo.java */; };
+		AD6250A620E107400095F0E9 /* MerchantReviewControl.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505320E107400095F0E9 /* MerchantReviewControl.java */; };
+		AD6250A720E107400095F0E9 /* DictBank.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505420E107400095F0E9 /* DictBank.java */; };
+		AD6250A820E107400095F0E9 /* MerchantCardPackage.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505520E107400095F0E9 /* MerchantCardPackage.java */; };
+		AD6250A920E107400095F0E9 /* Resp99007.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505620E107400095F0E9 /* Resp99007.java */; };
+		AD6250AA20E107400095F0E9 /* MerchantFee.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505720E107400095F0E9 /* MerchantFee.java */; };
+		AD6250AB20E107400095F0E9 /* RateChannel.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505820E107400095F0E9 /* RateChannel.java */; };
+		AD6250AC20E107400095F0E9 /* Resp1001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505920E107400095F0E9 /* Resp1001.java */; };
+		AD6250AD20E107400095F0E9 /* Resp1006.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505A20E107400095F0E9 /* Resp1006.java */; };
+		AD6250AE20E107400095F0E9 /* Resp2000.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505B20E107400095F0E9 /* Resp2000.java */; };
+		AD6250AF20E107400095F0E9 /* Resp1010.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505C20E107400095F0E9 /* Resp1010.java */; };
+		AD6250B020E107400095F0E9 /* Resp3001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505D20E107400095F0E9 /* Resp3001.java */; };
+		AD6250B120E107400095F0E9 /* Resp99001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505E20E107400095F0E9 /* Resp99001.java */; };
+		AD6250B220E107400095F0E9 /* Resp1011.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62505F20E107400095F0E9 /* Resp1011.java */; };
+		AD6250B320E107400095F0E9 /* Resp2001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506020E107400095F0E9 /* Resp2001.java */; };
+		AD6250B420E107400095F0E9 /* QpayRepayPlanDetail.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506120E107400095F0E9 /* QpayRepayPlanDetail.java */; };
+		AD6250B520E107400095F0E9 /* Resp1007.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506220E107400095F0E9 /* Resp1007.java */; };
+		AD6250B620E107400095F0E9 /* TerminalRecode.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506320E107400095F0E9 /* TerminalRecode.java */; };
+		AD6250B720E107400095F0E9 /* Resp1008.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506420E107400095F0E9 /* Resp1008.java */; };
+		AD6250B820E107400095F0E9 /* Resp99002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506520E107400095F0E9 /* Resp99002.java */; };
+		AD6250B920E107400095F0E9 /* Resp3003.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506620E107400095F0E9 /* Resp3003.java */; };
+		AD6250BA20E107400095F0E9 /* Resp1012.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506720E107400095F0E9 /* Resp1012.java */; };
+		AD6250BB20E107400095F0E9 /* Resp2002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506820E107400095F0E9 /* Resp2002.java */; };
+		AD6250BC20E107400095F0E9 /* Resp1004.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506920E107400095F0E9 /* Resp1004.java */; };
+		AD6250BD20E107400095F0E9 /* Resp1005.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506A20E107400095F0E9 /* Resp1005.java */; };
+		AD6250BE20E107400095F0E9 /* Notice.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506B20E107400095F0E9 /* Notice.java */; };
+		AD6250BF20E107400095F0E9 /* Resp1013.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506C20E107400095F0E9 /* Resp1013.java */; };
+		AD6250C020E107400095F0E9 /* ShareImgModel.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506D20E107400095F0E9 /* ShareImgModel.java */; };
+		AD6250C120E107400095F0E9 /* Resp3002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506E20E107400095F0E9 /* Resp3002.java */; };
+		AD6250C220E107400095F0E9 /* CauModel.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62506F20E107400095F0E9 /* CauModel.java */; };
+		AD6250C320E107400095F0E9 /* Resp1009.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507020E107400095F0E9 /* Resp1009.java */; };
+		AD6250C420E107400095F0E9 /* Resp3005.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507120E107400095F0E9 /* Resp3005.java */; };
+		AD6250C520E107400095F0E9 /* Resp1002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507220E107400095F0E9 /* Resp1002.java */; };
+		AD6250C620E107400095F0E9 /* MerchantBaseInfo.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507320E107400095F0E9 /* MerchantBaseInfo.java */; };
+		AD6250C720E107400095F0E9 /* Resp99008.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507420E107400095F0E9 /* Resp99008.java */; };
+		AD6250C820E107400095F0E9 /* MerchantImageData.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507520E107400095F0E9 /* MerchantImageData.java */; };
+		AD6250C920E107400095F0E9 /* FeeModel.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507620E107400095F0E9 /* FeeModel.java */; };
+		AD6250CA20E107400095F0E9 /* QpayRepayPlan.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507720E107400095F0E9 /* QpayRepayPlan.java */; };
+		AD6250CB20E107400095F0E9 /* Resp1003.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507820E107400095F0E9 /* Resp1003.java */; };
+		AD6250CC20E107400095F0E9 /* Resp990011.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507920E107400095F0E9 /* Resp990011.java */; };
+		AD6250CD20E107400095F0E9 /* Resp1015.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507A20E107400095F0E9 /* Resp1015.java */; };
+		AD6250CE20E107400095F0E9 /* Resp3004.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507B20E107400095F0E9 /* Resp3004.java */; };
+		AD6250D120E107400095F0E9 /* Req99001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62507F20E107400095F0E9 /* Req99001.java */; };
+		AD6250D220E107400095F0E9 /* Req6005.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508020E107400095F0E9 /* Req6005.java */; };
+		AD6250D320E107400095F0E9 /* Req1001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508120E107400095F0E9 /* Req1001.java */; };
+		AD6250D420E107400095F0E9 /* Req6004.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508220E107400095F0E9 /* Req6004.java */; };
+		AD6250D520E107400095F0E9 /* File in Resources */ = {isa = PBXBuildFile; fileRef = AD62508320E107400095F0E9 /* File */; };
+		AD6250D620E107400095F0E9 /* Req99007.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508420E107400095F0E9 /* Req99007.java */; };
+		AD6250D720E107400095F0E9 /* Req1011.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508520E107400095F0E9 /* Req1011.java */; };
+		AD6250D820E107400095F0E9 /* Req2001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508620E107400095F0E9 /* Req2001.java */; };
+		AD6250D920E107400095F0E9 /* Req1007.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508720E107400095F0E9 /* Req1007.java */; };
+		AD6250DA20E107400095F0E9 /* Req990011.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508820E107400095F0E9 /* Req990011.java */; };
+		AD6250DB20E107400095F0E9 /* Req1006.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508920E107400095F0E9 /* Req1006.java */; };
+		AD6250DC20E107400095F0E9 /* Req2000.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508A20E107400095F0E9 /* Req2000.java */; };
+		AD6250DD20E107400095F0E9 /* Req1010.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508B20E107400095F0E9 /* Req1010.java */; };
+		AD6250DE20E107400095F0E9 /* Req3001.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508C20E107400095F0E9 /* Req3001.java */; };
+		AD6250DF20E107400095F0E9 /* Req99006.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508D20E107400095F0E9 /* Req99006.java */; };
+		AD6250E020E107400095F0E9 /* Req1005.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508E20E107400095F0E9 /* Req1005.java */; };
+		AD6250E120E107400095F0E9 /* Req1013.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62508F20E107400095F0E9 /* Req1013.java */; };
+		AD6250E220E107400095F0E9 /* Req3002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509020E107400095F0E9 /* Req3002.java */; };
+		AD6250E320E107400095F0E9 /* Req1009.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509120E107400095F0E9 /* Req1009.java */; };
+		AD6250E420E107400095F0E9 /* Req99008.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509220E107400095F0E9 /* Req99008.java */; };
+		AD6250E520E107400095F0E9 /* Req1008.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509320E107400095F0E9 /* Req1008.java */; };
+		AD6250E620E107400095F0E9 /* Req3003.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509420E107400095F0E9 /* Req3003.java */; };
+		AD6250E720E107400095F0E9 /* Req1012.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509520E107400095F0E9 /* Req1012.java */; };
+		AD6250E820E107400095F0E9 /* Req2002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509620E107400095F0E9 /* Req2002.java */; };
+		AD6250E920E107400095F0E9 /* Req1004.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509720E107400095F0E9 /* Req1004.java */; };
+		AD6250EA20E107400095F0E9 /* Req1003.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509820E107400095F0E9 /* Req1003.java */; };
+		AD6250EB20E107400095F0E9 /* Req1015.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509920E107400095F0E9 /* Req1015.java */; };
+		AD6250EC20E107400095F0E9 /* Req3004.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509A20E107400095F0E9 /* Req3004.java */; };
+		AD6250ED20E107400095F0E9 /* Req99002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509B20E107400095F0E9 /* Req99002.java */; };
+		AD6250EE20E107400095F0E9 /* Req3005.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509C20E107400095F0E9 /* Req3005.java */; };
+		AD6250EF20E107400095F0E9 /* Req1002.java in Sources */ = {isa = PBXBuildFile; fileRef = AD62509D20E107400095F0E9 /* Req1002.java */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -670,6 +746,82 @@
 		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
 		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
 		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
+		AD62504F20E1073F0095F0E9 /* MerchantAccountInfo.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantAccountInfo.java; sourceTree = "<group>"; };
+		AD62505020E107400095F0E9 /* Resp99006.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp99006.java; sourceTree = "<group>"; };
+		AD62505120E107400095F0E9 /* MerchantCorporationInfo.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantCorporationInfo.java; sourceTree = "<group>"; };
+		AD62505220E107400095F0E9 /* MerchantContactsInfo.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantContactsInfo.java; sourceTree = "<group>"; };
+		AD62505320E107400095F0E9 /* MerchantReviewControl.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantReviewControl.java; sourceTree = "<group>"; };
+		AD62505420E107400095F0E9 /* DictBank.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = DictBank.java; sourceTree = "<group>"; };
+		AD62505520E107400095F0E9 /* MerchantCardPackage.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantCardPackage.java; sourceTree = "<group>"; };
+		AD62505620E107400095F0E9 /* Resp99007.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp99007.java; sourceTree = "<group>"; };
+		AD62505720E107400095F0E9 /* MerchantFee.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantFee.java; sourceTree = "<group>"; };
+		AD62505820E107400095F0E9 /* RateChannel.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = RateChannel.java; sourceTree = "<group>"; };
+		AD62505920E107400095F0E9 /* Resp1001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1001.java; sourceTree = "<group>"; };
+		AD62505A20E107400095F0E9 /* Resp1006.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1006.java; sourceTree = "<group>"; };
+		AD62505B20E107400095F0E9 /* Resp2000.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp2000.java; sourceTree = "<group>"; };
+		AD62505C20E107400095F0E9 /* Resp1010.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1010.java; sourceTree = "<group>"; };
+		AD62505D20E107400095F0E9 /* Resp3001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp3001.java; sourceTree = "<group>"; };
+		AD62505E20E107400095F0E9 /* Resp99001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp99001.java; sourceTree = "<group>"; };
+		AD62505F20E107400095F0E9 /* Resp1011.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1011.java; sourceTree = "<group>"; };
+		AD62506020E107400095F0E9 /* Resp2001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp2001.java; sourceTree = "<group>"; };
+		AD62506120E107400095F0E9 /* QpayRepayPlanDetail.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = QpayRepayPlanDetail.java; sourceTree = "<group>"; };
+		AD62506220E107400095F0E9 /* Resp1007.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1007.java; sourceTree = "<group>"; };
+		AD62506320E107400095F0E9 /* TerminalRecode.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = TerminalRecode.java; sourceTree = "<group>"; };
+		AD62506420E107400095F0E9 /* Resp1008.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1008.java; sourceTree = "<group>"; };
+		AD62506520E107400095F0E9 /* Resp99002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp99002.java; sourceTree = "<group>"; };
+		AD62506620E107400095F0E9 /* Resp3003.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp3003.java; sourceTree = "<group>"; };
+		AD62506720E107400095F0E9 /* Resp1012.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1012.java; sourceTree = "<group>"; };
+		AD62506820E107400095F0E9 /* Resp2002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp2002.java; sourceTree = "<group>"; };
+		AD62506920E107400095F0E9 /* Resp1004.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1004.java; sourceTree = "<group>"; };
+		AD62506A20E107400095F0E9 /* Resp1005.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1005.java; sourceTree = "<group>"; };
+		AD62506B20E107400095F0E9 /* Notice.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Notice.java; sourceTree = "<group>"; };
+		AD62506C20E107400095F0E9 /* Resp1013.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1013.java; sourceTree = "<group>"; };
+		AD62506D20E107400095F0E9 /* ShareImgModel.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ShareImgModel.java; sourceTree = "<group>"; };
+		AD62506E20E107400095F0E9 /* Resp3002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp3002.java; sourceTree = "<group>"; };
+		AD62506F20E107400095F0E9 /* CauModel.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CauModel.java; sourceTree = "<group>"; };
+		AD62507020E107400095F0E9 /* Resp1009.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1009.java; sourceTree = "<group>"; };
+		AD62507120E107400095F0E9 /* Resp3005.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp3005.java; sourceTree = "<group>"; };
+		AD62507220E107400095F0E9 /* Resp1002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1002.java; sourceTree = "<group>"; };
+		AD62507320E107400095F0E9 /* MerchantBaseInfo.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantBaseInfo.java; sourceTree = "<group>"; };
+		AD62507420E107400095F0E9 /* Resp99008.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp99008.java; sourceTree = "<group>"; };
+		AD62507520E107400095F0E9 /* MerchantImageData.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MerchantImageData.java; sourceTree = "<group>"; };
+		AD62507620E107400095F0E9 /* FeeModel.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FeeModel.java; sourceTree = "<group>"; };
+		AD62507720E107400095F0E9 /* QpayRepayPlan.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = QpayRepayPlan.java; sourceTree = "<group>"; };
+		AD62507820E107400095F0E9 /* Resp1003.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1003.java; sourceTree = "<group>"; };
+		AD62507920E107400095F0E9 /* Resp990011.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp990011.java; sourceTree = "<group>"; };
+		AD62507A20E107400095F0E9 /* Resp1015.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp1015.java; sourceTree = "<group>"; };
+		AD62507B20E107400095F0E9 /* Resp3004.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Resp3004.java; sourceTree = "<group>"; };
+		AD62507F20E107400095F0E9 /* Req99001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req99001.java; sourceTree = "<group>"; };
+		AD62508020E107400095F0E9 /* Req6005.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req6005.java; sourceTree = "<group>"; };
+		AD62508120E107400095F0E9 /* Req1001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1001.java; sourceTree = "<group>"; };
+		AD62508220E107400095F0E9 /* Req6004.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req6004.java; sourceTree = "<group>"; };
+		AD62508320E107400095F0E9 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		AD62508420E107400095F0E9 /* Req99007.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req99007.java; sourceTree = "<group>"; };
+		AD62508520E107400095F0E9 /* Req1011.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1011.java; sourceTree = "<group>"; };
+		AD62508620E107400095F0E9 /* Req2001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req2001.java; sourceTree = "<group>"; };
+		AD62508720E107400095F0E9 /* Req1007.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1007.java; sourceTree = "<group>"; };
+		AD62508820E107400095F0E9 /* Req990011.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req990011.java; sourceTree = "<group>"; };
+		AD62508920E107400095F0E9 /* Req1006.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1006.java; sourceTree = "<group>"; };
+		AD62508A20E107400095F0E9 /* Req2000.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req2000.java; sourceTree = "<group>"; };
+		AD62508B20E107400095F0E9 /* Req1010.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1010.java; sourceTree = "<group>"; };
+		AD62508C20E107400095F0E9 /* Req3001.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req3001.java; sourceTree = "<group>"; };
+		AD62508D20E107400095F0E9 /* Req99006.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req99006.java; sourceTree = "<group>"; };
+		AD62508E20E107400095F0E9 /* Req1005.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1005.java; sourceTree = "<group>"; };
+		AD62508F20E107400095F0E9 /* Req1013.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1013.java; sourceTree = "<group>"; };
+		AD62509020E107400095F0E9 /* Req3002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req3002.java; sourceTree = "<group>"; };
+		AD62509120E107400095F0E9 /* Req1009.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1009.java; sourceTree = "<group>"; };
+		AD62509220E107400095F0E9 /* Req99008.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req99008.java; sourceTree = "<group>"; };
+		AD62509320E107400095F0E9 /* Req1008.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1008.java; sourceTree = "<group>"; };
+		AD62509420E107400095F0E9 /* Req3003.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req3003.java; sourceTree = "<group>"; };
+		AD62509520E107400095F0E9 /* Req1012.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1012.java; sourceTree = "<group>"; };
+		AD62509620E107400095F0E9 /* Req2002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req2002.java; sourceTree = "<group>"; };
+		AD62509720E107400095F0E9 /* Req1004.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1004.java; sourceTree = "<group>"; };
+		AD62509820E107400095F0E9 /* Req1003.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1003.java; sourceTree = "<group>"; };
+		AD62509920E107400095F0E9 /* Req1015.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1015.java; sourceTree = "<group>"; };
+		AD62509A20E107400095F0E9 /* Req3004.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req3004.java; sourceTree = "<group>"; };
+		AD62509B20E107400095F0E9 /* Req99002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req99002.java; sourceTree = "<group>"; };
+		AD62509C20E107400095F0E9 /* Req3005.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req3005.java; sourceTree = "<group>"; };
+		AD62509D20E107400095F0E9 /* Req1002.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Req1002.java; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1364,6 +1516,7 @@
 		AD624EFB20E099FE0095F0E9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				AD62504920E1073F0095F0E9 /* json */,
 				AD624F9720E09B010095F0E9 /* Tools */,
 				AD624F5820E099FE0095F0E9 /* Public */,
 				AD624EFD20E099FE0095F0E9 /* Category */,
@@ -1829,6 +1982,105 @@
 			path = BCLoginView;
 			sourceTree = "<group>";
 		};
+		AD62504920E1073F0095F0E9 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				AD62504E20E1073F0095F0E9 /* resp */,
+				AD62507E20E107400095F0E9 /* req */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		AD62504E20E1073F0095F0E9 /* resp */ = {
+			isa = PBXGroup;
+			children = (
+				AD62504F20E1073F0095F0E9 /* MerchantAccountInfo.java */,
+				AD62505020E107400095F0E9 /* Resp99006.java */,
+				AD62505120E107400095F0E9 /* MerchantCorporationInfo.java */,
+				AD62505220E107400095F0E9 /* MerchantContactsInfo.java */,
+				AD62505320E107400095F0E9 /* MerchantReviewControl.java */,
+				AD62505420E107400095F0E9 /* DictBank.java */,
+				AD62505520E107400095F0E9 /* MerchantCardPackage.java */,
+				AD62505620E107400095F0E9 /* Resp99007.java */,
+				AD62505720E107400095F0E9 /* MerchantFee.java */,
+				AD62505820E107400095F0E9 /* RateChannel.java */,
+				AD62505920E107400095F0E9 /* Resp1001.java */,
+				AD62505A20E107400095F0E9 /* Resp1006.java */,
+				AD62505B20E107400095F0E9 /* Resp2000.java */,
+				AD62505C20E107400095F0E9 /* Resp1010.java */,
+				AD62505D20E107400095F0E9 /* Resp3001.java */,
+				AD62505E20E107400095F0E9 /* Resp99001.java */,
+				AD62505F20E107400095F0E9 /* Resp1011.java */,
+				AD62506020E107400095F0E9 /* Resp2001.java */,
+				AD62506120E107400095F0E9 /* QpayRepayPlanDetail.java */,
+				AD62506220E107400095F0E9 /* Resp1007.java */,
+				AD62506320E107400095F0E9 /* TerminalRecode.java */,
+				AD62506420E107400095F0E9 /* Resp1008.java */,
+				AD62506520E107400095F0E9 /* Resp99002.java */,
+				AD62506620E107400095F0E9 /* Resp3003.java */,
+				AD62506720E107400095F0E9 /* Resp1012.java */,
+				AD62506820E107400095F0E9 /* Resp2002.java */,
+				AD62506920E107400095F0E9 /* Resp1004.java */,
+				AD62506A20E107400095F0E9 /* Resp1005.java */,
+				AD62506B20E107400095F0E9 /* Notice.java */,
+				AD62506C20E107400095F0E9 /* Resp1013.java */,
+				AD62506D20E107400095F0E9 /* ShareImgModel.java */,
+				AD62506E20E107400095F0E9 /* Resp3002.java */,
+				AD62506F20E107400095F0E9 /* CauModel.java */,
+				AD62507020E107400095F0E9 /* Resp1009.java */,
+				AD62507120E107400095F0E9 /* Resp3005.java */,
+				AD62507220E107400095F0E9 /* Resp1002.java */,
+				AD62507320E107400095F0E9 /* MerchantBaseInfo.java */,
+				AD62507420E107400095F0E9 /* Resp99008.java */,
+				AD62507520E107400095F0E9 /* MerchantImageData.java */,
+				AD62507620E107400095F0E9 /* FeeModel.java */,
+				AD62507720E107400095F0E9 /* QpayRepayPlan.java */,
+				AD62507820E107400095F0E9 /* Resp1003.java */,
+				AD62507920E107400095F0E9 /* Resp990011.java */,
+				AD62507A20E107400095F0E9 /* Resp1015.java */,
+				AD62507B20E107400095F0E9 /* Resp3004.java */,
+			);
+			path = resp;
+			sourceTree = "<group>";
+		};
+		AD62507E20E107400095F0E9 /* req */ = {
+			isa = PBXGroup;
+			children = (
+				AD62507F20E107400095F0E9 /* Req99001.java */,
+				AD62508020E107400095F0E9 /* Req6005.java */,
+				AD62508120E107400095F0E9 /* Req1001.java */,
+				AD62508220E107400095F0E9 /* Req6004.java */,
+				AD62508320E107400095F0E9 /* File */,
+				AD62508420E107400095F0E9 /* Req99007.java */,
+				AD62508520E107400095F0E9 /* Req1011.java */,
+				AD62508620E107400095F0E9 /* Req2001.java */,
+				AD62508720E107400095F0E9 /* Req1007.java */,
+				AD62508820E107400095F0E9 /* Req990011.java */,
+				AD62508920E107400095F0E9 /* Req1006.java */,
+				AD62508A20E107400095F0E9 /* Req2000.java */,
+				AD62508B20E107400095F0E9 /* Req1010.java */,
+				AD62508C20E107400095F0E9 /* Req3001.java */,
+				AD62508D20E107400095F0E9 /* Req99006.java */,
+				AD62508E20E107400095F0E9 /* Req1005.java */,
+				AD62508F20E107400095F0E9 /* Req1013.java */,
+				AD62509020E107400095F0E9 /* Req3002.java */,
+				AD62509120E107400095F0E9 /* Req1009.java */,
+				AD62509220E107400095F0E9 /* Req99008.java */,
+				AD62509320E107400095F0E9 /* Req1008.java */,
+				AD62509420E107400095F0E9 /* Req3003.java */,
+				AD62509520E107400095F0E9 /* Req1012.java */,
+				AD62509620E107400095F0E9 /* Req2002.java */,
+				AD62509720E107400095F0E9 /* Req1004.java */,
+				AD62509820E107400095F0E9 /* Req1003.java */,
+				AD62509920E107400095F0E9 /* Req1015.java */,
+				AD62509A20E107400095F0E9 /* Req3004.java */,
+				AD62509B20E107400095F0E9 /* Req99002.java */,
+				AD62509C20E107400095F0E9 /* Req3005.java */,
+				AD62509D20E107400095F0E9 /* Req1002.java */,
+			);
+			path = req;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1946,6 +2198,7 @@
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
+				AD6250D520E107400095F0E9 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1971,19 +2224,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD624F9420E099FF0095F0E9 /* YWRequestData.m in Sources */,
+				AD6250A920E107400095F0E9 /* Resp99007.java in Sources */,
+				AD6250DF20E107400095F0E9 /* Req99006.java in Sources */,
 				AD624E7D20E091450095F0E9 /* MJExtensionConst.m in Sources */,
 				AD624FED20E09B020095F0E9 /* SDCycleScrollView.m in Sources */,
 				AD62504120E0FF190095F0E9 /* SALoginModel.m in Sources */,
+				AD6250B220E107400095F0E9 /* Resp1011.java in Sources */,
 				AD624ED220E091460095F0E9 /* FLAnimatedImage.m in Sources */,
 				AD624F6920E099FF0095F0E9 /* NSDate+Category.m in Sources */,
 				AD624E8020E091460095F0E9 /* NSString+MJExtension.m in Sources */,
 				AD624FE520E09B020095F0E9 /* ImagePicker.m in Sources */,
 				AD624E7E20E091450095F0E9 /* NSObject+MJProperty.m in Sources */,
+				AD6250EE20E107400095F0E9 /* Req3005.java in Sources */,
 				AD624EC820E091460095F0E9 /* FMDatabasePool.m in Sources */,
 				AD624ED720E091460095F0E9 /* SDWebImageCoderHelper.m in Sources */,
 				AD624EDE20E091460095F0E9 /* SDWebImageDownloaderOperation.m in Sources */,
 				AD624EB020E091460095F0E9 /* IQToolbar.m in Sources */,
+				AD6250E520E107400095F0E9 /* Req1008.java in Sources */,
 				AD624EDD20E091460095F0E9 /* SDImageCache.m in Sources */,
+				AD6250D320E107400095F0E9 /* Req1001.java in Sources */,
 				AD624E7C20E091450095F0E9 /* NSObject+MJCoding.m in Sources */,
 				AD624ED620E091460095F0E9 /* UIImage+MultiFormat.m in Sources */,
 				AD624FE920E09B020095F0E9 /* MBManager.m in Sources */,
@@ -1991,59 +2250,98 @@
 				AD624EBF20E091460095F0E9 /* AFURLSessionManager.m in Sources */,
 				AD624E8320E091460095F0E9 /* UIScrollView+MJRefresh.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
+				AD6250C320E107400095F0E9 /* Resp1009.java in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
 				AD624F7220E099FF0095F0E9 /* UIView+CLFExtension.m in Sources */,
 				AD624FEC20E09B020095F0E9 /* UITableView+Gzw.m in Sources */,
 				AD624E8E20E091460095F0E9 /* MJRefreshAutoNormalFooter.m in Sources */,
+				AD6250DC20E107400095F0E9 /* Req2000.java in Sources */,
 				AD624FEF20E09B020095F0E9 /* SDCollectionViewCell.m in Sources */,
+				AD6250CA20E107400095F0E9 /* QpayRepayPlan.java in Sources */,
+				AD6250C620E107400095F0E9 /* MerchantBaseInfo.java in Sources */,
+				AD6250B920E107400095F0E9 /* Resp3003.java in Sources */,
 				AD624ED320E091460095F0E9 /* FLAnimatedImageView.m in Sources */,
 				AD624EC720E091460095F0E9 /* FMDatabase.m in Sources */,
 				AD624EB320E091460095F0E9 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				AD6250B020E107400095F0E9 /* Resp3001.java in Sources */,
 				AD624EDC20E091460095F0E9 /* SDAnimatedImageRep.m in Sources */,
+				AD6250EF20E107400095F0E9 /* Req1002.java in Sources */,
 				AD624EAF20E091460095F0E9 /* IQTextView.m in Sources */,
 				AD624FF020E09B020095F0E9 /* TADotView.m in Sources */,
+				AD6250E320E107400095F0E9 /* Req1009.java in Sources */,
 				AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */,
+				AD6250AC20E107400095F0E9 /* Resp1001.java in Sources */,
 				AD624E9320E091460095F0E9 /* MJRefreshHeader.m in Sources */,
+				AD6250AA20E107400095F0E9 /* MerchantFee.java in Sources */,
 				AD624E9D20E091460095F0E9 /* View+MASAdditions.m in Sources */,
+				AD6250DB20E107400095F0E9 /* Req1006.java in Sources */,
+				AD6250A220E107400095F0E9 /* MerchantAccountInfo.java in Sources */,
 				AD624F9320E099FF0095F0E9 /* SVGloble.m in Sources */,
+				AD6250E720E107400095F0E9 /* Req1012.java in Sources */,
+				AD6250BC20E107400095F0E9 /* Resp1004.java in Sources */,
 				AD624EDF20E091460095F0E9 /* SDWebImageTransition.m in Sources */,
 				AD624E8F20E091460095F0E9 /* MJRefreshNormalHeader.m in Sources */,
 				AD624F6A20E099FF0095F0E9 /* NSString+WBStringExtension.m in Sources */,
+				AD6250D920E107400095F0E9 /* Req1007.java in Sources */,
+				AD6250E420E107400095F0E9 /* Req99008.java in Sources */,
 				AD624F7820E099FF0095F0E9 /* UIBarButtonItem+WHBarButtonItem.m in Sources */,
+				AD6250A320E107400095F0E9 /* Resp99006.java in Sources */,
 				AD624F8120E099FF0095F0E9 /* UINavigationController+WHNavigationController.m in Sources */,
 				AD624F7F20E099FF0095F0E9 /* UIButton+LWB.m in Sources */,
+				AD6250E820E107400095F0E9 /* Req2002.java in Sources */,
 				AD624E9620E091460095F0E9 /* MJRefreshComponent.m in Sources */,
 				AD624F7420E099FF0095F0E9 /* NSDictionary+WHDictionary.m in Sources */,
 				AD624EE820E091460095F0E9 /* UIButton+WebCache.m in Sources */,
+				AD6250B820E107400095F0E9 /* Resp99002.java in Sources */,
+				AD6250CE20E107400095F0E9 /* Resp3004.java in Sources */,
 				AD624E7F20E091450095F0E9 /* NSObject+MJClass.m in Sources */,
 				AD624F9220E099FF0095F0E9 /* BCRequestData.m in Sources */,
 				AD624FF220E09B020095F0E9 /* TAAnimatedDotView.m in Sources */,
 				AD624ECD20E091460095F0E9 /* UIImageView+HighlightedWebCache.m in Sources */,
+				AD6250C920E107400095F0E9 /* FeeModel.java in Sources */,
+				AD6250D220E107400095F0E9 /* Req6005.java in Sources */,
 				AD62502420E09D230095F0E9 /* MSMeViewController.m in Sources */,
 				AD624EE720E091460095F0E9 /* SDWebImageImageIOCoder.m in Sources */,
+				AD6250D420E107400095F0E9 /* Req6004.java in Sources */,
+				AD6250BE20E107400095F0E9 /* Notice.java in Sources */,
 				AD624F7C20E099FF0095F0E9 /* UIImageView+PlayGIF.m in Sources */,
 				AD624F8020E099FF0095F0E9 /* UIButton+Extensions.m in Sources */,
 				AD624E8720E091460095F0E9 /* NSBundle+MJRefresh.m in Sources */,
 				AD624EE520E091460095F0E9 /* UIView+WebCacheOperation.m in Sources */,
 				AD624EBB20E091460095F0E9 /* IQUIViewController+Additions.m in Sources */,
+				AD6250D720E107400095F0E9 /* Req1011.java in Sources */,
+				AD6250DE20E107400095F0E9 /* Req3001.java in Sources */,
+				AD6250E020E107400095F0E9 /* Req1005.java in Sources */,
 				AD624FFA20E09B020095F0E9 /* NSString+NSReplace.m in Sources */,
 				AD624E9720E091460095F0E9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				AD6250CD20E107400095F0E9 /* Resp1015.java in Sources */,
 				AD624E7B20E091450095F0E9 /* MJProperty.m in Sources */,
 				AD624F8B20E099FF0095F0E9 /* UIView+XMGExtension.m in Sources */,
+				AD6250C720E107400095F0E9 /* Resp99008.java in Sources */,
 				AD624E8220E091460095F0E9 /* MJFoundation.m in Sources */,
 				AD624F8E20E099FF0095F0E9 /* UIViewController+WHVC.m in Sources */,
+				AD6250BF20E107400095F0E9 /* Resp1013.java in Sources */,
 				AD624EC420E091460095F0E9 /* MBProgressHUD+Add.m in Sources */,
 				AD624F8D20E099FF0095F0E9 /* UIView+WBY.m in Sources */,
+				AD6250A420E107400095F0E9 /* MerchantCorporationInfo.java in Sources */,
+				AD6250DA20E107400095F0E9 /* Req990011.java in Sources */,
+				AD6250A820E107400095F0E9 /* MerchantCardPackage.java in Sources */,
 				AD624FF920E09B020095F0E9 /* UIView+TXFrame.m in Sources */,
 				AD624F8220E099FF0095F0E9 /* UITableView+WHTableView.m in Sources */,
 				AD624EE320E091460095F0E9 /* SDWebImageGIFCoder.m in Sources */,
 				AD624EC120E091460095F0E9 /* AFNetworkReachabilityManager.m in Sources */,
+				AD6250CC20E107400095F0E9 /* Resp990011.java in Sources */,
 				AD624E8120E091460095F0E9 /* MJPropertyKey.m in Sources */,
 				AD624FFC20E09B020095F0E9 /* DES3Util.m in Sources */,
+				AD6250B320E107400095F0E9 /* Resp2001.java in Sources */,
+				AD6250E220E107400095F0E9 /* Req3002.java in Sources */,
 				AD624EC520E091460095F0E9 /* FMDatabaseQueue.m in Sources */,
 				AD624E9220E091460095F0E9 /* MJRefreshFooter.m in Sources */,
+				AD6250B420E107400095F0E9 /* QpayRepayPlanDetail.java in Sources */,
 				AD624F8C20E099FF0095F0E9 /* UILabel+YBAttributeTextTapAction.m in Sources */,
+				AD6250E120E107400095F0E9 /* Req1013.java in Sources */,
 				AD624E8920E091460095F0E9 /* MJRefreshBackGifFooter.m in Sources */,
+				AD6250B120E107400095F0E9 /* Resp99001.java in Sources */,
 				AD624EC920E091460095F0E9 /* FMResultSet.m in Sources */,
 				AD624EDA20E091460095F0E9 /* SDWebImageCoder.m in Sources */,
 				AD624FF620E09B020095F0E9 /* UIView+GKExtension.m in Sources */,
@@ -2057,13 +2355,19 @@
 				AD624ECA20E091460095F0E9 /* UIImage+WebP.m in Sources */,
 				AD624F7120E099FF0095F0E9 /* UILabel+WHLabel.m in Sources */,
 				AD62500020E09B020095F0E9 /* YYLRefreshNoNetworkView.m in Sources */,
+				AD6250D620E107400095F0E9 /* Req99007.java in Sources */,
+				AD6250AB20E107400095F0E9 /* RateChannel.java in Sources */,
 				AD624F7E20E099FF0095F0E9 /* UIColor+WHColor.m in Sources */,
+				AD6250ED20E107400095F0E9 /* Req99002.java in Sources */,
 				AD624E9C20E091460095F0E9 /* NSArray+MASAdditions.m in Sources */,
 				AD624E7920E091450095F0E9 /* MJPropertyType.m in Sources */,
 				AD624F6E20E099FF0095F0E9 /* NSObject+WHObject.m in Sources */,
+				AD6250D120E107400095F0E9 /* Req99001.java in Sources */,
 				AD624EC220E091460095F0E9 /* AFSecurityPolicy.m in Sources */,
+				AD6250B520E107400095F0E9 /* Resp1007.java in Sources */,
 				AD624F7520E099FF0095F0E9 /* WHMethods.m in Sources */,
 				AD624FF420E09B020095F0E9 /* WBAudioPlayerHelper.m in Sources */,
+				AD6250BA20E107400095F0E9 /* Resp1012.java in Sources */,
 				AD624EC620E091460095F0E9 /* FMDatabaseAdditions.m in Sources */,
 				AD624E9420E091460095F0E9 /* MJRefreshBackFooter.m in Sources */,
 				AD624ECF20E091460095F0E9 /* UIImage+ForceDecode.m in Sources */,
@@ -2080,22 +2384,30 @@
 				AD624E9E20E091460095F0E9 /* MASConstraint.m in Sources */,
 				AD624EE920E091460095F0E9 /* SDWebImageWebPCoder.m in Sources */,
 				AD624F8420E099FF0095F0E9 /* UIScrollView+WHScrollView.m in Sources */,
+				AD6250BB20E107400095F0E9 /* Resp2002.java in Sources */,
 				AD624EE420E091460095F0E9 /* SDImageCacheConfig.m in Sources */,
 				AD624EB620E091460095F0E9 /* IQKeyboardManager.m in Sources */,
+				AD6250AD20E107400095F0E9 /* Resp1006.java in Sources */,
+				AD6250C220E107400095F0E9 /* CauModel.java in Sources */,
 				AD624F9620E099FF0095F0E9 /* AppDelegate.m in Sources */,
 				AD624F7320E099FF0095F0E9 /* UITextField+WBTextField.m in Sources */,
 				AD624D4820E0872A0095F0E9 /* main.m in Sources */,
+				AD6250BD20E107400095F0E9 /* Resp1005.java in Sources */,
 				AD624F7020E099FF0095F0E9 /* UIImageView+WBY.m in Sources */,
 				AD624F8320E099FF0095F0E9 /* UIButton+WHButton.m in Sources */,
+				AD6250A520E107400095F0E9 /* MerchantContactsInfo.java in Sources */,
 				AD624E9020E091460095F0E9 /* MJRefreshStateHeader.m in Sources */,
 				AD624F8520E099FF0095F0E9 /* UIBarButtonItem+ZZExtension.m in Sources */,
 				AD624FFB20E09B020095F0E9 /* GTMBase64.m in Sources */,
 				AD624EBC20E091460095F0E9 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				AD624FFE20E09B020095F0E9 /* YYLRefreshNoDataView.m in Sources */,
+				AD6250C120E107400095F0E9 /* Resp3002.java in Sources */,
 				AD624EB920E091460095F0E9 /* IQUIScrollView+Additions.m in Sources */,
 				AD624FFD20E09B020095F0E9 /* YYLRefreshRequestErrorView.m in Sources */,
 				AD624E8820E091460095F0E9 /* UIView+MJExtension.m in Sources */,
+				AD6250A720E107400095F0E9 /* DictBank.java in Sources */,
 				AD624F8720E099FF0095F0E9 /* UIBarButtonItem+Item.m in Sources */,
+				AD6250E620E107400095F0E9 /* Req3003.java in Sources */,
 				AD624FEA20E09B020095F0E9 /* LFAccountTool.m in Sources */,
 				AD624FFF20E09B020095F0E9 /* UIScrollView+Refresh.m in Sources */,
 				AD624EB420E091460095F0E9 /* IQPreviousNextView.m in Sources */,
@@ -2105,9 +2417,13 @@
 				AD624E9920E091460095F0E9 /* MASCompositeConstraint.m in Sources */,
 				AD624F9020E099FF0095F0E9 /* BCRefreshAutoGifFooter.m in Sources */,
 				AD62502720E09D6C0095F0E9 /* MSBillViewController.m in Sources */,
+				AD6250C820E107400095F0E9 /* MerchantImageData.java in Sources */,
 				AD624FE720E09B020095F0E9 /* LFHttpTool.m in Sources */,
 				AD624ECB20E091460095F0E9 /* MKAnnotationView+WebCache.m in Sources */,
 				AD624ED520E091460095F0E9 /* UIImage+GIF.m in Sources */,
+				AD6250AE20E107400095F0E9 /* Resp2000.java in Sources */,
+				AD6250EA20E107400095F0E9 /* Req1003.java in Sources */,
+				AD6250C020E107400095F0E9 /* ShareImgModel.java in Sources */,
 				AD624F7720E099FF0095F0E9 /* UIImageView+WHImageView.m in Sources */,
 				AD624F7620E099FF0095F0E9 /* UIView+WHView.m in Sources */,
 				AD624F7D20E099FF0095F0E9 /* NSArray+decription.m in Sources */,
@@ -2121,17 +2437,24 @@
 				AD624E8C20E091460095F0E9 /* MJRefreshAutoStateFooter.m in Sources */,
 				AD624F7A20E099FF0095F0E9 /* NSDate+WHDate.m in Sources */,
 				AD624E9F20E091460095F0E9 /* MASViewConstraint.m in Sources */,
+				AD6250B620E107400095F0E9 /* TerminalRecode.java in Sources */,
 				AD624E7A20E091450095F0E9 /* NSObject+MJKeyValue.m in Sources */,
 				AD624ED820E091460095F0E9 /* SDWebImageCompat.m in Sources */,
+				AD6250C420E107400095F0E9 /* Resp3005.java in Sources */,
 				AD624ECC20E091460095F0E9 /* SDWebImageManager.m in Sources */,
 				AD62501A20E09C860095F0E9 /* MSHomeViewController.m in Sources */,
+				AD6250C520E107400095F0E9 /* Resp1002.java in Sources */,
 				AD624EDB20E091460095F0E9 /* NSButton+WebCache.m in Sources */,
 				AD624EE220E091460095F0E9 /* NSImage+WebCache.m in Sources */,
+				AD6250D820E107400095F0E9 /* Req2001.java in Sources */,
 				AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */,
+				AD6250B720E107400095F0E9 /* Resp1008.java in Sources */,
+				AD6250AF20E107400095F0E9 /* Resp1010.java in Sources */,
 				AD624F6B20E099FF0095F0E9 /* NSString+WHString.m in Sources */,
 				AD624EC320E091460095F0E9 /* MBProgressHUD.m in Sources */,
 				AD624E9B20E091460095F0E9 /* MASLayoutConstraint.m in Sources */,
 				AD624ED020E091460095F0E9 /* SDWebImageCodersManager.m in Sources */,
+				AD6250EC20E107400095F0E9 /* Req3004.java in Sources */,
 				AD624F8A20E099FF0095F0E9 /* NSTimer+WHTimer.m in Sources */,
 				AD624E9120E091460095F0E9 /* MJRefreshGifHeader.m in Sources */,
 				AD624EE020E091460095F0E9 /* NSData+ImageContentType.m in Sources */,
@@ -2141,15 +2464,20 @@
 				AD624EF720E096B80095F0E9 /* SANavigationController.m in Sources */,
 				AD624F9520E099FF0095F0E9 /* SARefreshGifHeader.m in Sources */,
 				AD624E9520E091460095F0E9 /* MJRefreshAutoFooter.m in Sources */,
+				AD6250EB20E107400095F0E9 /* Req1015.java in Sources */,
 				AD624E9820E091460095F0E9 /* ViewController+MASAdditions.m in Sources */,
 				AD624EBD20E091460095F0E9 /* AFURLResponseSerialization.m in Sources */,
 				AD624ED420E091460095F0E9 /* SDWebImageDownloader.m in Sources */,
+				AD6250E920E107400095F0E9 /* Req1004.java in Sources */,
 				AD624FF720E09B020095F0E9 /* GKCover.m in Sources */,
 				AD624E8420E091460095F0E9 /* MJRefreshConst.m in Sources */,
+				AD6250CB20E107400095F0E9 /* Resp1003.java in Sources */,
 				AD624EE120E091460095F0E9 /* UIImageView+WebCache.m in Sources */,
 				AD624EF820E096B80095F0E9 /* SALoginRegistNavController.m in Sources */,
+				AD6250A620E107400095F0E9 /* MerchantReviewControl.java in Sources */,
 				AD624F6F20E099FF0095F0E9 /* Util.mm in Sources */,
 				AD624F6820E099FF0095F0E9 /* UIDevice+WHDevice.m in Sources */,
+				AD6250DD20E107400095F0E9 /* Req1010.java in Sources */,
 				AD624ECE20E091460095F0E9 /* SDWebImageFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

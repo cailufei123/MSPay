@@ -14,7 +14,7 @@
 
 
 //线上还是测试 1-测试 0-线上
-#define Mode_Value 0
+#define Mode_Value 1
 
 /**  API*/
 #if Mode_Value

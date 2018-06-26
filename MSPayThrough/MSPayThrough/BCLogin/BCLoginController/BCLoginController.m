@@ -233,8 +233,8 @@
 //            return;
 //        }
         NSMutableDictionary * loginDict = diction;
-//        loginDict[@"mobile"] = self.phoneTf.text;
-//        loginDict[@"smsCode"] =self.codeTf.text;
+        loginDict[@"mobile"] = self.phoneTf.text;
+        loginDict[@"smsCode"] =self.codeTf.text;
       loginDict[@"random_str"] =  @"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT";
         loginDict[@"user_name"] = @"18923447852";
         loginDict[@"user_pwd"] =@"qwe123";

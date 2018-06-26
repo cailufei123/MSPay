@@ -238,6 +238,10 @@
 		AF61853720E22C3C00791FF0 /* MSSetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61853520E22C3C00791FF0 /* MSSetController.xib */; };
 		AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61853920E2304700791FF0 /* MSAboutController.m */; };
 		AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61853A20E2304700791FF0 /* MSAboutController.xib */; };
+		AF61854420E2563900791FF0 /* MSRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61854220E2563900791FF0 /* MSRegisterController.m */; };
+		AF61854520E2563900791FF0 /* MSRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61854320E2563900791FF0 /* MSRegisterController.xib */; };
+		AF61854D20E25C1400791FF0 /* MSFrogetPwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61854B20E25C1400791FF0 /* MSFrogetPwdController.m */; };
+		AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -710,6 +714,12 @@
 		AF61853820E2304700791FF0 /* MSAboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAboutController.h; sourceTree = "<group>"; };
 		AF61853920E2304700791FF0 /* MSAboutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAboutController.m; sourceTree = "<group>"; };
 		AF61853A20E2304700791FF0 /* MSAboutController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSAboutController.xib; sourceTree = "<group>"; };
+		AF61854120E2563900791FF0 /* MSRegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSRegisterController.h; sourceTree = "<group>"; };
+		AF61854220E2563900791FF0 /* MSRegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSRegisterController.m; sourceTree = "<group>"; };
+		AF61854320E2563900791FF0 /* MSRegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSRegisterController.xib; sourceTree = "<group>"; };
+		AF61854A20E25C1400791FF0 /* MSFrogetPwdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFrogetPwdController.h; sourceTree = "<group>"; };
+		AF61854B20E25C1400791FF0 /* MSFrogetPwdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFrogetPwdController.m; sourceTree = "<group>"; };
+		AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFrogetPwdController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -779,6 +789,8 @@
 		AD624D3720E087270095F0E9 /* MSPayThrough */ = {
 			isa = PBXGroup;
 			children = (
+				AF61854620E25BFB00791FF0 /* MSForgetPwd */,
+				AF61853D20E2561400791FF0 /* MSRegister */,
 				AD62503520E0FF190095F0E9 /* BCLogin */,
 				AD62502020E09D100095F0E9 /* MSBill */,
 				AD62501E20E09D100095F0E9 /* MSMe */,
@@ -1901,6 +1913,74 @@
 			path = MSHomeView;
 			sourceTree = "<group>";
 		};
+		AF61853D20E2561400791FF0 /* MSRegister */ = {
+			isa = PBXGroup;
+			children = (
+				AF61853E20E2561400791FF0 /* ControllerVc */,
+				AF61853F20E2561400791FF0 /* Model */,
+				AF61854020E2561400791FF0 /* View */,
+			);
+			path = MSRegister;
+			sourceTree = "<group>";
+		};
+		AF61853E20E2561400791FF0 /* ControllerVc */ = {
+			isa = PBXGroup;
+			children = (
+				AF61854120E2563900791FF0 /* MSRegisterController.h */,
+				AF61854220E2563900791FF0 /* MSRegisterController.m */,
+				AF61854320E2563900791FF0 /* MSRegisterController.xib */,
+			);
+			path = ControllerVc;
+			sourceTree = "<group>";
+		};
+		AF61853F20E2561400791FF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF61854020E2561400791FF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF61854620E25BFB00791FF0 /* MSForgetPwd */ = {
+			isa = PBXGroup;
+			children = (
+				AF61854720E25BFB00791FF0 /* ControllerVc */,
+				AF61854820E25BFB00791FF0 /* Model */,
+				AF61854920E25BFB00791FF0 /* View */,
+			);
+			path = MSForgetPwd;
+			sourceTree = "<group>";
+		};
+		AF61854720E25BFB00791FF0 /* ControllerVc */ = {
+			isa = PBXGroup;
+			children = (
+				AF61854A20E25C1400791FF0 /* MSFrogetPwdController.h */,
+				AF61854B20E25C1400791FF0 /* MSFrogetPwdController.m */,
+				AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */,
+			);
+			path = ControllerVc;
+			sourceTree = "<group>";
+		};
+		AF61854820E25BFB00791FF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF61854920E25BFB00791FF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2013,6 +2093,7 @@
 				AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */,
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
+				AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
@@ -2021,6 +2102,7 @@
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
+				AF61854520E2563900791FF0 /* MSRegisterController.xib in Resources */,
 				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
@@ -2096,6 +2178,7 @@
 				AD624F8120E099FF0095F0E9 /* UINavigationController+WHNavigationController.m in Sources */,
 				AD624F7F20E099FF0095F0E9 /* UIButton+LWB.m in Sources */,
 				AD624E9620E091460095F0E9 /* MJRefreshComponent.m in Sources */,
+				AF61854D20E25C1400791FF0 /* MSFrogetPwdController.m in Sources */,
 				AD624F7420E099FF0095F0E9 /* NSDictionary+WHDictionary.m in Sources */,
 				AD624EE820E091460095F0E9 /* UIButton+WebCache.m in Sources */,
 				AD624E7F20E091450095F0E9 /* NSObject+MJClass.m in Sources */,
@@ -2103,6 +2186,7 @@
 				AD624FF220E09B020095F0E9 /* TAAnimatedDotView.m in Sources */,
 				AD624ECD20E091460095F0E9 /* UIImageView+HighlightedWebCache.m in Sources */,
 				AD624EE720E091460095F0E9 /* SDWebImageImageIOCoder.m in Sources */,
+				AF61854420E2563900791FF0 /* MSRegisterController.m in Sources */,
 				AD624F7C20E099FF0095F0E9 /* UIImageView+PlayGIF.m in Sources */,
 				AD624F8020E099FF0095F0E9 /* UIButton+Extensions.m in Sources */,
 				AD624E8720E091460095F0E9 /* NSBundle+MJRefresh.m in Sources */,

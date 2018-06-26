@@ -8,7 +8,8 @@
 
 #import "BCLoginController.h"
 #import "BCCodeAlertView.h"
-
+#import "MSRegisterController.h"
+#import "MSFrogetPwdController.h"
 
 #define timeCount 60
 
@@ -262,11 +263,14 @@
     [self.timer invalidate];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
 - (IBAction)registClick:(id)sender {
-    
+    MSRegisterController *registerVc = [[MSRegisterController alloc] init];
+    [self.navigationController pushViewController:registerVc animated:YES];
 }
 - (IBAction)forgetPassCilck:(id)sender {
-    
+    MSFrogetPwdController *forgeterVc = [[MSFrogetPwdController alloc] init];
+    [self.navigationController pushViewController:forgeterVc animated:YES];
 }
 
 @end

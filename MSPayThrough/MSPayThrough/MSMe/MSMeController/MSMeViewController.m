@@ -16,23 +16,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSLog(@"111");
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//点击头像
+- (IBAction)clicTopBtn {
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//点击费率
+- (IBAction)clickFeiLvBtn {
 }
-*/
+//点击银行卡
+- (IBAction)clickBankBtn {
+}
+//点击公告
+- (IBAction)clickGongGaoBtn {
+}
+//点击分享
+- (IBAction)clickShareBtn {
+}
+//点击会员
+- (IBAction)clickVipBtn {
+}
+//点击客服
+- (IBAction)clickKeFuBtn {
+}
+//点击设置
+- (IBAction)clickSetBtn {
+}
 
 @end

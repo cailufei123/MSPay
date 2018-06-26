@@ -144,7 +144,7 @@
                 <constraint firstItem="MRp-Dy-gYx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="yJj-KW-mHZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-118.5" y="44.5"/>
+            <point key="canvasLocation" x="65" y="45"/>
         </view>
     </objects>
     <resources>

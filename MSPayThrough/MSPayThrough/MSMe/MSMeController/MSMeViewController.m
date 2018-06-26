@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"111");
+    NSLog(@"1233434343");
 }
 
 //点击头像

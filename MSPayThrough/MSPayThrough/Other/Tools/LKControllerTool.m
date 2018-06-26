@@ -63,9 +63,9 @@
    
 }
 +(void)LoginRegistController{
-//    BCLoginController * registVc = [[BCLoginController alloc] init];
-    MSMeViewController *meVc = [[MSMeViewController alloc] init];
-    SALoginRegistNavController *naVc = [[SALoginRegistNavController alloc] initWithRootViewController:meVc];
+    BCLoginController * registVc = [[BCLoginController alloc] init];
+//    MSMeViewController *meVc = [[MSMeViewController alloc] init];
+    SALoginRegistNavController *naVc = [[SALoginRegistNavController alloc] initWithRootViewController:registVc];
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
   
     window.rootViewController = naVc;

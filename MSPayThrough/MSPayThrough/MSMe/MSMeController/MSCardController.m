@@ -17,10 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    self.navigationItem.title = @"身份证";
+    self.navigationItem.title = @"身份认证";
 }
 //点击防范身份证
 - (IBAction)clickIdentityCardBtn {
+    
 }
 //点击绑定储蓄卡
 - (IBAction)clickBankCardBtn {

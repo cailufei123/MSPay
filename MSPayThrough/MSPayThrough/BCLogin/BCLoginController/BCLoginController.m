@@ -262,5 +262,11 @@
     [self.timer invalidate];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+- (IBAction)registClick:(id)sender {
+    
+}
+- (IBAction)forgetPassCilck:(id)sender {
+    
+}
 
 @end

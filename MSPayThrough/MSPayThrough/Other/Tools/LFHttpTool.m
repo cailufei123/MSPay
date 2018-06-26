@@ -72,7 +72,7 @@
      NSMutableDictionary * headDict = diction;
   
      NSMutableDictionary * dict = diction;
-   
+    NSMutableArray * array = [NSMutableArray array];
    
 
     headDict[@"version"] =   [LFHttpTool getAppVersion];
@@ -83,12 +83,21 @@
     headDict[@"sign_type"] =  @"MD5";
     headDict[@"timestamp"] =  [LFHttpTool currentTimeStr];
     headDict[@"command"] =  params[@"command"];
-    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@",[params mj_JSONString],loginerchant_id] toMD5];
+    headDict[@"command"] = @"3004";
+//    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@",[params mj_JSONString],loginMerchant_key] toMD5];
     dict[@"head"] = headDict;
     dict[@"body"] = params;
+      headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@%@%@",@"0",@"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT",@"200",loginMerchant_key] toMD5];
     allDict[@"jsondata"] = [dict mj_JSONString];
+    [params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        
+        NSLog(@"key = %@ and obj = %@", key, obj);
+        
+        [array addObject:obj];
+            
     
-
+      }];
+NSString * stri = [array componentsJoinedByString:@""];
 
     manager.securityPolicy =   [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     manager.securityPolicy.allowInvalidCertificates = YES;
@@ -96,7 +105,9 @@
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     CFShow((__bridge CFTypeRef)(infoDictionary));
      LFLog(@"%@", allDict);
-   
+    LFLog(@"%@", loginMerchant_key);
+     LFLog(@"%@", stri);
+      LFLog(@"%@", array);
     [manager POST:SERVER_ADDR parameters: allDict progress:^(NSProgress * _Nonnull downloadProgress) {
         if (downloadProgress) {
             progress(downloadProgress);
@@ -117,34 +128,6 @@
 
     }];
 }
-////https证书
-//+ (AFSecurityPolicy*)customSecurityPolicy
-//{
-//    // /先导入证书
-//    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"hd1.graland.com" ofType:@"cer"];//证书的路径
-//    NSData *certData = [NSData dataWithContentsOfFile:cerPath];
-//
-//    // AFSSLPinningModeCertificate 使用证书验证模式
-//    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
-//
-//    // allowInvalidCertificates 是否允许无效证书（也就是自建的证书），默认为NO
-//    // 如果是需要验证自建证书，需要设置为YES
-//
-//    securityPolicy.allowInvalidCertificates = YES;
-//    securityPolicy.validatesDomainName = YES;
-//
-//    securityPolicy.pinnedCertificates = [NSSet setWithObject:certData];
-//
-//    return securityPolicy;
-//}
-
-
-
-
-
-
-
-
 
 
 

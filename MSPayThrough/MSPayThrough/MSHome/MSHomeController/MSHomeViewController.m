@@ -31,9 +31,11 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
     self.homeTopView = [MSHomeTopView loadNameHomeTopViewXib];
     self.homeTopView .frame = CGRectMake(0, 0, LFscreenW, 230+kStatusBarHeight);
     [self.view addSubview:self.homeTopView];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = bagColor;
     [self setTable ];
     [self createRefresh ];
+    [self loadNewData];
+    
 }
 - (void)createRefresh
 {
@@ -49,6 +51,15 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
     self.tableView.mj_footer = footer;
 }
 -(void)loadNewData{
+    NSMutableDictionary * registUserDict =diction;
+    registUserDict[@"qrp_status"] = @"0";
+     registUserDict[@"size"] = @"20";
+//    registUserDict[@"command"] = @"3004";
+     registUserDict[@"start"] = @"0";
+   
+    [YWRequestData playRepaymentDict:registUserDict success:^(id responseObj) {
+        
+    }];
     
 }
 -(void)loadMoreData{

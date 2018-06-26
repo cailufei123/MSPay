@@ -1910,6 +1910,7 @@
 		AD624D2D20E087270095F0E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MS;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "蔡路飞";
 				TargetAttributes = {

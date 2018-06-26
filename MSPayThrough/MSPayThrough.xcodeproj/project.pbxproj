@@ -234,6 +234,10 @@
 		AF61853020E2241C00791FF0 /* MSCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852820E2241B00791FF0 /* MSCardController.m */; };
 		AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852B20E2241C00791FF0 /* MSUserController.xib */; };
 		AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852C20E2241C00791FF0 /* MSVerifyCardController.xib */; };
+		AF61853620E22C3C00791FF0 /* MSSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61853420E22C3C00791FF0 /* MSSetController.m */; };
+		AF61853720E22C3C00791FF0 /* MSSetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61853520E22C3C00791FF0 /* MSSetController.xib */; };
+		AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61853920E2304700791FF0 /* MSAboutController.m */; };
+		AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61853A20E2304700791FF0 /* MSAboutController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -700,6 +704,12 @@
 		AF61852A20E2241B00791FF0 /* MSVerifyCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSVerifyCardController.h; sourceTree = "<group>"; };
 		AF61852B20E2241C00791FF0 /* MSUserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSUserController.xib; sourceTree = "<group>"; };
 		AF61852C20E2241C00791FF0 /* MSVerifyCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSVerifyCardController.xib; sourceTree = "<group>"; };
+		AF61853320E22C3C00791FF0 /* MSSetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSSetController.h; sourceTree = "<group>"; };
+		AF61853420E22C3C00791FF0 /* MSSetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSSetController.m; sourceTree = "<group>"; };
+		AF61853520E22C3C00791FF0 /* MSSetController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSSetController.xib; sourceTree = "<group>"; };
+		AF61853820E2304700791FF0 /* MSAboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAboutController.h; sourceTree = "<group>"; };
+		AF61853920E2304700791FF0 /* MSAboutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAboutController.m; sourceTree = "<group>"; };
+		AF61853A20E2304700791FF0 /* MSAboutController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSAboutController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1797,6 +1807,12 @@
 				AF61852A20E2241B00791FF0 /* MSVerifyCardController.h */,
 				AF61852420E2241A00791FF0 /* MSVerifyCardController.m */,
 				AF61852C20E2241C00791FF0 /* MSVerifyCardController.xib */,
+				AF61853320E22C3C00791FF0 /* MSSetController.h */,
+				AF61853420E22C3C00791FF0 /* MSSetController.m */,
+				AF61853520E22C3C00791FF0 /* MSSetController.xib */,
+				AF61853820E2304700791FF0 /* MSAboutController.h */,
+				AF61853920E2304700791FF0 /* MSAboutController.m */,
+				AF61853A20E2304700791FF0 /* MSAboutController.xib */,
 			);
 			path = MSMeController;
 			sourceTree = "<group>";
@@ -1991,6 +2007,7 @@
 			files = (
 				AD62504220E0FF190095F0E9 /* BCLoginController.xib in Resources */,
 				AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */,
+				AF61853720E22C3C00791FF0 /* MSSetController.xib in Resources */,
 				AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */,
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
 				AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */,
@@ -2006,6 +2023,7 @@
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
+				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				AD89ECE620E2382F00AB38C2 /* MSHomeTableViewCell.xib in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
@@ -2055,6 +2073,7 @@
 				AD624EBF20E091460095F0E9 /* AFURLSessionManager.m in Sources */,
 				AD624E8320E091460095F0E9 /* UIScrollView+MJRefresh.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
+				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
 				AD624F7220E099FF0095F0E9 /* UIView+CLFExtension.m in Sources */,
 				AD624FEC20E09B020095F0E9 /* UITableView+Gzw.m in Sources */,
@@ -2180,6 +2199,7 @@
 				AD624EA020E091460095F0E9 /* MASViewAttribute.m in Sources */,
 				AD624FF120E09B020095F0E9 /* TAPageControl.m in Sources */,
 				AD624E8B20E091460095F0E9 /* MJRefreshBackNormalFooter.m in Sources */,
+				AF61853620E22C3C00791FF0 /* MSSetController.m in Sources */,
 				AD624FEE20E09B020095F0E9 /* UIView+SDExtension.m in Sources */,
 				AD624E8620E091460095F0E9 /* UIScrollView+MJExtension.m in Sources */,
 				AD89ECE520E2382F00AB38C2 /* MSHomeTableViewCell.m in Sources */,

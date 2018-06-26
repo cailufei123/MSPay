@@ -9,6 +9,8 @@
 #import "MSMesController.h"
 #import "MSUserController.h"
 #import "MSCardController.h"
+#import "MSSetController.h"
+#import "MSAboutController.h"
 
 @interface MSMesController ()
 
@@ -23,37 +25,52 @@
 
 //点击头像
 - (IBAction)clicTopBtn {
-    NSLog(@"头像");
+    
     MSCardController *cardVc = [[MSCardController alloc] init];
     [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击费率
 - (IBAction)clickFeiLvBtn {
-    NSLog(@"费率");
+    
+    MSCardController *cardVc = [[MSCardController alloc] init];
+    [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击银行卡
 - (IBAction)clickBankBtn {
-    NSLog(@"银行卡");
+    
+    MSCardController *cardVc = [[MSCardController alloc] init];
+    [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击公告
 - (IBAction)clickGongGaoBtn {
-    NSLog(@"公告");
+    
+    MSCardController *cardVc = [[MSCardController alloc] init];
+    [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击分享
 - (IBAction)clickShareBtn {
-    NSLog(@"分享");
+    
+    MSCardController *cardVc = [[MSCardController alloc] init];
+    [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击会员
 - (IBAction)clickVipBtn {
-    NSLog(@"会员");
+    
+    MSCardController *cardVc = [[MSCardController alloc] init];
+    [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击客服
 - (IBAction)clickKeFuBtn {
-    NSLog(@"客服");
+   
+    MSCardController *cardVc = [[MSCardController alloc] init];
+    [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击设置
 - (IBAction)clickSetBtn {
-    NSLog(@"设置");
+    
+    MSSetController *setVc = [[MSSetController alloc] init];
+    [self.navigationController pushViewController:setVc animated:YES];
+   
 }
 
 

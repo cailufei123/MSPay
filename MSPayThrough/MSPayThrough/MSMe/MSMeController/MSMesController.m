@@ -1,0 +1,24 @@
+//
+//  MSMesController.m
+//  MSPayThrough
+//
+//  Created by ribencun on 2018/6/26.
+//  Copyright © 2018年 蔡路飞. All rights reserved.
+//
+
+#import "MSMesController.h"
+
+@interface MSMesController ()
+
+@end
+
+@implementation MSMesController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+   
+}
+
+
+
+@end

@@ -9,7 +9,7 @@
 #import "SATabBarController.h"
 #import "SANavigationController.h"
 #import "SATabBar.h"
-//#import "MSMeViewController.h"
+#import "MSMesController.h"
 #import "MSHomeViewController.h"
 #import "MSBillViewController.h"
 
@@ -94,7 +94,7 @@
     [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSHomeViewController alloc] init]]  title:@"首页" image:@"糖豆" selectedImage:@"糖豆－点击"];
       [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSBillViewController alloc] init]]  title:@"账单" image:@"我的" selectedImage:@"我的-点击"];
     
-//       [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSMeViewController alloc] init]]  title:@"我的" image:@"我的" selectedImage:@"我的-点击"];
+       [self setupOneChildViewController:[[SANavigationController alloc] initWithRootViewController:[[MSMesController alloc] init]]  title:@"我的" image:@"我的" selectedImage:@"我的-点击"];
 }
 -(void)setupOneChildViewController:(UIViewController *)vc title:(NSString *)title image:(NSString*)image selectedImage:(NSString *)selectedImage{
     

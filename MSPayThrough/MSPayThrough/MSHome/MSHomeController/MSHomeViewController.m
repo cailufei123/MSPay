@@ -7,31 +7,123 @@
 //
 
 #import "MSHomeViewController.h"
-
-@interface MSHomeViewController ()
-
+#import "MSHomeTopView.h"
+#import "MSHomeTableViewCell.h"
+@interface MSHomeViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,UISearchBarDelegate>
+@property(nonatomic,strong) MSHomeTopView * homeTopView;
+@property(nonatomic,strong)UITableView * tableView;
 @end
-
+static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 @implementation MSHomeViewController
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+  
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.homeTopView = [MSHomeTopView loadNameHomeTopViewXib];
+    self.homeTopView .frame = CGRectMake(0, 0, LFscreenW, 230+kStatusBarHeight);
+    [self.view addSubview:self.homeTopView];
+    self.view.backgroundColor = [UIColor redColor];
+    [self setTable ];
+    [self createRefresh ];
+}
+- (void)createRefresh
+{
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+    
+    SARefreshGifHeader *header = [SARefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+    BCRefreshAutoGifFooter *footer = [BCRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+    // 马上进入刷新状态
+//    [header beginRefreshing];
+    //    // 设置header
+    self.tableView.mj_header = header;
+    self.tableView.mj_footer = footer;
+}
+-(void)loadNewData{
+    
+}
+-(void)loadMoreData{
+    
+}
+-(void)setTable{
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView= [[UITableView alloc]initWithFrame:CGRectMake(0, self.homeTopView.clf_bottom+10, LFscreenW, LFscreenH-(self.homeTopView.clf_bottom+10)-kTabBarHeight) style:UITableViewStylePlain];
+    [self.view  addSubview:self.tableView];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.backgroundColor  =bagColor;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView registerNib:[UINib nibWithNibName:cellidenfder bundle:nil] forCellReuseIdentifier:cellidenfder];
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
+    if (@available(iOS 11.0, *)) {
+      
+        
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        self.tableView.estimatedRowHeight = 0;
+        self.tableView.estimatedSectionHeaderHeight = 0;
+        self.tableView.estimatedSectionFooterHeight = 0;
+    }
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section==0) {
+        return  0 ;
+    }else{
+        return 0.01f;
+    }
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.01f;
+    
+    
 }
-*/
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return    10;
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 130;
+    
+    
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+    MSHomeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellidenfder];
+  
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+   
+    
+}
+
+
+
 
 @end

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MSHomeTopView">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-EY-abb">
+                    <rect key="frame" x="0.0" y="0.0" width="341" height="224"/>
+                    <color key="backgroundColor" red="1" green="0.62352941179999999" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7J-zo-Suf">
+                    <rect key="frame" x="0.0" y="0.0" width="341" height="224"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTz-Aj-a3P">
+                            <rect key="frame" x="0.0" y="0.0" width="341" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="谊付通" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCi-96-xhR">
+                                    <rect key="frame" x="20" y="19" width="55.5" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5V-k0-QTJ">
+                                    <rect key="frame" x="307" y="17.5" width="24" height="24"/>
+                                    <state key="normal" image="home_setup"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ZS1-Nk-Aba"/>
+                                <constraint firstItem="qCi-96-xhR" firstAttribute="leading" secondItem="DTz-Aj-a3P" secondAttribute="leading" constant="20" id="dXU-0W-n01"/>
+                                <constraint firstAttribute="trailing" secondItem="g5V-k0-QTJ" secondAttribute="trailing" constant="10" id="hOY-NW-e1q"/>
+                                <constraint firstAttribute="bottom" secondItem="qCi-96-xhR" secondAttribute="bottom" constant="10" id="v6P-6q-UBg"/>
+                                <constraint firstItem="g5V-k0-QTJ" firstAttribute="centerY" secondItem="qCi-96-xhR" secondAttribute="centerY" id="xCT-DF-1U3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PF7-4b-KZa">
+                            <rect key="frame" x="0.0" y="50" width="341" height="100"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkj-K8-y8D" customClass="ATHomeFavButton">
+                                    <rect key="frame" x="0.0" y="10" width="80.5" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="快捷收款" image="quick_recipts_img"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLj-tz-tUV" customClass="ATHomeFavButton">
+                                    <rect key="frame" x="260.5" y="10" width="80.5" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="我的贷款" image="app_xiao_img"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXy-ck-tH2" customClass="ATHomeFavButton">
+                                    <rect key="frame" x="80.5" y="10" width="80" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="智慧还款" image="reim_money_img"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-LD-eD6" customClass="ATHomeFavButton">
+                                    <rect key="frame" x="180.5" y="10" width="80" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="申请信用卡" image="app_card_img"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="4KC-LD-eD6" firstAttribute="width" secondItem="GLj-tz-tUV" secondAttribute="width" id="5P2-jc-bSI"/>
+                                <constraint firstItem="Dkj-K8-y8D" firstAttribute="leading" secondItem="PF7-4b-KZa" secondAttribute="leading" id="6iX-qD-oLm"/>
+                                <constraint firstItem="4KC-LD-eD6" firstAttribute="bottom" secondItem="uXy-ck-tH2" secondAttribute="bottom" id="Ats-Np-mza"/>
+                                <constraint firstItem="GLj-tz-tUV" firstAttribute="bottom" secondItem="Dkj-K8-y8D" secondAttribute="bottom" id="BRa-qR-G1Q"/>
+                                <constraint firstItem="Dkj-K8-y8D" firstAttribute="top" secondItem="PF7-4b-KZa" secondAttribute="top" constant="10" id="HXi-DS-zPS"/>
+                                <constraint firstAttribute="bottom" secondItem="Dkj-K8-y8D" secondAttribute="bottom" constant="10" id="I4G-ty-Exl"/>
+                                <constraint firstItem="4KC-LD-eD6" firstAttribute="leading" secondItem="uXy-ck-tH2" secondAttribute="trailing" constant="20" id="M3a-4y-EtN"/>
+                                <constraint firstItem="4KC-LD-eD6" firstAttribute="top" secondItem="uXy-ck-tH2" secondAttribute="top" id="Uq9-XM-eJd"/>
+                                <constraint firstItem="uXy-ck-tH2" firstAttribute="leading" secondItem="Dkj-K8-y8D" secondAttribute="trailing" id="X67-9b-PUU"/>
+                                <constraint firstItem="uXy-ck-tH2" firstAttribute="top" secondItem="Dkj-K8-y8D" secondAttribute="top" id="a4a-JJ-wBK"/>
+                                <constraint firstItem="GLj-tz-tUV" firstAttribute="top" secondItem="Dkj-K8-y8D" secondAttribute="top" id="by7-YK-beQ"/>
+                                <constraint firstItem="uXy-ck-tH2" firstAttribute="width" secondItem="4KC-LD-eD6" secondAttribute="width" id="dTT-8q-Q80"/>
+                                <constraint firstItem="uXy-ck-tH2" firstAttribute="bottom" secondItem="Dkj-K8-y8D" secondAttribute="bottom" id="edq-Nn-f1u"/>
+                                <constraint firstAttribute="trailing" secondItem="GLj-tz-tUV" secondAttribute="trailing" id="gAJ-nn-P79"/>
+                                <constraint firstItem="GLj-tz-tUV" firstAttribute="leading" secondItem="4KC-LD-eD6" secondAttribute="trailing" id="lbg-Am-eGj"/>
+                                <constraint firstAttribute="height" constant="100" id="oqA-45-yXI"/>
+                                <constraint firstItem="Dkj-K8-y8D" firstAttribute="width" secondItem="uXy-ck-tH2" secondAttribute="width" id="zdw-hN-iTW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bO-Rv-xXo">
+                            <rect key="frame" x="0.0" y="150" width="341" height="74"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wa-rE-51J" customClass="ATHomeFavButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="113.5" height="74"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="费率" image="home_rate_img">
+                                        <color key="titleColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-X0-FJR" customClass="ATHomeFavButton">
+                                    <rect key="frame" x="113.5" y="0.0" width="114" height="74"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="还款计划" image="home_plan_img">
+                                        <color key="titleColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9j-z0-33Y" customClass="ATHomeFavButton">
+                                    <rect key="frame" x="227.5" y="0.0" width="113.5" height="74"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="银行卡" image="home_card">
+                                        <color key="titleColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="1wa-rE-51J" firstAttribute="top" secondItem="6bO-Rv-xXo" secondAttribute="top" id="1QV-z0-y2U"/>
+                                <constraint firstItem="c2D-X0-FJR" firstAttribute="width" secondItem="h9j-z0-33Y" secondAttribute="width" id="3qw-cQ-Dei"/>
+                                <constraint firstItem="h9j-z0-33Y" firstAttribute="leading" secondItem="c2D-X0-FJR" secondAttribute="trailing" id="6qJ-PX-phD"/>
+                                <constraint firstItem="1wa-rE-51J" firstAttribute="width" secondItem="c2D-X0-FJR" secondAttribute="width" id="BH8-LE-4rK"/>
+                                <constraint firstAttribute="bottom" secondItem="1wa-rE-51J" secondAttribute="bottom" id="DdH-ZU-sgt"/>
+                                <constraint firstItem="c2D-X0-FJR" firstAttribute="bottom" secondItem="1wa-rE-51J" secondAttribute="bottom" id="Dqh-Zu-DB0"/>
+                                <constraint firstAttribute="trailing" secondItem="h9j-z0-33Y" secondAttribute="trailing" id="J9D-JC-2AD"/>
+                                <constraint firstItem="c2D-X0-FJR" firstAttribute="leading" secondItem="1wa-rE-51J" secondAttribute="trailing" id="Spo-qj-9Us"/>
+                                <constraint firstAttribute="bottom" secondItem="h9j-z0-33Y" secondAttribute="bottom" id="jpZ-60-DV9"/>
+                                <constraint firstItem="c2D-X0-FJR" firstAttribute="top" secondItem="1wa-rE-51J" secondAttribute="top" id="o04-wj-rws"/>
+                                <constraint firstItem="1wa-rE-51J" firstAttribute="leading" secondItem="6bO-Rv-xXo" secondAttribute="leading" id="oEW-Tg-xJb"/>
+                                <constraint firstItem="h9j-z0-33Y" firstAttribute="top" secondItem="6bO-Rv-xXo" secondAttribute="top" id="oaY-1k-GA8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="PF7-4b-KZa" firstAttribute="top" secondItem="DTz-Aj-a3P" secondAttribute="bottom" id="0s9-uo-0ul"/>
+                        <constraint firstItem="6bO-Rv-xXo" firstAttribute="leading" secondItem="x7J-zo-Suf" secondAttribute="leading" id="6NP-gM-olk"/>
+                        <constraint firstAttribute="trailing" secondItem="DTz-Aj-a3P" secondAttribute="trailing" id="Aij-xV-KbH"/>
+                        <constraint firstAttribute="trailing" secondItem="PF7-4b-KZa" secondAttribute="trailing" id="AnD-Mi-G7m"/>
+                        <constraint firstItem="DTz-Aj-a3P" firstAttribute="top" secondItem="x7J-zo-Suf" secondAttribute="top" id="Aqh-mx-U7p"/>
+                        <constraint firstAttribute="bottom" secondItem="6bO-Rv-xXo" secondAttribute="bottom" id="Eu5-P8-MLO"/>
+                        <constraint firstAttribute="trailing" secondItem="6bO-Rv-xXo" secondAttribute="trailing" id="RXm-kH-vjn"/>
+                        <constraint firstItem="6bO-Rv-xXo" firstAttribute="top" secondItem="PF7-4b-KZa" secondAttribute="bottom" id="S7b-Gn-25c"/>
+                        <constraint firstItem="PF7-4b-KZa" firstAttribute="leading" secondItem="x7J-zo-Suf" secondAttribute="leading" id="SSD-RJ-yAx"/>
+                        <constraint firstItem="DTz-Aj-a3P" firstAttribute="leading" secondItem="x7J-zo-Suf" secondAttribute="leading" id="hHs-z3-iha"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="B8b-EY-abb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="4g7-jR-A2w"/>
+                <constraint firstItem="B8b-EY-abb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EeV-vH-gAJ"/>
+                <constraint firstItem="B8b-EY-abb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Fjh-PD-4Be"/>
+                <constraint firstItem="x7J-zo-Suf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MRg-FI-kHQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x7J-zo-Suf" secondAttribute="trailing" id="XYU-e4-FOb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="x7J-zo-Suf" secondAttribute="bottom" id="fGQ-cS-ABM"/>
+                <constraint firstItem="x7J-zo-Suf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h4l-7G-lYI"/>
+                <constraint firstItem="B8b-EY-abb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qK3-CY-a5N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bagView" destination="B8b-EY-abb" id="JUK-kE-3aQ"/>
+                <outlet property="titleViewLyout" destination="ZS1-Nk-Aba" id="1lx-VX-9qt"/>
+            </connections>
+            <point key="canvasLocation" x="-8.5" y="-50"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_card_img" width="33" height="24"/>
+        <image name="app_xiao_img" width="33" height="24"/>
+        <image name="home_card" width="33" height="33"/>
+        <image name="home_plan_img" width="33" height="33"/>
+        <image name="home_rate_img" width="33" height="33"/>
+        <image name="home_setup" width="24" height="24"/>
+        <image name="quick_recipts_img" width="33" height="24"/>
+        <image name="reim_money_img" width="33" height="24"/>
+    </resources>
+</document>

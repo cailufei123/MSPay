@@ -59,12 +59,12 @@
 //}
 
 
-+ (void)post:(NSString *)url params:(NSDictionary *)params progress:(void (^)(id))progress success:(void (^)(id))success failure:(void (^)(NSError *))failure
++ (void)post:(NSString *)url params:(NSMutableDictionary *)params progress:(void (^)(id))progress success:(void (^)(id))success failure:(void (^)(NSError *))failure
 {
     
     
    
-    
+     params[@"random_str"] =  @"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT";
     
     // 1.获得请求管理者
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -77,13 +77,13 @@
 
     headDict[@"version"] =   [LFHttpTool getAppVersion];
     headDict[@"channel"] =  @"1";;
-//    headDict[@"merchant_id"] = loginUid;
+    headDict[@"merchant_id"] = loginerchant_id;
     headDict[@"format"] =  @"JSON";
     headDict[@"charset"] =  @"utf-8";
     headDict[@"sign_type"] =  @"MD5";
     headDict[@"timestamp"] =  [LFHttpTool currentTimeStr];
     headDict[@"command"] =  params[@"command"];
-//    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@",[params mj_JSONString],loginUid] toMD5];
+    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@",[params mj_JSONString],loginerchant_id] toMD5];
     dict[@"head"] = headDict;
     dict[@"body"] = params;
     allDict[@"jsondata"] = [dict mj_JSONString];

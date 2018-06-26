@@ -46,12 +46,12 @@
 ////        [defaults setObject:currentVersion forKey:versionKey];
 ////        [defaults synchronize];
 //    }
-//    if (loginTokenlength) {
-//        [LKControllerTool rootController];
-//    }else{
-//          [LKControllerTool LoginRegistController];
-//    }
-//      [LKControllerTool rootController];
+    if (loginTokenlength) {
+        [LKControllerTool rootController];
+    }else{
+          [LKControllerTool LoginRegistController];
+    }
+      [LKControllerTool rootController];
     
    
 }

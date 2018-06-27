@@ -1925,15 +1925,6 @@
 			path = MSHomeView;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		AD89ECE720E2592F00AB38C2 /* MSHomeModel */ = {
-			isa = PBXGroup;
-			children = (
-				AD89ECE820E2594F00AB38C2 /* MSHomModel.h */,
-				AD89ECE920E2594F00AB38C2 /* MSHomModel.m */,
-			);
-			path = MSHomeModel;
-=======
 		AF61853D20E2561400791FF0 /* MSRegister */ = {
 			isa = PBXGroup;
 			children = (
@@ -2000,7 +1991,6 @@
 			children = (
 			);
 			path = View;
->>>>>>> ea2cc7a1ad5de7467bf3546ebbb0b7e2b2b1e4d3
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

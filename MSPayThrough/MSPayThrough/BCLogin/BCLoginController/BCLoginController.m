@@ -10,7 +10,8 @@
 #import "BCCodeAlertView.h"
 #import "MSRegisterController.h"
 #import "MSFrogetPwdController.h"
-
+#import "MSRegisterController.h"
+#import "MSFrogetPwdController.h"
 #define timeCount 60
 
 @interface BCLoginController ()<UITextFieldDelegate,UIScrollViewDelegate>
@@ -265,8 +266,14 @@
 }
 
 - (IBAction)registClick:(id)sender {
+    MSRegisterController * registerC = [[MSRegisterController alloc] init];
+    [self.navigationController pushViewController:registerC animated:YES];
+
 }
 - (IBAction)forgetPassCilck:(id)sender {
+    MSFrogetPwdController * registerC = [[MSFrogetPwdController alloc] init];
+    [self.navigationController pushViewController:registerC animated:YES];
+
 }
 
 @end

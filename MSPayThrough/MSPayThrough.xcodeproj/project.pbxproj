@@ -1917,8 +1917,6 @@
 			isa = PBXGroup;
 			children = (
 				AF61853E20E2561400791FF0 /* ControllerVc */,
-				AF61853F20E2561400791FF0 /* Model */,
-				AF61854020E2561400791FF0 /* View */,
 			);
 			path = MSRegister;
 			sourceTree = "<group>";
@@ -1933,26 +1931,10 @@
 			path = ControllerVc;
 			sourceTree = "<group>";
 		};
-		AF61853F20E2561400791FF0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		AF61854020E2561400791FF0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		AF61854620E25BFB00791FF0 /* MSForgetPwd */ = {
 			isa = PBXGroup;
 			children = (
 				AF61854720E25BFB00791FF0 /* ControllerVc */,
-				AF61854820E25BFB00791FF0 /* Model */,
-				AF61854920E25BFB00791FF0 /* View */,
 			);
 			path = MSForgetPwd;
 			sourceTree = "<group>";
@@ -1965,20 +1947,6 @@
 				AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */,
 			);
 			path = ControllerVc;
-			sourceTree = "<group>";
-		};
-		AF61854820E25BFB00791FF0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		AF61854920E25BFB00791FF0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -15,6 +15,7 @@
                 <outlet property="bodyTF" destination="oWd-PU-vxR" id="mSa-UU-4Yd"/>
                 <outlet property="cardNumTF" destination="jaC-Cq-PqT" id="kBC-pQ-CBZ"/>
                 <outlet property="cardTF" destination="x3L-2B-57d" id="jVJ-lQ-KD8"/>
+                <outlet property="commteBtn" destination="kJM-BK-5Da" id="LCd-pa-eDH"/>
                 <outlet property="timeTF" destination="h2G-Hm-ngJ" id="tLE-8N-48b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -152,9 +153,12 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJM-BK-5Da">
-                    <rect key="frame" x="159" y="234" width="57" height="57"/>
+                    <rect key="frame" x="40" y="234" width="295" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="brl-H0-qP4"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="提交" backgroundImage="mine_msgupdate_bg"/>
+                    <state key="normal" title="提交"/>
                     <connections>
                         <action selector="clickCommteBtn" destination="-1" eventType="touchUpInside" id="R4w-fd-xbO"/>
                     </connections>
@@ -179,11 +183,13 @@
                 <constraint firstItem="gHr-wx-OlG" firstAttribute="top" secondItem="jmi-J9-ogh" secondAttribute="bottom" constant="1" id="aAu-bK-CCq"/>
                 <constraint firstItem="Wp4-Wl-eBr" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="cNu-WP-OS6"/>
                 <constraint firstItem="kJM-BK-5Da" firstAttribute="top" secondItem="wKs-lt-h0Y" secondAttribute="bottom" constant="35" id="cag-IH-QUL"/>
+                <constraint firstItem="kJM-BK-5Da" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="cfx-XM-wCK"/>
                 <constraint firstItem="4rm-8D-Hko" firstAttribute="leading" secondItem="f3W-7v-Pnt" secondAttribute="leading" id="hiy-2C-Iae"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Wp4-Wl-eBr" secondAttribute="trailing" id="jk1-7A-uhe"/>
                 <constraint firstItem="jaC-Cq-PqT" firstAttribute="centerY" secondItem="f3W-7v-Pnt" secondAttribute="centerY" id="qNu-4A-heJ"/>
                 <constraint firstItem="FbO-FF-e09" firstAttribute="centerY" secondItem="wKs-lt-h0Y" secondAttribute="centerY" id="uo2-nJ-JNe"/>
                 <constraint firstItem="wKs-lt-h0Y" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="vGs-V4-ywp"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kJM-BK-5Da" secondAttribute="trailing" constant="40" id="yVS-0n-RiQ"/>
                 <constraint firstItem="kJM-BK-5Da" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="ze3-v8-YEo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
@@ -191,7 +197,6 @@
         </view>
     </objects>
     <resources>
-        <image name="mine_msgupdate_bg" width="57" height="57"/>
         <image name="pai_card" width="30" height="30"/>
     </resources>
 </document>

@@ -10,6 +10,7 @@
 #import "MSVerifyCardController.h"
 
 @interface MSCardController ()
+@property (weak, nonatomic) IBOutlet UIImageView *backImageView;
 
 @end
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
    
     self.navigationItem.title = @"身份认证";
+    [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
 }
 //点击防范身份证
 - (IBAction)clickIdentityCardBtn {

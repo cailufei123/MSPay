@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSSetController">
             <connections>
+                <outlet property="commteBtn" destination="uWU-UX-yfe" id="seh-Ue-uyY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -139,9 +140,12 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWU-UX-yfe">
-                    <rect key="frame" x="156.5" y="358" width="62" height="57"/>
+                    <rect key="frame" x="40" y="358" width="295" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="wQW-Bx-jE5"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="安全退出" backgroundImage="mine_msgupdate_bg"/>
+                    <state key="normal" title="安全退出"/>
                     <connections>
                         <action selector="clickLogOutBtn" destination="-1" eventType="touchUpInside" id="ege-02-1g7"/>
                     </connections>
@@ -161,8 +165,10 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="zTx-Da-zb2" secondAttribute="trailing" id="T4m-HN-hdM"/>
                 <constraint firstItem="OQq-Hn-BHE" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="Wkl-LM-Ey8"/>
                 <constraint firstItem="OQq-Hn-BHE" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="XwD-lv-Czf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uWU-UX-yfe" secondAttribute="trailing" constant="40" id="agT-QY-oqh"/>
                 <constraint firstItem="dOi-nq-tWE" firstAttribute="leading" secondItem="L5v-hx-Nlp" secondAttribute="leading" id="dzc-yL-4fU"/>
                 <constraint firstItem="ztF-vt-q0u" firstAttribute="top" secondItem="zTx-Da-zb2" secondAttribute="bottom" constant="1" id="f0I-7R-alS"/>
+                <constraint firstItem="uWU-UX-yfe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="p3q-Mi-V5C"/>
                 <constraint firstItem="uWU-UX-yfe" firstAttribute="top" secondItem="ztF-vt-q0u" secondAttribute="bottom" constant="20" id="pHE-DV-ihI"/>
                 <constraint firstItem="QMI-9K-1cs" firstAttribute="top" secondItem="syk-PR-7mC" secondAttribute="bottom" constant="30" id="t0D-RE-M8f"/>
                 <constraint firstItem="zTx-Da-zb2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="zaS-nJ-eJ5"/>
@@ -174,6 +180,5 @@
     <resources>
         <image name="arrow_right" width="12" height="19"/>
         <image name="ic_launcher" width="72" height="72"/>
-        <image name="mine_msgupdate_bg" width="57" height="57"/>
     </resources>
 </document>

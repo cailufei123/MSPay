@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSMesController">
             <connections>
+                <outlet property="backImageView" destination="Tde-tC-4NF" id="59U-P9-dE3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,13 +22,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKy-ve-IGV">
-                    <rect key="frame" x="0.0" y="60" width="375" height="80"/>
+                    <rect key="frame" x="0.0" y="70" width="375" height="80"/>
                     <connections>
                         <action selector="clicTopBtn" destination="-1" eventType="touchUpInside" id="d7A-Gy-MY6"/>
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cys-ZV-jdQ" userLabel="topView">
-                    <rect key="frame" x="0.0" y="140" width="375" height="164"/>
+                    <rect key="frame" x="0.0" y="150" width="375" height="164"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-VB-fdn" userLabel="feilvView">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
@@ -179,34 +180,34 @@
                         <constraint firstItem="8eP-DO-veQ" firstAttribute="leading" secondItem="xtf-OH-shX" secondAttribute="leading" id="vQC-wt-XZa"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Tde-tC-4NF">
-                    <rect key="frame" x="0.0" y="20" width="375" height="120"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tde-tC-4NF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="120" id="ez7-pt-5jc"/>
+                        <constraint firstAttribute="height" constant="150" id="ez7-pt-5jc"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user_nologin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="eR1-H2-MRA">
-                    <rect key="frame" x="15" y="80" width="50" height="50"/>
+                    <rect key="frame" x="15" y="90" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="ZD5-xh-Kv7"/>
                         <constraint firstAttribute="height" constant="50" id="wfD-So-d82"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:200117" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWe-MJ-YQq">
-                    <rect key="frame" x="80" y="108" width="76" height="21"/>
+                    <rect key="frame" x="80" y="118" width="76" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right_white" translatesAutoresizingMaskIntoConstraints="NO" id="v6u-ev-LCB">
-                    <rect key="frame" x="348" y="95.5" width="12" height="19"/>
+                    <rect key="frame" x="348" y="105.5" width="12" height="19"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="12" id="6aC-Pr-vHQ"/>
                         <constraint firstAttribute="height" constant="19" id="VBH-Xb-Wrp"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vg2-mh-Z9n" userLabel="bottomView">
-                    <rect key="frame" x="0.0" y="314" width="375" height="219"/>
+                    <rect key="frame" x="0.0" y="324" width="375" height="219"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Fx-L2-Lst" userLabel="fenxView">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
@@ -407,13 +408,13 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李刚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlC-dD-GkY">
-                    <rect key="frame" x="80" y="80" width="31" height="18"/>
+                    <rect key="frame" x="80" y="90" width="31" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmI-i4-Jhu">
-                    <rect key="frame" x="15" y="43" width="14.5" height="17"/>
+                    <rect key="frame" x="15" y="53" width="14.5" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -427,8 +428,8 @@
                 <constraint firstItem="Vg2-mh-Z9n" firstAttribute="top" secondItem="Cys-ZV-jdQ" secondAttribute="bottom" constant="10" id="GEg-lF-LEp"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="v6u-ev-LCB" secondAttribute="trailing" constant="15" id="Juu-5f-J0b"/>
                 <constraint firstItem="vlC-dD-GkY" firstAttribute="leading" secondItem="eR1-H2-MRA" secondAttribute="trailing" constant="15" id="Myk-Pr-gna"/>
-                <constraint firstItem="Cys-ZV-jdQ" firstAttribute="top" secondItem="PKy-ve-IGV" secondAttribute="bottom" id="Nwr-5R-mBG"/>
-                <constraint firstItem="Tde-tC-4NF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="PsD-sD-Qzm"/>
+                <constraint firstItem="Cys-ZV-jdQ" firstAttribute="top" secondItem="PKy-ve-IGV" secondAttribute="bottom" id="N9B-m7-Vjs"/>
+                <constraint firstItem="Tde-tC-4NF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PsD-sD-Qzm"/>
                 <constraint firstItem="Tde-tC-4NF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R6Z-1N-O39"/>
                 <constraint firstItem="eR1-H2-MRA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="SPN-Bn-gjF"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Tde-tC-4NF" secondAttribute="trailing" id="Yg2-be-0bf"/>
@@ -441,21 +442,19 @@
                 <constraint firstItem="v6u-ev-LCB" firstAttribute="centerY" secondItem="eR1-H2-MRA" secondAttribute="centerY" id="ktM-wm-crV"/>
                 <constraint firstItem="Vg2-mh-Z9n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lJT-mJ-8k9"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Cys-ZV-jdQ" secondAttribute="trailing" id="lwr-Lt-DCx"/>
-                <constraint firstItem="Cys-ZV-jdQ" firstAttribute="top" secondItem="PKy-ve-IGV" secondAttribute="bottom" id="n2G-r6-b3s"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Vg2-mh-Z9n" secondAttribute="trailing" id="ned-tr-nr3"/>
                 <constraint firstItem="eR1-H2-MRA" firstAttribute="bottom" secondItem="Tde-tC-4NF" secondAttribute="bottom" constant="-10" id="rox-VG-lcP"/>
                 <constraint firstItem="Cys-ZV-jdQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v4T-8G-kdb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="159" y="-190"/>
+            <point key="canvasLocation" x="158.5" y="-190.5"/>
         </view>
     </objects>
     <resources>
         <image name="arrow_right" width="12" height="19"/>
         <image name="arrow_right_white" width="12" height="19"/>
         <image name="default_user_nologin_icon" width="88" height="88"/>
-        <image name="home_card" width="50" height="50"/>
-        <image name="mine_login_bg" width="562" height="343"/>
+        <image name="home_card" width="33" height="33"/>
         <image name="mine_notice" width="32" height="32"/>
         <image name="mine_plan" width="33" height="28"/>
         <image name="mine_rate" width="32" height="32"/>

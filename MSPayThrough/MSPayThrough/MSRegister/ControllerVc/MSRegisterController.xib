@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSRegisterController">
             <connections>
                 <outlet property="codeTF" destination="2lv-fZ-xSh" id="FSj-JM-l2D"/>
+                <outlet property="getCodeBtn" destination="ssO-B0-jdq" id="tcc-hY-pqJ"/>
                 <outlet property="otherPhoneTF" destination="aVW-Rw-lZZ" id="tSu-cF-SvB"/>
                 <outlet property="phoneTF" destination="Di2-dn-5d3" id="DDV-XS-EKJ"/>
                 <outlet property="pwdTF" destination="SpK-It-eKU" id="5XB-4g-FkW"/>

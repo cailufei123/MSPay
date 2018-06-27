@@ -46,6 +46,45 @@
 }
 //点击提交按钮
 - (IBAction)clickCommteBtn {
+    
+    if (self.cardTF.text.length == 0) {
+        [MBManager showBriefAlert:@"请输入姓名"];
+        return;
+    }
+//    if (self.cardNumTF.text.length == 0) {
+//        [MBManager showBriefAlert:@"请输入身份证号"];
+//        return;
+//    }
+//    if (self.cardTF.text.length == 0) {
+//        [MBManager showBriefAlert:@"请输入签发机关"];
+//        return;
+//    }
+//    if (self.cardTF.text.length == 0) {
+//        [MBManager showBriefAlert:@"请输入身份证有效期"];
+//        return;
+//    }
+//
+//    if (self.codeTF.text.length == 0) {
+//        [MBManager showBriefAlert:@"请输入验证码"];
+//        return;
+//    }
+    
+//    NSMutableDictionary * dict = diction;
+//    dict[@"mobile"] = self.phoneTF.text;
+//    dict[@"vc_type"] = @"2";
+//    dict[@"command"] = @"99001";
+//    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+//    } success:^(id responseObj) {
+//        
+//        NSLog(@"responseObj-%@",responseObj);
+//        if (responseObj[@"body"]) {
+//            [MBManager showBriefAlert:@"找回密码成功"];
+//            //            SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"body"]];
+//            //            [LFAccountTool save:loginmodel];
+//            //            [MBManager hideAlert];
+//            //            [LKControllerTool chooseRootViewController];
+//            [self.navigationController popViewControllerAnimated:YES];
+//        }
 }
 
 @end

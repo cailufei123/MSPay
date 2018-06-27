@@ -85,7 +85,7 @@
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        NSLog(@"responseObj-%@",responseObj);
+//        NSLog(@"responseObj-%@",responseObj);
         if (responseObj[@"body"]) {
             [MBManager showBriefAlert:@"找回密码成功"];
             //            SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"body"]];

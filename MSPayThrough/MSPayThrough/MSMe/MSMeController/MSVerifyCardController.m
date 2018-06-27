@@ -51,40 +51,44 @@
         [MBManager showBriefAlert:@"请输入姓名"];
         return;
     }
-//    if (self.cardNumTF.text.length == 0) {
-//        [MBManager showBriefAlert:@"请输入身份证号"];
-//        return;
-//    }
-//    if (self.cardTF.text.length == 0) {
-//        [MBManager showBriefAlert:@"请输入签发机关"];
-//        return;
-//    }
-//    if (self.cardTF.text.length == 0) {
-//        [MBManager showBriefAlert:@"请输入身份证有效期"];
-//        return;
-//    }
-//
-//    if (self.codeTF.text.length == 0) {
-//        [MBManager showBriefAlert:@"请输入验证码"];
+    if (self.cardNumTF.text.length == 0) {
+        [MBManager showBriefAlert:@"请输入身份证号"];
+        return;
+    }
+    
+//    if (![NSString accurateVerifyIDCardNumber:self.cardNumTF.text]) {
+//        [MBManager showBriefAlert:@"请输入正确的身份证号"];
 //        return;
 //    }
     
-//    NSMutableDictionary * dict = diction;
-//    dict[@"mobile"] = self.phoneTF.text;
-//    dict[@"vc_type"] = @"2";
-//    dict[@"command"] = @"99001";
-//    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
-//    } success:^(id responseObj) {
-//        
-//        NSLog(@"responseObj-%@",responseObj);
-//        if (responseObj[@"body"]) {
-//            [MBManager showBriefAlert:@"找回密码成功"];
-//            //            SALoginModel* loginmodel = [SALoginModel mj_objectWithKeyValues:responseObj[@"body"]];
-//            //            [LFAccountTool save:loginmodel];
-//            //            [MBManager hideAlert];
-//            //            [LKControllerTool chooseRootViewController];
-//            [self.navigationController popViewControllerAnimated:YES];
-//        }
+    if (self.bodyTF.text.length == 0) {
+        [MBManager showBriefAlert:@"请输入签发机关"];
+        return;
+    }
+    if (self.timeTF.text.length == 0) {
+        [MBManager showBriefAlert:@"请输入身份证有效期"];
+        return;
+    }
+    
+    NSMutableDictionary * dict = diction;
+    dict[@"mci_name"] = self.cardTF.text;
+    dict[@"mci_id_card"] = self.cardNumTF.text;
+    dict[@"mci_sign_org_name"] = self.bodyTF.text;
+    dict[@"mci_period"] = self.timeTF.text;
+    dict[@"command"] = @"1010";
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+        LFLog(@"responseObj-%@",responseObj);
+        
+        if (responseObj[@"body"]) {
+            
+        }
+        
+    } failure:^(NSError *error) {
+        //        [MBManager showBriefAlert:@"网络错误"];
+        [MBManager hideAlert];
+    }];
 }
 
 @end

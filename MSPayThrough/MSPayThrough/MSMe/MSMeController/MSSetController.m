@@ -39,6 +39,18 @@
 }
 //点击安全退出按钮
 - (IBAction)clickLogOutBtn {
+    
+    NSString* filename = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"account.data"];
+    
+    //            NSString* filename = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"accountMe.data"];
+    
+    NSFileManager *defaultManager = [NSFileManager defaultManager];
+    if ([defaultManager isDeletableFileAtPath:filename]) {
+        [defaultManager removeItemAtPath:filename error:nil];
+    }
+    
+    [LKControllerTool chooseRootViewController];
+    
 }
 
 @end

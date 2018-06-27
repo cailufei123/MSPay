@@ -16,6 +16,7 @@
 #import "WHCategory.h"
 #import "FMDB.h"
 #import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
 #import "SDImageCache.h"
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"

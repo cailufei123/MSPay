@@ -1969,23 +1969,23 @@
 		ADE06F7C20E3A0510067C9A9 /* MSHomeView */ = {
 			isa = PBXGroup;
 			children = (
-				ADE06F7D20E3A0510067C9A9 /* MSCollectionViewFlowLayout.h */,
-				ADE06F7E20E3A0510067C9A9 /* MSTopCollectionViewCell.h */,
-				ADE06F7F20E3A0510067C9A9 /* MSHomeTableViewCell.h */,
-				ADE06F8020E3A0510067C9A9 /* MSTopCollectionViewCell.xib */,
-				ADE06F8120E3A0510067C9A9 /* MSHomeTopView.h */,
-				ADE06F8220E3A0510067C9A9 /* MSHomeTableTopView.h */,
-				ADE06F8320E3A0510067C9A9 /* ATHomeFavButton.h */,
-				ADE06F8420E3A0510067C9A9 /* MSHomeTableViewCell.xib */,
-				ADE06F8520E3A0510067C9A9 /* MSCollectionViewFlowLayout.m */,
 				ADE06F8620E3A0510067C9A9 /* ZZCircleProgress */,
-				ADE06F9020E3A0510067C9A9 /* MSTopCollectionViewCell.m */,
-				ADE06F9120E3A0510067C9A9 /* MSHomeTopView.xib */,
-				ADE06F9220E3A0510067C9A9 /* MSHomeTableViewCell.m */,
-				ADE06F9320E3A0510067C9A9 /* MSHomeTableTopView.xib */,
+				ADE06F8320E3A0510067C9A9 /* ATHomeFavButton.h */,
 				ADE06F9420E3A0510067C9A9 /* ATHomeFavButton.m */,
+				ADE06F7D20E3A0510067C9A9 /* MSCollectionViewFlowLayout.h */,
+				ADE06F8520E3A0510067C9A9 /* MSCollectionViewFlowLayout.m */,
+				ADE06F7E20E3A0510067C9A9 /* MSTopCollectionViewCell.h */,
+				ADE06F9020E3A0510067C9A9 /* MSTopCollectionViewCell.m */,
+				ADE06F8020E3A0510067C9A9 /* MSTopCollectionViewCell.xib */,
+				ADE06F7F20E3A0510067C9A9 /* MSHomeTableViewCell.h */,
+				ADE06F8420E3A0510067C9A9 /* MSHomeTableViewCell.xib */,
+				ADE06F9220E3A0510067C9A9 /* MSHomeTableViewCell.m */,
+				ADE06F8220E3A0510067C9A9 /* MSHomeTableTopView.h */,
 				ADE06F9520E3A0510067C9A9 /* MSHomeTableTopView.m */,
+				ADE06F9320E3A0510067C9A9 /* MSHomeTableTopView.xib */,
+				ADE06F8120E3A0510067C9A9 /* MSHomeTopView.h */,
 				ADE06F9620E3A0510067C9A9 /* MSHomeTopView.m */,
+				ADE06F9120E3A0510067C9A9 /* MSHomeTopView.xib */,
 			);
 			path = MSHomeView;
 			sourceTree = "<group>";

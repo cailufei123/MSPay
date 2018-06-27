@@ -11,3 +11,8 @@
 @implementation MSHomModel
 
 @end
+
+@implementation MSHomListModel
+
+@end
+

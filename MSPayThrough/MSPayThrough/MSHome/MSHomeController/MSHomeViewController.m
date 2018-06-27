@@ -9,9 +9,14 @@
 #import "MSHomeViewController.h"
 #import "MSHomeTopView.h"
 #import "MSHomeTableViewCell.h"
+#import "MSHomeTableTopView.h"
+#import "MSHomModel.h"
 @interface MSHomeViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,UISearchBarDelegate>
 @property(nonatomic,strong) MSHomeTopView * homeTopView;
 @property(nonatomic,strong)UITableView * tableView;
+@property(nonatomic,strong)MSHomeTableTopView * homeTableTopView;
+@property(nonatomic,strong)NSMutableArray * playRepayments;
+@property(nonatomic,strong)NSMutableArray * billLists;
 @end
 static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 @implementation MSHomeViewController
@@ -48,7 +53,7 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 //    [header beginRefreshing];
     //    // 设置header
     self.tableView.mj_header = header;
-    self.tableView.mj_footer = footer;
+//    self.tableView.mj_footer = footer;
 }
 -(void)loadNewData{
     NSMutableDictionary * registUserDict =diction;
@@ -58,7 +63,22 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
      registUserDict[@"start"] = @"0";
    
     [YWRequestData playRepaymentDict:registUserDict success:^(id responseObj) {
-        
+        self.playRepayments = [MSHomModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"qrp_list"]];
+        self.homeTableTopView.playRepayments = self.playRepayments;
+        [self.tableView.mj_header endRefreshing];
+    }];
+    NSMutableDictionary * billListDict =diction;
+    billListDict[@"mcp_id"] = @"n999999";
+    billListDict[@"mcp_card_no"] = @"n999999";
+    billListDict[@"start_time"] = @"999999";
+    billListDict[@"end_time"] = @"999999";
+    billListDict[@"start"] = @"0";
+    billListDict[@"size"] = @"2";
+    billListDict[@"command"] = @"1013";
+    [YWRequestData billListDict:billListDict success:^(id responseObj) {
+        self.billLists = [MSHomListModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"tm_list"]];
+        [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
     }];
     
 }
@@ -85,7 +105,8 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
         self.tableView.estimatedSectionHeaderHeight = 0;
         self.tableView.estimatedSectionFooterHeight = 0;
     }
-    
+    self.homeTableTopView = [MSHomeTableTopView loadNameHomeTableTopViewXib];
+    self.tableView.tableHeaderView = self.homeTableTopView ;
 }
 
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
@@ -113,20 +134,21 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return    10;
+    return   self.billLists.count;
     
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 130;
+    return 100;
     
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  
+    MSHomListModel * listModel =  self.billLists[indexPath.row];
     MSHomeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellidenfder];
-  
+    cell.listModel = listModel;
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

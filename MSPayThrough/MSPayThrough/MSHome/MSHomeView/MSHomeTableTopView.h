@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MSHomeTableTopView : UIView
-
++(instancetype)loadNameHomeTableTopViewXib ;
+@property(nonatomic,strong)NSMutableArray * playRepayments;
 @end

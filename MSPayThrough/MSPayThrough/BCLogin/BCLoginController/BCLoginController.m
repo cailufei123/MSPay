@@ -265,12 +265,10 @@
 }
 
 - (IBAction)registClick:(id)sender {
-    MSRegisterController *registerVc = [[MSRegisterController alloc] init];
-    [self.navigationController pushViewController:registerVc animated:YES];
+  
 }
 - (IBAction)forgetPassCilck:(id)sender {
-    MSFrogetPwdController *forgeterVc = [[MSFrogetPwdController alloc] init];
-    [self.navigationController pushViewController:forgeterVc animated:YES];
+   
 }
 
 @end

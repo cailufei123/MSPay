@@ -208,7 +208,6 @@
 		AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD624FE320E09B010095F0E9 /* RefreshTableView.bundle */; };
 		AD62500220E09B020095F0E9 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AD624FE420E09B010095F0E9 /* .gitkeep */; };
 		AD62501520E09C180095F0E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD62501420E09C180095F0E9 /* Info.plist */; };
-		AD62501A20E09C860095F0E9 /* MSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62501920E09C860095F0E9 /* MSHomeViewController.m */; };
 		AD62502720E09D6C0095F0E9 /* MSBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62502620E09D6C0095F0E9 /* MSBillViewController.m */; };
 		AD62502A20E09F5C0095F0E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62502920E09F5C0095F0E9 /* SystemConfiguration.framework */; };
 		AD62502C20E09F6E0095F0E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62502B20E09F6E0095F0E9 /* CoreTelephony.framework */; };
@@ -221,12 +220,23 @@
 		AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503C20E0FF190095F0E9 /* BCLoginController.m */; };
 		AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */; };
 		AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */; };
-		AD89ECDC20E22A8E00AB38C2 /* MSHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECDB20E22A8E00AB38C2 /* MSHomeTopView.m */; };
-		AD89ECDE20E22A9800AB38C2 /* MSHomeTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89ECDD20E22A9800AB38C2 /* MSHomeTopView.xib */; };
-		AD89ECE120E22C4900AB38C2 /* ATHomeFavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECE020E22C4900AB38C2 /* ATHomeFavButton.m */; };
-		AD89ECE520E2382F00AB38C2 /* MSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */; };
-		AD89ECE620E2382F00AB38C2 /* MSHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */; };
-		ADEFE82F20E334C1006C0184 /* MSHomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE82E20E334C0006C0184 /* MSHomModel.m */; };
+		ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06F8020E3A0510067C9A9 /* MSTopCollectionViewCell.xib */; };
+		ADE06FA020E3A0510067C9A9 /* MSHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06F8420E3A0510067C9A9 /* MSHomeTableViewCell.xib */; };
+		ADE06FA120E3A0510067C9A9 /* MSCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F8520E3A0510067C9A9 /* MSCollectionViewFlowLayout.m */; };
+		ADE06FA220E3A0510067C9A9 /* ZZCACircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F8720E3A0510067C9A9 /* ZZCACircleProgress.m */; };
+		ADE06FA320E3A0510067C9A9 /* NSTimer+timerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F8820E3A0510067C9A9 /* NSTimer+timerBlock.m */; };
+		ADE06FA420E3A0510067C9A9 /* ZZCircleProgress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADE06F8920E3A0510067C9A9 /* ZZCircleProgress.bundle */; };
+		ADE06FA520E3A0510067C9A9 /* ZZCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F8B20E3A0510067C9A9 /* ZZCountingLabel.m */; };
+		ADE06FA620E3A0510067C9A9 /* ZZCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F8F20E3A0510067C9A9 /* ZZCircleProgress.m */; };
+		ADE06FA720E3A0510067C9A9 /* MSTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9020E3A0510067C9A9 /* MSTopCollectionViewCell.m */; };
+		ADE06FA820E3A0510067C9A9 /* MSHomeTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06F9120E3A0510067C9A9 /* MSHomeTopView.xib */; };
+		ADE06FA920E3A0510067C9A9 /* MSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9220E3A0510067C9A9 /* MSHomeTableViewCell.m */; };
+		ADE06FAA20E3A0510067C9A9 /* MSHomeTableTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06F9320E3A0510067C9A9 /* MSHomeTableTopView.xib */; };
+		ADE06FAB20E3A0510067C9A9 /* ATHomeFavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9420E3A0510067C9A9 /* ATHomeFavButton.m */; };
+		ADE06FAC20E3A0510067C9A9 /* MSHomeTableTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9520E3A0510067C9A9 /* MSHomeTableTopView.m */; };
+		ADE06FAD20E3A0510067C9A9 /* MSHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9620E3A0510067C9A9 /* MSHomeTopView.m */; };
+		ADE06FAE20E3A0510067C9A9 /* MSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9820E3A0510067C9A9 /* MSHomeViewController.m */; };
+		ADE06FB020E3A0510067C9A9 /* MSHomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9E20E3A0510067C9A9 /* MSHomModel.m */; };
 		AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4B20E3751E00A300BA /* MSMeModel.m */; };
 		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
 		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
@@ -685,8 +695,6 @@
 		AD624FE320E09B010095F0E9 /* RefreshTableView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RefreshTableView.bundle; sourceTree = "<group>"; };
 		AD624FE420E09B010095F0E9 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AD62501420E09C180095F0E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD62501820E09C860095F0E9 /* MSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeViewController.h; sourceTree = "<group>"; };
-		AD62501920E09C860095F0E9 /* MSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeViewController.m; sourceTree = "<group>"; };
 		AD62502520E09D6C0095F0E9 /* MSBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBillViewController.h; sourceTree = "<group>"; };
 		AD62502620E09D6C0095F0E9 /* MSBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSBillViewController.m; sourceTree = "<group>"; };
 		AD62502920E09F5C0095F0E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -703,16 +711,35 @@
 		AD62503E20E0FF190095F0E9 /* BCCodeAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCCodeAlertView.xib; sourceTree = "<group>"; };
 		AD62503F20E0FF190095F0E9 /* BCCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCodeAlertView.m; sourceTree = "<group>"; };
 		AD62504020E0FF190095F0E9 /* BCCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCodeAlertView.h; sourceTree = "<group>"; };
-		AD89ECDA20E22A8E00AB38C2 /* MSHomeTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeTopView.h; sourceTree = "<group>"; };
-		AD89ECDB20E22A8E00AB38C2 /* MSHomeTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeTopView.m; sourceTree = "<group>"; };
-		AD89ECDD20E22A9800AB38C2 /* MSHomeTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSHomeTopView.xib; sourceTree = "<group>"; };
-		AD89ECDF20E22C4800AB38C2 /* ATHomeFavButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHomeFavButton.h; sourceTree = "<group>"; };
-		AD89ECE020E22C4900AB38C2 /* ATHomeFavButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHomeFavButton.m; sourceTree = "<group>"; };
-		AD89ECE220E2382F00AB38C2 /* MSHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeTableViewCell.h; sourceTree = "<group>"; };
-		AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeTableViewCell.m; sourceTree = "<group>"; };
-		AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSHomeTableViewCell.xib; sourceTree = "<group>"; };
-		ADEFE82D20E334C0006C0184 /* MSHomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomModel.h; sourceTree = "<group>"; };
-		ADEFE82E20E334C0006C0184 /* MSHomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomModel.m; sourceTree = "<group>"; };
+		ADE06F7D20E3A0510067C9A9 /* MSCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		ADE06F7E20E3A0510067C9A9 /* MSTopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTopCollectionViewCell.h; sourceTree = "<group>"; };
+		ADE06F7F20E3A0510067C9A9 /* MSHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomeTableViewCell.h; sourceTree = "<group>"; };
+		ADE06F8020E3A0510067C9A9 /* MSTopCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSTopCollectionViewCell.xib; sourceTree = "<group>"; };
+		ADE06F8120E3A0510067C9A9 /* MSHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomeTopView.h; sourceTree = "<group>"; };
+		ADE06F8220E3A0510067C9A9 /* MSHomeTableTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomeTableTopView.h; sourceTree = "<group>"; };
+		ADE06F8320E3A0510067C9A9 /* ATHomeFavButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHomeFavButton.h; sourceTree = "<group>"; };
+		ADE06F8420E3A0510067C9A9 /* MSHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSHomeTableViewCell.xib; sourceTree = "<group>"; };
+		ADE06F8520E3A0510067C9A9 /* MSCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		ADE06F8720E3A0510067C9A9 /* ZZCACircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCACircleProgress.m; sourceTree = "<group>"; };
+		ADE06F8820E3A0510067C9A9 /* NSTimer+timerBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+timerBlock.m"; sourceTree = "<group>"; };
+		ADE06F8920E3A0510067C9A9 /* ZZCircleProgress.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZCircleProgress.bundle; sourceTree = "<group>"; };
+		ADE06F8A20E3A0510067C9A9 /* ZZCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCircleProgress.h; sourceTree = "<group>"; };
+		ADE06F8B20E3A0510067C9A9 /* ZZCountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCountingLabel.m; sourceTree = "<group>"; };
+		ADE06F8C20E3A0510067C9A9 /* NSTimer+timerBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+timerBlock.h"; sourceTree = "<group>"; };
+		ADE06F8D20E3A0510067C9A9 /* ZZCACircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCACircleProgress.h; sourceTree = "<group>"; };
+		ADE06F8E20E3A0510067C9A9 /* ZZCountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCountingLabel.h; sourceTree = "<group>"; };
+		ADE06F8F20E3A0510067C9A9 /* ZZCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCircleProgress.m; sourceTree = "<group>"; };
+		ADE06F9020E3A0510067C9A9 /* MSTopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTopCollectionViewCell.m; sourceTree = "<group>"; };
+		ADE06F9120E3A0510067C9A9 /* MSHomeTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSHomeTopView.xib; sourceTree = "<group>"; };
+		ADE06F9220E3A0510067C9A9 /* MSHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomeTableViewCell.m; sourceTree = "<group>"; };
+		ADE06F9320E3A0510067C9A9 /* MSHomeTableTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSHomeTableTopView.xib; sourceTree = "<group>"; };
+		ADE06F9420E3A0510067C9A9 /* ATHomeFavButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHomeFavButton.m; sourceTree = "<group>"; };
+		ADE06F9520E3A0510067C9A9 /* MSHomeTableTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomeTableTopView.m; sourceTree = "<group>"; };
+		ADE06F9620E3A0510067C9A9 /* MSHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomeTopView.m; sourceTree = "<group>"; };
+		ADE06F9820E3A0510067C9A9 /* MSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomeViewController.m; sourceTree = "<group>"; };
+		ADE06F9A20E3A0510067C9A9 /* MSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomeViewController.h; sourceTree = "<group>"; };
+		ADE06F9D20E3A0510067C9A9 /* MSHomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomModel.h; sourceTree = "<group>"; };
+		ADE06F9E20E3A0510067C9A9 /* MSHomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomModel.m; sourceTree = "<group>"; };
 		AF421B4A20E3751E00A300BA /* MSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeModel.h; sourceTree = "<group>"; };
 		AF421B4B20E3751E00A300BA /* MSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeModel.m; sourceTree = "<group>"; };
 		AF421B4D20E3762600A300BA /* MSMciModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMciModel.h; sourceTree = "<group>"; };
@@ -834,12 +861,12 @@
 		AD624D3720E087270095F0E9 /* MSPayThrough */ = {
 			isa = PBXGroup;
 			children = (
+				ADE06F7B20E3A0510067C9A9 /* MSHome */,
 				AF61854620E25BFB00791FF0 /* MSForgetPwd */,
 				AF61853D20E2561400791FF0 /* MSRegister */,
 				AD62503520E0FF190095F0E9 /* BCLogin */,
 				AD62502020E09D100095F0E9 /* MSBill */,
 				AD62501E20E09D100095F0E9 /* MSMe */,
-				AD62501620E09C4D0095F0E9 /* MSHome */,
 				AD624EFB20E099FE0095F0E9 /* Other */,
 				AD624EEC20E096B80095F0E9 /* Main */,
 				AD624D6A20E091440095F0E9 /* Libs */,
@@ -1824,25 +1851,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		AD62501620E09C4D0095F0E9 /* MSHome */ = {
-			isa = PBXGroup;
-			children = (
-				ADEFE82C20E334C0006C0184 /* MSHomeModel */,
-				AD89ECD920E22A6C00AB38C2 /* MSHomeView */,
-				AD62501720E09C4D0095F0E9 /* MSHomeController */,
-			);
-			path = MSHome;
-			sourceTree = "<group>";
-		};
-		AD62501720E09C4D0095F0E9 /* MSHomeController */ = {
-			isa = PBXGroup;
-			children = (
-				AD62501820E09C860095F0E9 /* MSHomeViewController.h */,
-				AD62501920E09C860095F0E9 /* MSHomeViewController.m */,
-			);
-			path = MSHomeController;
-			sourceTree = "<group>";
-		};
 		AD62501E20E09D100095F0E9 /* MSMe */ = {
 			isa = PBXGroup;
 			children = (
@@ -1948,26 +1956,70 @@
 			path = BCLoginView;
 			sourceTree = "<group>";
 		};
-		AD89ECD920E22A6C00AB38C2 /* MSHomeView */ = {
+		ADE06F7B20E3A0510067C9A9 /* MSHome */ = {
 			isa = PBXGroup;
 			children = (
-				AD89ECDF20E22C4800AB38C2 /* ATHomeFavButton.h */,
-				AD89ECE020E22C4900AB38C2 /* ATHomeFavButton.m */,
-				AD89ECDA20E22A8E00AB38C2 /* MSHomeTopView.h */,
-				AD89ECDB20E22A8E00AB38C2 /* MSHomeTopView.m */,
-				AD89ECDD20E22A9800AB38C2 /* MSHomeTopView.xib */,
-				AD89ECE220E2382F00AB38C2 /* MSHomeTableViewCell.h */,
-				AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */,
-				AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */,
+				ADE06F7C20E3A0510067C9A9 /* MSHomeView */,
+				ADE06F9720E3A0510067C9A9 /* MSHomeController */,
+				ADE06F9C20E3A0510067C9A9 /* MSHomeModel */,
+			);
+			path = MSHome;
+			sourceTree = "<group>";
+		};
+		ADE06F7C20E3A0510067C9A9 /* MSHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				ADE06F7D20E3A0510067C9A9 /* MSCollectionViewFlowLayout.h */,
+				ADE06F7E20E3A0510067C9A9 /* MSTopCollectionViewCell.h */,
+				ADE06F7F20E3A0510067C9A9 /* MSHomeTableViewCell.h */,
+				ADE06F8020E3A0510067C9A9 /* MSTopCollectionViewCell.xib */,
+				ADE06F8120E3A0510067C9A9 /* MSHomeTopView.h */,
+				ADE06F8220E3A0510067C9A9 /* MSHomeTableTopView.h */,
+				ADE06F8320E3A0510067C9A9 /* ATHomeFavButton.h */,
+				ADE06F8420E3A0510067C9A9 /* MSHomeTableViewCell.xib */,
+				ADE06F8520E3A0510067C9A9 /* MSCollectionViewFlowLayout.m */,
+				ADE06F8620E3A0510067C9A9 /* ZZCircleProgress */,
+				ADE06F9020E3A0510067C9A9 /* MSTopCollectionViewCell.m */,
+				ADE06F9120E3A0510067C9A9 /* MSHomeTopView.xib */,
+				ADE06F9220E3A0510067C9A9 /* MSHomeTableViewCell.m */,
+				ADE06F9320E3A0510067C9A9 /* MSHomeTableTopView.xib */,
+				ADE06F9420E3A0510067C9A9 /* ATHomeFavButton.m */,
+				ADE06F9520E3A0510067C9A9 /* MSHomeTableTopView.m */,
+				ADE06F9620E3A0510067C9A9 /* MSHomeTopView.m */,
 			);
 			path = MSHomeView;
 			sourceTree = "<group>";
 		};
-		ADEFE82C20E334C0006C0184 /* MSHomeModel */ = {
+		ADE06F8620E3A0510067C9A9 /* ZZCircleProgress */ = {
 			isa = PBXGroup;
 			children = (
-				ADEFE82D20E334C0006C0184 /* MSHomModel.h */,
-				ADEFE82E20E334C0006C0184 /* MSHomModel.m */,
+				ADE06F8720E3A0510067C9A9 /* ZZCACircleProgress.m */,
+				ADE06F8820E3A0510067C9A9 /* NSTimer+timerBlock.m */,
+				ADE06F8920E3A0510067C9A9 /* ZZCircleProgress.bundle */,
+				ADE06F8A20E3A0510067C9A9 /* ZZCircleProgress.h */,
+				ADE06F8B20E3A0510067C9A9 /* ZZCountingLabel.m */,
+				ADE06F8C20E3A0510067C9A9 /* NSTimer+timerBlock.h */,
+				ADE06F8D20E3A0510067C9A9 /* ZZCACircleProgress.h */,
+				ADE06F8E20E3A0510067C9A9 /* ZZCountingLabel.h */,
+				ADE06F8F20E3A0510067C9A9 /* ZZCircleProgress.m */,
+			);
+			path = ZZCircleProgress;
+			sourceTree = "<group>";
+		};
+		ADE06F9720E3A0510067C9A9 /* MSHomeController */ = {
+			isa = PBXGroup;
+			children = (
+				ADE06F9820E3A0510067C9A9 /* MSHomeViewController.m */,
+				ADE06F9A20E3A0510067C9A9 /* MSHomeViewController.h */,
+			);
+			path = MSHomeController;
+			sourceTree = "<group>";
+		};
+		ADE06F9C20E3A0510067C9A9 /* MSHomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADE06F9D20E3A0510067C9A9 /* MSHomModel.h */,
+				ADE06F9E20E3A0510067C9A9 /* MSHomModel.m */,
 			);
 			path = MSHomeModel;
 			sourceTree = "<group>";
@@ -2201,21 +2253,24 @@
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */,
+				ADE06FA820E3A0510067C9A9 /* MSHomeTopView.xib in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
 				AF421B5B20E3835900A300BA /* MSRateController.xib in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
-				AD89ECDE20E22A9800AB38C2 /* MSHomeTopView.xib in Resources */,
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
+				ADE06FA020E3A0510067C9A9 /* MSHomeTableViewCell.xib in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AF61854520E2563900791FF0 /* MSRegisterController.xib in Resources */,
 				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
+				ADE06FA420E3A0510067C9A9 /* ZZCircleProgress.bundle in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
-				AD89ECE620E2382F00AB38C2 /* MSHomeTableViewCell.xib in Resources */,
+				ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */,
+				ADE06FAA20E3A0510067C9A9 /* MSHomeTableTopView.xib in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2243,13 +2298,14 @@
 			files = (
 				AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */,
 				AD624F9420E099FF0095F0E9 /* YWRequestData.m in Sources */,
-				AD89ECDC20E22A8E00AB38C2 /* MSHomeTopView.m in Sources */,
 				AD624E7D20E091450095F0E9 /* MJExtensionConst.m in Sources */,
 				AD624FED20E09B020095F0E9 /* SDCycleScrollView.m in Sources */,
+				ADE06FA620E3A0510067C9A9 /* ZZCircleProgress.m in Sources */,
 				AD62504120E0FF190095F0E9 /* SALoginModel.m in Sources */,
 				AD624ED220E091460095F0E9 /* FLAnimatedImage.m in Sources */,
 				AD624F6920E099FF0095F0E9 /* NSDate+Category.m in Sources */,
 				AD624E8020E091460095F0E9 /* NSString+MJExtension.m in Sources */,
+				ADE06FAE20E3A0510067C9A9 /* MSHomeViewController.m in Sources */,
 				AD624FE520E09B020095F0E9 /* ImagePicker.m in Sources */,
 				AD624E7E20E091450095F0E9 /* NSObject+MJProperty.m in Sources */,
 				AD624EC820E091460095F0E9 /* FMDatabasePool.m in Sources */,
@@ -2263,6 +2319,7 @@
 				AD624FF520E09B020095F0E9 /* LKControllerTool.m in Sources */,
 				AD624EBF20E091460095F0E9 /* AFURLSessionManager.m in Sources */,
 				AD624E8320E091460095F0E9 /* UIScrollView+MJRefresh.m in Sources */,
+				ADE06FB020E3A0510067C9A9 /* MSHomModel.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
 				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
@@ -2277,6 +2334,7 @@
 				AD624EC720E091460095F0E9 /* FMDatabase.m in Sources */,
 				AD624EB320E091460095F0E9 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				AD624EDC20E091460095F0E9 /* SDAnimatedImageRep.m in Sources */,
+				ADE06FA720E3A0510067C9A9 /* MSTopCollectionViewCell.m in Sources */,
 				AD624EAF20E091460095F0E9 /* IQTextView.m in Sources */,
 				AD624FF020E09B020095F0E9 /* TADotView.m in Sources */,
 				AF421B7320E387C800A300BA /* MSBankController.m in Sources */,
@@ -2325,9 +2383,11 @@
 				AD624E9220E091460095F0E9 /* MJRefreshFooter.m in Sources */,
 				AF421B7920E3882700A300BA /* MSDepositCardController.m in Sources */,
 				AD624F8C20E099FF0095F0E9 /* UILabel+YBAttributeTextTapAction.m in Sources */,
+				ADE06FAD20E3A0510067C9A9 /* MSHomeTopView.m in Sources */,
 				AD624E8920E091460095F0E9 /* MJRefreshBackGifFooter.m in Sources */,
 				AD624EC920E091460095F0E9 /* FMResultSet.m in Sources */,
 				AD624EDA20E091460095F0E9 /* SDWebImageCoder.m in Sources */,
+				ADE06FA120E3A0510067C9A9 /* MSCollectionViewFlowLayout.m in Sources */,
 				AD624FF620E09B020095F0E9 /* UIView+GKExtension.m in Sources */,
 				AD624E8D20E091460095F0E9 /* MJRefreshAutoGifFooter.m in Sources */,
 				AD624F6C20E099FF0095F0E9 /* NSNumber+WHNumber.m in Sources */,
@@ -2341,7 +2401,6 @@
 				AD62500020E09B020095F0E9 /* YYLRefreshNoNetworkView.m in Sources */,
 				AD624F7E20E099FF0095F0E9 /* UIColor+WHColor.m in Sources */,
 				AF421B6C20E387AE00A300BA /* UIView+SGPagingView.m in Sources */,
-				ADEFE82F20E334C1006C0184 /* MSHomModel.m in Sources */,
 				AD624E9C20E091460095F0E9 /* NSArray+MASAdditions.m in Sources */,
 				AD624E7920E091450095F0E9 /* MJPropertyType.m in Sources */,
 				AD624F6E20E099FF0095F0E9 /* NSObject+WHObject.m in Sources */,
@@ -2354,12 +2413,16 @@
 				AD624F8620E099FF0095F0E9 /* NSDateFormatter+Category.m in Sources */,
 				AD624F8820E099FF0095F0E9 /* UIBarButtonItem+LFExtension.m in Sources */,
 				AD624FE620E09B020095F0E9 /* ATSkipTool.m in Sources */,
+				ADE06FA320E3A0510067C9A9 /* NSTimer+timerBlock.m in Sources */,
 				AD624F8920E099FF0095F0E9 /* NSFileManager+WHFileManager.m in Sources */,
 				AD624EB220E091460095F0E9 /* IQBarButtonItem.m in Sources */,
+				ADE06FA520E3A0510067C9A9 /* ZZCountingLabel.m in Sources */,
 				AD624F7920E099FF0095F0E9 /* UIImage+WHImage.m in Sources */,
 				AD624EC020E091460095F0E9 /* AFURLRequestSerialization.m in Sources */,
+				ADE06FA220E3A0510067C9A9 /* ZZCACircleProgress.m in Sources */,
 				AD624EFA20E096B80095F0E9 /* SATabBar.m in Sources */,
 				AD624EE620E091460095F0E9 /* UIView+WebCache.m in Sources */,
+				ADE06FAC20E3A0510067C9A9 /* MSHomeTableTopView.m in Sources */,
 				AD624FF320E09B020095F0E9 /* TAAbstractDotView.m in Sources */,
 				AD624E9E20E091460095F0E9 /* MASConstraint.m in Sources */,
 				AF421B7620E3880200A300BA /* MSCreditCardController.m in Sources */,
@@ -2385,6 +2448,7 @@
 				AD624F8720E099FF0095F0E9 /* UIBarButtonItem+Item.m in Sources */,
 				AD624FEA20E09B020095F0E9 /* LFAccountTool.m in Sources */,
 				AD624FFF20E09B020095F0E9 /* UIScrollView+Refresh.m in Sources */,
+				ADE06FA920E3A0510067C9A9 /* MSHomeTableViewCell.m in Sources */,
 				AD624EB420E091460095F0E9 /* IQPreviousNextView.m in Sources */,
 				AD624EBE20E091460095F0E9 /* AFHTTPSessionManager.m in Sources */,
 				AD624ED920E091460095F0E9 /* SDWebImagePrefetcher.m in Sources */,
@@ -2399,6 +2463,7 @@
 				AD624F7620E099FF0095F0E9 /* UIView+WHView.m in Sources */,
 				AD624F7D20E099FF0095F0E9 /* NSArray+decription.m in Sources */,
 				AD624F7B20E099FF0095F0E9 /* NSArray+WHArray.m in Sources */,
+				ADE06FAB20E3A0510067C9A9 /* ATHomeFavButton.m in Sources */,
 				AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */,
 				AD624EA020E091460095F0E9 /* MASViewAttribute.m in Sources */,
 				AD624FF120E09B020095F0E9 /* TAPageControl.m in Sources */,
@@ -2406,7 +2471,6 @@
 				AF61853620E22C3C00791FF0 /* MSSetController.m in Sources */,
 				AD624FEE20E09B020095F0E9 /* UIView+SDExtension.m in Sources */,
 				AD624E8620E091460095F0E9 /* UIScrollView+MJExtension.m in Sources */,
-				AD89ECE520E2382F00AB38C2 /* MSHomeTableViewCell.m in Sources */,
 				AD624E8A20E091460095F0E9 /* MJRefreshBackStateFooter.m in Sources */,
 				AF61852E20E2241C00791FF0 /* MSUserController.m in Sources */,
 				AD624E8C20E091460095F0E9 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -2415,7 +2479,6 @@
 				AD624E7A20E091450095F0E9 /* NSObject+MJKeyValue.m in Sources */,
 				AD624ED820E091460095F0E9 /* SDWebImageCompat.m in Sources */,
 				AD624ECC20E091460095F0E9 /* SDWebImageManager.m in Sources */,
-				AD62501A20E09C860095F0E9 /* MSHomeViewController.m in Sources */,
 				AD624EDB20E091460095F0E9 /* NSButton+WebCache.m in Sources */,
 				AD624EE220E091460095F0E9 /* NSImage+WebCache.m in Sources */,
 				AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */,
@@ -2428,7 +2491,6 @@
 				AD624E9120E091460095F0E9 /* MJRefreshGifHeader.m in Sources */,
 				AD624EE020E091460095F0E9 /* NSData+ImageContentType.m in Sources */,
 				AD624EF920E096B80095F0E9 /* SATabBarController.m in Sources */,
-				AD89ECE120E22C4900AB38C2 /* ATHomeFavButton.m in Sources */,
 				AD624EB120E091460095F0E9 /* IQTitleBarButtonItem.m in Sources */,
 				AD624ED120E091460095F0E9 /* FLAnimatedImageView+WebCache.m in Sources */,
 				AF421B7020E387AE00A300BA /* SGPageTitleViewConfigure.m in Sources */,

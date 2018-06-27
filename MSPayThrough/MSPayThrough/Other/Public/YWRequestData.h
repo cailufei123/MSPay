@@ -17,4 +17,6 @@
 + (void)userLoginDict:(NSDictionary *)dict success:(void (^) (id responseObj))sucess;
 // -还款计划---
 + (void)playRepaymentDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
+// -账单---
++ (void)billListDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
 @end

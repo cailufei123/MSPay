@@ -226,6 +226,7 @@
 		AD89ECE120E22C4900AB38C2 /* ATHomeFavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECE020E22C4900AB38C2 /* ATHomeFavButton.m */; };
 		AD89ECE520E2382F00AB38C2 /* MSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */; };
 		AD89ECE620E2382F00AB38C2 /* MSHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */; };
+		ADEFE82F20E334C1006C0184 /* MSHomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE82E20E334C0006C0184 /* MSHomModel.m */; };
 		AF61852220E2206C00791FF0 /* MSMesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852020E2206C00791FF0 /* MSMesController.m */; };
 		AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852120E2206C00791FF0 /* MSMesController.xib */; };
 		AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852420E2241A00791FF0 /* MSVerifyCardController.m */; };
@@ -696,6 +697,8 @@
 		AD89ECE220E2382F00AB38C2 /* MSHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHomeTableViewCell.h; sourceTree = "<group>"; };
 		AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHomeTableViewCell.m; sourceTree = "<group>"; };
 		AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSHomeTableViewCell.xib; sourceTree = "<group>"; };
+		ADEFE82D20E334C0006C0184 /* MSHomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomModel.h; sourceTree = "<group>"; };
+		ADEFE82E20E334C0006C0184 /* MSHomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomModel.m; sourceTree = "<group>"; };
 		AF61851F20E2206C00791FF0 /* MSMesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMesController.h; sourceTree = "<group>"; };
 		AF61852020E2206C00791FF0 /* MSMesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMesController.m; sourceTree = "<group>"; };
 		AF61852120E2206C00791FF0 /* MSMesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMesController.xib; sourceTree = "<group>"; };
@@ -1781,6 +1784,7 @@
 		AD62501620E09C4D0095F0E9 /* MSHome */ = {
 			isa = PBXGroup;
 			children = (
+				ADEFE82C20E334C0006C0184 /* MSHomeModel */,
 				AD89ECD920E22A6C00AB38C2 /* MSHomeView */,
 				AD62501720E09C4D0095F0E9 /* MSHomeController */,
 			);
@@ -1911,6 +1915,15 @@
 				AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */,
 			);
 			path = MSHomeView;
+			sourceTree = "<group>";
+		};
+		ADEFE82C20E334C0006C0184 /* MSHomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADEFE82D20E334C0006C0184 /* MSHomModel.h */,
+				ADEFE82E20E334C0006C0184 /* MSHomModel.m */,
+			);
+			path = MSHomeModel;
 			sourceTree = "<group>";
 		};
 		AF61853D20E2561400791FF0 /* MSRegister */ = {
@@ -2193,6 +2206,7 @@
 				AD624F7120E099FF0095F0E9 /* UILabel+WHLabel.m in Sources */,
 				AD62500020E09B020095F0E9 /* YYLRefreshNoNetworkView.m in Sources */,
 				AD624F7E20E099FF0095F0E9 /* UIColor+WHColor.m in Sources */,
+				ADEFE82F20E334C1006C0184 /* MSHomModel.m in Sources */,
 				AD624E9C20E091460095F0E9 /* NSArray+MASAdditions.m in Sources */,
 				AD624E7920E091450095F0E9 /* MJPropertyType.m in Sources */,
 				AD624F6E20E099FF0095F0E9 /* NSObject+WHObject.m in Sources */,

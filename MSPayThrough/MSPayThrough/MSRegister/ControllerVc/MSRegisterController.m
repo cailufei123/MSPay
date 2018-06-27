@@ -42,10 +42,30 @@
 
 //点击发送验证码按钮
 - (IBAction)clickCardBtn {
-    if ([self.phoneTF.text isMobileNumberClassification]) {
-        [MBProgressHUD showMessag:@"请输入正确的手机号" toView:self.view];
+    if (![self.phoneTF.text isMobileNumber]) {
+        [MBProgressHUD showError:@"请输入正确的手机号" toView:self.view];
+    }else{
+        //获取验证码
+        [self getCardData];
     }
     
+}
+
+//获取验证码
+- (void)getCardData{
+    NSMutableDictionary * dict = diction;
+    dict[@"mobile"] = self.phoneTF.text;
+    dict[@"vc_type"] = @(1);
+    dict[@"command"] = @"99001";
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+        NSLog(@"responseObj-%@",responseObj);
+        
+    } failure:^(NSError *error) {
+        //        [MBManager showBriefAlert:@"网络错误"];
+        [MBManager hideAlert];
+    }];
 }
 
 //点击注册按钮

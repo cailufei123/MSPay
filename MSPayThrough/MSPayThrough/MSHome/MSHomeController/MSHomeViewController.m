@@ -54,16 +54,14 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
     NSMutableDictionary * registUserDict =diction;
     registUserDict[@"qrp_status"] = @"0";
      registUserDict[@"size"] = @"20";
-    registUserDict[@"command"] = @"3004";
+//    registUserDict[@"command"] = @"3004";
      registUserDict[@"start"] = @"0";
-     
+   
     [YWRequestData playRepaymentDict:registUserDict success:^(id responseObj) {
         
     }];
     
 }
-
-
 -(void)loadMoreData{
     
 }

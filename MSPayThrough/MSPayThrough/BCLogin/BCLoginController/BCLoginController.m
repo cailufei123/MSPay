@@ -265,10 +265,8 @@
 }
 
 - (IBAction)registClick:(id)sender {
-  
 }
 - (IBAction)forgetPassCilck:(id)sender {
-   
 }
 
 @end

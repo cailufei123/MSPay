@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSMesController">
             <connections>
+                <outlet property="IDLabel" destination="wWe-MJ-YQq" id="wcX-Hp-l8r"/>
                 <outlet property="backImageView" destination="Tde-tC-4NF" id="59U-P9-dE3"/>
+                <outlet property="userNameLabel" destination="vlC-dD-GkY" id="7SL-gL-i5B"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

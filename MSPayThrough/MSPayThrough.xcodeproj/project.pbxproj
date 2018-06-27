@@ -227,6 +227,10 @@
 		AD89ECE520E2382F00AB38C2 /* MSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89ECE320E2382F00AB38C2 /* MSHomeTableViewCell.m */; };
 		AD89ECE620E2382F00AB38C2 /* MSHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */; };
 		ADEFE82F20E334C1006C0184 /* MSHomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE82E20E334C0006C0184 /* MSHomModel.m */; };
+		AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4B20E3751E00A300BA /* MSMeModel.m */; };
+		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
+		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
+		AF421B5520E376B800A300BA /* MSMrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5420E376B800A300BA /* MSMrcModel.m */; };
 		AF61852220E2206C00791FF0 /* MSMesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852020E2206C00791FF0 /* MSMesController.m */; };
 		AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852120E2206C00791FF0 /* MSMesController.xib */; };
 		AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852420E2241A00791FF0 /* MSVerifyCardController.m */; };
@@ -699,6 +703,14 @@
 		AD89ECE420E2382F00AB38C2 /* MSHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSHomeTableViewCell.xib; sourceTree = "<group>"; };
 		ADEFE82D20E334C0006C0184 /* MSHomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomModel.h; sourceTree = "<group>"; };
 		ADEFE82E20E334C0006C0184 /* MSHomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomModel.m; sourceTree = "<group>"; };
+		AF421B4A20E3751E00A300BA /* MSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeModel.h; sourceTree = "<group>"; };
+		AF421B4B20E3751E00A300BA /* MSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeModel.m; sourceTree = "<group>"; };
+		AF421B4D20E3762600A300BA /* MSMciModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMciModel.h; sourceTree = "<group>"; };
+		AF421B4E20E3762600A300BA /* MSMciModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMciModel.m; sourceTree = "<group>"; };
+		AF421B5020E3764500A300BA /* MSMbiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMbiModel.h; sourceTree = "<group>"; };
+		AF421B5120E3764500A300BA /* MSMbiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMbiModel.m; sourceTree = "<group>"; };
+		AF421B5320E376B800A300BA /* MSMrcModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMrcModel.h; sourceTree = "<group>"; };
+		AF421B5420E376B800A300BA /* MSMrcModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMrcModel.m; sourceTree = "<group>"; };
 		AF61851F20E2206C00791FF0 /* MSMesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMesController.h; sourceTree = "<group>"; };
 		AF61852020E2206C00791FF0 /* MSMesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMesController.m; sourceTree = "<group>"; };
 		AF61852120E2206C00791FF0 /* MSMesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMesController.xib; sourceTree = "<group>"; };
@@ -1803,6 +1815,7 @@
 		AD62501E20E09D100095F0E9 /* MSMe */ = {
 			isa = PBXGroup;
 			children = (
+				AF421B4920E373F500A300BA /* Model */,
 				AD62501F20E09D100095F0E9 /* MSMeController */,
 			);
 			path = MSMe;
@@ -1924,6 +1937,21 @@
 				ADEFE82E20E334C0006C0184 /* MSHomModel.m */,
 			);
 			path = MSHomeModel;
+			sourceTree = "<group>";
+		};
+		AF421B4920E373F500A300BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF421B4A20E3751E00A300BA /* MSMeModel.h */,
+				AF421B4B20E3751E00A300BA /* MSMeModel.m */,
+				AF421B4D20E3762600A300BA /* MSMciModel.h */,
+				AF421B4E20E3762600A300BA /* MSMciModel.m */,
+				AF421B5020E3764500A300BA /* MSMbiModel.h */,
+				AF421B5120E3764500A300BA /* MSMbiModel.m */,
+				AF421B5320E376B800A300BA /* MSMrcModel.h */,
+				AF421B5420E376B800A300BA /* MSMrcModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AF61853D20E2561400791FF0 /* MSRegister */ = {
@@ -2114,6 +2142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */,
 				AD624F9420E099FF0095F0E9 /* YWRequestData.m in Sources */,
 				AD89ECDC20E22A8E00AB38C2 /* MSHomeTopView.m in Sources */,
 				AD624E7D20E091450095F0E9 /* MJExtensionConst.m in Sources */,
@@ -2136,6 +2165,7 @@
 				AD624EBF20E091460095F0E9 /* AFURLSessionManager.m in Sources */,
 				AD624E8320E091460095F0E9 /* UIScrollView+MJRefresh.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
+				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
 				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
 				AD624F7220E099FF0095F0E9 /* UIView+CLFExtension.m in Sources */,
@@ -2158,6 +2188,7 @@
 				AD624F7820E099FF0095F0E9 /* UIBarButtonItem+WHBarButtonItem.m in Sources */,
 				AD624F8120E099FF0095F0E9 /* UINavigationController+WHNavigationController.m in Sources */,
 				AD624F7F20E099FF0095F0E9 /* UIButton+LWB.m in Sources */,
+				AF421B5520E376B800A300BA /* MSMrcModel.m in Sources */,
 				AD624E9620E091460095F0E9 /* MJRefreshComponent.m in Sources */,
 				AF61854D20E25C1400791FF0 /* MSFrogetPwdController.m in Sources */,
 				AD624F7420E099FF0095F0E9 /* NSDictionary+WHDictionary.m in Sources */,
@@ -2262,6 +2293,7 @@
 				AD624F7620E099FF0095F0E9 /* UIView+WHView.m in Sources */,
 				AD624F7D20E099FF0095F0E9 /* NSArray+decription.m in Sources */,
 				AD624F7B20E099FF0095F0E9 /* NSArray+WHArray.m in Sources */,
+				AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */,
 				AD624EA020E091460095F0E9 /* MASViewAttribute.m in Sources */,
 				AD624FF120E09B020095F0E9 /* TAPageControl.m in Sources */,
 				AD624E8B20E091460095F0E9 /* MJRefreshBackNormalFooter.m in Sources */,

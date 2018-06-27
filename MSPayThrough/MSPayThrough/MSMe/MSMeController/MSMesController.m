@@ -11,10 +11,15 @@
 #import "MSCardController.h"
 #import "MSSetController.h"
 #import "MSAboutController.h"
+#import "MSMeModel.h"
 
 @interface MSMesController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *IDLabel;
 
+//个人信息模型
+@property (nonatomic,strong) MSMeModel *meModel;
 @end
 
 @implementation MSMesController
@@ -27,13 +32,44 @@
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:NO];
     
-    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
    
     [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+    
+    //获取用户信息
+    [self loadUserInfo];
+    
 }
+
+- (void)loadUserInfo{
+    NSMutableDictionary * dict = diction;
+    dict[@"command"] = @"1003";
+    
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+        
+    } success:^(id responseObj) {
+        
+        LFLog(@"个人信息-%@",responseObj);
+        
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+           
+            self.meModel = [MSMeModel mj_objectWithKeyValues:responseObj[@"body"]];
+            
+            self.userNameLabel.text = self.meModel.mbi.mbi_name;
+            self.IDLabel.text = [NSString stringWithFormat:@"ID:%@",self.meModel.mbi.mbi_id];
+        }else{
+//            [MBManager showBriefAlert:@"绑定失败"];
+
+        }
+        
+    } failure:^(NSError *error) {
+        //        [MBManager showBriefAlert:@"网络错误"];
+        [MBManager hideAlert];
+    }];
+}
+
 
 //点击头像
 - (IBAction)clicTopBtn {

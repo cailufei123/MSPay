@@ -21,7 +21,11 @@
    
     self.navigationItem.title = @"身份认证";
     [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+    
+  
 }
+
+
 //点击防范身份证
 - (IBAction)clickIdentityCardBtn {
     MSVerifyCardController *verifyVc = [[MSVerifyCardController alloc] init];

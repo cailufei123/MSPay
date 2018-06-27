@@ -30,7 +30,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"用户信息";
-    NSLog(@"11");
+    
 }
 //点击身份证按钮
 - (IBAction)clicRenZhenBtn {

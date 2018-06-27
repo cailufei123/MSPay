@@ -71,17 +71,23 @@
     }
     
     NSMutableDictionary * dict = diction;
+    
     dict[@"mci_name"] = self.cardTF.text;
     dict[@"mci_id_card"] = self.cardNumTF.text;
     dict[@"mci_sign_org_name"] = self.bodyTF.text;
-    dict[@"mci_period"] = self.timeTF.text;
+    dict[@"mci_period_of_validity"] = self.timeTF.text;
     dict[@"command"] = @"1010";
+
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        LFLog(@"responseObj-%@",responseObj);
+//        LFLog(@"responseObj-%@",responseObj);
         
-        if (responseObj[@"body"]) {
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [MBManager showscuess:@"绑定成功"];
+            [self.navigationController popViewControllerAnimated:YES];
+        }else{
+            [MBManager showBriefAlert:@"绑定失败"];
             
         }
         

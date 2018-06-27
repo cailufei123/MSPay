@@ -231,6 +231,16 @@
 		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
 		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
 		AF421B5520E376B800A300BA /* MSMrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5420E376B800A300BA /* MSMrcModel.m */; };
+		AF421B5A20E3835900A300BA /* MSRateController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5820E3835900A300BA /* MSRateController.m */; };
+		AF421B5B20E3835900A300BA /* MSRateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF421B5920E3835900A300BA /* MSRateController.xib */; };
+		AF421B6C20E387AE00A300BA /* UIView+SGPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B6020E387AE00A300BA /* UIView+SGPagingView.m */; };
+		AF421B6D20E387AE00A300BA /* SGPageContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B6320E387AE00A300BA /* SGPageContentScrollView.m */; };
+		AF421B6E20E387AE00A300BA /* SGPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B6520E387AE00A300BA /* SGPageContentView.m */; };
+		AF421B6F20E387AE00A300BA /* SGPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B6820E387AE00A300BA /* SGPageTitleView.m */; };
+		AF421B7020E387AE00A300BA /* SGPageTitleViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B6A20E387AE00A300BA /* SGPageTitleViewConfigure.m */; };
+		AF421B7320E387C800A300BA /* MSBankController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B7220E387C800A300BA /* MSBankController.m */; };
+		AF421B7620E3880200A300BA /* MSCreditCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B7520E3880200A300BA /* MSCreditCardController.m */; };
+		AF421B7920E3882700A300BA /* MSDepositCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B7820E3882700A300BA /* MSDepositCardController.m */; };
 		AF61852220E2206C00791FF0 /* MSMesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852020E2206C00791FF0 /* MSMesController.m */; };
 		AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852120E2206C00791FF0 /* MSMesController.xib */; };
 		AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852420E2241A00791FF0 /* MSVerifyCardController.m */; };
@@ -711,6 +721,26 @@
 		AF421B5120E3764500A300BA /* MSMbiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMbiModel.m; sourceTree = "<group>"; };
 		AF421B5320E376B800A300BA /* MSMrcModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMrcModel.h; sourceTree = "<group>"; };
 		AF421B5420E376B800A300BA /* MSMrcModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMrcModel.m; sourceTree = "<group>"; };
+		AF421B5720E3835900A300BA /* MSRateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSRateController.h; sourceTree = "<group>"; };
+		AF421B5820E3835900A300BA /* MSRateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSRateController.m; sourceTree = "<group>"; };
+		AF421B5920E3835900A300BA /* MSRateController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSRateController.xib; sourceTree = "<group>"; };
+		AF421B5F20E387AE00A300BA /* UIView+SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SGPagingView.h"; sourceTree = "<group>"; };
+		AF421B6020E387AE00A300BA /* UIView+SGPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SGPagingView.m"; sourceTree = "<group>"; };
+		AF421B6220E387AE00A300BA /* SGPageContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageContentScrollView.h; sourceTree = "<group>"; };
+		AF421B6320E387AE00A300BA /* SGPageContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageContentScrollView.m; sourceTree = "<group>"; };
+		AF421B6420E387AE00A300BA /* SGPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageContentView.h; sourceTree = "<group>"; };
+		AF421B6520E387AE00A300BA /* SGPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageContentView.m; sourceTree = "<group>"; };
+		AF421B6720E387AE00A300BA /* SGPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageTitleView.h; sourceTree = "<group>"; };
+		AF421B6820E387AE00A300BA /* SGPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageTitleView.m; sourceTree = "<group>"; };
+		AF421B6920E387AE00A300BA /* SGPageTitleViewConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageTitleViewConfigure.h; sourceTree = "<group>"; };
+		AF421B6A20E387AE00A300BA /* SGPageTitleViewConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageTitleViewConfigure.m; sourceTree = "<group>"; };
+		AF421B6B20E387AE00A300BA /* SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPagingView.h; sourceTree = "<group>"; };
+		AF421B7120E387C800A300BA /* MSBankController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBankController.h; sourceTree = "<group>"; };
+		AF421B7220E387C800A300BA /* MSBankController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSBankController.m; sourceTree = "<group>"; };
+		AF421B7420E3880200A300BA /* MSCreditCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCreditCardController.h; sourceTree = "<group>"; };
+		AF421B7520E3880200A300BA /* MSCreditCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCreditCardController.m; sourceTree = "<group>"; };
+		AF421B7720E3882700A300BA /* MSDepositCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDepositCardController.h; sourceTree = "<group>"; };
+		AF421B7820E3882700A300BA /* MSDepositCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDepositCardController.m; sourceTree = "<group>"; };
 		AF61851F20E2206C00791FF0 /* MSMesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMesController.h; sourceTree = "<group>"; };
 		AF61852020E2206C00791FF0 /* MSMesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMesController.m; sourceTree = "<group>"; };
 		AF61852120E2206C00791FF0 /* MSMesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMesController.xib; sourceTree = "<group>"; };
@@ -843,6 +873,7 @@
 		AD624D6A20E091440095F0E9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				AF421B5D20E387AE00A300BA /* SGPagingView */,
 				AD624D6B20E091440095F0E9 /* MJExtension */,
 				AD624D8120E091440095F0E9 /* MJRefresh */,
 				AD624DB020E091440095F0E9 /* Masonry */,
@@ -1824,6 +1855,8 @@
 		AD62501F20E09D100095F0E9 /* MSMeController */ = {
 			isa = PBXGroup;
 			children = (
+				AF421B5C20E3857800A300BA /* MSBankVC */,
+				AF421B5620E3833000A300BA /* MSRateVC */,
 				AF61851F20E2206C00791FF0 /* MSMesController.h */,
 				AF61852020E2206C00791FF0 /* MSMesController.m */,
 				AF61852120E2206C00791FF0 /* MSMesController.xib */,
@@ -1952,6 +1985,71 @@
 				AF421B5420E376B800A300BA /* MSMrcModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AF421B5620E3833000A300BA /* MSRateVC */ = {
+			isa = PBXGroup;
+			children = (
+				AF421B5720E3835900A300BA /* MSRateController.h */,
+				AF421B5820E3835900A300BA /* MSRateController.m */,
+				AF421B5920E3835900A300BA /* MSRateController.xib */,
+			);
+			path = MSRateVC;
+			sourceTree = "<group>";
+		};
+		AF421B5C20E3857800A300BA /* MSBankVC */ = {
+			isa = PBXGroup;
+			children = (
+				AF421B7120E387C800A300BA /* MSBankController.h */,
+				AF421B7220E387C800A300BA /* MSBankController.m */,
+				AF421B7420E3880200A300BA /* MSCreditCardController.h */,
+				AF421B7520E3880200A300BA /* MSCreditCardController.m */,
+				AF421B7720E3882700A300BA /* MSDepositCardController.h */,
+				AF421B7820E3882700A300BA /* MSDepositCardController.m */,
+			);
+			path = MSBankVC;
+			sourceTree = "<group>";
+		};
+		AF421B5D20E387AE00A300BA /* SGPagingView */ = {
+			isa = PBXGroup;
+			children = (
+				AF421B5E20E387AE00A300BA /* Category */,
+				AF421B6120E387AE00A300BA /* SGPageContent */,
+				AF421B6620E387AE00A300BA /* SGPageTitle */,
+				AF421B6B20E387AE00A300BA /* SGPagingView.h */,
+			);
+			path = SGPagingView;
+			sourceTree = "<group>";
+		};
+		AF421B5E20E387AE00A300BA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AF421B5F20E387AE00A300BA /* UIView+SGPagingView.h */,
+				AF421B6020E387AE00A300BA /* UIView+SGPagingView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AF421B6120E387AE00A300BA /* SGPageContent */ = {
+			isa = PBXGroup;
+			children = (
+				AF421B6220E387AE00A300BA /* SGPageContentScrollView.h */,
+				AF421B6320E387AE00A300BA /* SGPageContentScrollView.m */,
+				AF421B6420E387AE00A300BA /* SGPageContentView.h */,
+				AF421B6520E387AE00A300BA /* SGPageContentView.m */,
+			);
+			path = SGPageContent;
+			sourceTree = "<group>";
+		};
+		AF421B6620E387AE00A300BA /* SGPageTitle */ = {
+			isa = PBXGroup;
+			children = (
+				AF421B6720E387AE00A300BA /* SGPageTitleView.h */,
+				AF421B6820E387AE00A300BA /* SGPageTitleView.m */,
+				AF421B6920E387AE00A300BA /* SGPageTitleViewConfigure.h */,
+				AF421B6A20E387AE00A300BA /* SGPageTitleViewConfigure.m */,
+			);
+			path = SGPageTitle;
 			sourceTree = "<group>";
 		};
 		AF61853D20E2561400791FF0 /* MSRegister */ = {
@@ -2104,6 +2202,7 @@
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
+				AF421B5B20E3835900A300BA /* MSRateController.xib in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
@@ -2168,6 +2267,8 @@
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
 				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
+				AF421B6D20E387AE00A300BA /* SGPageContentScrollView.m in Sources */,
+				AF421B6E20E387AE00A300BA /* SGPageContentView.m in Sources */,
 				AD624F7220E099FF0095F0E9 /* UIView+CLFExtension.m in Sources */,
 				AD624FEC20E09B020095F0E9 /* UITableView+Gzw.m in Sources */,
 				AD624E8E20E091460095F0E9 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -2178,6 +2279,7 @@
 				AD624EDC20E091460095F0E9 /* SDAnimatedImageRep.m in Sources */,
 				AD624EAF20E091460095F0E9 /* IQTextView.m in Sources */,
 				AD624FF020E09B020095F0E9 /* TADotView.m in Sources */,
+				AF421B7320E387C800A300BA /* MSBankController.m in Sources */,
 				AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */,
 				AD624E9320E091460095F0E9 /* MJRefreshHeader.m in Sources */,
 				AD624E9D20E091460095F0E9 /* View+MASAdditions.m in Sources */,
@@ -2221,6 +2323,7 @@
 				AD624FFC20E09B020095F0E9 /* DES3Util.m in Sources */,
 				AD624EC520E091460095F0E9 /* FMDatabaseQueue.m in Sources */,
 				AD624E9220E091460095F0E9 /* MJRefreshFooter.m in Sources */,
+				AF421B7920E3882700A300BA /* MSDepositCardController.m in Sources */,
 				AD624F8C20E099FF0095F0E9 /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				AD624E8920E091460095F0E9 /* MJRefreshBackGifFooter.m in Sources */,
 				AD624EC920E091460095F0E9 /* FMResultSet.m in Sources */,
@@ -2237,6 +2340,7 @@
 				AD624F7120E099FF0095F0E9 /* UILabel+WHLabel.m in Sources */,
 				AD62500020E09B020095F0E9 /* YYLRefreshNoNetworkView.m in Sources */,
 				AD624F7E20E099FF0095F0E9 /* UIColor+WHColor.m in Sources */,
+				AF421B6C20E387AE00A300BA /* UIView+SGPagingView.m in Sources */,
 				ADEFE82F20E334C1006C0184 /* MSHomModel.m in Sources */,
 				AD624E9C20E091460095F0E9 /* NSArray+MASAdditions.m in Sources */,
 				AD624E7920E091450095F0E9 /* MJPropertyType.m in Sources */,
@@ -2258,9 +2362,11 @@
 				AD624EE620E091460095F0E9 /* UIView+WebCache.m in Sources */,
 				AD624FF320E09B020095F0E9 /* TAAbstractDotView.m in Sources */,
 				AD624E9E20E091460095F0E9 /* MASConstraint.m in Sources */,
+				AF421B7620E3880200A300BA /* MSCreditCardController.m in Sources */,
 				AD624EE920E091460095F0E9 /* SDWebImageWebPCoder.m in Sources */,
 				AD624F8420E099FF0095F0E9 /* UIScrollView+WHScrollView.m in Sources */,
 				AD624EE420E091460095F0E9 /* SDImageCacheConfig.m in Sources */,
+				AF421B5A20E3835900A300BA /* MSRateController.m in Sources */,
 				AD624EB620E091460095F0E9 /* IQKeyboardManager.m in Sources */,
 				AD624F9620E099FF0095F0E9 /* AppDelegate.m in Sources */,
 				AF61852220E2206C00791FF0 /* MSMesController.m in Sources */,
@@ -2315,6 +2421,7 @@
 				AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */,
 				AD624F6B20E099FF0095F0E9 /* NSString+WHString.m in Sources */,
 				AD624EC320E091460095F0E9 /* MBProgressHUD.m in Sources */,
+				AF421B6F20E387AE00A300BA /* SGPageTitleView.m in Sources */,
 				AD624E9B20E091460095F0E9 /* MASLayoutConstraint.m in Sources */,
 				AD624ED020E091460095F0E9 /* SDWebImageCodersManager.m in Sources */,
 				AD624F8A20E099FF0095F0E9 /* NSTimer+WHTimer.m in Sources */,
@@ -2324,6 +2431,7 @@
 				AD89ECE120E22C4900AB38C2 /* ATHomeFavButton.m in Sources */,
 				AD624EB120E091460095F0E9 /* IQTitleBarButtonItem.m in Sources */,
 				AD624ED120E091460095F0E9 /* FLAnimatedImageView+WebCache.m in Sources */,
+				AF421B7020E387AE00A300BA /* SGPageTitleViewConfigure.m in Sources */,
 				AD624EF720E096B80095F0E9 /* SANavigationController.m in Sources */,
 				AD624F9520E099FF0095F0E9 /* SARefreshGifHeader.m in Sources */,
 				AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */,

@@ -12,6 +12,8 @@
 #import "MSSetController.h"
 #import "MSAboutController.h"
 #import "MSMeModel.h"
+#import "MSBankController.h"
+#import "MSRateController.h"
 
 @interface MSMesController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -25,12 +27,13 @@
 @implementation MSMesController
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
     
 }
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
     
 }
 - (void)viewDidLoad {
@@ -86,8 +89,10 @@
 //点击银行卡
 - (IBAction)clickBankBtn {
     
-    MSCardController *cardVc = [[MSCardController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
+//    MSCardController *cardVc = [[MSCardController alloc] init];
+//    [self.navigationController pushViewController:cardVc animated:YES];
+    MSBankController *bankVc = [[MSBankController alloc] init];
+    [self.navigationController pushViewController:bankVc animated:YES];
 }
 //点击公告
 - (IBAction)clickGongGaoBtn {

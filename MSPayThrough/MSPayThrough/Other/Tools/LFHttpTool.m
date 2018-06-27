@@ -83,7 +83,7 @@
     NSMutableDictionary * headDict = diction;
     
     NSMutableDictionary * dict = diction;
-    NSMutableArray * array = [NSMutableArray array];
+    
     
     
     headDict[@"version"] =   [LFHttpTool getAppVersion];
@@ -99,14 +99,14 @@
     //    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@",[params mj_JSONString],loginMerchant_key] toMD5];
     dict[@"head"] = headDict;
     dict[@"body"] = params;
-    headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@%@%@",@"0",@"pyMsM1KWivb2zNrd9PEIduGtzTau8VxT",@"200",loginMerchant_key] toMD5];
+    
     headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@", [[LFHttpTool stringWithDict:params] stringByReplacingOccurrencesOfString:@"," withString:@""],loginMerchant_key] toMD5];
     
     allDict[@"jsondata"] = [dict mj_JSONString];
     
-    
+    LFLog(@"%@",[NSString stringWithFormat:@"%@%@", [[LFHttpTool stringWithDict:params] stringByReplacingOccurrencesOfString:@"," withString:@""],loginMerchant_key]);
     [LFHttpTool stringWithDict:params];
-    NSString * stri = [array componentsJoinedByString:@""];
+    
     
     manager.securityPolicy =   [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     manager.securityPolicy.allowInvalidCertificates = YES;

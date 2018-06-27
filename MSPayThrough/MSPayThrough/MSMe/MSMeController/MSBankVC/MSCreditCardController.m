@@ -38,8 +38,9 @@
 }
 
 - (void)setUpView{
+    
     UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    addButton.frame = CGRectMake(45, LFscreenH - 20, LFscreenW - 90, 50);
+    addButton.frame = CGRectMake(45, LFscreenH - 20 - 50 , LFscreenW - 90, 50);
     [addButton gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 50) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     [self.view addSubview:addButton];
 }

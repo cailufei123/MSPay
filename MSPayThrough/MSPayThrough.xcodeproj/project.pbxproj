@@ -267,11 +267,15 @@
 		AF61854D20E25C1400791FF0 /* MSFrogetPwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61854B20E25C1400791FF0 /* MSFrogetPwdController.m */; };
 		AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */; };
 		AF61D9FC20E486F5008AD123 /* MSNticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61D9FB20E486F5008AD123 /* MSNticeController.m */; };
-		AF61DA0120E4888E008AD123 /* MSNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61D9FF20E4888E008AD123 /* MSNoticeCell.m */; };
-		AF61DA0220E4888F008AD123 /* MSNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA0020E4888E008AD123 /* MSNoticeCell.xib */; };
 		AF61DA0720E48FD1008AD123 /* MSShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA0520E48FD1008AD123 /* MSShareController.m */; };
 		AF61DA0820E48FD1008AD123 /* MSShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA0620E48FD1008AD123 /* MSShareController.xib */; };
 		AF61DA0B20E4B261008AD123 /* YCArchiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA0A20E4B260008AD123 /* YCArchiveTool.m */; };
+		AF61DA1920E4BBF1008AD123 /* MSCreditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA1020E4BBF0008AD123 /* MSCreditCell.m */; };
+		AF61DA1A20E4BBF1008AD123 /* MSCreditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA1120E4BBF0008AD123 /* MSCreditCell.xib */; };
+		AF61DA1B20E4BBF1008AD123 /* MSDepositCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA1320E4BBF0008AD123 /* MSDepositCell.m */; };
+		AF61DA1C20E4BBF1008AD123 /* MSDepositCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA1420E4BBF0008AD123 /* MSDepositCell.xib */; };
+		AF61DA1D20E4BBF1008AD123 /* MSNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA1720E4BBF0008AD123 /* MSNoticeCell.m */; };
+		AF61DA1E20E4BBF1008AD123 /* MSNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA1820E4BBF0008AD123 /* MSNoticeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -797,7 +801,6 @@
 		AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFrogetPwdController.xib; sourceTree = "<group>"; };
 		AF61D9FA20E486F5008AD123 /* MSNticeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSNticeController.h; sourceTree = "<group>"; };
 		AF61D9FB20E486F5008AD123 /* MSNticeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSNticeController.m; sourceTree = "<group>"; };
-		AF61D9FE20E4888E008AD123 /* MSNoticeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSNoticeCell.h; sourceTree = "<group>"; };
 		AF61D9FF20E4888E008AD123 /* MSNoticeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSNoticeCell.m; sourceTree = "<group>"; };
 		AF61DA0020E4888E008AD123 /* MSNoticeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSNoticeCell.xib; sourceTree = "<group>"; };
 		AF61DA0420E48FD1008AD123 /* MSShareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSShareController.h; sourceTree = "<group>"; };
@@ -805,6 +808,15 @@
 		AF61DA0620E48FD1008AD123 /* MSShareController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSShareController.xib; sourceTree = "<group>"; };
 		AF61DA0920E4B260008AD123 /* YCArchiveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCArchiveTool.h; sourceTree = "<group>"; };
 		AF61DA0A20E4B260008AD123 /* YCArchiveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCArchiveTool.m; sourceTree = "<group>"; };
+		AF61DA0F20E4BBF0008AD123 /* MSCreditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCreditCell.h; sourceTree = "<group>"; };
+		AF61DA1020E4BBF0008AD123 /* MSCreditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCreditCell.m; sourceTree = "<group>"; };
+		AF61DA1120E4BBF0008AD123 /* MSCreditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSCreditCell.xib; sourceTree = "<group>"; };
+		AF61DA1220E4BBF0008AD123 /* MSDepositCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDepositCell.h; sourceTree = "<group>"; };
+		AF61DA1320E4BBF0008AD123 /* MSDepositCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDepositCell.m; sourceTree = "<group>"; };
+		AF61DA1420E4BBF0008AD123 /* MSDepositCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSDepositCell.xib; sourceTree = "<group>"; };
+		AF61DA1620E4BBF0008AD123 /* MSNoticeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNoticeCell.h; sourceTree = "<group>"; };
+		AF61DA1720E4BBF0008AD123 /* MSNoticeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNoticeCell.m; sourceTree = "<group>"; };
+		AF61DA1820E4BBF0008AD123 /* MSNoticeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSNoticeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -858,6 +870,7 @@
 				AD624D5B20E0872B0095F0E9 /* MSPayThroughUITests */,
 				AD624D3620E087270095F0E9 /* Products */,
 				AD62502820E09F5B0095F0E9 /* Frameworks */,
+				AF61DA0C20E4BACF008AD123 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1869,6 +1882,7 @@
 		AD62501E20E09D100095F0E9 /* MSMe */ = {
 			isa = PBXGroup;
 			children = (
+				AF61DA0D20E4BBF0008AD123 /* View */,
 				AF421B4920E373F500A300BA /* Model */,
 				AD62501F20E09D100095F0E9 /* MSMeController */,
 			);
@@ -2111,31 +2125,6 @@
 			path = SGPageTitle;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		AF421B7A20E3AB1F00A300BA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AF61D9FD20E487AA008AD123 /* MSNoticeView */,
-				AF421B7B20E3AB1F00A300BA /* MSBankView */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		AF421B7B20E3AB1F00A300BA /* MSBankView */ = {
-			isa = PBXGroup;
-			children = (
-				AF421B7C20E3AB4F00A300BA /* MSCreditCell.h */,
-				AF421B7D20E3AB4F00A300BA /* MSCreditCell.m */,
-				AF421B7E20E3AB4F00A300BA /* MSCreditCell.xib */,
-				AF421B8120E3AB6400A300BA /* MSDepositCell.h */,
-				AF421B8220E3AB6400A300BA /* MSDepositCell.m */,
-				AF421B8320E3AB6400A300BA /* MSDepositCell.xib */,
-			);
-			path = MSBankView;
-			sourceTree = "<group>";
-		};
-=======
->>>>>>> 095a552bbe43ba21a02df4301046f49b7019c6fb
 		AF61853D20E2561400791FF0 /* MSRegister */ = {
 			isa = PBXGroup;
 			children = (
@@ -2181,16 +2170,6 @@
 			path = MSNoticeVc;
 			sourceTree = "<group>";
 		};
-		AF61D9FD20E487AA008AD123 /* MSNoticeView */ = {
-			isa = PBXGroup;
-			children = (
-				AF61D9FE20E4888E008AD123 /* MSNoticeCell.h */,
-				AF61D9FF20E4888E008AD123 /* MSNoticeCell.m */,
-				AF61DA0020E4888E008AD123 /* MSNoticeCell.xib */,
-			);
-			path = MSNoticeView;
-			sourceTree = "<group>";
-		};
 		AF61DA0320E48FB8008AD123 /* MSShareVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -2199,6 +2178,47 @@
 				AF61DA0620E48FD1008AD123 /* MSShareController.xib */,
 			);
 			path = MSShareVC;
+			sourceTree = "<group>";
+		};
+		AF61DA0C20E4BACF008AD123 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				AF61D9FF20E4888E008AD123 /* MSNoticeCell.m */,
+				AF61DA0020E4888E008AD123 /* MSNoticeCell.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		AF61DA0D20E4BBF0008AD123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DA0E20E4BBF0008AD123 /* MSBankView */,
+				AF61DA1520E4BBF0008AD123 /* MSNoticeView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF61DA0E20E4BBF0008AD123 /* MSBankView */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DA0F20E4BBF0008AD123 /* MSCreditCell.h */,
+				AF61DA1020E4BBF0008AD123 /* MSCreditCell.m */,
+				AF61DA1120E4BBF0008AD123 /* MSCreditCell.xib */,
+				AF61DA1220E4BBF0008AD123 /* MSDepositCell.h */,
+				AF61DA1320E4BBF0008AD123 /* MSDepositCell.m */,
+				AF61DA1420E4BBF0008AD123 /* MSDepositCell.xib */,
+			);
+			path = MSBankView;
+			sourceTree = "<group>";
+		};
+		AF61DA1520E4BBF0008AD123 /* MSNoticeView */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DA1620E4BBF0008AD123 /* MSNoticeCell.h */,
+				AF61DA1720E4BBF0008AD123 /* MSNoticeCell.m */,
+				AF61DA1820E4BBF0008AD123 /* MSNoticeCell.xib */,
+			);
+			path = MSNoticeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2306,6 +2326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD62504220E0FF190095F0E9 /* BCLoginController.xib in Resources */,
+				AF61DA1E20E4BBF1008AD123 /* MSNoticeCell.xib in Resources */,
 				AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */,
 				AF61853720E22C3C00791FF0 /* MSSetController.xib in Resources */,
 				ADE06FBE20E4B30A0067C9A9 /* MSDetailsTopView.xib in Resources */,
@@ -2323,13 +2344,14 @@
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
 				ADE06FA020E3A0510067C9A9 /* MSHomeTableViewCell.xib in Resources */,
+				AF61DA1A20E4BBF1008AD123 /* MSCreditCell.xib in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
-				AF61DA0220E4888F008AD123 /* MSNoticeCell.xib in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AF61854520E2563900791FF0 /* MSRegisterController.xib in Resources */,
 				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
+				AF61DA1C20E4BBF1008AD123 /* MSDepositCell.xib in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */,
 				AF61DA0820E48FD1008AD123 /* MSShareController.xib in Resources */,
@@ -2387,6 +2409,7 @@
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
 				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
+				AF61DA1920E4BBF1008AD123 /* MSCreditCell.m in Sources */,
 				AF421B6D20E387AE00A300BA /* SGPageContentScrollView.m in Sources */,
 				AF421B6E20E387AE00A300BA /* SGPageContentView.m in Sources */,
 				AD624F7220E099FF0095F0E9 /* UIView+CLFExtension.m in Sources */,
@@ -2442,7 +2465,6 @@
 				AD624F8220E099FF0095F0E9 /* UITableView+WHTableView.m in Sources */,
 				AD624EE320E091460095F0E9 /* SDWebImageGIFCoder.m in Sources */,
 				AD624EC120E091460095F0E9 /* AFNetworkReachabilityManager.m in Sources */,
-				AF61DA0120E4888E008AD123 /* MSNoticeCell.m in Sources */,
 				AD624E8120E091460095F0E9 /* MJPropertyKey.m in Sources */,
 				AD624FFC20E09B020095F0E9 /* DES3Util.m in Sources */,
 				AD624EC520E091460095F0E9 /* FMDatabaseQueue.m in Sources */,
@@ -2491,6 +2513,7 @@
 				AD624E9E20E091460095F0E9 /* MASConstraint.m in Sources */,
 				AF421B7620E3880200A300BA /* MSCreditCardController.m in Sources */,
 				AD624EE920E091460095F0E9 /* SDWebImageWebPCoder.m in Sources */,
+				AF61DA1B20E4BBF1008AD123 /* MSDepositCell.m in Sources */,
 				AD624F8420E099FF0095F0E9 /* UIScrollView+WHScrollView.m in Sources */,
 				AD624EE420E091460095F0E9 /* SDImageCacheConfig.m in Sources */,
 				AF421B5A20E3835900A300BA /* MSRateController.m in Sources */,
@@ -2552,6 +2575,7 @@
 				AF421B6F20E387AE00A300BA /* SGPageTitleView.m in Sources */,
 				AD624E9B20E091460095F0E9 /* MASLayoutConstraint.m in Sources */,
 				AD624ED020E091460095F0E9 /* SDWebImageCodersManager.m in Sources */,
+				AF61DA1D20E4BBF1008AD123 /* MSNoticeCell.m in Sources */,
 				AD624F8A20E099FF0095F0E9 /* NSTimer+WHTimer.m in Sources */,
 				AD624E9120E091460095F0E9 /* MJRefreshGifHeader.m in Sources */,
 				AD624EE020E091460095F0E9 /* NSData+ImageContentType.m in Sources */,

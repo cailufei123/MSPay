@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MSHomModel.h"
 @interface MSDetailsTopView : UIView
 +(instancetype)loadNameDetailsTopViewXib;
+@property(nonatomic,strong)  MSHomModel * homeModel ;
 @end

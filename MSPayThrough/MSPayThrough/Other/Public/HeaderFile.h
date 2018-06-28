@@ -72,5 +72,5 @@
 #import "DES3Util.h"
 #import "UILabel+YBAttributeTextTapAction.h"
 #import "NSString+WBStringExtension.h"
-
+#import "YCArchiveTool.h"
 #endif /* HeaderFile_h */

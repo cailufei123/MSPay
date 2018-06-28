@@ -15,9 +15,27 @@
 @end
 
 @implementation MSDetalsViewController
+- (void)viewWillAppear:(BOOL)animated {
+    //去掉背景图片
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    //去掉底部线条
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+    
+}
 
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"millcolorGrad"] forBarMetrics:UIBarMetricsDefault];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"计划详情";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     
+     @{NSFontAttributeName:[UIFont boldSystemFontOfSize:17],
+       
+       NSForegroundColorAttributeName:naverTextColor}];
+    self.automaticallyAdjustsScrollViewInsets = NO;
       NSMutableDictionary * xiangQinDict =diction;
     xiangQinDict[@"command"] = @"3005";
      xiangQinDict[@"qrp_id"] = self.homeModel.qrp_id;
@@ -25,7 +43,12 @@
         self.datas = [MSHomModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"qrpd_list"]];
     }];
     self.detailsTopView = [MSDetailsTopView loadNameDetailsTopViewXib];
+    self.detailsTopView .clf_width = LFscreenW;
     [self.view addSubview: self.detailsTopView];
+    self.view.backgroundColor = [UIColor orangeColor];
+    self.detailsTopView.homeModel = self.homeModel;
+    
+  
 }
 
 

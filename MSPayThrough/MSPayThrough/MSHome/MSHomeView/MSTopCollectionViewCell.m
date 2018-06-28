@@ -7,17 +7,10 @@
 //
 
 #import "MSTopCollectionViewCell.h"
-#import "ZZCircleProgress.h"
-#import "ZZCACircleProgress.h"
+
 #import "ProgressView.h"
 @interface MSTopCollectionViewCell()
-{
-   
-    ZZCircleProgress *circle1;
-    ZZCircleProgress *circle2;
-    ZZCACircleProgress *circle3;
-    ZZCACircleProgress *circle4;
-}
+
 @property (weak, nonatomic) IBOutlet UILabel *huankuanLb;
 @property (weak, nonatomic) IBOutlet UILabel *cardLb;
 
@@ -33,13 +26,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-//    //无小圆点、同动画时间
-//    circle2 = [[ZZCircleProgress alloc] initWithFrame:CGRectMake(0, 0, 60, 60) pathBackColor:nil pathFillColor:[UIColor greenColor] startAngle:0 strokeWidth:5];
-//    circle2.clf_centerY = 30;
-//    circle2.showPoint = NO;
-//    circle2.animationModel = CircleIncreaseSameTime;
-//    circle2.progress = 0.6;
-//    [self.statusView addSubview:circle2];
+
     
     
    self.progressView = [ProgressView createProgressWithFrame:CGRectMake(0, 0, 60, 60) backColor:bagColor color:[SVGloble colorWithHexString:@"#69c30c"] proportion:0];

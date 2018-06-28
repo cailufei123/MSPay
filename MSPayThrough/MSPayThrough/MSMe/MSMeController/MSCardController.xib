@@ -13,6 +13,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSCardController">
             <connections>
                 <outlet property="backImageView" destination="MRp-Dy-gYx" id="ukd-aO-8Fy"/>
+                <outlet property="bankBtn" destination="4kT-PL-znZ" id="aNy-tZ-Tm2"/>
+                <outlet property="bankLabel" destination="Dhm-so-HJF" id="9yr-EP-wbj"/>
+                <outlet property="cardNumBtn" destination="DwA-od-GaF" id="ynp-U2-GCP"/>
+                <outlet property="cardNumLabel" destination="N8l-3K-cuF" id="THc-Ia-PN3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

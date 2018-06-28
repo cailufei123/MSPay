@@ -9,6 +9,7 @@
 #import "MSSetController.h"
 #import "MSAboutController.h"
 #import "MSCardController.h"
+#import "MSModifyController.h"
 
 @interface MSSetController ()
 @property (weak, nonatomic) IBOutlet UIButton *commteBtn;
@@ -26,8 +27,11 @@
 
 //点击修改密码
 - (IBAction)clickReviseBtn {
-    MSCardController *cardVc = [[MSCardController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
+//    MSCardController *cardVc = [[MSCardController alloc] init];
+//    [self.navigationController pushViewController:cardVc animated:YES];
+    
+    MSModifyController *modifyVc = [[MSModifyController alloc] init];
+    [self.navigationController pushViewController:modifyVc animated:YES];
 }
 //点击关于我们
 - (IBAction)clickAboutBtn {

@@ -8,9 +8,16 @@
 
 #import "MSCardController.h"
 #import "MSVerifyCardController.h"
+#import "YCArchiveTool.h"
 
 @interface MSCardController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
+//是否绑定身份证
+@property (weak, nonatomic) IBOutlet UILabel *cardNumLabel;
+//是否绑定银行卡
+@property (weak, nonatomic) IBOutlet UILabel *bankLabel;
+@property (weak, nonatomic) IBOutlet UIButton *cardNumBtn;
+@property (weak, nonatomic) IBOutlet UIButton *bankBtn;
 
 @end
 
@@ -22,6 +29,13 @@
     self.navigationItem.title = @"身份认证";
     [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        self.cardNumLabel.text = @"已认证";
+        self.cardNumBtn.enabled = NO;
+    }else{
+        self.cardNumLabel.text = @"未认证";
+        self.cardNumBtn.enabled = YES;
+    }
   
 }
 

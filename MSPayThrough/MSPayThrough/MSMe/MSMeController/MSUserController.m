@@ -31,6 +31,10 @@
     
     self.navigationItem.title = @"用户信息";
     
+    self.vipTypeLabel.text = @"大众会员";
+//    if ([]) {
+//        <#statements#>
+//    }
 }
 //点击身份证按钮
 - (IBAction)clicRenZhenBtn {

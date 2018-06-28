@@ -64,7 +64,7 @@
             self.meModel = [MSMeModel mj_objectWithKeyValues:responseObj[@"body"]];
             [YCArchiveTool saveMeModel:self.meModel];
             
-            self.userNameLabel.text = self.meModel.mbi.mbi_name;
+            self.userNameLabel.text = self.meModel.mci.mci_name;
             self.IDLabel.text = [NSString stringWithFormat:@"ID:%@",self.meModel.mbi.mbi_id];
             
             
@@ -82,9 +82,14 @@
 
 //点击头像
 - (IBAction)clicTopBtn {
-    
-    MSCardController *cardVc = [[MSCardController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSUserController *userVC = [[MSUserController alloc] init];
+        [self.navigationController pushViewController:userVC animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
+   
 }
 //点击费率
 - (IBAction)clickFeiLvBtn {

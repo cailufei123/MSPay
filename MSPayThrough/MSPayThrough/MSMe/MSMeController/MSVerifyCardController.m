@@ -56,10 +56,10 @@
         return;
     }
     
-//    if (![NSString accurateVerifyIDCardNumber:self.cardNumTF.text]) {
-//        [MBManager showBriefAlert:@"请输入正确的身份证号"];
-//        return;
-//    }
+    if (![NSString accurateVerifyIDCardNumber:self.cardNumTF.text]) {
+        [MBManager showBriefAlert:@"请输入正确的身份证号"];
+        return;
+    }
     
     if (self.bodyTF.text.length == 0) {
         [MBManager showBriefAlert:@"请输入签发机关"];

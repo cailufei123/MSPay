@@ -25,12 +25,14 @@
    
 }
 
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @property (weak, nonatomic) IBOutlet UIView *nitView;
 
 @property (weak, nonatomic) IBOutlet UIView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *controlView;
 @property (strong, nonatomic)  UICollectionView *collectionView;
+@property (strong, nonatomic)  NSMutableArray * titles;
 @end
 static NSString * const cellid = @"MSTopCollectionViewCell";
 @implementation MSHomeTableTopView
@@ -40,8 +42,23 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
     [self creaveHorseRaceLamp];
       [self setCreatCollection];
    
-    
+    self.pageControl.currentPageIndicatorTintColor = [UIColor redColor];
+    self.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
    
+}
+-(NSMutableArray *)titles{
+    if (!_titles) {
+        _titles = [NSMutableArray array];
+    }
+    return _titles;
+}
+-(void)setArrar:(NSMutableArray *)arrar{
+    [self.titles removeAllObjects];
+
+    for (GongGaoModel * gongGaoModel in arrar) {
+        [self.titles addObject:gongGaoModel.cn_content];
+    }
+    _verticalMarquee.sourceArray = self.titles;
 }
 /** 添加上下滚动的跑马灯 */
 -(void)creaveHorseRaceLamp{
@@ -60,7 +77,7 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
                                         @"3. 谁又从谁的雨季里消失，泛滥了眼泪",
                                         @"4. 人生路，路迢迢，谁道自古英雄多寂寥，若一朝，看透了，一身清风挣多少"
                                         ];
-        _verticalMarquee.sourceArray = soureArray;
+    
     NSString *str = @"谁曾在谁的花季里停留，温暖了想念";
     // 创建NSMutableAttributedString
     NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc]initWithString:str];
@@ -140,5 +157,13 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
   
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat offsetX =  scrollView.contentOffset.x;
+//     _oldPoint = scrollView.contentOffset.x;
+//    self.collectionView.userInteractionEnabled = NO;
+//    if (!self._playRepayments.count) return; // 解决清除timer时偶尔会出现的问题
+    self.pageControl.currentPage = offsetX/LFscreenW;
 }
 @end

@@ -80,6 +80,13 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
     }];
+    NSMutableDictionary * gongGaoDict =diction;
+    gongGaoDict[@"command"] = @"99007";
+    [YWRequestData gongGaoDict:gongGaoDict success:^(id responseObj) {
+        NSMutableArray * arrar = [GongGaoModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"cn_list"]];
+        self.homeTableTopView.arrar = arrar;
+    }];
+    
     
 }
 -(void)loadMoreData{

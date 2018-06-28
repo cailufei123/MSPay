@@ -30,7 +30,7 @@
 -(void)setListModel:(MSHomListModel *)listModel{
     self.timeLb.text = listModel.tm_trade_time;
      self.billLb.text = listModel.tm_serial_no;
-      self.moneyLb.text = listModel.tm_transaction_money;
+     self.moneyLb.text = [NSString stringWithFormat:@"%0.1f",[listModel.tm_transaction_money doubleValue]*0.01];
      self.cardLb.text = [self numberSuitScanf:listModel.tm_card_no];
   
 }

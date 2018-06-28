@@ -15,4 +15,7 @@
 @implementation MSHomListModel
 
 @end
+@implementation GongGaoModel
+
+@end
 

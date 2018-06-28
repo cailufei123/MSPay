@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MSCollectionViewFlowLayout : UICollectionViewFlowLayout
-
+@property (nonatomic,assign) BOOL isZoom;
 @end

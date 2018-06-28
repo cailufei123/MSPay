@@ -7,8 +7,9 @@
 //
 
 #import "MSCreditCardController.h"
+#import "MSCreditCell.h"
 
-@interface MSCreditCardController ()<UITableViewDelegate,UITableViewDataSource>
+@interface MSCreditCardController ()<UITableViewDelegate,UITableViewDataSource,MSCreditCellDelegate>
 @property (nonatomic,weak) UITableView *tableView;
 @end
 
@@ -25,12 +26,12 @@
 }
 
 - (void)setUpTableView{
-    CGFloat tableViewH = LFscreenH - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT - 44;
+    CGFloat tableViewH = LFscreenH - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT - 44 - 50;
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, LFscreenW, tableViewH) style:UITableViewStylePlain];
     tableView.backgroundColor = [UIColor clearColor];
     tableView.dataSource = self;
     tableView.delegate = self;
-    tableView.rowHeight = 200;
+    tableView.rowHeight = 150;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:tableView];
@@ -110,16 +111,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ID"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ID"];
-    }
+    MSCreditCell *creditCell = [MSCreditCell creditCell];
+    creditCell.delegate = self;
     
-    cell.textLabel.text = @"1";
-    
-    return cell;
+    return creditCell;
     
 }
-
+#pragma mark - MSCreditCellDelegate
+- (void)clickDeleteButton:(MSCreditCell *)creditCell{
+    LFLog(@"点击删除按钮");
+}
 
 @end

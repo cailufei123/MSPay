@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MSMbiModel : NSObject
+@interface MSMbiModel : NSObject<NSCoding>
 
 @property (nonatomic,copy) NSString *mbi_business_licence;
 @property (nonatomic,copy) NSString *mbi_vip_level;

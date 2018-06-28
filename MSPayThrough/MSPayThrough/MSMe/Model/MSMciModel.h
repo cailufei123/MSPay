@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MSMciModel : NSObject
+@interface MSMciModel : NSObject<NSCoding>
 @property (nonatomic,copy) NSString *mci_salt;
 @property (nonatomic,copy) NSString *version;
 @property (nonatomic,copy) NSString *mbi_id;

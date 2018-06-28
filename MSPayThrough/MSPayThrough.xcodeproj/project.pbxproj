@@ -271,6 +271,12 @@
 		AF61854520E2563900791FF0 /* MSRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61854320E2563900791FF0 /* MSRegisterController.xib */; };
 		AF61854D20E25C1400791FF0 /* MSFrogetPwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61854B20E25C1400791FF0 /* MSFrogetPwdController.m */; };
 		AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */; };
+		AF61D9FC20E486F5008AD123 /* MSNticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61D9FB20E486F5008AD123 /* MSNticeController.m */; };
+		AF61DA0120E4888E008AD123 /* MSNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61D9FF20E4888E008AD123 /* MSNoticeCell.m */; };
+		AF61DA0220E4888F008AD123 /* MSNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA0020E4888E008AD123 /* MSNoticeCell.xib */; };
+		AF61DA0720E48FD1008AD123 /* MSShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA0520E48FD1008AD123 /* MSShareController.m */; };
+		AF61DA0820E48FD1008AD123 /* MSShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA0620E48FD1008AD123 /* MSShareController.xib */; };
+		AF61DA0B20E4B261008AD123 /* YCArchiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA0A20E4B260008AD123 /* YCArchiveTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -802,6 +808,16 @@
 		AF61854A20E25C1400791FF0 /* MSFrogetPwdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFrogetPwdController.h; sourceTree = "<group>"; };
 		AF61854B20E25C1400791FF0 /* MSFrogetPwdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFrogetPwdController.m; sourceTree = "<group>"; };
 		AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFrogetPwdController.xib; sourceTree = "<group>"; };
+		AF61D9FA20E486F5008AD123 /* MSNticeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSNticeController.h; sourceTree = "<group>"; };
+		AF61D9FB20E486F5008AD123 /* MSNticeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSNticeController.m; sourceTree = "<group>"; };
+		AF61D9FE20E4888E008AD123 /* MSNoticeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSNoticeCell.h; sourceTree = "<group>"; };
+		AF61D9FF20E4888E008AD123 /* MSNoticeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSNoticeCell.m; sourceTree = "<group>"; };
+		AF61DA0020E4888E008AD123 /* MSNoticeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSNoticeCell.xib; sourceTree = "<group>"; };
+		AF61DA0420E48FD1008AD123 /* MSShareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSShareController.h; sourceTree = "<group>"; };
+		AF61DA0520E48FD1008AD123 /* MSShareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSShareController.m; sourceTree = "<group>"; };
+		AF61DA0620E48FD1008AD123 /* MSShareController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSShareController.xib; sourceTree = "<group>"; };
+		AF61DA0920E4B260008AD123 /* YCArchiveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCArchiveTool.h; sourceTree = "<group>"; };
+		AF61DA0A20E4B260008AD123 /* YCArchiveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCArchiveTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1684,6 +1700,8 @@
 		AD624F9720E09B010095F0E9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AF61DA0920E4B260008AD123 /* YCArchiveTool.h */,
+				AF61DA0A20E4B260008AD123 /* YCArchiveTool.m */,
 				AD624F9820E09B010095F0E9 /* DWImagePicker */,
 				AD624F9B20E09B010095F0E9 /* ATSkipTool.m */,
 				AD624F9E20E09B010095F0E9 /* MBManager.m */,
@@ -1874,6 +1892,8 @@
 		AD62501F20E09D100095F0E9 /* MSMeController */ = {
 			isa = PBXGroup;
 			children = (
+				AF61DA0320E48FB8008AD123 /* MSShareVC */,
+				AF61D9F920E48664008AD123 /* MSNoticeVc */,
 				AF421B5C20E3857800A300BA /* MSBankVC */,
 				AF421B5620E3833000A300BA /* MSRateVC */,
 				AF61851F20E2206C00791FF0 /* MSMesController.h */,
@@ -2118,6 +2138,7 @@
 		AF421B7A20E3AB1F00A300BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF61D9FD20E487AA008AD123 /* MSNoticeView */,
 				AF421B7B20E3AB1F00A300BA /* MSBankView */,
 			);
 			path = View;
@@ -2170,6 +2191,35 @@
 				AF61854C20E25C1400791FF0 /* MSFrogetPwdController.xib */,
 			);
 			path = ControllerVc;
+			sourceTree = "<group>";
+		};
+		AF61D9F920E48664008AD123 /* MSNoticeVc */ = {
+			isa = PBXGroup;
+			children = (
+				AF61D9FA20E486F5008AD123 /* MSNticeController.h */,
+				AF61D9FB20E486F5008AD123 /* MSNticeController.m */,
+			);
+			path = MSNoticeVc;
+			sourceTree = "<group>";
+		};
+		AF61D9FD20E487AA008AD123 /* MSNoticeView */ = {
+			isa = PBXGroup;
+			children = (
+				AF61D9FE20E4888E008AD123 /* MSNoticeCell.h */,
+				AF61D9FF20E4888E008AD123 /* MSNoticeCell.m */,
+				AF61DA0020E4888E008AD123 /* MSNoticeCell.xib */,
+			);
+			path = MSNoticeView;
+			sourceTree = "<group>";
+		};
+		AF61DA0320E48FB8008AD123 /* MSShareVC */ = {
+			isa = PBXGroup;
+			children = (
+				AF61DA0420E48FD1008AD123 /* MSShareController.h */,
+				AF61DA0520E48FD1008AD123 /* MSShareController.m */,
+				AF61DA0620E48FD1008AD123 /* MSShareController.xib */,
+			);
+			path = MSShareVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2295,6 +2345,7 @@
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
 				ADE06FA020E3A0510067C9A9 /* MSHomeTableViewCell.xib in Resources */,
 				AD624EA120E091460095F0E9 /* Info.plist in Resources */,
+				AF61DA0220E4888F008AD123 /* MSNoticeCell.xib in Resources */,
 				AD624EA920E091460095F0E9 /* UMSocialSDKResources.bundle in Resources */,
 				AF61854520E2563900791FF0 /* MSRegisterController.xib in Resources */,
 				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
@@ -2304,6 +2355,7 @@
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				AF421B8020E3AB4F00A300BA /* MSCreditCell.xib in Resources */,
 				ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */,
+				AF61DA0820E48FD1008AD123 /* MSShareController.xib in Resources */,
 				ADE06FAA20E3A0510067C9A9 /* MSHomeTableTopView.xib in Resources */,
 				AD624D4020E087270095F0E9 /* Main.storyboard in Resources */,
 			);
@@ -2388,6 +2440,7 @@
 				AF61854D20E25C1400791FF0 /* MSFrogetPwdController.m in Sources */,
 				AD624F7420E099FF0095F0E9 /* NSDictionary+WHDictionary.m in Sources */,
 				AD624EE820E091460095F0E9 /* UIButton+WebCache.m in Sources */,
+				AF61D9FC20E486F5008AD123 /* MSNticeController.m in Sources */,
 				AD624E7F20E091450095F0E9 /* NSObject+MJClass.m in Sources */,
 				AD624F9220E099FF0095F0E9 /* BCRequestData.m in Sources */,
 				AD624FF220E09B020095F0E9 /* TAAnimatedDotView.m in Sources */,
@@ -2399,6 +2452,7 @@
 				AD624E8720E091460095F0E9 /* NSBundle+MJRefresh.m in Sources */,
 				AD624EE520E091460095F0E9 /* UIView+WebCacheOperation.m in Sources */,
 				AD624EBB20E091460095F0E9 /* IQUIViewController+Additions.m in Sources */,
+				AF61DA0B20E4B261008AD123 /* YCArchiveTool.m in Sources */,
 				AD624FFA20E09B020095F0E9 /* NSString+NSReplace.m in Sources */,
 				AD624E9720E091460095F0E9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				AD624E7B20E091450095F0E9 /* MJProperty.m in Sources */,
@@ -2412,6 +2466,7 @@
 				AD624F8220E099FF0095F0E9 /* UITableView+WHTableView.m in Sources */,
 				AD624EE320E091460095F0E9 /* SDWebImageGIFCoder.m in Sources */,
 				AD624EC120E091460095F0E9 /* AFNetworkReachabilityManager.m in Sources */,
+				AF61DA0120E4888E008AD123 /* MSNoticeCell.m in Sources */,
 				AD624E8120E091460095F0E9 /* MJPropertyKey.m in Sources */,
 				AD624FFC20E09B020095F0E9 /* DES3Util.m in Sources */,
 				AD624EC520E091460095F0E9 /* FMDatabaseQueue.m in Sources */,
@@ -2539,6 +2594,7 @@
 				AD624ED420E091460095F0E9 /* SDWebImageDownloader.m in Sources */,
 				AD624FF720E09B020095F0E9 /* GKCover.m in Sources */,
 				AD624E8420E091460095F0E9 /* MJRefreshConst.m in Sources */,
+				AF61DA0720E48FD1008AD123 /* MSShareController.m in Sources */,
 				AD624EE120E091460095F0E9 /* UIImageView+WebCache.m in Sources */,
 				AD624EF820E096B80095F0E9 /* SALoginRegistNavController.m in Sources */,
 				AD624F6F20E099FF0095F0E9 /* Util.mm in Sources */,

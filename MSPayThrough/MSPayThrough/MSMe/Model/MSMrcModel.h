@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MSMrcModel : NSObject
+@interface MSMrcModel : NSObject<NSCoding>
 
 @property (nonatomic,copy) NSString *mrc_review_status;
 @property (nonatomic,copy) NSString *mrc_is_manual_review;

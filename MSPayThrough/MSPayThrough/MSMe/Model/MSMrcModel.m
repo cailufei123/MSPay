@@ -9,5 +9,5 @@
 #import "MSMrcModel.h"
 
 @implementation MSMrcModel
-
+MJExtensionCodingImplementation
 @end

@@ -10,4 +10,6 @@
 
 @implementation MSMeModel
 
+MJExtensionCodingImplementation
+
 @end

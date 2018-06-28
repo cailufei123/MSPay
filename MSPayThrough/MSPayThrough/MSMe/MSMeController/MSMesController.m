@@ -14,6 +14,8 @@
 #import "MSMeModel.h"
 #import "MSBankController.h"
 #import "MSRateController.h"
+#import "MSNticeController.h"
+#import "YCArchiveTool.h"
 
 @interface MSMesController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -59,9 +61,12 @@
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
            
             self.meModel = [MSMeModel mj_objectWithKeyValues:responseObj[@"body"]];
+            [YCArchiveTool saveMeModel:self.meModel];
             
             self.userNameLabel.text = self.meModel.mbi.mbi_name;
             self.IDLabel.text = [NSString stringWithFormat:@"ID:%@",self.meModel.mbi.mbi_id];
+            
+            
         }else{
 //            [MBManager showBriefAlert:@"绑定失败"];
 
@@ -97,8 +102,11 @@
 //点击公告
 - (IBAction)clickGongGaoBtn {
     
-    MSCardController *cardVc = [[MSCardController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
+//    MSCardController *cardVc = [[MSCardController alloc] init];
+//    [self.navigationController pushViewController:cardVc animated:YES];
+    
+    MSNticeController *noticeVc = [[MSNticeController alloc] init];
+    [self.navigationController pushViewController:noticeVc animated:YES];
 }
 //点击分享
 - (IBAction)clickShareBtn {
@@ -109,7 +117,10 @@
 //点击会员
 - (IBAction)clickVipBtn {
     
-    MSCardController *cardVc = [[MSCardController alloc] init];
+//    MSCardController *cardVc = [[MSCardController alloc] init];
+//    [self.navigationController pushViewController:cardVc animated:YES];
+    
+    MSUserController *cardVc = [[MSUserController alloc] init];
     [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击客服

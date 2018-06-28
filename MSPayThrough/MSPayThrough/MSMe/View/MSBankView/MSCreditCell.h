@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MSCreditCell;
+
+@protocol MSCreditCellDelegate<NSObject>
+
+- (void)clickDeleteButton:(MSCreditCell *)creditCell;
+
+@end
 
 @interface MSCreditCell : UITableViewCell
+
+@property (nonatomic,weak) id<MSCreditCellDelegate> delegate;
+
++ (instancetype)creditCell;
 
 @end

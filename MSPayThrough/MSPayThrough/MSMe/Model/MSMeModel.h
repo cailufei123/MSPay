@@ -11,7 +11,7 @@
 #import "MSMbiModel.h"
 #import "MSMrcModel.h"
 
-@interface MSMeModel : NSObject
+@interface MSMeModel : NSObject<NSCoding>
 @property (nonatomic,copy) NSString *random_str;
 @property (nonatomic,strong) MSMciModel *mci;
 @property (nonatomic,strong) MSMbiModel *mbi;

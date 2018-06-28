@@ -9,5 +9,5 @@
 #import "MSMciModel.h"
 
 @implementation MSMciModel
-
+MJExtensionCodingImplementation
 @end

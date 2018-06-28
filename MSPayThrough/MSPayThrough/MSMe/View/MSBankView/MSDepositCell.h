@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MSDepositCell;
+
+@protocol MSDepositCellDelegate<NSObject>
+
+- (void)clickDeleteButton:(MSDepositCell *)depositCell;
+
+@end
 
 @interface MSDepositCell : UITableViewCell
+
+@property (nonatomic,weak) id<MSDepositCellDelegate> delegate;
+
++ (instancetype)depositCell;
 
 @end

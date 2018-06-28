@@ -21,4 +21,5 @@
 + (void)billListDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
 // -账单-----
 + (void)gongGaoDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
++ (void)xiangQinDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
 @end

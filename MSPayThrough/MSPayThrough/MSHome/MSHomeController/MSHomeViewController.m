@@ -11,6 +11,7 @@
 #import "MSHomeTableViewCell.h"
 #import "MSHomeTableTopView.h"
 #import "MSHomModel.h"
+#import "MSDetalsViewController.h"
 @interface MSHomeViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,UISearchBarDelegate>
 @property(nonatomic,strong) MSHomeTopView * homeTopView;
 @property(nonatomic,strong)UITableView * tableView;
@@ -160,7 +161,8 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
    
-    
+    MSDetalsViewController * detal = [[MSDetalsViewController alloc] init];
+    [self.navigationController pushViewController:detal animated:YES];
 }
 
 

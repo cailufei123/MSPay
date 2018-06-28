@@ -70,3 +70,25 @@
 @property(nonatomic,strong)NSString * cn_create_time;
 @end
 
+@interface XiangQinModel : NSObject
+@property(nonatomic,strong)NSString * qrpd_team_no;//" = 101318051915267289359250,
+@property(nonatomic,strong)NSString * qrpd_serial_no;//" = 101318051915267289359250,
+@property(nonatomic,strong)NSString * qrpd_serial_no_bank;//" = 998737712321286146,
+@property(nonatomic,strong)NSString * version;//" = 4,
+@property(nonatomic,strong)NSString * mbi_id;//" = 300117,
+@property(nonatomic,strong)NSString * qrpd_credit_card_no;//" = 6225758308116622,
+@property(nonatomic,strong)NSString * qrpd_money;//" = 972786,
+@property(nonatomic,strong)NSString * qrpd_remark;//" = 000:交易成功,
+@property(nonatomic,strong)NSString * tcqr_id;//" = 100004,
+@property(nonatomic,strong)NSString * qrpd_create_time;//" = 2018-05-19 19:22:15,
+@property(nonatomic,strong)NSString * qrpd_update_time;//" = 2018-05-23 11:24:39,
+@property(nonatomic,strong)NSString * qrp_id;//" = 100051,
+@property(nonatomic,strong)NSString * qrpd_status;//" = 3,
+@property(nonatomic,strong)NSString * qrpd_credit_bank_no;//" = 308,
+@property(nonatomic,strong)NSString * mbi_code;//" = M1805154690350651855,
+@property(nonatomic,strong)NSString * qrpd_type;//" = 1,
+@property(nonatomic,strong)NSString * qrpd_execute_datetime;//" = 2018-05-22 09:29:00,
+@property(nonatomic,strong)NSString * qrpd_id;//" = 100727,
+@property(nonatomic,strong)NSString * qrpd_finish_datetime;//" = 2018-05-23 11:24:39,
+@end
+

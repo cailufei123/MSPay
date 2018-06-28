@@ -32,5 +32,23 @@
 +(instancetype)loadNameDetailsTopViewXib {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
 }
+-(void)setHomeModel:(MSHomModel *)homeModel{
+    self.huankuanLb.text = [NSString stringWithFormat:@"还款周期：%@",homeModel.qrp_plan_cycle] ;
+    self.IDNumberLb.text = homeModel.mbi_code;
+    self.cardLb.text = [self numberSuitScanf:homeModel.qrp_credit_card_no];
+    self.huankuanNumLb.text = [NSString stringWithFormat:@"%0.1f",[homeModel.qrp_repay_money_total doubleValue]*0.01];
+    self.huankuanCountLb.text = homeModel.qrp_repay_count;
+    self.liuMoneyLb.text = [NSString stringWithFormat:@"%0.2f",[homeModel.qrp_reserve_money doubleValue]*0.01];
+    self.shouxuMoneyLb.text =[NSString stringWithFormat:@"%0.2f",[homeModel.qrp_repay_money_fee_total doubleValue]*0.01 + [homeModel.qrp_repay_money_fee_pay_total doubleValue]*0.01*[homeModel.qrp_repay_count doubleValue]] ;
+   
+    
+}
+-(NSString *)numberSuitScanf:(NSString*)number{
+    
+    
+    NSString *numberString = [number stringByReplacingCharactersInRange:NSMakeRange(0, number.length-4) withString:@"**** **** **** "];
+    return numberString;
+    
+}
 
 @end

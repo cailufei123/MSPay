@@ -18,4 +18,7 @@
 @implementation GongGaoModel
 
 @end
+@implementation XiangQinModel
+
+@end
 

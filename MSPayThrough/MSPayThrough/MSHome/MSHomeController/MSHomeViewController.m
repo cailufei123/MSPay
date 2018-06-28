@@ -11,7 +11,7 @@
 #import "MSHomeTableViewCell.h"
 #import "MSHomeTableTopView.h"
 #import "MSHomModel.h"
-#import "MSDetalsViewController.h"
+
 @interface MSHomeViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,UISearchBarDelegate>
 @property(nonatomic,strong) MSHomeTopView * homeTopView;
 @property(nonatomic,strong)UITableView * tableView;
@@ -35,6 +35,7 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.homeTopView = [MSHomeTopView loadNameHomeTopViewXib];
+    
     self.homeTopView .frame = CGRectMake(0, 0, LFscreenW, 230+kStatusBarHeight);
     [self.view addSubview:self.homeTopView];
     self.view.backgroundColor = bagColor;
@@ -161,8 +162,7 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
    
-    MSDetalsViewController * detal = [[MSDetalsViewController alloc] init];
-    [self.navigationController pushViewController:detal animated:YES];
+  
 }
 
 

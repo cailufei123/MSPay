@@ -8,8 +8,10 @@
 
 #import "MSDetalsViewController.h"
 #import "MSDetailsTopView.h"
+#import "MSHomModel.h"
 @interface MSDetalsViewController ()
-
+@property(nonatomic,strong)NSMutableArray * datas;
+@property(nonatomic,strong)MSDetailsTopView * detailsTopView;
 @end
 
 @implementation MSDetalsViewController
@@ -20,8 +22,10 @@
     xiangQinDict[@"command"] = @"3005";
      xiangQinDict[@"qrp_id"] = self.homeModel.qrp_id;
     [YWRequestData xiangQinDict:xiangQinDict success:^(id responseObj) {
-        
+        self.datas = [MSHomModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"qrpd_list"]];
     }];
+    self.detailsTopView = [MSDetailsTopView loadNameDetailsTopViewXib];
+    [self.view addSubview: self.detailsTopView];
 }
 
 

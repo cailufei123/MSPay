@@ -12,4 +12,6 @@
 +(instancetype)loadNameHomeTableTopViewXib ;
 @property(nonatomic,strong)NSMutableArray * playRepayments;
 @property(nonatomic,strong) NSMutableArray * arrar;
+
+
 @end

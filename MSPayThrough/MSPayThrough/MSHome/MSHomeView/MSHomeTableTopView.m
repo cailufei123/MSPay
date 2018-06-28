@@ -12,7 +12,7 @@
 #import "MSTopCollectionViewCell.h"
 #import "MSCollectionViewFlowLayout.h"
 #import "MSHomModel.h"
-
+#import "MSDetalsViewController.h"
 @interface MSHomeTableTopView()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate>
 {
     // 水平滚动的跑马灯
@@ -156,8 +156,21 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-  
+      MSHomModel * homeModel = _playRepayments[indexPath.row];
+    MSDetalsViewController * detal = [[MSDetalsViewController alloc] init];
+    detal.homeModel = homeModel;
+    [[self viewController].navigationController pushViewController:detal animated:YES];
 }
+- (UIViewController *)viewController {
+    for (UIView* next = [self superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat offsetX =  scrollView.contentOffset.x;

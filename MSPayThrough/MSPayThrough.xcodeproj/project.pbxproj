@@ -276,6 +276,8 @@
 		AF61DA1C20E4BBF1008AD123 /* MSDepositCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA1420E4BBF0008AD123 /* MSDepositCell.xib */; };
 		AF61DA1D20E4BBF1008AD123 /* MSNoticeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA1720E4BBF0008AD123 /* MSNoticeCell.m */; };
 		AF61DA1E20E4BBF1008AD123 /* MSNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA1820E4BBF0008AD123 /* MSNoticeCell.xib */; };
+		AF61DA2220E4C113008AD123 /* MSModifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA2020E4C113008AD123 /* MSModifyController.m */; };
+		AF61DA2320E4C113008AD123 /* MSModifyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA2120E4C113008AD123 /* MSModifyController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -817,6 +819,9 @@
 		AF61DA1620E4BBF0008AD123 /* MSNoticeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNoticeCell.h; sourceTree = "<group>"; };
 		AF61DA1720E4BBF0008AD123 /* MSNoticeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNoticeCell.m; sourceTree = "<group>"; };
 		AF61DA1820E4BBF0008AD123 /* MSNoticeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSNoticeCell.xib; sourceTree = "<group>"; };
+		AF61DA1F20E4C113008AD123 /* MSModifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSModifyController.h; sourceTree = "<group>"; };
+		AF61DA2020E4C113008AD123 /* MSModifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSModifyController.m; sourceTree = "<group>"; };
+		AF61DA2120E4C113008AD123 /* MSModifyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSModifyController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1914,6 +1919,9 @@
 				AF61853820E2304700791FF0 /* MSAboutController.h */,
 				AF61853920E2304700791FF0 /* MSAboutController.m */,
 				AF61853A20E2304700791FF0 /* MSAboutController.xib */,
+				AF61DA1F20E4C113008AD123 /* MSModifyController.h */,
+				AF61DA2020E4C113008AD123 /* MSModifyController.m */,
+				AF61DA2120E4C113008AD123 /* MSModifyController.xib */,
 			);
 			path = MSMeController;
 			sourceTree = "<group>";
@@ -2334,6 +2342,7 @@
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
 				AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */,
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
+				AF61DA2320E4C113008AD123 /* MSModifyController.xib in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */,
 				ADE06FA820E3A0510067C9A9 /* MSHomeTopView.xib in Resources */,
@@ -2584,6 +2593,7 @@
 				AD624ED120E091460095F0E9 /* FLAnimatedImageView+WebCache.m in Sources */,
 				AF421B7020E387AE00A300BA /* SGPageTitleViewConfigure.m in Sources */,
 				AD624EF720E096B80095F0E9 /* SANavigationController.m in Sources */,
+				AF61DA2220E4C113008AD123 /* MSModifyController.m in Sources */,
 				AD624F9520E099FF0095F0E9 /* SARefreshGifHeader.m in Sources */,
 				AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */,
 				AD624E9520E091460095F0E9 /* MJRefreshAutoFooter.m in Sources */,

@@ -16,6 +16,7 @@
 #import "MSRateController.h"
 #import "MSNticeController.h"
 #import "YCArchiveTool.h"
+#import "MSAboutController.h"
 
 @interface MSMesController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -126,8 +127,11 @@
 //点击客服
 - (IBAction)clickKeFuBtn {
    
-    MSCardController *cardVc = [[MSCardController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
+//    MSCardController *cardVc = [[MSCardController alloc] init];
+//    [self.navigationController pushViewController:cardVc animated:YES];
+    
+    MSAboutController *aboutVc = [[MSAboutController alloc] init];
+    [self.navigationController pushViewController:aboutVc animated:YES];
 }
 //点击设置
 - (IBAction)clickSetBtn {

@@ -237,6 +237,8 @@
 		ADE06FAD20E3A0510067C9A9 /* MSHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9620E3A0510067C9A9 /* MSHomeTopView.m */; };
 		ADE06FAE20E3A0510067C9A9 /* MSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9820E3A0510067C9A9 /* MSHomeViewController.m */; };
 		ADE06FB020E3A0510067C9A9 /* MSHomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06F9E20E3A0510067C9A9 /* MSHomModel.m */; };
+		ADE06FB320E3BFC90067C9A9 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FB120E3BFC80067C9A9 /* ProgressView.m */; };
+		ADE06FB620E4875C0067C9A9 /* DCCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FB420E4875A0067C9A9 /* DCCycleScrollView.m */; };
 		AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4B20E3751E00A300BA /* MSMeModel.m */; };
 		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
 		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
@@ -251,10 +253,6 @@
 		AF421B7320E387C800A300BA /* MSBankController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B7220E387C800A300BA /* MSBankController.m */; };
 		AF421B7620E3880200A300BA /* MSCreditCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B7520E3880200A300BA /* MSCreditCardController.m */; };
 		AF421B7920E3882700A300BA /* MSDepositCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B7820E3882700A300BA /* MSDepositCardController.m */; };
-		AF421B7F20E3AB4F00A300BA /* MSCreditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B7D20E3AB4F00A300BA /* MSCreditCell.m */; };
-		AF421B8020E3AB4F00A300BA /* MSCreditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF421B7E20E3AB4F00A300BA /* MSCreditCell.xib */; };
-		AF421B8420E3AB6400A300BA /* MSDepositCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B8220E3AB6400A300BA /* MSDepositCell.m */; };
-		AF421B8520E3AB6400A300BA /* MSDepositCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF421B8320E3AB6400A300BA /* MSDepositCell.xib */; };
 		AF61852220E2206C00791FF0 /* MSMesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852020E2206C00791FF0 /* MSMesController.m */; };
 		AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61852120E2206C00791FF0 /* MSMesController.xib */; };
 		AF61852D20E2241C00791FF0 /* MSVerifyCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61852420E2241A00791FF0 /* MSVerifyCardController.m */; };
@@ -750,6 +748,10 @@
 		ADE06F9A20E3A0510067C9A9 /* MSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomeViewController.h; sourceTree = "<group>"; };
 		ADE06F9D20E3A0510067C9A9 /* MSHomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomModel.h; sourceTree = "<group>"; };
 		ADE06F9E20E3A0510067C9A9 /* MSHomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomModel.m; sourceTree = "<group>"; };
+		ADE06FB120E3BFC80067C9A9 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		ADE06FB220E3BFC90067C9A9 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		ADE06FB420E4875A0067C9A9 /* DCCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCycleScrollView.m; sourceTree = "<group>"; };
+		ADE06FB520E4875B0067C9A9 /* DCCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCycleScrollView.h; sourceTree = "<group>"; };
 		AF421B4A20E3751E00A300BA /* MSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeModel.h; sourceTree = "<group>"; };
 		AF421B4B20E3751E00A300BA /* MSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeModel.m; sourceTree = "<group>"; };
 		AF421B4D20E3762600A300BA /* MSMciModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMciModel.h; sourceTree = "<group>"; };
@@ -778,12 +780,6 @@
 		AF421B7520E3880200A300BA /* MSCreditCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCreditCardController.m; sourceTree = "<group>"; };
 		AF421B7720E3882700A300BA /* MSDepositCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDepositCardController.h; sourceTree = "<group>"; };
 		AF421B7820E3882700A300BA /* MSDepositCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDepositCardController.m; sourceTree = "<group>"; };
-		AF421B7C20E3AB4F00A300BA /* MSCreditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCreditCell.h; sourceTree = "<group>"; };
-		AF421B7D20E3AB4F00A300BA /* MSCreditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCreditCell.m; sourceTree = "<group>"; };
-		AF421B7E20E3AB4F00A300BA /* MSCreditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSCreditCell.xib; sourceTree = "<group>"; };
-		AF421B8120E3AB6400A300BA /* MSDepositCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDepositCell.h; sourceTree = "<group>"; };
-		AF421B8220E3AB6400A300BA /* MSDepositCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDepositCell.m; sourceTree = "<group>"; };
-		AF421B8320E3AB6400A300BA /* MSDepositCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSDepositCell.xib; sourceTree = "<group>"; };
 		AF61851F20E2206C00791FF0 /* MSMesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMesController.h; sourceTree = "<group>"; };
 		AF61852020E2206C00791FF0 /* MSMesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMesController.m; sourceTree = "<group>"; };
 		AF61852120E2206C00791FF0 /* MSMesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMesController.xib; sourceTree = "<group>"; };
@@ -1882,7 +1878,6 @@
 		AD62501E20E09D100095F0E9 /* MSMe */ = {
 			isa = PBXGroup;
 			children = (
-				AF421B7A20E3AB1F00A300BA /* View */,
 				AF421B4920E373F500A300BA /* Model */,
 				AD62501F20E09D100095F0E9 /* MSMeController */,
 			);
@@ -2000,6 +1995,10 @@
 		ADE06F7C20E3A0510067C9A9 /* MSHomeView */ = {
 			isa = PBXGroup;
 			children = (
+				ADE06FB520E4875B0067C9A9 /* DCCycleScrollView.h */,
+				ADE06FB420E4875A0067C9A9 /* DCCycleScrollView.m */,
+				ADE06FB220E3BFC90067C9A9 /* ProgressView.h */,
+				ADE06FB120E3BFC80067C9A9 /* ProgressView.m */,
 				ADE06F8620E3A0510067C9A9 /* ZZCircleProgress */,
 				ADE06F8320E3A0510067C9A9 /* ATHomeFavButton.h */,
 				ADE06F9420E3A0510067C9A9 /* ATHomeFavButton.m */,
@@ -2028,10 +2027,10 @@
 				ADE06F8820E3A0510067C9A9 /* NSTimer+timerBlock.m */,
 				ADE06F8920E3A0510067C9A9 /* ZZCircleProgress.bundle */,
 				ADE06F8A20E3A0510067C9A9 /* ZZCircleProgress.h */,
+				ADE06F8E20E3A0510067C9A9 /* ZZCountingLabel.h */,
 				ADE06F8B20E3A0510067C9A9 /* ZZCountingLabel.m */,
 				ADE06F8C20E3A0510067C9A9 /* NSTimer+timerBlock.h */,
 				ADE06F8D20E3A0510067C9A9 /* ZZCACircleProgress.h */,
-				ADE06F8E20E3A0510067C9A9 /* ZZCountingLabel.h */,
 				ADE06F8F20E3A0510067C9A9 /* ZZCircleProgress.m */,
 			);
 			path = ZZCircleProgress;
@@ -2040,8 +2039,8 @@
 		ADE06F9720E3A0510067C9A9 /* MSHomeController */ = {
 			isa = PBXGroup;
 			children = (
-				ADE06F9820E3A0510067C9A9 /* MSHomeViewController.m */,
 				ADE06F9A20E3A0510067C9A9 /* MSHomeViewController.h */,
+				ADE06F9820E3A0510067C9A9 /* MSHomeViewController.m */,
 			);
 			path = MSHomeController;
 			sourceTree = "<group>";
@@ -2135,6 +2134,7 @@
 			path = SGPageTitle;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		AF421B7A20E3AB1F00A300BA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -2157,6 +2157,8 @@
 			path = MSBankView;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 095a552bbe43ba21a02df4301046f49b7019c6fb
 		AF61853D20E2561400791FF0 /* MSRegister */ = {
 			isa = PBXGroup;
 			children = (
@@ -2338,7 +2340,6 @@
 				ADE06FA820E3A0510067C9A9 /* MSHomeTopView.xib in Resources */,
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
 				AF421B5B20E3835900A300BA /* MSRateController.xib in Resources */,
-				AF421B8520E3AB6400A300BA /* MSDepositCell.xib in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
@@ -2353,7 +2354,6 @@
 				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
 				ADE06FA420E3A0510067C9A9 /* ZZCircleProgress.bundle in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
-				AF421B8020E3AB4F00A300BA /* MSCreditCell.xib in Resources */,
 				ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */,
 				AF61DA0820E48FD1008AD123 /* MSShareController.xib in Resources */,
 				ADE06FAA20E3A0510067C9A9 /* MSHomeTableTopView.xib in Resources */,
@@ -2405,12 +2405,12 @@
 				AD624FF520E09B020095F0E9 /* LKControllerTool.m in Sources */,
 				AD624EBF20E091460095F0E9 /* AFURLSessionManager.m in Sources */,
 				AD624E8320E091460095F0E9 /* UIScrollView+MJRefresh.m in Sources */,
+				ADE06FB320E3BFC90067C9A9 /* ProgressView.m in Sources */,
 				ADE06FB020E3A0510067C9A9 /* MSHomModel.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
 				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
-				AF421B8420E3AB6400A300BA /* MSDepositCell.m in Sources */,
 				AF421B6D20E387AE00A300BA /* SGPageContentScrollView.m in Sources */,
 				AF421B6E20E387AE00A300BA /* SGPageContentView.m in Sources */,
 				AD624F7220E099FF0095F0E9 /* UIView+CLFExtension.m in Sources */,
@@ -2463,6 +2463,7 @@
 				AD624EC420E091460095F0E9 /* MBProgressHUD+Add.m in Sources */,
 				AD624F8D20E099FF0095F0E9 /* UIView+WBY.m in Sources */,
 				AD624FF920E09B020095F0E9 /* UIView+TXFrame.m in Sources */,
+				ADE06FB620E4875C0067C9A9 /* DCCycleScrollView.m in Sources */,
 				AD624F8220E099FF0095F0E9 /* UITableView+WHTableView.m in Sources */,
 				AD624EE320E091460095F0E9 /* SDWebImageGIFCoder.m in Sources */,
 				AD624EC120E091460095F0E9 /* AFNetworkReachabilityManager.m in Sources */,
@@ -2489,7 +2490,6 @@
 				AD624ECA20E091460095F0E9 /* UIImage+WebP.m in Sources */,
 				AD624F7120E099FF0095F0E9 /* UILabel+WHLabel.m in Sources */,
 				AD62500020E09B020095F0E9 /* YYLRefreshNoNetworkView.m in Sources */,
-				AF421B7F20E3AB4F00A300BA /* MSCreditCell.m in Sources */,
 				AD624F7E20E099FF0095F0E9 /* UIColor+WHColor.m in Sources */,
 				AF421B6C20E387AE00A300BA /* UIView+SGPagingView.m in Sources */,
 				AD624E9C20E091460095F0E9 /* NSArray+MASAdditions.m in Sources */,

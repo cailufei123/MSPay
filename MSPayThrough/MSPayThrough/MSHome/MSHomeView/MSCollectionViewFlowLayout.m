@@ -18,7 +18,7 @@
         //同一行相邻两个cell的最小间距
         self.minimumInteritemSpacing = 0;
         //最小两行之间的间距
-        self.minimumLineSpacing = 10;
+        self.minimumLineSpacing = 0;
     }
     return self;
 }

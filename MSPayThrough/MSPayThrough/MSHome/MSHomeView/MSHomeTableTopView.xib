@@ -87,7 +87,29 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nnf-2o-X7c">
                     <rect key="frame" x="0.0" y="240" width="304" height="47"/>
-                    <color key="backgroundColor" red="0.89539456409999996" green="0.64313725489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LTI-8g-fxA">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="47"/>
+                        </pageControl>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ece-Ux-5T2">
+                            <rect key="frame" x="0.0" y="42" width="304" height="5"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.90588235289999997" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="unq-zf-1wu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="LTI-8g-fxA" firstAttribute="leading" secondItem="Nnf-2o-X7c" secondAttribute="leading" id="9RH-pl-7Cm"/>
+                        <constraint firstAttribute="trailing" secondItem="ece-Ux-5T2" secondAttribute="trailing" id="A5a-NW-JJz"/>
+                        <constraint firstItem="ece-Ux-5T2" firstAttribute="leading" secondItem="Nnf-2o-X7c" secondAttribute="leading" id="FLY-zP-qLB"/>
+                        <constraint firstAttribute="bottom" secondItem="LTI-8g-fxA" secondAttribute="bottom" id="LpM-tM-42x"/>
+                        <constraint firstAttribute="bottom" secondItem="ece-Ux-5T2" secondAttribute="bottom" id="NLs-tX-kPI"/>
+                        <constraint firstItem="LTI-8g-fxA" firstAttribute="centerY" secondItem="Nnf-2o-X7c" secondAttribute="centerY" id="k6z-cj-ihK"/>
+                        <constraint firstItem="LTI-8g-fxA" firstAttribute="top" secondItem="Nnf-2o-X7c" secondAttribute="top" id="lgq-eP-Jhq"/>
+                        <constraint firstAttribute="trailing" secondItem="LTI-8g-fxA" secondAttribute="trailing" id="tnW-TX-dZe"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.8980392157" green="0.90588235289999997" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,6 +133,7 @@
             <connections>
                 <outlet property="controlView" destination="Nnf-2o-X7c" id="0Z2-yS-agj"/>
                 <outlet property="nitView" destination="pI7-HX-MK7" id="jhl-eN-dbw"/>
+                <outlet property="pageControl" destination="LTI-8g-fxA" id="j1e-K8-jg3"/>
                 <outlet property="scrollView" destination="lmZ-Rg-hQ1" id="zF2-Lv-Wbb"/>
             </connections>
             <point key="canvasLocation" x="-2" y="-32.5"/>

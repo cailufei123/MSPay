@@ -17,6 +17,7 @@
 #import "MSNticeController.h"
 #import "YCArchiveTool.h"
 #import "MSAboutController.h"
+#import "MSShareController.h"
 
 @interface MSMesController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -57,7 +58,7 @@
         
     } success:^(id responseObj) {
         
-        LFLog(@"个人信息-%@",responseObj);
+//        LFLog(@"个人信息-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
            
@@ -93,50 +94,73 @@
 }
 //点击费率
 - (IBAction)clickFeiLvBtn {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSRateController *rateVc = [[MSRateController alloc] init];
+        [self.navigationController pushViewController:rateVc animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
     
-    MSCardController *cardVc = [[MSCardController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
 }
 //点击银行卡
 - (IBAction)clickBankBtn {
     
-//    MSCardController *cardVc = [[MSCardController alloc] init];
-//    [self.navigationController pushViewController:cardVc animated:YES];
-    MSBankController *bankVc = [[MSBankController alloc] init];
-    [self.navigationController pushViewController:bankVc animated:YES];
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSBankController *bankVc = [[MSBankController alloc] init];
+        [self.navigationController pushViewController:bankVc animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
+   
 }
 //点击公告
 - (IBAction)clickGongGaoBtn {
     
-//    MSCardController *cardVc = [[MSCardController alloc] init];
-//    [self.navigationController pushViewController:cardVc animated:YES];
-    
-    MSNticeController *noticeVc = [[MSNticeController alloc] init];
-    [self.navigationController pushViewController:noticeVc animated:YES];
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSNticeController *noticeVc = [[MSNticeController alloc] init];
+        [self.navigationController pushViewController:noticeVc animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
+  
 }
 //点击分享
 - (IBAction)clickShareBtn {
-    
-    MSCardController *cardVc = [[MSCardController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSShareController *sharVc = [[MSShareController alloc] init];
+        [self.navigationController pushViewController:sharVc animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
+   
 }
 //点击会员
 - (IBAction)clickVipBtn {
     
-//    MSCardController *cardVc = [[MSCardController alloc] init];
-//    [self.navigationController pushViewController:cardVc animated:YES];
-    
-    MSUserController *cardVc = [[MSUserController alloc] init];
-    [self.navigationController pushViewController:cardVc animated:YES];
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSUserController *cardVc = [[MSUserController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
+  
 }
 //点击客服
 - (IBAction)clickKeFuBtn {
    
-//    MSCardController *cardVc = [[MSCardController alloc] init];
-//    [self.navigationController pushViewController:cardVc animated:YES];
-    
-    MSAboutController *aboutVc = [[MSAboutController alloc] init];
-    [self.navigationController pushViewController:aboutVc animated:YES];
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSAboutController *aboutVc = [[MSAboutController alloc] init];
+        [self.navigationController pushViewController:aboutVc animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
+   
 }
 //点击设置
 - (IBAction)clickSetBtn {

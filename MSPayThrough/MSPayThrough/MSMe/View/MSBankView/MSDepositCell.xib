@@ -19,6 +19,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncv-MF-ku2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkP-SL-3Sm" userLabel="contenView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
                         <subviews>
@@ -30,32 +34,32 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交通银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-t2-VQ4">
-                                <rect key="frame" x="65" y="25" width="69.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="65" y="25" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="****   ****   ****   8860" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqT-5f-sMa">
-                                <rect key="frame" x="65" y="61" width="153.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="65" y="61" width="180" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持卡人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6n-Nt-cbM">
-                                <rect key="frame" x="65" y="72.5" width="40" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="65" y="68.5" width="46" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李刚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-yz-4iB">
-                                <rect key="frame" x="65" y="93.5" width="27" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="65" y="91.5" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCj-e3-YEG">
-                                <rect key="frame" x="278" y="72.5" width="27" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="274" y="68.5" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -71,7 +75,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.24313725489999999" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="TCj-e3-YEG" secondAttribute="trailing" constant="15" id="1iQ-wZ-HEe"/>
                             <constraint firstItem="cL8-yz-4iB" firstAttribute="top" secondItem="a6n-Nt-cbM" secondAttribute="bottom" constant="5" id="4Zg-1Q-T3k"/>
@@ -92,9 +96,13 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="NkP-SL-3Sm" secondAttribute="trailing" id="01E-9r-Bdw"/>
+                    <constraint firstAttribute="bottom" secondItem="ncv-MF-ku2" secondAttribute="bottom" id="Bvw-kb-Y4X"/>
+                    <constraint firstItem="ncv-MF-ku2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W1u-8Y-089"/>
+                    <constraint firstItem="ncv-MF-ku2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WIn-0P-wwb"/>
                     <constraint firstItem="NkP-SL-3Sm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZAs-8g-X1P"/>
                     <constraint firstAttribute="bottom" secondItem="NkP-SL-3Sm" secondAttribute="bottom" id="dDK-Zh-UVi"/>
                     <constraint firstItem="NkP-SL-3Sm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iaN-bW-gQz"/>
+                    <constraint firstAttribute="trailing" secondItem="ncv-MF-ku2" secondAttribute="trailing" id="tJ3-Ld-Hym"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
@@ -105,6 +113,7 @@
                 <outlet property="bankNumLabel" destination="xqT-5f-sMa" id="0Tu-Xo-gBV"/>
                 <outlet property="bgView" destination="NkP-SL-3Sm" id="9jp-n0-Ev1"/>
                 <outlet property="userName" destination="cL8-yz-4iB" id="iq4-ab-TbO"/>
+                <outlet property="xuanRanVIew" destination="ncv-MF-ku2" id="Tx1-MI-vao"/>
             </connections>
             <point key="canvasLocation" x="25" y="14"/>
         </tableViewCell>

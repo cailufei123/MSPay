@@ -9,6 +9,19 @@
 #import "MSAddCreditCardController.h"
 
 @interface MSAddCreditCardController ()
+//用户
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+//身份证号
+@property (weak, nonatomic) IBOutlet UILabel *cardNumLabel;
+//卡号
+@property (weak, nonatomic) IBOutlet UITextField *bankNumTF;
+//发卡行
+@property (weak, nonatomic) IBOutlet UITextField *faBankNumTF;
+//卡正面
+@property (weak, nonatomic) IBOutlet UITextField *bankZhengTF;
+//卡末三位
+@property (weak, nonatomic) IBOutlet UITextField *bankLastTF;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 
 @end
 
@@ -22,5 +35,7 @@
     
 }
 
+- (IBAction)clickNextBtn {
+}
 
 @end

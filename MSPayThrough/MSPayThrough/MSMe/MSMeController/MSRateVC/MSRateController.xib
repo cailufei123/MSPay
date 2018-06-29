@@ -13,7 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSRateController">
             <connections>
                 <outlet property="backPayLabel" destination="yA9-Al-Mv3" id="Idh-v7-XWS"/>
-                <outlet property="jiFenLabel" destination="Az9-0b-KTP" id="G6q-PZ-HsE"/>
+                <outlet property="huanKuanLabel" destination="yA9-Al-Mv3" id="Ebp-wO-9Mk"/>
+                <outlet property="kuaiJieLabel" destination="IDy-oT-9z5" id="eyq-Jy-t01"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

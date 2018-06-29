@@ -278,6 +278,10 @@
 		AF61DA1E20E4BBF1008AD123 /* MSNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA1820E4BBF0008AD123 /* MSNoticeCell.xib */; };
 		AF61DA2220E4C113008AD123 /* MSModifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA2020E4C113008AD123 /* MSModifyController.m */; };
 		AF61DA2320E4C113008AD123 /* MSModifyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA2120E4C113008AD123 /* MSModifyController.xib */; };
+		AF61DA2720E4E9CF008AD123 /* MSAddCreditCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA2520E4E9CF008AD123 /* MSAddCreditCardController.m */; };
+		AF61DA2820E4E9CF008AD123 /* MSAddCreditCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA2620E4E9CF008AD123 /* MSAddCreditCardController.xib */; };
+		AF61DA2C20E4E9F3008AD123 /* MSAddDepositCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA2A20E4E9F3008AD123 /* MSAddDepositCardController.m */; };
+		AF61DA2D20E4E9F3008AD123 /* MSAddDepositCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA2B20E4E9F3008AD123 /* MSAddDepositCardController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -822,6 +826,12 @@
 		AF61DA1F20E4C113008AD123 /* MSModifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSModifyController.h; sourceTree = "<group>"; };
 		AF61DA2020E4C113008AD123 /* MSModifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSModifyController.m; sourceTree = "<group>"; };
 		AF61DA2120E4C113008AD123 /* MSModifyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSModifyController.xib; sourceTree = "<group>"; };
+		AF61DA2420E4E9CF008AD123 /* MSAddCreditCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAddCreditCardController.h; sourceTree = "<group>"; };
+		AF61DA2520E4E9CF008AD123 /* MSAddCreditCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAddCreditCardController.m; sourceTree = "<group>"; };
+		AF61DA2620E4E9CF008AD123 /* MSAddCreditCardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSAddCreditCardController.xib; sourceTree = "<group>"; };
+		AF61DA2920E4E9F3008AD123 /* MSAddDepositCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAddDepositCardController.h; sourceTree = "<group>"; };
+		AF61DA2A20E4E9F3008AD123 /* MSAddDepositCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAddDepositCardController.m; sourceTree = "<group>"; };
+		AF61DA2B20E4E9F3008AD123 /* MSAddDepositCardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSAddDepositCardController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2085,8 +2095,14 @@
 				AF421B7220E387C800A300BA /* MSBankController.m */,
 				AF421B7420E3880200A300BA /* MSCreditCardController.h */,
 				AF421B7520E3880200A300BA /* MSCreditCardController.m */,
+				AF61DA2420E4E9CF008AD123 /* MSAddCreditCardController.h */,
+				AF61DA2520E4E9CF008AD123 /* MSAddCreditCardController.m */,
+				AF61DA2620E4E9CF008AD123 /* MSAddCreditCardController.xib */,
 				AF421B7720E3882700A300BA /* MSDepositCardController.h */,
 				AF421B7820E3882700A300BA /* MSDepositCardController.m */,
+				AF61DA2920E4E9F3008AD123 /* MSAddDepositCardController.h */,
+				AF61DA2A20E4E9F3008AD123 /* MSAddDepositCardController.m */,
+				AF61DA2B20E4E9F3008AD123 /* MSAddDepositCardController.xib */,
 			);
 			path = MSBankVC;
 			sourceTree = "<group>";
@@ -2341,6 +2357,7 @@
 				AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */,
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
 				AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */,
+				AF61DA2D20E4E9F3008AD123 /* MSAddDepositCardController.xib in Resources */,
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
 				AF61DA2320E4C113008AD123 /* MSModifyController.xib in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
@@ -2349,6 +2366,7 @@
 				AD624EEB20E091460095F0E9 /* Info.plist in Resources */,
 				AF421B5B20E3835900A300BA /* MSRateController.xib in Resources */,
 				AD62501520E09C180095F0E9 /* Info.plist in Resources */,
+				AF61DA2820E4E9CF008AD123 /* MSAddCreditCardController.xib in Resources */,
 				AD62504420E0FF190095F0E9 /* BCCodeAlertView.xib in Resources */,
 				AD624E8520E091460095F0E9 /* MJRefresh.bundle in Resources */,
 				AD624EA320E091460095F0E9 /* UMCommonLog.bundle in Resources */,
@@ -2417,6 +2435,7 @@
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
 				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
+				AF61DA2720E4E9CF008AD123 /* MSAddCreditCardController.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
 				AF61DA1920E4BBF1008AD123 /* MSCreditCell.m in Sources */,
 				AF421B6D20E387AE00A300BA /* SGPageContentScrollView.m in Sources */,
@@ -2427,6 +2446,7 @@
 				AD624FEF20E09B020095F0E9 /* SDCollectionViewCell.m in Sources */,
 				AD624ED320E091460095F0E9 /* FLAnimatedImageView.m in Sources */,
 				AD624EC720E091460095F0E9 /* FMDatabase.m in Sources */,
+				AF61DA2C20E4E9F3008AD123 /* MSAddDepositCardController.m in Sources */,
 				AD624EB320E091460095F0E9 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				AD624EDC20E091460095F0E9 /* SDAnimatedImageRep.m in Sources */,
 				ADE06FA720E3A0510067C9A9 /* MSTopCollectionViewCell.m in Sources */,

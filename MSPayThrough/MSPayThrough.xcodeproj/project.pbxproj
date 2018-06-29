@@ -244,6 +244,13 @@
 		ADE06FCE20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FCD20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib */; };
 		ADE06FD220E4FD640067C9A9 /* MSFeiLvTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FD020E4FD640067C9A9 /* MSFeiLvTableViewCell.m */; };
 		ADE06FD320E4FD640067C9A9 /* MSFeiLvTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FD120E4FD640067C9A9 /* MSFeiLvTableViewCell.xib */; };
+		ADE06FD620E5D35F0067C9A9 /* MSHuanKuanPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FD520E5D35F0067C9A9 /* MSHuanKuanPlayViewController.m */; };
+		ADE06FD920E5D6B60067C9A9 /* YWMeTopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FD820E5D6B60067C9A9 /* YWMeTopButton.m */; };
+		ADE06FDD20E5E20F0067C9A9 /* MSHuanKuanPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FDB20E5E20F0067C9A9 /* MSHuanKuanPlayCell.m */; };
+		ADE06FDE20E5E20F0067C9A9 /* MSHuanKuanPlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FDC20E5E20F0067C9A9 /* MSHuanKuanPlayCell.xib */; };
+		ADE06FE120E5FF940067C9A9 /* MSShaiXuanViewAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FE020E5FF940067C9A9 /* MSShaiXuanViewAlertView.m */; };
+		ADE06FE520E611C50067C9A9 /* MSfastGiveMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FE320E611C50067C9A9 /* MSfastGiveMoneyViewController.m */; };
+		ADE06FE620E611C50067C9A9 /* MSfastGiveMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FE420E611C50067C9A9 /* MSfastGiveMoneyViewController.xib */; };
 		AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4B20E3751E00A300BA /* MSMeModel.m */; };
 		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
 		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
@@ -770,6 +777,18 @@
 		ADE06FCF20E4FD640067C9A9 /* MSFeiLvTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeiLvTableViewCell.h; sourceTree = "<group>"; };
 		ADE06FD020E4FD640067C9A9 /* MSFeiLvTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFeiLvTableViewCell.m; sourceTree = "<group>"; };
 		ADE06FD120E4FD640067C9A9 /* MSFeiLvTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFeiLvTableViewCell.xib; sourceTree = "<group>"; };
+		ADE06FD420E5D35F0067C9A9 /* MSHuanKuanPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHuanKuanPlayViewController.h; sourceTree = "<group>"; };
+		ADE06FD520E5D35F0067C9A9 /* MSHuanKuanPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHuanKuanPlayViewController.m; sourceTree = "<group>"; };
+		ADE06FD720E5D6B60067C9A9 /* YWMeTopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWMeTopButton.h; sourceTree = "<group>"; };
+		ADE06FD820E5D6B60067C9A9 /* YWMeTopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWMeTopButton.m; sourceTree = "<group>"; };
+		ADE06FDA20E5E20F0067C9A9 /* MSHuanKuanPlayCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHuanKuanPlayCell.h; sourceTree = "<group>"; };
+		ADE06FDB20E5E20F0067C9A9 /* MSHuanKuanPlayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHuanKuanPlayCell.m; sourceTree = "<group>"; };
+		ADE06FDC20E5E20F0067C9A9 /* MSHuanKuanPlayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSHuanKuanPlayCell.xib; sourceTree = "<group>"; };
+		ADE06FDF20E5FF940067C9A9 /* MSShaiXuanViewAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSShaiXuanViewAlertView.h; sourceTree = "<group>"; };
+		ADE06FE020E5FF940067C9A9 /* MSShaiXuanViewAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSShaiXuanViewAlertView.m; sourceTree = "<group>"; };
+		ADE06FE220E611C50067C9A9 /* MSfastGiveMoneyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSfastGiveMoneyViewController.h; sourceTree = "<group>"; };
+		ADE06FE320E611C50067C9A9 /* MSfastGiveMoneyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSfastGiveMoneyViewController.m; sourceTree = "<group>"; };
+		ADE06FE420E611C50067C9A9 /* MSfastGiveMoneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSfastGiveMoneyViewController.xib; sourceTree = "<group>"; };
 		AF421B4A20E3751E00A300BA /* MSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeModel.h; sourceTree = "<group>"; };
 		AF421B4B20E3751E00A300BA /* MSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeModel.m; sourceTree = "<group>"; };
 		AF421B4D20E3762600A300BA /* MSMciModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMciModel.h; sourceTree = "<group>"; };
@@ -2029,6 +2048,8 @@
 		ADE06F7C20E3A0510067C9A9 /* MSHomeView */ = {
 			isa = PBXGroup;
 			children = (
+				ADE06FD720E5D6B60067C9A9 /* YWMeTopButton.h */,
+				ADE06FD820E5D6B60067C9A9 /* YWMeTopButton.m */,
 				ADE06FB220E3BFC90067C9A9 /* ProgressView.h */,
 				ADE06FB120E3BFC80067C9A9 /* ProgressView.m */,
 				ADE06F8320E3A0510067C9A9 /* ATHomeFavButton.h */,
@@ -2059,6 +2080,11 @@
 				ADE06FCF20E4FD640067C9A9 /* MSFeiLvTableViewCell.h */,
 				ADE06FD020E4FD640067C9A9 /* MSFeiLvTableViewCell.m */,
 				ADE06FD120E4FD640067C9A9 /* MSFeiLvTableViewCell.xib */,
+				ADE06FDA20E5E20F0067C9A9 /* MSHuanKuanPlayCell.h */,
+				ADE06FDB20E5E20F0067C9A9 /* MSHuanKuanPlayCell.m */,
+				ADE06FDC20E5E20F0067C9A9 /* MSHuanKuanPlayCell.xib */,
+				ADE06FDF20E5FF940067C9A9 /* MSShaiXuanViewAlertView.h */,
+				ADE06FE020E5FF940067C9A9 /* MSShaiXuanViewAlertView.m */,
 			);
 			path = MSHomeView;
 			sourceTree = "<group>";
@@ -2074,6 +2100,11 @@
 				ADE06FB820E4B2C60067C9A9 /* MSDetalsViewController.m */,
 				ADE06FC720E4FB9D0067C9A9 /* MSFeiLvViewController.h */,
 				ADE06FC820E4FB9D0067C9A9 /* MSFeiLvViewController.m */,
+				ADE06FD420E5D35F0067C9A9 /* MSHuanKuanPlayViewController.h */,
+				ADE06FD520E5D35F0067C9A9 /* MSHuanKuanPlayViewController.m */,
+				ADE06FE220E611C50067C9A9 /* MSfastGiveMoneyViewController.h */,
+				ADE06FE320E611C50067C9A9 /* MSfastGiveMoneyViewController.m */,
+				ADE06FE420E611C50067C9A9 /* MSfastGiveMoneyViewController.xib */,
 			);
 			path = MSHomeController;
 			sourceTree = "<group>";
@@ -2374,10 +2405,12 @@
 				ADE06FC320E4D4680067C9A9 /* MSDetailsTableViewCell.xib in Resources */,
 				ADE06FBE20E4B30A0067C9A9 /* MSDetailsTopView.xib in Resources */,
 				ADE06FD320E4FD640067C9A9 /* MSFeiLvTableViewCell.xib in Resources */,
+				ADE06FDE20E5E20F0067C9A9 /* MSHuanKuanPlayCell.xib in Resources */,
 				AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */,
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
 				AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */,
 				AD62500220E09B020095F0E9 /* .gitkeep in Resources */,
+				ADE06FE620E611C50067C9A9 /* MSfastGiveMoneyViewController.xib in Resources */,
 				AF61DA2320E4C113008AD123 /* MSModifyController.xib in Resources */,
 				AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */,
 				AF61854E20E25C1400791FF0 /* MSFrogetPwdController.xib in Resources */,
@@ -2453,6 +2486,7 @@
 				ADE06FB320E3BFC90067C9A9 /* ProgressView.m in Sources */,
 				ADE06FB020E3A0510067C9A9 /* MSHomModel.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
+				ADE06FE520E611C50067C9A9 /* MSfastGiveMoneyViewController.m in Sources */,
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
 				AF61853B20E2304700791FF0 /* MSAboutController.m in Sources */,
 				AD624F6D20E099FF0095F0E9 /* UILabel+LWB.m in Sources */,
@@ -2468,6 +2502,7 @@
 				AD624EB320E091460095F0E9 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				AD624EDC20E091460095F0E9 /* SDAnimatedImageRep.m in Sources */,
 				ADE06FA720E3A0510067C9A9 /* MSTopCollectionViewCell.m in Sources */,
+				ADE06FD620E5D35F0067C9A9 /* MSHuanKuanPlayViewController.m in Sources */,
 				AD624EAF20E091460095F0E9 /* IQTextView.m in Sources */,
 				AD624FF020E09B020095F0E9 /* TADotView.m in Sources */,
 				AF421B7320E387C800A300BA /* MSBankController.m in Sources */,
@@ -2492,6 +2527,7 @@
 				AD624F9220E099FF0095F0E9 /* BCRequestData.m in Sources */,
 				AD624FF220E09B020095F0E9 /* TAAnimatedDotView.m in Sources */,
 				AD624ECD20E091460095F0E9 /* UIImageView+HighlightedWebCache.m in Sources */,
+				ADE06FD920E5D6B60067C9A9 /* YWMeTopButton.m in Sources */,
 				AD624EE720E091460095F0E9 /* SDWebImageImageIOCoder.m in Sources */,
 				AF61854420E2563900791FF0 /* MSRegisterController.m in Sources */,
 				AD624F7C20E099FF0095F0E9 /* UIImageView+PlayGIF.m in Sources */,
@@ -2521,6 +2557,7 @@
 				AD624F8C20E099FF0095F0E9 /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				ADE06FAD20E3A0510067C9A9 /* MSHomeTopView.m in Sources */,
 				AD624E8920E091460095F0E9 /* MJRefreshBackGifFooter.m in Sources */,
+				ADE06FDD20E5E20F0067C9A9 /* MSHuanKuanPlayCell.m in Sources */,
 				AD624EC920E091460095F0E9 /* FMResultSet.m in Sources */,
 				AD624EDA20E091460095F0E9 /* SDWebImageCoder.m in Sources */,
 				ADE06FA120E3A0510067C9A9 /* MSCollectionViewFlowLayout.m in Sources */,
@@ -2632,6 +2669,7 @@
 				AD624EE020E091460095F0E9 /* NSData+ImageContentType.m in Sources */,
 				AD624EF920E096B80095F0E9 /* SATabBarController.m in Sources */,
 				AD624EB120E091460095F0E9 /* IQTitleBarButtonItem.m in Sources */,
+				ADE06FE120E5FF940067C9A9 /* MSShaiXuanViewAlertView.m in Sources */,
 				AD624ED120E091460095F0E9 /* FLAnimatedImageView+WebCache.m in Sources */,
 				AF421B7020E387AE00A300BA /* SGPageTitleViewConfigure.m in Sources */,
 				AD624EF720E096B80095F0E9 /* SANavigationController.m in Sources */,

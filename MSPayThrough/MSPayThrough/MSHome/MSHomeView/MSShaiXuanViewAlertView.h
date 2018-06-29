@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MSShaiXuanViewAlertView : UIView
-
+@property(nonatomic,copy)void(^shaixuan)(UIButton * button);
 @end

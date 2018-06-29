@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MSHuanKuanPlayCell : UITableViewCell
-
+@property(nonatomic,strong)  MSHomModel * homeModel ;
+@property(nonatomic,copy)void(^skipDetailsVc)(MSHomModel* homModel);
+@property(nonatomic,copy)void(^cacnlJihuaVc)(MSHomModel* homModel);
 @end

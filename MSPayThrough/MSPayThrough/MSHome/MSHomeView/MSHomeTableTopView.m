@@ -12,6 +12,8 @@
 #import "MSTopCollectionViewCell.h"
 #import "MSCollectionViewFlowLayout.h"
 #import "MSDetalsViewController.h"
+#import "MSHuanKuanPlayViewController.h"
+
 @interface MSHomeTableTopView()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate>
 {
     // 水平滚动的跑马灯
@@ -116,8 +118,19 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
 }
 - (IBAction)jihuaBtClick:(id)sender {
     
-    
+    MSHuanKuanPlayViewController * serviceAgreementVc = [[MSHuanKuanPlayViewController alloc] init];
+    [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
 }
+- (UIViewController *)viewController {
+    for (UIView* next = [self superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
+
 -(void)setPlayRepayments:(NSMutableArray *)playRepayments{
     
     _playRepayments = playRepayments;
@@ -160,15 +173,7 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
     detal.homeModel = homeModel;
     [[self viewController].navigationController pushViewController:detal animated:YES];
 }
-- (UIViewController *)viewController {
-    for (UIView* next = [self superview]; next; next = next.superview) {
-        UIResponder *nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController *)nextResponder;
-        }
-    }
-    return nil;
-}
+
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {

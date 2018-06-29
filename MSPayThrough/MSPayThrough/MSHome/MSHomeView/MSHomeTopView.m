@@ -9,6 +9,9 @@
 #import "MSHomeTopView.h"
 #import "MSSetController.h"
 #import "MSFeiLvViewController.h"
+#import "MSBankController.h"
+#import "MSHuanKuanPlayViewController.h"
+#import "MSfastGiveMoneyViewController.h"
 @implementation MSHomeTopView
 -(void)awakeFromNib{
     [super awakeFromNib];
@@ -26,6 +29,9 @@
     [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
 }
 - (IBAction)shoukuanClick:(id)sender {
+  
+    MSfastGiveMoneyViewController * serviceAgreementVc = [[MSfastGiveMoneyViewController alloc] init];
+    [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
 }
 - (IBAction)huankuanClick:(id)sender {
 }
@@ -56,9 +62,16 @@
 }
 
 - (IBAction)jihuaClick:(id)sender {
+    
+    MSHuanKuanPlayViewController * serviceAgreementVc = [[MSHuanKuanPlayViewController alloc] init];
+    [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
 }
 
 - (IBAction)yinghangkaClick:(id)sender {
+    
+    MSBankController * serviceAgreementVc = [[MSBankController alloc] init];
+    [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
+    
 }
 - (UIViewController *)viewController {
     for (UIView* next = [self superview]; next; next = next.superview) {

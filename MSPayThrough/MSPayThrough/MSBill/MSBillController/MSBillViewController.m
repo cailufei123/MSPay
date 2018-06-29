@@ -98,7 +98,7 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
             [self.tableView.mj_footer endRefreshingWithNoMoreData];
         }
        
-        [self.tableView.mj_header endRefreshing];
+       [self.tableView.mj_footer endRefreshing];
     }];
 }
 -(void)setTable{

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class MSCreditCell;
+@class MSCreditCell,MSBankMcp;
 
 @protocol MSCreditCellDelegate<NSObject>
 
@@ -17,8 +17,12 @@
 
 @interface MSCreditCell : UITableViewCell
 
-@property (nonatomic,weak) id<MSCreditCellDelegate> delegate;
+@property (nonatomic,strong) NSIndexPath *indexpath;
 
+@property (nonatomic,weak) id<MSCreditCellDelegate> delegate;
+//背景view
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+@property (nonatomic,strong) MSBankMcp *mcp;
 + (instancetype)creditCell;
 
 @end

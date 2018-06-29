@@ -290,6 +290,18 @@
 		AF61DA2820E4E9CF008AD123 /* MSAddCreditCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA2620E4E9CF008AD123 /* MSAddCreditCardController.xib */; };
 		AF61DA2C20E4E9F3008AD123 /* MSAddDepositCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF61DA2A20E4E9F3008AD123 /* MSAddDepositCardController.m */; };
 		AF61DA2D20E4E9F3008AD123 /* MSAddDepositCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF61DA2B20E4E9F3008AD123 /* MSAddDepositCardController.xib */; };
+		AF65D32C20E5D3F40016BAC3 /* MSBankMcp.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D32B20E5D3F40016BAC3 /* MSBankMcp.m */; };
+		AF65D32F20E5F2D80016BAC3 /* MSDepositModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D32E20E5F2D80016BAC3 /* MSDepositModel.m */; };
+		AF65D34120E600380016BAC3 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D33320E600380016BAC3 /* BRAddressModel.m */; };
+		AF65D34220E600380016BAC3 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D33520E600380016BAC3 /* BRAddressPickerView.m */; };
+		AF65D34320E600380016BAC3 /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF65D33620E600380016BAC3 /* BRPickerView.bundle */; };
+		AF65D34420E600380016BAC3 /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D33920E600380016BAC3 /* BRBaseView.m */; };
+		AF65D34520E600380016BAC3 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D33D20E600380016BAC3 /* BRDatePickerView.m */; };
+		AF65D34620E600380016BAC3 /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D34020E600380016BAC3 /* BRStringPickerView.m */; };
+		AF65D34920E601660016BAC3 /* MSBankList.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D34820E601660016BAC3 /* MSBankList.m */; };
+		AF65D34D20E607050016BAC3 /* MSBandCreditController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D34B20E607050016BAC3 /* MSBandCreditController.m */; };
+		AF65D34E20E607050016BAC3 /* MSBandCreditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF65D34C20E607050016BAC3 /* MSBandCreditController.xib */; };
+		AF65D35220E61A680016BAC3 /* MSNoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D35120E61A680016BAC3 /* MSNoticeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -853,6 +865,29 @@
 		AF61DA2920E4E9F3008AD123 /* MSAddDepositCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAddDepositCardController.h; sourceTree = "<group>"; };
 		AF61DA2A20E4E9F3008AD123 /* MSAddDepositCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAddDepositCardController.m; sourceTree = "<group>"; };
 		AF61DA2B20E4E9F3008AD123 /* MSAddDepositCardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSAddDepositCardController.xib; sourceTree = "<group>"; };
+		AF65D32A20E5D3F40016BAC3 /* MSBankMcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBankMcp.h; sourceTree = "<group>"; };
+		AF65D32B20E5D3F40016BAC3 /* MSBankMcp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSBankMcp.m; sourceTree = "<group>"; };
+		AF65D32D20E5F2D80016BAC3 /* MSDepositModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDepositModel.h; sourceTree = "<group>"; };
+		AF65D32E20E5F2D80016BAC3 /* MSDepositModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDepositModel.m; sourceTree = "<group>"; };
+		AF65D33220E600380016BAC3 /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
+		AF65D33320E600380016BAC3 /* BRAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressModel.m; sourceTree = "<group>"; };
+		AF65D33420E600380016BAC3 /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
+		AF65D33520E600380016BAC3 /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
+		AF65D33620E600380016BAC3 /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
+		AF65D33820E600380016BAC3 /* BRBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseView.h; sourceTree = "<group>"; };
+		AF65D33920E600380016BAC3 /* BRBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseView.m; sourceTree = "<group>"; };
+		AF65D33A20E600380016BAC3 /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
+		AF65D33C20E600380016BAC3 /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
+		AF65D33D20E600380016BAC3 /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
+		AF65D33F20E600380016BAC3 /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
+		AF65D34020E600380016BAC3 /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
+		AF65D34720E601660016BAC3 /* MSBankList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBankList.h; sourceTree = "<group>"; };
+		AF65D34820E601660016BAC3 /* MSBankList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSBankList.m; sourceTree = "<group>"; };
+		AF65D34A20E607050016BAC3 /* MSBandCreditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBandCreditController.h; sourceTree = "<group>"; };
+		AF65D34B20E607050016BAC3 /* MSBandCreditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSBandCreditController.m; sourceTree = "<group>"; };
+		AF65D34C20E607050016BAC3 /* MSBandCreditController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSBandCreditController.xib; sourceTree = "<group>"; };
+		AF65D35020E61A680016BAC3 /* MSNoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSNoticeModel.h; sourceTree = "<group>"; };
+		AF65D35120E61A680016BAC3 /* MSNoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSNoticeModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -962,6 +997,7 @@
 		AD624D6A20E091440095F0E9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				AF65D33020E600380016BAC3 /* BRPickerView */,
 				AF421B5D20E387AE00A300BA /* SGPagingView */,
 				AD624D6B20E091440095F0E9 /* MJExtension */,
 				AD624D8120E091440095F0E9 /* MJRefresh */,
@@ -2100,6 +2136,8 @@
 		AF421B4920E373F500A300BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF65D34F20E61A540016BAC3 /* MSNoticeModel */,
+				AF65D32920E5D38D0016BAC3 /* MSBankModel */,
 				AF421B4A20E3751E00A300BA /* MSMeModel.h */,
 				AF421B4B20E3751E00A300BA /* MSMeModel.m */,
 				AF421B4D20E3762600A300BA /* MSMciModel.h */,
@@ -2132,6 +2170,9 @@
 				AF61DA2420E4E9CF008AD123 /* MSAddCreditCardController.h */,
 				AF61DA2520E4E9CF008AD123 /* MSAddCreditCardController.m */,
 				AF61DA2620E4E9CF008AD123 /* MSAddCreditCardController.xib */,
+				AF65D34A20E607050016BAC3 /* MSBandCreditController.h */,
+				AF65D34B20E607050016BAC3 /* MSBandCreditController.m */,
+				AF65D34C20E607050016BAC3 /* MSBandCreditController.xib */,
 				AF421B7720E3882700A300BA /* MSDepositCardController.h */,
 				AF421B7820E3882700A300BA /* MSDepositCardController.m */,
 				AF61DA2920E4E9F3008AD123 /* MSAddDepositCardController.h */,
@@ -2279,6 +2320,79 @@
 			path = MSNoticeView;
 			sourceTree = "<group>";
 		};
+		AF65D32920E5D38D0016BAC3 /* MSBankModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D32A20E5D3F40016BAC3 /* MSBankMcp.h */,
+				AF65D32B20E5D3F40016BAC3 /* MSBankMcp.m */,
+				AF65D32D20E5F2D80016BAC3 /* MSDepositModel.h */,
+				AF65D32E20E5F2D80016BAC3 /* MSDepositModel.m */,
+				AF65D34720E601660016BAC3 /* MSBankList.h */,
+				AF65D34820E601660016BAC3 /* MSBankList.m */,
+			);
+			path = MSBankModel;
+			sourceTree = "<group>";
+		};
+		AF65D33020E600380016BAC3 /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D33120E600380016BAC3 /* AddressPickerView */,
+				AF65D33720E600380016BAC3 /* Base */,
+				AF65D33A20E600380016BAC3 /* BRPickerView.h */,
+				AF65D33B20E600380016BAC3 /* DatePickerView */,
+				AF65D33E20E600380016BAC3 /* StringPickerView */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		AF65D33120E600380016BAC3 /* AddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D33220E600380016BAC3 /* BRAddressModel.h */,
+				AF65D33320E600380016BAC3 /* BRAddressModel.m */,
+				AF65D33420E600380016BAC3 /* BRAddressPickerView.h */,
+				AF65D33520E600380016BAC3 /* BRAddressPickerView.m */,
+				AF65D33620E600380016BAC3 /* BRPickerView.bundle */,
+			);
+			path = AddressPickerView;
+			sourceTree = "<group>";
+		};
+		AF65D33720E600380016BAC3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D33820E600380016BAC3 /* BRBaseView.h */,
+				AF65D33920E600380016BAC3 /* BRBaseView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AF65D33B20E600380016BAC3 /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D33C20E600380016BAC3 /* BRDatePickerView.h */,
+				AF65D33D20E600380016BAC3 /* BRDatePickerView.m */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		AF65D33E20E600380016BAC3 /* StringPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D33F20E600380016BAC3 /* BRStringPickerView.h */,
+				AF65D34020E600380016BAC3 /* BRStringPickerView.m */,
+			);
+			path = StringPickerView;
+			sourceTree = "<group>";
+		};
+		AF65D34F20E61A540016BAC3 /* MSNoticeModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D35020E61A680016BAC3 /* MSNoticeModel.h */,
+				AF65D35120E61A680016BAC3 /* MSNoticeModel.m */,
+			);
+			path = MSNoticeModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2414,7 +2528,9 @@
 				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
+				AF65D34E20E607050016BAC3 /* MSBandCreditController.xib in Resources */,
 				AF61DA1C20E4BBF1008AD123 /* MSDepositCell.xib in Resources */,
+				AF65D34320E600380016BAC3 /* BRPickerView.bundle in Resources */,
 				ADE06FCE20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */,
@@ -2517,7 +2633,9 @@
 				AD624F7C20E099FF0095F0E9 /* UIImageView+PlayGIF.m in Sources */,
 				AD624F8020E099FF0095F0E9 /* UIButton+Extensions.m in Sources */,
 				AD624E8720E091460095F0E9 /* NSBundle+MJRefresh.m in Sources */,
+				AF65D34520E600380016BAC3 /* BRDatePickerView.m in Sources */,
 				AD624EE520E091460095F0E9 /* UIView+WebCacheOperation.m in Sources */,
+				AF65D34220E600380016BAC3 /* BRAddressPickerView.m in Sources */,
 				AD624EBB20E091460095F0E9 /* IQUIViewController+Additions.m in Sources */,
 				AF61DA0B20E4B261008AD123 /* YCArchiveTool.m in Sources */,
 				AD624FFA20E09B020095F0E9 /* NSString+NSReplace.m in Sources */,
@@ -2563,7 +2681,9 @@
 				AD624F6E20E099FF0095F0E9 /* NSObject+WHObject.m in Sources */,
 				AD624EC220E091460095F0E9 /* AFSecurityPolicy.m in Sources */,
 				AD624F7520E099FF0095F0E9 /* WHMethods.m in Sources */,
+				AF65D35220E61A680016BAC3 /* MSNoticeModel.m in Sources */,
 				AD624FF420E09B020095F0E9 /* WBAudioPlayerHelper.m in Sources */,
+				AF65D32F20E5F2D80016BAC3 /* MSDepositModel.m in Sources */,
 				AD624EC620E091460095F0E9 /* FMDatabaseAdditions.m in Sources */,
 				AD624E9420E091460095F0E9 /* MJRefreshBackFooter.m in Sources */,
 				AD624ECF20E091460095F0E9 /* UIImage+ForceDecode.m in Sources */,
@@ -2574,6 +2694,7 @@
 				ADE06FBC20E4B2F50067C9A9 /* MSDetailsTopView.m in Sources */,
 				AD624EB220E091460095F0E9 /* IQBarButtonItem.m in Sources */,
 				AD624F7920E099FF0095F0E9 /* UIImage+WHImage.m in Sources */,
+				AF65D34420E600380016BAC3 /* BRBaseView.m in Sources */,
 				AD624EC020E091460095F0E9 /* AFURLRequestSerialization.m in Sources */,
 				AD624EFA20E096B80095F0E9 /* SATabBar.m in Sources */,
 				AD624EE620E091460095F0E9 /* UIView+WebCache.m in Sources */,
@@ -2596,9 +2717,11 @@
 				AD624F8320E099FF0095F0E9 /* UIButton+WHButton.m in Sources */,
 				AD624E9020E091460095F0E9 /* MJRefreshStateHeader.m in Sources */,
 				AD624F8520E099FF0095F0E9 /* UIBarButtonItem+ZZExtension.m in Sources */,
+				AF65D34620E600380016BAC3 /* BRStringPickerView.m in Sources */,
 				AD624FFB20E09B020095F0E9 /* GTMBase64.m in Sources */,
 				AD624EBC20E091460095F0E9 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				AD624FFE20E09B020095F0E9 /* YYLRefreshNoDataView.m in Sources */,
+				AF65D34D20E607050016BAC3 /* MSBandCreditController.m in Sources */,
 				ADE06FC220E4D4680067C9A9 /* MSDetailsTableViewCell.m in Sources */,
 				AD624EB920E091460095F0E9 /* IQUIScrollView+Additions.m in Sources */,
 				AD624FFD20E09B020095F0E9 /* YYLRefreshRequestErrorView.m in Sources */,
@@ -2634,6 +2757,7 @@
 				AD624E8C20E091460095F0E9 /* MJRefreshAutoStateFooter.m in Sources */,
 				AD624F7A20E099FF0095F0E9 /* NSDate+WHDate.m in Sources */,
 				ADE06FC620E4F6880067C9A9 /* ATServiceAgreementController.m in Sources */,
+				AF65D34920E601660016BAC3 /* MSBankList.m in Sources */,
 				AD624E9F20E091460095F0E9 /* MASViewConstraint.m in Sources */,
 				AD624E7A20E091450095F0E9 /* NSObject+MJKeyValue.m in Sources */,
 				AD624ED820E091460095F0E9 /* SDWebImageCompat.m in Sources */,
@@ -2641,6 +2765,8 @@
 				AD624EDB20E091460095F0E9 /* NSButton+WebCache.m in Sources */,
 				AD624EE220E091460095F0E9 /* NSImage+WebCache.m in Sources */,
 				AD62504320E0FF190095F0E9 /* BCLoginController.m in Sources */,
+				AF65D32C20E5D3F40016BAC3 /* MSBankMcp.m in Sources */,
+				AF65D34120E600380016BAC3 /* BRAddressModel.m in Sources */,
 				AD624F6B20E099FF0095F0E9 /* NSString+WHString.m in Sources */,
 				AD624EC320E091460095F0E9 /* MBProgressHUD.m in Sources */,
 				AF421B6F20E387AE00A300BA /* SGPageTitleView.m in Sources */,

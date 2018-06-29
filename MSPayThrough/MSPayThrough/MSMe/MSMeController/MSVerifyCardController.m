@@ -7,6 +7,7 @@
 //
 
 #import "MSVerifyCardController.h"
+#import <AipOcrSdk/AipOcrSdk.h>
 
 @interface MSVerifyCardController ()
 /**
@@ -30,19 +31,47 @@
 
 @end
 
-@implementation MSVerifyCardController
+@implementation MSVerifyCardController{
+    // 默认的识别成功的回调
+    void (^_successHandler)(id);
+    // 默认的识别失败的回调
+    void (^_failHandler)(NSError *);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationItem.title = @"身份验证";
     [self.commteBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+    
+    [[AipOcrService shardService] authWithAK:@"MBIvCmrvK2xNrk19M9LdV6wo" andSK:@"9XPe1bIA8EN7pO7Awhoxg1dVOckc0zIi"];
 }
 //点击持卡人相机
 - (IBAction)clickCardBtn {
+    UIViewController * vc =
+    [AipCaptureCardVC ViewControllerWithCardType:CardTypeIdCardFont
+                                 andImageHandler:^(UIImage *image) {
+                                     
+                                     [[AipOcrService shardService] detectIdCardFrontFromImage:image
+                                                                                  withOptions:nil
+                                                                               successHandler:_successHandler
+                                                                                  failHandler:_failHandler];
+                                 }];
+    
+    [self presentViewController:vc animated:YES completion:nil];
 }
 //点击签发机关相机
 - (IBAction)clickBodyBtn {
+    UIViewController * vc =
+    [AipCaptureCardVC ViewControllerWithCardType:CardTypeIdCardBack
+                                 andImageHandler:^(UIImage *image) {
+                                     
+                                     [[AipOcrService shardService] detectIdCardBackFromImage:image
+                                                                                 withOptions:nil
+                                                                              successHandler:_successHandler
+                                                                                 failHandler:_failHandler];
+                                 }];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 //点击提交按钮
 - (IBAction)clickCommteBtn {

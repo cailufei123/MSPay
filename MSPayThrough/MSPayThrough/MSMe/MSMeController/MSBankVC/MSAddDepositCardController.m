@@ -9,6 +9,7 @@
 #import "MSAddDepositCardController.h"
 #import "BRPickerView.h"
 #import "MSBankList.h"
+#import <AipOcrSdk/AipOcrSdk.h>
 
 @interface MSAddDepositCardController ()
 //用户
@@ -27,7 +28,12 @@
 @property (nonatomic,strong) NSMutableArray *bankLists;
 @end
 
-@implementation MSAddDepositCardController
+@implementation MSAddDepositCardController{
+    // 默认的识别成功的回调
+    void (^_successHandler)(id);
+    // 默认的识别失败的回调
+    void (^_failHandler)(NSError *);
+}
 - (NSMutableArray *)bankLists{
     if (!_bankLists) {
         _bankLists = [NSMutableArray array];
@@ -39,9 +45,22 @@
     
     self.navigationItem.title = @"添加储蓄卡";
     [self.nextBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+    
+     [[AipOcrService shardService] authWithAK:@"MBIvCmrvK2xNrk19M9LdV6wo" andSK:@"9XPe1bIA8EN7pO7Awhoxg1dVOckc0zIi"];
 }
 //点击相机
 - (IBAction)clickCameraBtn {
+    UIViewController * vc =
+    [AipCaptureCardVC ViewControllerWithCardType:CardTypeBankCard
+                                 andImageHandler:^(UIImage *image) {
+                                     
+                                     [[AipOcrService shardService] detectBankCardFromImage:image
+                                                                            successHandler:_successHandler
+                                                                               failHandler:_failHandler];
+                                     
+                                 }];
+    [self presentViewController:vc animated:YES completion:nil];
+
 }
 //点击发卡行
 - (IBAction)clickFaKaBankBtn {

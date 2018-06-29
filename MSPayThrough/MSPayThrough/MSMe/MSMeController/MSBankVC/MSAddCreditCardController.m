@@ -9,9 +9,15 @@
 #import "MSAddCreditCardController.h"
 #import "BRPickerView.h"
 #import "MSBankList.h"
+#import <AipOcrSdk/AipOcrSdk.h>
 #import "MSBandCreditController.h"
 
-@interface MSAddCreditCardController ()
+@interface MSAddCreditCardController (){
+    // 默认的识别成功的回调
+    void (^_successHandler)(id);
+    // 默认的识别失败的回调
+    void (^_failHandler)(NSError *);
+}
 //用户
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 //身份证号
@@ -43,6 +49,9 @@
     
     self.navigationItem.title = @"添加信用卡";
     [self.nextBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+    
+     [[AipOcrService shardService] authWithAK:@"MBIvCmrvK2xNrk19M9LdV6wo" andSK:@"9XPe1bIA8EN7pO7Awhoxg1dVOckc0zIi"];
+    
     self.userNameLabel.text = [YCArchiveTool meModel].mci.mci_name;
     self.cardNumLabel.text = [YCArchiveTool meModel].mci.mci_id_card;
     
@@ -79,6 +88,17 @@
 
 //点击相机
 - (IBAction)clickCameraBtn {
+    UIViewController * vc =
+    [AipCaptureCardVC ViewControllerWithCardType:CardTypeBankCard
+                                 andImageHandler:^(UIImage *image) {
+                                     
+                                     [[AipOcrService shardService] detectBankCardFromImage:image
+                                                                            successHandler:_successHandler
+                                                                               failHandler:_failHandler];
+                                     
+                                 }];
+    [self presentViewController:vc animated:YES completion:nil];
+
 }
 
 - (IBAction)clickNextBtn {

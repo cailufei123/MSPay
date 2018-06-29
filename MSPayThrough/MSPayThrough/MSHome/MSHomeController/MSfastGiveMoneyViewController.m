@@ -38,7 +38,7 @@
     Controller.gehuanka = ^(MSBankMcp *bakMcp) {
         [weakSelf.fuImageView sd_setImageWithURL:[NSURL URLWithString:bakMcp.mcp_bank_ico]];
         weakSelf.fuLb.text = bakMcp.mcp_bank_name;
-          self.credit_card_id = bakMcp.mbi_id;
+          self.credit_card_id = bakMcp.mcp_id;
     };
     [self.navigationController pushViewController:Controller animated:YES];
     [self.shoukuanBt addTarget:self action:@selector(shoukuanBtClick) forControlEvents:UIControlEventTouchUpInside];
@@ -66,7 +66,7 @@
                 
                 [self.fuImageView sd_setImageWithURL:[NSURL URLWithString:bankMcp.mcp_bank_ico]];
                 self.fuLb.text = bankMcp.mcp_bank_name;
-                  self.credit_card_id = bankMcp.mbi_id;
+                  self.credit_card_id = bankMcp.mcp_id;
             }
         
             
@@ -91,7 +91,7 @@
                 MSDepositModel *bankMcp = [deposits firstObject];
                 [self.zhouImgView sd_setImageWithURL:[NSURL URLWithString:bankMcp.mcp_bank_ico]];
                 self.shouLb.text = bankMcp.mcp_bank_name;
-                self.debit_card_id = bankMcp.mbi_id;
+                self.debit_card_id = bankMcp.mcp_id;
             }
         }
         
@@ -120,6 +120,9 @@
     NSMutableDictionary * dic = [NSMutableDictionary dictionary];
     if (!self.tixiangLb.text.length) {
         [MBManager showBriefAlert:@"输入提现金额"]; return;
+    }
+    if ([self.tixiangLb.text integerValue]<550) {
+        [MBManager showBriefAlert:@"输入提现金额不能小于550"]; return;
     }
 
 

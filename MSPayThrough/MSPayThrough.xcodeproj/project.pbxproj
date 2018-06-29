@@ -311,6 +311,18 @@
 		AF65D34D20E607050016BAC3 /* MSBandCreditController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D34B20E607050016BAC3 /* MSBandCreditController.m */; };
 		AF65D34E20E607050016BAC3 /* MSBandCreditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF65D34C20E607050016BAC3 /* MSBandCreditController.xib */; };
 		AF65D35220E61A680016BAC3 /* MSNoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D35120E61A680016BAC3 /* MSNoticeModel.m */; };
+		AF65D35720E631430016BAC3 /* RBCShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D35420E631420016BAC3 /* RBCShareView.m */; };
+		AF65D35820E631430016BAC3 /* RBCShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF65D35620E631430016BAC3 /* RBCShareView.xib */; };
+		AF65D35C20E631720016BAC3 /* RBCShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D35A20E631710016BAC3 /* RBCShareCell.m */; };
+		AF65D35D20E631720016BAC3 /* RBCShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF65D35B20E631720016BAC3 /* RBCShareCell.xib */; };
+		AF65D36E20E635480016BAC3 /* UIImage+SGImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36120E635480016BAC3 /* UIImage+SGImageSize.m */; };
+		AF65D36F20E635480016BAC3 /* SGQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF65D36220E635480016BAC3 /* SGQRCode.bundle */; };
+		AF65D37020E635480016BAC3 /* SGQRCodeAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36520E635480016BAC3 /* SGQRCodeAlbumManager.m */; };
+		AF65D37120E635480016BAC3 /* SGQRCodeGenerateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36720E635480016BAC3 /* SGQRCodeGenerateManager.m */; };
+		AF65D37220E635480016BAC3 /* SGQRCodeHelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36920E635480016BAC3 /* SGQRCodeHelperTool.m */; };
+		AF65D37320E635480016BAC3 /* SGQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36B20E635480016BAC3 /* SGQRCodeScanManager.m */; };
+		AF65D37420E635480016BAC3 /* SGQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36D20E635480016BAC3 /* SGQRCodeScanningView.m */; };
+		AF65D37820E63AA30016BAC3 /* MSShareNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D37720E63AA30016BAC3 /* MSShareNotice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -913,6 +925,28 @@
 		AF65D34C20E607050016BAC3 /* MSBandCreditController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSBandCreditController.xib; sourceTree = "<group>"; };
 		AF65D35020E61A680016BAC3 /* MSNoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSNoticeModel.h; sourceTree = "<group>"; };
 		AF65D35120E61A680016BAC3 /* MSNoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSNoticeModel.m; sourceTree = "<group>"; };
+		AF65D35420E631420016BAC3 /* RBCShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCShareView.m; sourceTree = "<group>"; };
+		AF65D35520E631420016BAC3 /* RBCShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCShareView.h; sourceTree = "<group>"; };
+		AF65D35620E631430016BAC3 /* RBCShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBCShareView.xib; sourceTree = "<group>"; };
+		AF65D35920E631710016BAC3 /* RBCShareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCShareCell.h; sourceTree = "<group>"; };
+		AF65D35A20E631710016BAC3 /* RBCShareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCShareCell.m; sourceTree = "<group>"; };
+		AF65D35B20E631720016BAC3 /* RBCShareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBCShareCell.xib; sourceTree = "<group>"; };
+		AF65D36020E635480016BAC3 /* UIImage+SGImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGImageSize.h"; sourceTree = "<group>"; };
+		AF65D36120E635480016BAC3 /* UIImage+SGImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGImageSize.m"; sourceTree = "<group>"; };
+		AF65D36220E635480016BAC3 /* SGQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGQRCode.bundle; sourceTree = "<group>"; };
+		AF65D36320E635480016BAC3 /* SGQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCode.h; sourceTree = "<group>"; };
+		AF65D36420E635480016BAC3 /* SGQRCodeAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeAlbumManager.h; sourceTree = "<group>"; };
+		AF65D36520E635480016BAC3 /* SGQRCodeAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeAlbumManager.m; sourceTree = "<group>"; };
+		AF65D36620E635480016BAC3 /* SGQRCodeGenerateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeGenerateManager.h; sourceTree = "<group>"; };
+		AF65D36720E635480016BAC3 /* SGQRCodeGenerateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeGenerateManager.m; sourceTree = "<group>"; };
+		AF65D36820E635480016BAC3 /* SGQRCodeHelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeHelperTool.h; sourceTree = "<group>"; };
+		AF65D36920E635480016BAC3 /* SGQRCodeHelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeHelperTool.m; sourceTree = "<group>"; };
+		AF65D36A20E635480016BAC3 /* SGQRCodeScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanManager.h; sourceTree = "<group>"; };
+		AF65D36B20E635480016BAC3 /* SGQRCodeScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanManager.m; sourceTree = "<group>"; };
+		AF65D36C20E635480016BAC3 /* SGQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningView.h; sourceTree = "<group>"; };
+		AF65D36D20E635480016BAC3 /* SGQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningView.m; sourceTree = "<group>"; };
+		AF65D37620E63AA30016BAC3 /* MSShareNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSShareNotice.h; sourceTree = "<group>"; };
+		AF65D37720E63AA30016BAC3 /* MSShareNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSShareNotice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1022,6 +1056,7 @@
 		AD624D6A20E091440095F0E9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				AF65D35E20E635480016BAC3 /* SGQRCode */,
 				AF65D33020E600380016BAC3 /* BRPickerView */,
 				AF421B5D20E387AE00A300BA /* SGPagingView */,
 				AD624D6B20E091440095F0E9 /* MJExtension */,
@@ -2177,6 +2212,7 @@
 		AF421B4920E373F500A300BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF65D37520E63A8E0016BAC3 /* MSShareModel */,
 				AF65D34F20E61A540016BAC3 /* MSNoticeModel */,
 				AF65D32920E5D38D0016BAC3 /* MSBankModel */,
 				AF421B4A20E3751E00A300BA /* MSMeModel.h */,
@@ -2332,6 +2368,7 @@
 		AF61DA0D20E4BBF0008AD123 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF65D35320E631390016BAC3 /* MSSharView */,
 				AF61DA0E20E4BBF0008AD123 /* MSBankView */,
 				AF61DA1520E4BBF0008AD123 /* MSNoticeView */,
 			);
@@ -2432,6 +2469,57 @@
 				AF65D35120E61A680016BAC3 /* MSNoticeModel.m */,
 			);
 			path = MSNoticeModel;
+			sourceTree = "<group>";
+		};
+		AF65D35320E631390016BAC3 /* MSSharView */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D35920E631710016BAC3 /* RBCShareCell.h */,
+				AF65D35A20E631710016BAC3 /* RBCShareCell.m */,
+				AF65D35B20E631720016BAC3 /* RBCShareCell.xib */,
+				AF65D35520E631420016BAC3 /* RBCShareView.h */,
+				AF65D35420E631420016BAC3 /* RBCShareView.m */,
+				AF65D35620E631430016BAC3 /* RBCShareView.xib */,
+			);
+			path = MSSharView;
+			sourceTree = "<group>";
+		};
+		AF65D35E20E635480016BAC3 /* SGQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D35F20E635480016BAC3 /* Category */,
+				AF65D36220E635480016BAC3 /* SGQRCode.bundle */,
+				AF65D36320E635480016BAC3 /* SGQRCode.h */,
+				AF65D36420E635480016BAC3 /* SGQRCodeAlbumManager.h */,
+				AF65D36520E635480016BAC3 /* SGQRCodeAlbumManager.m */,
+				AF65D36620E635480016BAC3 /* SGQRCodeGenerateManager.h */,
+				AF65D36720E635480016BAC3 /* SGQRCodeGenerateManager.m */,
+				AF65D36820E635480016BAC3 /* SGQRCodeHelperTool.h */,
+				AF65D36920E635480016BAC3 /* SGQRCodeHelperTool.m */,
+				AF65D36A20E635480016BAC3 /* SGQRCodeScanManager.h */,
+				AF65D36B20E635480016BAC3 /* SGQRCodeScanManager.m */,
+				AF65D36C20E635480016BAC3 /* SGQRCodeScanningView.h */,
+				AF65D36D20E635480016BAC3 /* SGQRCodeScanningView.m */,
+			);
+			path = SGQRCode;
+			sourceTree = "<group>";
+		};
+		AF65D35F20E635480016BAC3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D36020E635480016BAC3 /* UIImage+SGImageSize.h */,
+				AF65D36120E635480016BAC3 /* UIImage+SGImageSize.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AF65D37520E63A8E0016BAC3 /* MSShareModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF65D37620E63AA30016BAC3 /* MSShareNotice.h */,
+				AF65D37720E63AA30016BAC3 /* MSShareNotice.m */,
+			);
+			path = MSShareModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2539,11 +2627,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD62504220E0FF190095F0E9 /* BCLoginController.xib in Resources */,
+				AF65D36F20E635480016BAC3 /* SGQRCode.bundle in Resources */,
 				AF61DA1E20E4BBF1008AD123 /* MSNoticeCell.xib in Resources */,
 				AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */,
 				AF61853720E22C3C00791FF0 /* MSSetController.xib in Resources */,
 				ADE06FC320E4D4680067C9A9 /* MSDetailsTableViewCell.xib in Resources */,
 				ADE06FBE20E4B30A0067C9A9 /* MSDetailsTopView.xib in Resources */,
+				AF65D35820E631430016BAC3 /* RBCShareView.xib in Resources */,
 				ADE06FD320E4FD640067C9A9 /* MSFeiLvTableViewCell.xib in Resources */,
 				ADE06FDE20E5E20F0067C9A9 /* MSHuanKuanPlayCell.xib in Resources */,
 				AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */,
@@ -2576,6 +2666,7 @@
 				AF65D34320E600380016BAC3 /* BRPickerView.bundle in Resources */,
 				ADE06FCE20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
+				AF65D35D20E631720016BAC3 /* RBCShareCell.xib in Resources */,
 				ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */,
 				AF61DA0820E48FD1008AD123 /* MSShareController.xib in Resources */,
 				ADE06FAA20E3A0510067C9A9 /* MSHomeTableTopView.xib in Resources */,
@@ -2606,6 +2697,7 @@
 			files = (
 				AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */,
 				AD624F9420E099FF0095F0E9 /* YWRequestData.m in Sources */,
+				AF65D37120E635480016BAC3 /* SGQRCodeGenerateManager.m in Sources */,
 				AD624E7D20E091450095F0E9 /* MJExtensionConst.m in Sources */,
 				AD624FED20E09B020095F0E9 /* SDCycleScrollView.m in Sources */,
 				AD62504120E0FF190095F0E9 /* SALoginModel.m in Sources */,
@@ -2646,6 +2738,7 @@
 				AD624EC720E091460095F0E9 /* FMDatabase.m in Sources */,
 				AF61DA2C20E4E9F3008AD123 /* MSAddDepositCardController.m in Sources */,
 				AD624EB320E091460095F0E9 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				AF65D37320E635480016BAC3 /* SGQRCodeScanManager.m in Sources */,
 				AD624EDC20E091460095F0E9 /* SDAnimatedImageRep.m in Sources */,
 				ADE06FA720E3A0510067C9A9 /* MSTopCollectionViewCell.m in Sources */,
 				ADE06FD620E5D35F0067C9A9 /* MSHuanKuanPlayViewController.m in Sources */,
@@ -2687,6 +2780,7 @@
 				AD624FFA20E09B020095F0E9 /* NSString+NSReplace.m in Sources */,
 				AD624E9720E091460095F0E9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				AD624E7B20E091450095F0E9 /* MJProperty.m in Sources */,
+				AF65D37020E635480016BAC3 /* SGQRCodeAlbumManager.m in Sources */,
 				AD624F8B20E099FF0095F0E9 /* UIView+XMGExtension.m in Sources */,
 				AF61853020E2241C00791FF0 /* MSCardController.m in Sources */,
 				AD624E8220E091460095F0E9 /* MJFoundation.m in Sources */,
@@ -2763,6 +2857,7 @@
 				AD624D4820E0872A0095F0E9 /* main.m in Sources */,
 				AD624F7020E099FF0095F0E9 /* UIImageView+WBY.m in Sources */,
 				AD624F8320E099FF0095F0E9 /* UIButton+WHButton.m in Sources */,
+				AF65D37420E635480016BAC3 /* SGQRCodeScanningView.m in Sources */,
 				AD624E9020E091460095F0E9 /* MJRefreshStateHeader.m in Sources */,
 				AD624F8520E099FF0095F0E9 /* UIBarButtonItem+ZZExtension.m in Sources */,
 				AF65D34620E600380016BAC3 /* BRStringPickerView.m in Sources */,
@@ -2792,6 +2887,7 @@
 				AD624F7720E099FF0095F0E9 /* UIImageView+WHImageView.m in Sources */,
 				AD624F7620E099FF0095F0E9 /* UIView+WHView.m in Sources */,
 				AD624F7D20E099FF0095F0E9 /* NSArray+decription.m in Sources */,
+				AF65D35C20E631720016BAC3 /* RBCShareCell.m in Sources */,
 				AD624F7B20E099FF0095F0E9 /* NSArray+WHArray.m in Sources */,
 				ADE06FAB20E3A0510067C9A9 /* ATHomeFavButton.m in Sources */,
 				AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */,
@@ -2800,6 +2896,7 @@
 				AD624E8B20E091460095F0E9 /* MJRefreshBackNormalFooter.m in Sources */,
 				AF61853620E22C3C00791FF0 /* MSSetController.m in Sources */,
 				AD624FEE20E09B020095F0E9 /* UIView+SDExtension.m in Sources */,
+				AF65D35720E631430016BAC3 /* RBCShareView.m in Sources */,
 				AD624E8620E091460095F0E9 /* UIScrollView+MJExtension.m in Sources */,
 				AD624E8A20E091460095F0E9 /* MJRefreshBackStateFooter.m in Sources */,
 				AF61852E20E2241C00791FF0 /* MSUserController.m in Sources */,
@@ -2820,8 +2917,10 @@
 				AD624EC320E091460095F0E9 /* MBProgressHUD.m in Sources */,
 				AF421B6F20E387AE00A300BA /* SGPageTitleView.m in Sources */,
 				AD624E9B20E091460095F0E9 /* MASLayoutConstraint.m in Sources */,
+				AF65D36E20E635480016BAC3 /* UIImage+SGImageSize.m in Sources */,
 				AD624ED020E091460095F0E9 /* SDWebImageCodersManager.m in Sources */,
 				AF61DA1D20E4BBF1008AD123 /* MSNoticeCell.m in Sources */,
+				AF65D37820E63AA30016BAC3 /* MSShareNotice.m in Sources */,
 				AD624F8A20E099FF0095F0E9 /* NSTimer+WHTimer.m in Sources */,
 				AD624E9120E091460095F0E9 /* MJRefreshGifHeader.m in Sources */,
 				AD624EE020E091460095F0E9 /* NSData+ImageContentType.m in Sources */,
@@ -2840,6 +2939,7 @@
 				AD624ED420E091460095F0E9 /* SDWebImageDownloader.m in Sources */,
 				AD624FF720E09B020095F0E9 /* GKCover.m in Sources */,
 				AD624E8420E091460095F0E9 /* MJRefreshConst.m in Sources */,
+				AF65D37220E635480016BAC3 /* SGQRCodeHelperTool.m in Sources */,
 				AF61DA0720E48FD1008AD123 /* MSShareController.m in Sources */,
 				AD624EE120E091460095F0E9 /* UIImageView+WebCache.m in Sources */,
 				AD624EF820E096B80095F0E9 /* SALoginRegistNavController.m in Sources */,
@@ -3015,7 +3115,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PSM9QJGHC3;
+				DEVELOPMENT_TEAM = R2JCE89QA2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",
@@ -3052,7 +3152,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PSM9QJGHC3;
+				DEVELOPMENT_TEAM = R2JCE89QA2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",

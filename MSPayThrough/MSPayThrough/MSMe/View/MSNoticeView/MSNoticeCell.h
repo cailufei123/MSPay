@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSNoticeModel.h"
 
 @interface MSNoticeCell : UITableViewCell
 
 + (instancetype)noticeCell;
+
+@property (nonatomic,strong) MSNoticeModel *notice;
 
 @end

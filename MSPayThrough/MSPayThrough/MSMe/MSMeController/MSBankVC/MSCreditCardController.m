@@ -145,15 +145,10 @@
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        LFLog(@"删除卡-%@",responseObj);
-        
+        LFLog(@"responseObj-%@",responseObj);
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
-            
-            [self.mcps removeAllObjects];
-            
-            NSArray *mcps = [MSBankMcp mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"mcp"]];
-            
-            [self.mcps addObjectsFromArray:mcps];
+            [MBManager showBriefAlert:@"删除信用卡成功"];
+
             [self.tableView reloadData];
             [self.tableView.mj_header beginRefreshing];
             

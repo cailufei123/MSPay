@@ -56,6 +56,9 @@
                             <state key="normal" title="发送验证码">
                                 <color key="titleColor" red="0.94901960780000005" green="0.24313725489999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="clickCodeBtn" destination="-1" eventType="touchUpInside" id="wTo-fY-oKC"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQT-a3-wCu">
                             <rect key="frame" x="30" y="0.0" width="245" height="50"/>

@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.title = @"谊付通";
+     self.navigationItem.title = @"谊付通";
     
     //关于我们
     [self loadAboutData];
@@ -29,6 +29,7 @@
 
 - (void)loadAboutData{
     NSMutableDictionary * dict = diction;
+    dict[@"abi_code"] = @"n999999";
     dict[@"command"] = @"99008";
     
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
@@ -36,13 +37,15 @@
         
         LFLog(@"responseObj-%@",responseObj);
         
-//        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
-//            [MBManager showscuess:@"绑定成功"];
-//            [self.navigationController popViewControllerAnimated:YES];
-//        }else{
-//            [MBManager showBriefAlert:@"绑定失败"];
-//
-//        }
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            if ([responseObj[@"body"][@"cau_list"] count] > 1) {
+                self.phoneLabe.text = responseObj[@"body"][@"cau_list"][1][@"cau_value"];
+            }
+            
+        }else{
+           
+
+        }
         
     } failure:^(NSError *error) {
         //        [MBManager showBriefAlert:@"网络错误"];

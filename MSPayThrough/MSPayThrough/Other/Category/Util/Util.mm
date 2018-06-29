@@ -107,7 +107,6 @@
 }
 
 //截屏
-
 #pragma mark--------保存图片到相册功能，ALAssetsLibraryiOS9.0 以后用photoliabary 替代，--
 +(void)savePhotoWithJiePingView:(UIView *)view
 {

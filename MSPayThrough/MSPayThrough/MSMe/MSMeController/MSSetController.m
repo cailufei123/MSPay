@@ -40,6 +40,27 @@
 }
 //点击检查更新按钮
 - (IBAction)clickCheckBtn {
+    NSMutableDictionary * dict = diction;
+    dict[@"mv_version_type"] = @"2";
+    dict[@"abi_code"] = @"999999";
+    dict[@"command"] = @"99006";
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+        LFLog(@"版本检测-%@",responseObj);
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+//            [MBManager showBriefAlert:@"密码修改成功"];
+           
+        }else{
+            
+            
+        }
+        
+    } failure:^(NSError *error) {
+        //        [MBManager showBriefAlert:@"网络错误"];
+        [MBManager hideAlert];
+    }];
+    
 }
 //点击安全退出按钮
 - (IBAction)clickLogOutBtn {

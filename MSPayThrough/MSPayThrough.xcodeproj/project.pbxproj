@@ -251,6 +251,8 @@
 		ADE06FE120E5FF940067C9A9 /* MSShaiXuanViewAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FE020E5FF940067C9A9 /* MSShaiXuanViewAlertView.m */; };
 		ADE06FE520E611C50067C9A9 /* MSfastGiveMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FE320E611C50067C9A9 /* MSfastGiveMoneyViewController.m */; };
 		ADE06FE620E611C50067C9A9 /* MSfastGiveMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FE420E611C50067C9A9 /* MSfastGiveMoneyViewController.xib */; };
+		ADE06FE920E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FE820E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m */; };
+		ADE06FEC20E6329A0067C9A9 /* MSselectChuxukaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FEB20E6329A0067C9A9 /* MSselectChuxukaViewController.m */; };
 		AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4B20E3751E00A300BA /* MSMeModel.m */; };
 		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
 		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
@@ -805,6 +807,10 @@
 		ADE06FE220E611C50067C9A9 /* MSfastGiveMoneyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSfastGiveMoneyViewController.h; sourceTree = "<group>"; };
 		ADE06FE320E611C50067C9A9 /* MSfastGiveMoneyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSfastGiveMoneyViewController.m; sourceTree = "<group>"; };
 		ADE06FE420E611C50067C9A9 /* MSfastGiveMoneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSfastGiveMoneyViewController.xib; sourceTree = "<group>"; };
+		ADE06FE720E6324E0067C9A9 /* MSXunzeXinYongKaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSXunzeXinYongKaViewController.h; sourceTree = "<group>"; };
+		ADE06FE820E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSXunzeXinYongKaViewController.m; sourceTree = "<group>"; };
+		ADE06FEA20E6329A0067C9A9 /* MSselectChuxukaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSselectChuxukaViewController.h; sourceTree = "<group>"; };
+		ADE06FEB20E6329A0067C9A9 /* MSselectChuxukaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSselectChuxukaViewController.m; sourceTree = "<group>"; };
 		AF421B4A20E3751E00A300BA /* MSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeModel.h; sourceTree = "<group>"; };
 		AF421B4B20E3751E00A300BA /* MSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeModel.m; sourceTree = "<group>"; };
 		AF421B4D20E3762600A300BA /* MSMciModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMciModel.h; sourceTree = "<group>"; };
@@ -2151,6 +2157,10 @@
 				ADE06FE220E611C50067C9A9 /* MSfastGiveMoneyViewController.h */,
 				ADE06FE320E611C50067C9A9 /* MSfastGiveMoneyViewController.m */,
 				ADE06FE420E611C50067C9A9 /* MSfastGiveMoneyViewController.xib */,
+				ADE06FE720E6324E0067C9A9 /* MSXunzeXinYongKaViewController.h */,
+				ADE06FE820E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m */,
+				ADE06FEA20E6329A0067C9A9 /* MSselectChuxukaViewController.h */,
+				ADE06FEB20E6329A0067C9A9 /* MSselectChuxukaViewController.m */,
 			);
 			path = MSHomeController;
 			sourceTree = "<group>";
@@ -2704,6 +2714,7 @@
 				AD624F6C20E099FF0095F0E9 /* NSNumber+WHNumber.m in Sources */,
 				AD624F9120E099FF0095F0E9 /* LFConst.m in Sources */,
 				AD624EB820E091460095F0E9 /* IQUITextFieldView+Additions.m in Sources */,
+				ADE06FEC20E6329A0067C9A9 /* MSselectChuxukaViewController.m in Sources */,
 				AD624EBA20E091460095F0E9 /* IQUIView+Hierarchy.m in Sources */,
 				AD624FF820E09B020095F0E9 /* TXScrollLabelView.m in Sources */,
 				ADE06FCC20E4FC0F0067C9A9 /* MSFeiLvTopVoew.m in Sources */,
@@ -2769,6 +2780,7 @@
 				ADE06FA920E3A0510067C9A9 /* MSHomeTableViewCell.m in Sources */,
 				AD624EB420E091460095F0E9 /* IQPreviousNextView.m in Sources */,
 				AD624EBE20E091460095F0E9 /* AFHTTPSessionManager.m in Sources */,
+				ADE06FE920E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m in Sources */,
 				AD624ED920E091460095F0E9 /* SDWebImagePrefetcher.m in Sources */,
 				AD624EB720E091460095F0E9 /* IQNSArray+Sort.m in Sources */,
 				AD624E9920E091460095F0E9 /* MASCompositeConstraint.m in Sources */,

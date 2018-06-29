@@ -21,4 +21,6 @@
 @property (nonatomic,copy) NSString *mcp_bank_ico;
 /*id*/
 @property (nonatomic,copy) NSString *mbi_id;
+/*mcp_id*/
+@property (nonatomic,copy) NSString *mcp_id;
 @end

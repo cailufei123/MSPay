@@ -10,4 +10,8 @@
 
 @interface MSNoticeModel : NSObject
 
+@property (nonatomic,copy) NSString *cn_title;
+@property (nonatomic,copy) NSString *cn_content;
+@property (nonatomic,copy) NSString *cn_create_time;
+
 @end

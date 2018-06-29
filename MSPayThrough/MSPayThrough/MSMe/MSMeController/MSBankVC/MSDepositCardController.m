@@ -84,7 +84,7 @@
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-//        LFLog(@"储蓄卡卡-%@",responseObj);
+        LFLog(@"储蓄卡卡-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
             
@@ -132,7 +132,30 @@
 
 #pragma mark - MSDepositCellDelegate
 - (void)clickDeleteButton:(MSDepositCell *)depositCell{
-    LFLog(@"点击删除按钮");
+//    LFLog(@"点击删除按钮");
+    NSMutableDictionary * dict = diction;
+    dict[@"mcp_id"] = depositCell.deposit.mcp_id;
+    dict[@"command"] = @"1008";
+
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+
+//        LFLog(@"删除储蓄卡-%@",responseObj);
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [MBManager showBriefAlert:@"删除储蓄卡成功"];
+
+            [self.tableView reloadData];
+            [self.tableView.mj_header beginRefreshing];
+
+        }else{
+
+        }
+
+    } failure:^(NSError *error) {
+        //        [MBManager showBriefAlert:@"网络错误"];
+
+        [MBManager hideAlert];
+    }];
 }
 - (void)clickCardTypeButon:(MSDepositCell *)depositCell{
     LFLog(@"点击主卡");

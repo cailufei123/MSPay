@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSShareController">
             <connections>
+                <outlet property="bgImageView" destination="M3h-X9-VI1" id="yCA-4R-Akh"/>
                 <outlet property="qrCodeImageView" destination="VXJ-PP-GQ6" id="tzd-ia-OkZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -65,7 +66,6 @@
                         <constraint firstAttribute="height" constant="50" id="PO5-Ek-DHs"/>
                         <constraint firstAttribute="width" constant="50" id="oKe-UC-gKK"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="clickBackBtn" destination="-1" eventType="touchUpInside" id="uvu-O6-RJq"/>
                     </connections>
@@ -84,7 +84,6 @@
                         <constraint firstAttribute="width" constant="50" id="oTX-Ih-Yjn"/>
                         <constraint firstAttribute="height" constant="50" id="yDT-yc-th5"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="clickShareBtn" destination="-1" eventType="touchUpInside" id="Il8-Cg-d6o"/>
                     </connections>

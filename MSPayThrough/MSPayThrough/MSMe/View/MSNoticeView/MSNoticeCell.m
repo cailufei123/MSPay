@@ -36,6 +36,13 @@
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
 }
 
+- (void)setNotice:(MSNoticeModel *)notice{
+    _notice = notice;
+    self.titleLabel.text = notice.cn_title;
+    self.contentLabel.text = notice.cn_content;
+    self.timeLabel.text = notice.cn_create_time;
+}
+
 - (void)setFrame:(CGRect)frame{
   
     frame.origin.y += 15;

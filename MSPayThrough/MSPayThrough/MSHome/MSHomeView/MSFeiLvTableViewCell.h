@@ -1,5 +1,5 @@
 //
-//  MSDetalsViewController.h
+//  MSFeiLvTableViewCell.h
 //  MSPayThrough
 //
 //  Created by 蔡路飞 on 2018/6/28.
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface MSDetalsViewController : UIViewController
-@property(nonatomic,strong)  MSHomModel * homeModel;
+
+@interface MSFeiLvTableViewCell : UITableViewCell
+@property(nonatomic,strong) FeiLVModel * xiangQinModel;
 @end

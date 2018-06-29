@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MSHomModel.h"
 @interface MSTopCollectionViewCell : UICollectionViewCell
 @property(nonatomic,strong)  MSHomModel * homeModel ;
 @end

@@ -11,7 +11,6 @@
 #import "JhtHorizontalMarquee.h"
 #import "MSTopCollectionViewCell.h"
 #import "MSCollectionViewFlowLayout.h"
-#import "MSHomModel.h"
 #import "MSDetalsViewController.h"
 @interface MSHomeTableTopView()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate>
 {

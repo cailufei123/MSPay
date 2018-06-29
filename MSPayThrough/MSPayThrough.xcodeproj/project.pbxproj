@@ -236,6 +236,14 @@
 		ADE06FB920E4B2C60067C9A9 /* MSDetalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FB820E4B2C60067C9A9 /* MSDetalsViewController.m */; };
 		ADE06FBC20E4B2F50067C9A9 /* MSDetailsTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FBB20E4B2F50067C9A9 /* MSDetailsTopView.m */; };
 		ADE06FBE20E4B30A0067C9A9 /* MSDetailsTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FBD20E4B30A0067C9A9 /* MSDetailsTopView.xib */; };
+		ADE06FC220E4D4680067C9A9 /* MSDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FC020E4D4680067C9A9 /* MSDetailsTableViewCell.m */; };
+		ADE06FC320E4D4680067C9A9 /* MSDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FC120E4D4680067C9A9 /* MSDetailsTableViewCell.xib */; };
+		ADE06FC620E4F6880067C9A9 /* ATServiceAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FC520E4F6880067C9A9 /* ATServiceAgreementController.m */; };
+		ADE06FC920E4FB9D0067C9A9 /* MSFeiLvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FC820E4FB9D0067C9A9 /* MSFeiLvViewController.m */; };
+		ADE06FCC20E4FC0F0067C9A9 /* MSFeiLvTopVoew.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FCB20E4FC0F0067C9A9 /* MSFeiLvTopVoew.m */; };
+		ADE06FCE20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FCD20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib */; };
+		ADE06FD220E4FD640067C9A9 /* MSFeiLvTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FD020E4FD640067C9A9 /* MSFeiLvTableViewCell.m */; };
+		ADE06FD320E4FD640067C9A9 /* MSFeiLvTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FD120E4FD640067C9A9 /* MSFeiLvTableViewCell.xib */; };
 		AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4B20E3751E00A300BA /* MSMeModel.m */; };
 		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
 		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
@@ -749,6 +757,19 @@
 		ADE06FBA20E4B2F50067C9A9 /* MSDetailsTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDetailsTopView.h; sourceTree = "<group>"; };
 		ADE06FBB20E4B2F50067C9A9 /* MSDetailsTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDetailsTopView.m; sourceTree = "<group>"; };
 		ADE06FBD20E4B30A0067C9A9 /* MSDetailsTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSDetailsTopView.xib; sourceTree = "<group>"; };
+		ADE06FBF20E4D4680067C9A9 /* MSDetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDetailsTableViewCell.h; sourceTree = "<group>"; };
+		ADE06FC020E4D4680067C9A9 /* MSDetailsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDetailsTableViewCell.m; sourceTree = "<group>"; };
+		ADE06FC120E4D4680067C9A9 /* MSDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		ADE06FC420E4F6870067C9A9 /* ATServiceAgreementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATServiceAgreementController.h; sourceTree = "<group>"; };
+		ADE06FC520E4F6880067C9A9 /* ATServiceAgreementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATServiceAgreementController.m; sourceTree = "<group>"; };
+		ADE06FC720E4FB9D0067C9A9 /* MSFeiLvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeiLvViewController.h; sourceTree = "<group>"; };
+		ADE06FC820E4FB9D0067C9A9 /* MSFeiLvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFeiLvViewController.m; sourceTree = "<group>"; };
+		ADE06FCA20E4FC0F0067C9A9 /* MSFeiLvTopVoew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeiLvTopVoew.h; sourceTree = "<group>"; };
+		ADE06FCB20E4FC0F0067C9A9 /* MSFeiLvTopVoew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFeiLvTopVoew.m; sourceTree = "<group>"; };
+		ADE06FCD20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFeiLvTopVoew.xib; sourceTree = "<group>"; };
+		ADE06FCF20E4FD640067C9A9 /* MSFeiLvTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeiLvTableViewCell.h; sourceTree = "<group>"; };
+		ADE06FD020E4FD640067C9A9 /* MSFeiLvTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFeiLvTableViewCell.m; sourceTree = "<group>"; };
+		ADE06FD120E4FD640067C9A9 /* MSFeiLvTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFeiLvTableViewCell.xib; sourceTree = "<group>"; };
 		AF421B4A20E3751E00A300BA /* MSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeModel.h; sourceTree = "<group>"; };
 		AF421B4B20E3751E00A300BA /* MSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeModel.m; sourceTree = "<group>"; };
 		AF421B4D20E3762600A300BA /* MSMciModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMciModel.h; sourceTree = "<group>"; };
@@ -2029,6 +2050,15 @@
 				ADE06FBA20E4B2F50067C9A9 /* MSDetailsTopView.h */,
 				ADE06FBB20E4B2F50067C9A9 /* MSDetailsTopView.m */,
 				ADE06FBD20E4B30A0067C9A9 /* MSDetailsTopView.xib */,
+				ADE06FBF20E4D4680067C9A9 /* MSDetailsTableViewCell.h */,
+				ADE06FC020E4D4680067C9A9 /* MSDetailsTableViewCell.m */,
+				ADE06FC120E4D4680067C9A9 /* MSDetailsTableViewCell.xib */,
+				ADE06FCA20E4FC0F0067C9A9 /* MSFeiLvTopVoew.h */,
+				ADE06FCB20E4FC0F0067C9A9 /* MSFeiLvTopVoew.m */,
+				ADE06FCD20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib */,
+				ADE06FCF20E4FD640067C9A9 /* MSFeiLvTableViewCell.h */,
+				ADE06FD020E4FD640067C9A9 /* MSFeiLvTableViewCell.m */,
+				ADE06FD120E4FD640067C9A9 /* MSFeiLvTableViewCell.xib */,
 			);
 			path = MSHomeView;
 			sourceTree = "<group>";
@@ -2036,10 +2066,14 @@
 		ADE06F9720E3A0510067C9A9 /* MSHomeController */ = {
 			isa = PBXGroup;
 			children = (
+				ADE06FC420E4F6870067C9A9 /* ATServiceAgreementController.h */,
+				ADE06FC520E4F6880067C9A9 /* ATServiceAgreementController.m */,
 				ADE06F9A20E3A0510067C9A9 /* MSHomeViewController.h */,
 				ADE06F9820E3A0510067C9A9 /* MSHomeViewController.m */,
 				ADE06FB720E4B2C60067C9A9 /* MSDetalsViewController.h */,
 				ADE06FB820E4B2C60067C9A9 /* MSDetalsViewController.m */,
+				ADE06FC720E4FB9D0067C9A9 /* MSFeiLvViewController.h */,
+				ADE06FC820E4FB9D0067C9A9 /* MSFeiLvViewController.m */,
 			);
 			path = MSHomeController;
 			sourceTree = "<group>";
@@ -2337,7 +2371,9 @@
 				AF61DA1E20E4BBF1008AD123 /* MSNoticeCell.xib in Resources */,
 				AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */,
 				AF61853720E22C3C00791FF0 /* MSSetController.xib in Resources */,
+				ADE06FC320E4D4680067C9A9 /* MSDetailsTableViewCell.xib in Resources */,
 				ADE06FBE20E4B30A0067C9A9 /* MSDetailsTopView.xib in Resources */,
+				ADE06FD320E4FD640067C9A9 /* MSFeiLvTableViewCell.xib in Resources */,
 				AF61853220E2241C00791FF0 /* MSVerifyCardController.xib in Resources */,
 				AD62500120E09B020095F0E9 /* RefreshTableView.bundle in Resources */,
 				AF61852F20E2241C00791FF0 /* MSCardController.xib in Resources */,
@@ -2361,6 +2397,7 @@
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
 				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
 				AF61DA1C20E4BBF1008AD123 /* MSDepositCell.xib in Resources */,
+				ADE06FCE20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				ADE06F9F20E3A0510067C9A9 /* MSTopCollectionViewCell.xib in Resources */,
 				AF61DA0820E48FD1008AD123 /* MSShareController.xib in Resources */,
@@ -2401,6 +2438,7 @@
 				ADE06FAE20E3A0510067C9A9 /* MSHomeViewController.m in Sources */,
 				AD624FE520E09B020095F0E9 /* ImagePicker.m in Sources */,
 				AD624E7E20E091450095F0E9 /* NSObject+MJProperty.m in Sources */,
+				ADE06FC920E4FB9D0067C9A9 /* MSFeiLvViewController.m in Sources */,
 				AD624EC820E091460095F0E9 /* FMDatabasePool.m in Sources */,
 				AD624ED720E091460095F0E9 /* SDWebImageCoderHelper.m in Sources */,
 				AD624EDE20E091460095F0E9 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -2446,6 +2484,7 @@
 				AF421B5520E376B800A300BA /* MSMrcModel.m in Sources */,
 				AD624E9620E091460095F0E9 /* MJRefreshComponent.m in Sources */,
 				AF61854D20E25C1400791FF0 /* MSFrogetPwdController.m in Sources */,
+				ADE06FD220E4FD640067C9A9 /* MSFeiLvTableViewCell.m in Sources */,
 				AD624F7420E099FF0095F0E9 /* NSDictionary+WHDictionary.m in Sources */,
 				AD624EE820E091460095F0E9 /* UIButton+WebCache.m in Sources */,
 				AF61D9FC20E486F5008AD123 /* MSNticeController.m in Sources */,
@@ -2492,6 +2531,7 @@
 				AD624EB820E091460095F0E9 /* IQUITextFieldView+Additions.m in Sources */,
 				AD624EBA20E091460095F0E9 /* IQUIView+Hierarchy.m in Sources */,
 				AD624FF820E09B020095F0E9 /* TXScrollLabelView.m in Sources */,
+				ADE06FCC20E4FC0F0067C9A9 /* MSFeiLvTopVoew.m in Sources */,
 				AD624EEA20E091460095F0E9 /* UIScrollView+EmptyDataSet.m in Sources */,
 				AD624ECA20E091460095F0E9 /* UIImage+WebP.m in Sources */,
 				AD624F7120E099FF0095F0E9 /* UILabel+WHLabel.m in Sources */,
@@ -2539,6 +2579,7 @@
 				AD624FFB20E09B020095F0E9 /* GTMBase64.m in Sources */,
 				AD624EBC20E091460095F0E9 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				AD624FFE20E09B020095F0E9 /* YYLRefreshNoDataView.m in Sources */,
+				ADE06FC220E4D4680067C9A9 /* MSDetailsTableViewCell.m in Sources */,
 				AD624EB920E091460095F0E9 /* IQUIScrollView+Additions.m in Sources */,
 				AD624FFD20E09B020095F0E9 /* YYLRefreshRequestErrorView.m in Sources */,
 				AD624E8820E091460095F0E9 /* UIView+MJExtension.m in Sources */,
@@ -2572,6 +2613,7 @@
 				AF61852E20E2241C00791FF0 /* MSUserController.m in Sources */,
 				AD624E8C20E091460095F0E9 /* MJRefreshAutoStateFooter.m in Sources */,
 				AD624F7A20E099FF0095F0E9 /* NSDate+WHDate.m in Sources */,
+				ADE06FC620E4F6880067C9A9 /* ATServiceAgreementController.m in Sources */,
 				AD624E9F20E091460095F0E9 /* MASViewConstraint.m in Sources */,
 				AD624E7A20E091450095F0E9 /* NSObject+MJKeyValue.m in Sources */,
 				AD624ED820E091460095F0E9 /* SDWebImageCompat.m in Sources */,

@@ -95,4 +95,17 @@
         [MBManager hideAlert];
     }];
 }
+#pragma mark -xaing----
++ (void)publicDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess{
+    [LFHttpTool post:nil params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        LFLog(@"%@",responseObj);
+        [MBManager hideAlert];
+        sucess(responseObj);
+        
+    } failure:^(NSError *error) {
+        [MBManager showBriefAlert:@"网络错误"];
+        [MBManager hideAlert];
+    }];
+}
 @end

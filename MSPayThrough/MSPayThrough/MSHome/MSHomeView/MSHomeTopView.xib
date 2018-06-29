@@ -35,6 +35,9 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5V-k0-QTJ">
                                     <rect key="frame" x="307" y="17.5" width="24" height="24"/>
                                     <state key="normal" image="home_setup"/>
+                                    <connections>
+                                        <action selector="setClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="kmD-F7-dRG"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -52,21 +55,33 @@
                                     <rect key="frame" x="0.0" y="10" width="80.5" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <state key="normal" title="快捷收款" image="quick_recipts_img"/>
+                                    <connections>
+                                        <action selector="shoukuanClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="JS3-Yt-kTu"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLj-tz-tUV" customClass="ATHomeFavButton">
                                     <rect key="frame" x="260.5" y="10" width="80.5" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <state key="normal" title="我的贷款" image="app_xiao_img"/>
+                                    <connections>
+                                        <action selector="daikuanClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="oXf-mB-VeB"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXy-ck-tH2" customClass="ATHomeFavButton">
                                     <rect key="frame" x="80.5" y="10" width="80" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <state key="normal" title="智慧还款" image="reim_money_img"/>
+                                    <connections>
+                                        <action selector="huankuanClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="3jG-Cf-rDY"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-LD-eD6" customClass="ATHomeFavButton">
                                     <rect key="frame" x="180.5" y="10" width="80" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <state key="normal" title="申请信用卡" image="app_card_img"/>
+                                    <connections>
+                                        <action selector="xingyongkaClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="8WX-0Z-ug3"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -98,6 +113,9 @@
                                     <state key="normal" title="费率" image="home_rate_img">
                                         <color key="titleColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="feilvClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="923-TL-Q2R"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-X0-FJR" customClass="ATHomeFavButton">
                                     <rect key="frame" x="113.5" y="0.0" width="114" height="74"/>
@@ -105,6 +123,9 @@
                                     <state key="normal" title="还款计划" image="home_plan_img">
                                         <color key="titleColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="jihuaClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Tij-RB-krh"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9j-z0-33Y" customClass="ATHomeFavButton">
                                     <rect key="frame" x="227.5" y="0.0" width="113.5" height="74"/>
@@ -112,6 +133,9 @@
                                     <state key="normal" title="银行卡" image="home_card">
                                         <color key="titleColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="yinghangkaClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZqO-l3-dwS"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

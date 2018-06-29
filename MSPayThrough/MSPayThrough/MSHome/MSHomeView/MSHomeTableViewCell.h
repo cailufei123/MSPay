@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MSHomModel.h"
 @interface MSHomeTableViewCell : UITableViewCell
 @property(nonatomic,strong) MSHomListModel * listModel;
 @end

@@ -91,4 +91,9 @@
 @property(nonatomic,strong)NSString * qrpd_id;//" = 100727,
 @property(nonatomic,strong)NSString * qrpd_finish_datetime;//" = 2018-05-23 11:24:39,
 @end
+@interface FeiLVModel : NSObject
+@property(nonatomic,strong)NSString * fee_value;//" = 0.55%+1,
+@property(nonatomic,strong)NSString * fee_name;//" = 快捷有积分,
+
+@end
 

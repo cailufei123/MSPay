@@ -28,7 +28,6 @@
     [super awakeFromNib];
 
     
-    
    self.progressView = [ProgressView createProgressWithFrame:CGRectMake(0, 0, 60, 60) backColor:bagColor color:[SVGloble colorWithHexString:@"#69c30c"] proportion:0];
    
     //如果需要内容数据时使用

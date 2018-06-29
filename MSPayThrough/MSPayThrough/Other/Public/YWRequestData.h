@@ -22,4 +22,5 @@
 // -账单-----
 + (void)gongGaoDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
 + (void)xiangQinDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
++ (void)publicDict:(NSMutableDictionary *)dict success:(void (^) (id responseObj))sucess;
 @end

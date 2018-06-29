@@ -258,6 +258,6 @@
         </view>
     </objects>
     <resources>
-        <image name="pai_card" width="30" height="30"/>
+        <image name="pai_card" width="20" height="20"/>
     </resources>
 </document>

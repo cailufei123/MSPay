@@ -158,7 +158,31 @@
     }];
 }
 - (void)clickCardTypeButon:(MSDepositCell *)depositCell{
-    LFLog(@"点击主卡");
+//    LFLog(@"点击主卡");
+    
+    NSMutableDictionary * dict = diction;
+    dict[@"mcp_id"] = depositCell.deposit.mcp_id;
+    dict[@"command"] = @"1004";
+    
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+//        LFLog(@"设置主卡-%@",responseObj);
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [MBManager showBriefAlert:@"设置主卡成功"];
+            [self.deposits exchangeObjectAtIndex:depositCell.indexpath.row withObjectAtIndex:0];
+            
+            [self.tableView reloadData];
+            
+        }else{
+            [MBManager showBriefAlert:responseObj[@"head"][@"status_desc"]];
+        }
+        
+    } failure:^(NSError *error) {
+        //        [MBManager showBriefAlert:@"网络错误"];
+        
+        [MBManager hideAlert];
+    }];
 }
 
 @end

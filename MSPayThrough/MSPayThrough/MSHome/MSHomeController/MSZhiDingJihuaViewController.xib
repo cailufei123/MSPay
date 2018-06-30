@@ -245,7 +245,9 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="99b-dB-S8u"/>
                                     </constraints>
-                                    <state key="normal" title="生成计划"/>
+                                    <state key="normal" title="生成计划">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
                                     <connections>
                                         <action selector="kdfkdfk:" destination="-1" eventType="touchUpInside" id="g4c-mC-xXo"/>
                                     </connections>

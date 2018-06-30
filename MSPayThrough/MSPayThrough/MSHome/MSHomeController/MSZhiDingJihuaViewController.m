@@ -22,7 +22,7 @@
 @property (strong, nonatomic)  NSString *repay_dates;
 @property (strong, nonatomic)  NSString *srepay_dates_text;
 @property (weak, nonatomic) IBOutlet UIButton *sehgnchengiBt;
-
+@property (assign, nonatomic)  NSInteger choseCount;
 @end
 
 @implementation MSZhiDingJihuaViewController
@@ -37,7 +37,7 @@
 //     @{NSFontAttributeName:[UIFont boldSystemFontOfSize:17],
 //       
 //       NSForegroundColorAttributeName:naverTextColor}];
-    
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -52,6 +52,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      [self.bgView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+    
+     [self.sehgnchengiBt gradientFreme: CGRectMake(0, 0, LFscreenW-40, 40) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     self.navigationItem.title = @"制定还款计划";
          self.automaticallyAdjustsScrollViewInsets = NO;
     [self.logo sd_setImageWithURL:[NSURL URLWithString:self.bankMcp.mcp_bank_ico]];
@@ -146,10 +148,10 @@
 //    repay_dates = "";
 //    srepay_dates_text = "";
 //    choseCount = 1;
-    NSInteger choseCount  = 0;
+  
     if (texts.length > 2 &&  [texts integerValue]>= 560) {
-       choseCount = [texts integerValue]/ 560;
-        NSInteger dateCount = (choseCount % 2 == 0 ? choseCount / 2 : choseCount / 2 + 1);
+      self. choseCount = [texts integerValue]/ 560;
+        NSInteger dateCount = (self.choseCount % 2 == 0 ? self.choseCount / 2 :self. choseCount / 2 + 1);
        dateCount =  [self.dates count] > dateCount ? dateCount :  [self.dates count];
           NSArray * smallArray = [self.dates subarrayWithRange:NSMakeRange(0, dateCount)];
         NSArray * smallArray1 = [self.dates subarrayWithRange:NSMakeRange(0, dateCount)];
@@ -157,7 +159,7 @@
         LFLog(@"%@",smallArray1);
           self.repay_dates = [smallArray componentsJoinedByString:@","];
          self.srepay_dates_text = [smallArray componentsJoinedByString:@","];
-        choseCount = choseCount > dateCount * 2 ? dateCount * 2 : choseCount;
+        self.choseCount = self.choseCount > dateCount * 2 ? dateCount * 2 : self.choseCount;
     }
     
     if (self.repay_dates.length||texts.length<=2) {
@@ -167,8 +169,8 @@
          self.dateLb.hidden = YES;
         
     }
-    if (choseCount) {
-        self.countLB.text = [NSString stringWithFormat:@"%ld",choseCount];
+    if (self.choseCount) {
+        self.countLB.text = [NSString stringWithFormat:@"%ld",(long)self.choseCount];
         self.countLB.hidden = NO;
     }else{
         self.countLB.hidden = YES;
@@ -177,12 +179,13 @@
    
 }
 - (IBAction)kdfkdfk:(id)sender {
-    NSDictionary * dict = diction;
+    
+    NSMutableDictionary * dict = diction;
     dict[@"bank_acc_name"] = self.bankMcp.mcp_user_name;
      dict[@"bank_acc_no"] = self.bankMcp.mcp_card_no;
     dict[@"repay_money_total"] = self.enterTf.text;
      dict[@"qrp_plan_cycle"] = self.srepay_dates_text;
-     dict[@"qrp_repay_count"] =
+    dict[@"qrp_repay_count"] =  [NSString stringWithFormat:@"%ld",(long)self.choseCount];
     
     [YWRequestData publicDict:dict success:^(id responseObj) {
         

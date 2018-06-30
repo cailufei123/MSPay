@@ -98,6 +98,9 @@
     }
     self.navigationItem.title = @"登录";
     self.scrollow.delegate = self;
+    
+    [self.loginBt gradientFreme:CGRectMake(0, 0, LFscreenW-40, 45)startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+
 //     self.scrollow
 //      self.scrollow.automaticallyAdjustsScrollViewInsets = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;

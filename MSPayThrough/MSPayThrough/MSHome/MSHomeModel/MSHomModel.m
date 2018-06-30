@@ -25,3 +25,7 @@
 @implementation FeiLVModel
 
 @end
+@implementation MSBankMcpModel
+
+@end
+

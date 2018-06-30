@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD451C8820E7482200E26FFD /* MSLiuShuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD451C8620E7482200E26FFD /* MSLiuShuiViewController.m */; };
+		AD451C8C20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD451C8B20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m */; };
+		AD451C9020E74C9F00E26FFD /* MSZhiHuiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD451C8E20E74C9F00E26FFD /* MSZhiHuiTableViewCell.m */; };
+		AD451C9120E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD451C8F20E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib */; };
 		AD624D4020E087270095F0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD624D3E20E087270095F0E9 /* Main.storyboard */; };
 		AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD624D4120E0872A0095F0E9 /* Assets.xcassets */; };
 		AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD624D4320E0872A0095F0E9 /* LaunchScreen.storyboard */; };
@@ -365,6 +369,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD451C8520E7482200E26FFD /* MSLiuShuiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLiuShuiViewController.h; sourceTree = "<group>"; };
+		AD451C8620E7482200E26FFD /* MSLiuShuiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLiuShuiViewController.m; sourceTree = "<group>"; };
+		AD451C8A20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSZhiHuiHuanKuanViewController.h; sourceTree = "<group>"; };
+		AD451C8B20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSZhiHuiHuanKuanViewController.m; sourceTree = "<group>"; };
+		AD451C8D20E74C9F00E26FFD /* MSZhiHuiTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSZhiHuiTableViewCell.h; sourceTree = "<group>"; };
+		AD451C8E20E74C9F00E26FFD /* MSZhiHuiTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSZhiHuiTableViewCell.m; sourceTree = "<group>"; };
+		AD451C8F20E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSZhiHuiTableViewCell.xib; sourceTree = "<group>"; };
 		AD624D3520E087270095F0E9 /* MSPayThrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSPayThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD624D3F20E087270095F0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD624D4120E0872A0095F0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -2097,6 +2108,8 @@
 			children = (
 				AD62502520E09D6C0095F0E9 /* MSBillViewController.h */,
 				AD62502620E09D6C0095F0E9 /* MSBillViewController.m */,
+				AD451C8520E7482200E26FFD /* MSLiuShuiViewController.h */,
+				AD451C8620E7482200E26FFD /* MSLiuShuiViewController.m */,
 			);
 			path = MSBillController;
 			sourceTree = "<group>";
@@ -2203,6 +2216,9 @@
 				ADE06FDC20E5E20F0067C9A9 /* MSHuanKuanPlayCell.xib */,
 				ADE06FDF20E5FF940067C9A9 /* MSShaiXuanViewAlertView.h */,
 				ADE06FE020E5FF940067C9A9 /* MSShaiXuanViewAlertView.m */,
+				AD451C8D20E74C9F00E26FFD /* MSZhiHuiTableViewCell.h */,
+				AD451C8E20E74C9F00E26FFD /* MSZhiHuiTableViewCell.m */,
+				AD451C8F20E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib */,
 			);
 			path = MSHomeView;
 			sourceTree = "<group>";
@@ -2227,6 +2243,8 @@
 				ADE06FE820E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m */,
 				ADE06FEA20E6329A0067C9A9 /* MSselectChuxukaViewController.h */,
 				ADE06FEB20E6329A0067C9A9 /* MSselectChuxukaViewController.m */,
+				AD451C8A20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.h */,
+				AD451C8B20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m */,
 			);
 			path = MSHomeController;
 			sourceTree = "<group>";
@@ -2696,6 +2714,7 @@
 				AF65D34E20E607050016BAC3 /* MSBandCreditController.xib in Resources */,
 				AF61DA1C20E4BBF1008AD123 /* MSDepositCell.xib in Resources */,
 				AF65D34320E600380016BAC3 /* BRPickerView.bundle in Resources */,
+				AD451C9120E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib in Resources */,
 				ADE06FCE20E4FC1D0067C9A9 /* MSFeiLvTopVoew.xib in Resources */,
 				AF61852320E2206C00791FF0 /* MSMesController.xib in Resources */,
 				AF65D35D20E631720016BAC3 /* RBCShareCell.xib in Resources */,
@@ -2753,6 +2772,7 @@
 				AD624E8320E091460095F0E9 /* UIScrollView+MJRefresh.m in Sources */,
 				ADE06FB320E3BFC90067C9A9 /* ProgressView.m in Sources */,
 				ADE06FB020E3A0510067C9A9 /* MSHomModel.m in Sources */,
+				AD451C8820E7482200E26FFD /* MSLiuShuiViewController.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
 				ADE06FE520E611C50067C9A9 /* MSfastGiveMoneyViewController.m in Sources */,
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
@@ -2868,6 +2888,7 @@
 				ADE06FBC20E4B2F50067C9A9 /* MSDetailsTopView.m in Sources */,
 				AD624EB220E091460095F0E9 /* IQBarButtonItem.m in Sources */,
 				AD624F7920E099FF0095F0E9 /* UIImage+WHImage.m in Sources */,
+				AD451C8C20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m in Sources */,
 				AF65D34420E600380016BAC3 /* BRBaseView.m in Sources */,
 				AD624EC020E091460095F0E9 /* AFURLRequestSerialization.m in Sources */,
 				AD624EFA20E096B80095F0E9 /* SATabBar.m in Sources */,
@@ -2973,6 +2994,7 @@
 				AD624E8420E091460095F0E9 /* MJRefreshConst.m in Sources */,
 				AF65D37220E635480016BAC3 /* SGQRCodeHelperTool.m in Sources */,
 				AF61DA0720E48FD1008AD123 /* MSShareController.m in Sources */,
+				AD451C9020E74C9F00E26FFD /* MSZhiHuiTableViewCell.m in Sources */,
 				AD624EE120E091460095F0E9 /* UIImageView+WebCache.m in Sources */,
 				AD624EF820E096B80095F0E9 /* SALoginRegistNavController.m in Sources */,
 				AD624F6F20E099FF0095F0E9 /* Util.mm in Sources */,

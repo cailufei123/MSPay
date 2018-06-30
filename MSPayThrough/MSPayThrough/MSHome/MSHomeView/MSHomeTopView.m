@@ -13,6 +13,7 @@
 #import "MSHuanKuanPlayViewController.h"
 #import "MSfastGiveMoneyViewController.h"
 #import "MSZhiHuiHuanKuanViewController.h"
+
 @implementation MSHomeTopView
 -(void)awakeFromNib{
     [super awakeFromNib];

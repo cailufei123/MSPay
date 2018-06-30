@@ -8,6 +8,8 @@
 
 #import "MSZhiHuiTableViewCell.h"
 #import "MSHuanKuanPlayViewController.h"
+#import "MSZhiDingJihuaViewController.h"
+#import "MSLiuShuiSelectViewController.h"
 @interface MSZhiHuiTableViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 @property (weak, nonatomic) IBOutlet UILabel *cardNameLb;
@@ -37,10 +39,12 @@
      [self.chakanJIhuaBt addTarget:self action:@selector(chakanJIhuaBtClick) forControlEvents:UIControlEventTouchUpInside];
 }
 -(void)zhidingJihuaBtClick{
-   
+    MSZhiDingJihuaViewController * huanKuanPlayV =  [[MSZhiDingJihuaViewController alloc] init];
+    [[self viewController].navigationController pushViewController:huanKuanPlayV animated:YES];
 }
 -(void)chankanLiushuiBtClick{
-    
+    MSZhiDingJihuaViewController * huanKuanPlayV =  [[MSZhiDingJihuaViewController alloc] init];
+    [[self viewController].navigationController pushViewController:huanKuanPlayV animated:YES];
 }
 -(void)chakanJIhuaBtClick{
     MSHuanKuanPlayViewController * huanKuanPlayV =  [[MSHuanKuanPlayViewController alloc] init];

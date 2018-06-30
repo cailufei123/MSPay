@@ -11,6 +11,9 @@
 		AD451C8C20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD451C8B20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m */; };
 		AD451C9020E74C9F00E26FFD /* MSZhiHuiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD451C8E20E74C9F00E26FFD /* MSZhiHuiTableViewCell.m */; };
 		AD451C9120E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD451C8F20E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib */; };
+		AD451C9420E761B400E26FFD /* MSLiuShuiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD451C9320E761B400E26FFD /* MSLiuShuiSelectViewController.m */; };
+		AD451C9820E764D000E26FFD /* MSZhiDingJihuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD451C9620E764D000E26FFD /* MSZhiDingJihuaViewController.m */; };
+		AD451C9920E764D000E26FFD /* MSZhiDingJihuaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD451C9720E764D000E26FFD /* MSZhiDingJihuaViewController.xib */; };
 		AD624D4020E087270095F0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD624D3E20E087270095F0E9 /* Main.storyboard */; };
 		AD624D4220E0872A0095F0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD624D4120E0872A0095F0E9 /* Assets.xcassets */; };
 		AD624D4520E0872A0095F0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD624D4320E0872A0095F0E9 /* LaunchScreen.storyboard */; };
@@ -376,6 +379,11 @@
 		AD451C8D20E74C9F00E26FFD /* MSZhiHuiTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSZhiHuiTableViewCell.h; sourceTree = "<group>"; };
 		AD451C8E20E74C9F00E26FFD /* MSZhiHuiTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSZhiHuiTableViewCell.m; sourceTree = "<group>"; };
 		AD451C8F20E74C9F00E26FFD /* MSZhiHuiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSZhiHuiTableViewCell.xib; sourceTree = "<group>"; };
+		AD451C9220E761B400E26FFD /* MSLiuShuiSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLiuShuiSelectViewController.h; sourceTree = "<group>"; };
+		AD451C9320E761B400E26FFD /* MSLiuShuiSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLiuShuiSelectViewController.m; sourceTree = "<group>"; };
+		AD451C9520E764D000E26FFD /* MSZhiDingJihuaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSZhiDingJihuaViewController.h; sourceTree = "<group>"; };
+		AD451C9620E764D000E26FFD /* MSZhiDingJihuaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSZhiDingJihuaViewController.m; sourceTree = "<group>"; };
+		AD451C9720E764D000E26FFD /* MSZhiDingJihuaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSZhiDingJihuaViewController.xib; sourceTree = "<group>"; };
 		AD624D3520E087270095F0E9 /* MSPayThrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSPayThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD624D3F20E087270095F0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD624D4120E0872A0095F0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -2110,6 +2118,8 @@
 				AD62502620E09D6C0095F0E9 /* MSBillViewController.m */,
 				AD451C8520E7482200E26FFD /* MSLiuShuiViewController.h */,
 				AD451C8620E7482200E26FFD /* MSLiuShuiViewController.m */,
+				AD451C9220E761B400E26FFD /* MSLiuShuiSelectViewController.h */,
+				AD451C9320E761B400E26FFD /* MSLiuShuiSelectViewController.m */,
 			);
 			path = MSBillController;
 			sourceTree = "<group>";
@@ -2245,6 +2255,9 @@
 				ADE06FEB20E6329A0067C9A9 /* MSselectChuxukaViewController.m */,
 				AD451C8A20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.h */,
 				AD451C8B20E74C4D00E26FFD /* MSZhiHuiHuanKuanViewController.m */,
+				AD451C9520E764D000E26FFD /* MSZhiDingJihuaViewController.h */,
+				AD451C9620E764D000E26FFD /* MSZhiDingJihuaViewController.m */,
+				AD451C9720E764D000E26FFD /* MSZhiDingJihuaViewController.xib */,
 			);
 			path = MSHomeController;
 			sourceTree = "<group>";
@@ -2710,6 +2723,7 @@
 				AF61854520E2563900791FF0 /* MSRegisterController.xib in Resources */,
 				AF61853120E2241C00791FF0 /* MSUserController.xib in Resources */,
 				AD624EB520E091460095F0E9 /* IQKeyboardManager.bundle in Resources */,
+				AD451C9920E764D000E26FFD /* MSZhiDingJihuaViewController.xib in Resources */,
 				AF61853C20E2304700791FF0 /* MSAboutController.xib in Resources */,
 				AF65D34E20E607050016BAC3 /* MSBandCreditController.xib in Resources */,
 				AF61DA1C20E4BBF1008AD123 /* MSDepositCell.xib in Resources */,
@@ -2852,6 +2866,7 @@
 				ADE06FAD20E3A0510067C9A9 /* MSHomeTopView.m in Sources */,
 				AD624E8920E091460095F0E9 /* MJRefreshBackGifFooter.m in Sources */,
 				ADE06FDD20E5E20F0067C9A9 /* MSHuanKuanPlayCell.m in Sources */,
+				AD451C9420E761B400E26FFD /* MSLiuShuiSelectViewController.m in Sources */,
 				AD624EC920E091460095F0E9 /* FMResultSet.m in Sources */,
 				AD624EDA20E091460095F0E9 /* SDWebImageCoder.m in Sources */,
 				ADE06FA120E3A0510067C9A9 /* MSCollectionViewFlowLayout.m in Sources */,
@@ -2927,6 +2942,7 @@
 				AD624FFF20E09B020095F0E9 /* UIScrollView+Refresh.m in Sources */,
 				ADE06FA920E3A0510067C9A9 /* MSHomeTableViewCell.m in Sources */,
 				AD624EB420E091460095F0E9 /* IQPreviousNextView.m in Sources */,
+				AD451C9820E764D000E26FFD /* MSZhiDingJihuaViewController.m in Sources */,
 				AD624EBE20E091460095F0E9 /* AFHTTPSessionManager.m in Sources */,
 				ADE06FE920E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m in Sources */,
 				AD624ED920E091460095F0E9 /* SDWebImagePrefetcher.m in Sources */,

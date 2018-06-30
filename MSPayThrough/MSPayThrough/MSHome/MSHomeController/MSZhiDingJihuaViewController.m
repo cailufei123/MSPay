@@ -32,11 +32,11 @@
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     //去掉底部线条
     [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
-//    [self.navigationController.navigationBar setTitleTextAttributes:
-//     
-//     @{NSFontAttributeName:[UIFont boldSystemFontOfSize:17],
-//       
-//       NSForegroundColorAttributeName:naverTextColor}];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     
+     @{NSFontAttributeName:[UIFont boldSystemFontOfSize:17],
+       
+       NSForegroundColorAttributeName:naverTextColor}];
 
 }
 
@@ -153,12 +153,12 @@
       self. choseCount = [texts integerValue]/ 560;
         NSInteger dateCount = (self.choseCount % 2 == 0 ? self.choseCount / 2 :self. choseCount / 2 + 1);
        dateCount =  [self.dates count] > dateCount ? dateCount :  [self.dates count];
-          NSArray * smallArray = [self.dates subarrayWithRange:NSMakeRange(0, dateCount)];
-        NSArray * smallArray1 = [self.dates subarrayWithRange:NSMakeRange(0, dateCount)];
+          NSArray * smallArray = [self.dates subarrayWithRange:NSMakeRange(2, dateCount)];
+        NSArray * smallArray1 = [self.dates2 subarrayWithRange:NSMakeRange(2, dateCount)];
         LFLog(@"%@",smallArray);
         LFLog(@"%@",smallArray1);
           self.repay_dates = [smallArray componentsJoinedByString:@","];
-         self.srepay_dates_text = [smallArray componentsJoinedByString:@","];
+         self.srepay_dates_text = [smallArray1 componentsJoinedByString:@"|"];
         self.choseCount = self.choseCount > dateCount * 2 ? dateCount * 2 : self.choseCount;
     }
     
@@ -181,12 +181,15 @@
 - (IBAction)kdfkdfk:(id)sender {
     
     NSMutableDictionary * dict = diction;
-    dict[@"bank_acc_name"] = self.bankMcp.mcp_user_name;
+   
+     dict[@"command"] = @"3002";
+     dict[@"bank_acc_name"] = self.bankMcp.mcp_user_name;
      dict[@"bank_acc_no"] = self.bankMcp.mcp_card_no;
-    dict[@"repay_money_total"] = self.enterTf.text;
-     dict[@"qrp_plan_cycle"] = self.srepay_dates_text;
-    dict[@"qrp_repay_count"] =  [NSString stringWithFormat:@"%ld",(long)self.choseCount];
-    
+     dict[@"repay_money_total"] = [NSString stringWithFormat:@"%@00",self.enterTf.text] ;
+     dict[@"qrp_plan_cycle"] = [NSString stringWithFormat:@"%@|",self.srepay_dates_text];
+     dict[@"qrp_repay_count"] =  [NSString stringWithFormat:@"%ld",(long)self.choseCount];
+   
+    LFLog(@"%@",dict);
     [YWRequestData publicDict:dict success:^(id responseObj) {
         
     }];

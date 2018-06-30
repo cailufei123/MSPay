@@ -10,7 +10,6 @@
 #import "MSVerifyCardController.h"
 #import "YCArchiveTool.h"
 #import "MSAddDepositCardController.h"
-#import "WRNavigationBar.h"
 
 @interface MSCardController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;

@@ -18,7 +18,6 @@
 #import "YCArchiveTool.h"
 #import "MSAboutController.h"
 #import "MSShareController.h"
-#import "WRNavigationBar.h"
 
 @interface MSMesController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;

@@ -44,9 +44,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 //
-    [self wr_setNavBarBackgroundAlpha:1];
-    // 一行代码搞定导航栏底部分割线是否隐藏
-    [self wr_setNavBarShadowImageHidden:NO];
+//    [self wr_setNavBarBackgroundAlpha:1];
+//    // 一行代码搞定导航栏底部分割线是否隐藏
+//    [self wr_setNavBarShadowImageHidden:NO];
     
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     

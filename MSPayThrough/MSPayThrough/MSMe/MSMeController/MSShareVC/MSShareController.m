@@ -13,7 +13,6 @@
 #import "SGQRCode.h"
 #import "MSShareNotice.h"
 #import "Util.h"
-#import "WRNavigationBar.h"
 
 @interface MSShareController ()<RBCShareViewDelegate>
 //二维码图片
@@ -61,12 +60,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (ABOVE_IOS11) {
-        self.backBtnY.constant = 15;
-        self.zhegaBtnY.constant = 5;
+        self.backBtnY.constant = 30;
+        self.zhegaBtnY.constant = 10;
         
     }else{
-        self.backBtnY.constant = 79;
-        self.zhegaBtnY.constant = 69;
+        self.backBtnY.constant = 30;
+        self.zhegaBtnY.constant = 10;
     }
     
    //分享

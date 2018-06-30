@@ -70,7 +70,7 @@
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        LFLog(@"银行卡列表-%@",responseObj);
+//        LFLog(@"银行卡列表-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
             [self.bankLists removeAllObjects];

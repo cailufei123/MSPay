@@ -15,7 +15,11 @@
 @end
 
 @implementation MSNticeController
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    
+}
 - (NSMutableArray *)notices{
     if (!_notices) {
         _notices = [NSMutableArray array];

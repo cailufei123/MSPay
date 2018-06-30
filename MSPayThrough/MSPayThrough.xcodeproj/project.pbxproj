@@ -339,6 +339,8 @@
 		AFD5E66720E771DF003A4B24 /* NSObject+SXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66220E771DE003A4B24 /* NSObject+SXRuntime.m */; };
 		AFD5E66820E771DF003A4B24 /* UINavigation+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66420E771DE003A4B24 /* UINavigation+SXFixSpace.m */; };
 		AFD5E66920E771DF003A4B24 /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66620E771DE003A4B24 /* UIViewController+BarButton.m */; };
+		AFD5E66F20E77AFE003A4B24 /* WRCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66C20E77AFE003A4B24 /* WRCustomNavigationBar.m */; };
+		AFD5E67020E77AFE003A4B24 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66E20E77AFE003A4B24 /* WRNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1000,6 +1002,10 @@
 		AFD5E66420E771DE003A4B24 /* UINavigation+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigation+SXFixSpace.m"; sourceTree = "<group>"; };
 		AFD5E66520E771DE003A4B24 /* UIViewController+BarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
 		AFD5E66620E771DE003A4B24 /* UIViewController+BarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
+		AFD5E66B20E77AFE003A4B24 /* WRCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRCustomNavigationBar.h; sourceTree = "<group>"; };
+		AFD5E66C20E77AFE003A4B24 /* WRCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRCustomNavigationBar.m; sourceTree = "<group>"; };
+		AFD5E66D20E77AFE003A4B24 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
+		AFD5E66E20E77AFE003A4B24 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1115,6 +1121,7 @@
 		AD624D6A20E091440095F0E9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				AFD5E66A20E77AFE003A4B24 /* WRNavigationBar */,
 				AF65D35E20E635480016BAC3 /* SGQRCode */,
 				AF65D33020E600380016BAC3 /* BRPickerView */,
 				AF421B5D20E387AE00A300BA /* SGPagingView */,
@@ -2607,6 +2614,17 @@
 			path = "UIViewController+UINavigation";
 			sourceTree = "<group>";
 		};
+		AFD5E66A20E77AFE003A4B24 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				AFD5E66B20E77AFE003A4B24 /* WRCustomNavigationBar.h */,
+				AFD5E66C20E77AFE003A4B24 /* WRCustomNavigationBar.m */,
+				AFD5E66D20E77AFE003A4B24 /* WRNavigationBar.h */,
+				AFD5E66E20E77AFE003A4B24 /* WRNavigationBar.m */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2810,6 +2828,7 @@
 				ADE06FB320E3BFC90067C9A9 /* ProgressView.m in Sources */,
 				ADE06FB020E3A0510067C9A9 /* MSHomModel.m in Sources */,
 				AD451C8820E7482200E26FFD /* MSLiuShuiViewController.m in Sources */,
+				AFD5E66F20E77AFE003A4B24 /* WRCustomNavigationBar.m in Sources */,
 				AD624E9A20E091460095F0E9 /* MASConstraintMaker.m in Sources */,
 				ADE06FE520E611C50067C9A9 /* MSfastGiveMoneyViewController.m in Sources */,
 				AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */,
@@ -2859,6 +2878,7 @@
 				ADE06FD920E5D6B60067C9A9 /* YWMeTopButton.m in Sources */,
 				AD624EE720E091460095F0E9 /* SDWebImageImageIOCoder.m in Sources */,
 				AF61854420E2563900791FF0 /* MSRegisterController.m in Sources */,
+				AFD5E67020E77AFE003A4B24 /* WRNavigationBar.m in Sources */,
 				AD624F7C20E099FF0095F0E9 /* UIImageView+PlayGIF.m in Sources */,
 				AD624F8020E099FF0095F0E9 /* UIButton+Extensions.m in Sources */,
 				AD624E8720E091460095F0E9 /* NSBundle+MJRefresh.m in Sources */,

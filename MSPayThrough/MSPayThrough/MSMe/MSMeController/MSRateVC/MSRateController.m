@@ -21,7 +21,11 @@
 @end
 
 @implementation MSRateController
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (ABOVE_IOS11) {

@@ -12,6 +12,7 @@
 #import "MSAddDepositCardController.h"
 #import "UIViewController+BarButton.h"
 #import "SANavigationController.h"
+#import "WRNavigationBar.h"
 
 @interface MSCardController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -23,9 +24,25 @@
 @property (weak, nonatomic) IBOutlet UIButton *bankBtn;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
+
+@property (nonatomic,strong) NSMutableArray *bankLists;
 @end
 
 @implementation MSCardController
+
+- (NSMutableArray *)bankLists{
+    if (!_bankLists) {
+        _bankLists = [NSMutableArray array];
+    }
+    return _bankLists;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+      [self.navigationController setNavigationBarHidden:NO animated:animated];
+    
+   [self loadBankList];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,9 +64,40 @@
         self.cardNumBtn.enabled = NO;
     }else{
         self.cardNumLabel.text = @"未认证";
-        self.cardNumBtn.enabled = YES;
+        self.bankBtn.enabled = YES;
     }
   
+}
+
+- (void)loadBankList{
+    NSMutableDictionary * dict = diction;
+    dict[@"mcp_card_type"] = @"99";
+    dict[@"command"] = @"1006";
+    
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+        LFLog(@"银行卡列表-%@",responseObj);
+        
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [self.bankLists removeAllObjects];
+            NSArray *bankLists = responseObj[@"body"][@"mcp"];
+            [self.bankLists addObjectsFromArray:bankLists];
+        }
+        
+        if (self.bankLists.count) {
+            self.bankLabel.text = @"已绑定";
+            self.bankBtn.enabled = NO;
+            
+        }else{
+            self.bankLabel.text = @"未绑定";
+            self.cardNumBtn.enabled = NO;
+        }
+        
+    } failure:^(NSError *error) {
+        
+        [MBManager hideAlert];
+    }];
 }
 
 - (void)back{

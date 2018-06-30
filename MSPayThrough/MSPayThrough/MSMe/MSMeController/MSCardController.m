@@ -9,6 +9,7 @@
 #import "MSCardController.h"
 #import "MSVerifyCardController.h"
 #import "YCArchiveTool.h"
+#import "MSAddDepositCardController.h"
 
 @interface MSCardController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -54,6 +55,8 @@
 }
 //点击绑定储蓄卡
 - (IBAction)clickBankCardBtn {
+    MSAddDepositCardController *addDepositVc = [[MSAddDepositCardController alloc] init];
+    [self.navigationController pushViewController:addDepositVc animated:YES];
 }
 
 @end

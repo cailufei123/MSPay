@@ -34,11 +34,15 @@
 
 //点击修改密码
 - (IBAction)clickReviseBtn {
-//    MSCardController *cardVc = [[MSCardController alloc] init];
-//    [self.navigationController pushViewController:cardVc animated:YES];
+    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+        MSModifyController *modifyVc = [[MSModifyController alloc] init];
+        [self.navigationController pushViewController:modifyVc animated:YES];
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        [self.navigationController pushViewController:cardVc animated:YES];
+    }
     
-    MSModifyController *modifyVc = [[MSModifyController alloc] init];
-    [self.navigationController pushViewController:modifyVc animated:YES];
+   
 }
 //点击关于我们
 - (IBAction)clickAboutBtn {

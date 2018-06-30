@@ -10,6 +10,8 @@
 #import "MSVerifyCardController.h"
 #import "YCArchiveTool.h"
 #import "MSAddDepositCardController.h"
+#import "UIViewController+BarButton.h"
+#import "SANavigationController.h"
 
 @interface MSCardController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -33,6 +35,9 @@
     }else{
         self.topViewY.constant = 64;
     }
+    if (self.fromClassVc == [SANavigationController class]) {
+        [self addLeftBarButtonWithImage:[UIImage imageNamed:@"icon_back"] action:@selector(back)];
+    }
     
     self.navigationItem.title = @"身份认证";
     [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
@@ -45,6 +50,10 @@
         self.cardNumBtn.enabled = YES;
     }
   
+}
+
+- (void)back{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

@@ -14,10 +14,16 @@
 @interface MSSetController ()
 @property (weak, nonatomic) IBOutlet UIButton *commteBtn;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
-
+@property (nonatomic,strong) NSMutableArray *bankLists;
 @end
 
 @implementation MSSetController
+- (NSMutableArray *)bankLists{
+    if (!_bankLists) {
+        _bankLists = [NSMutableArray array];
+    }
+    return _bankLists;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,11 +36,35 @@
     
     self.navigationItem.title = @"设置";
     [self.commteBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
+    
+    [self loadBankList];
+}
+
+- (void)loadBankList{
+    NSMutableDictionary * dict = diction;
+    dict[@"mcp_card_type"] = @"99";
+    dict[@"command"] = @"1006";
+    
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+        LFLog(@"银行卡列表-%@",responseObj);
+        
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [self.bankLists removeAllObjects];
+            NSArray *bankLists = responseObj[@"body"][@"mcp"];
+            [self.bankLists addObjectsFromArray:bankLists];
+        }
+        
+    } failure:^(NSError *error) {
+        
+        [MBManager hideAlert];
+    }];
 }
 
 //点击修改密码
 - (IBAction)clickReviseBtn {
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSModifyController *modifyVc = [[MSModifyController alloc] init];
         [self.navigationController pushViewController:modifyVc animated:YES];
     }else{

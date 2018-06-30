@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/Other/Public/YWRequestData.m"
-            timestampString = "552026734.862481"
+            filePath = "MSPayThrough/MSHome/MSHomeView/MSHomeTableTopView.m"
+            timestampString = "552034313.914977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "+publicDict:success:"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "-jihuaBtClick:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,77 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/MSHome/MSHomeController/MSXunzeXinYongKaViewController.m"
-            timestampString = "552026734.862583"
+            filePath = "MSPayThrough/MSHome/MSHomeView/MSHomeTableTopView.m"
+            timestampString = "552034313.9157749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "-loadNewCreditCardData"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/MSHome/MSHomeController/MSXunzeXinYongKaViewController.m"
-            timestampString = "552026734.863014"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "-loadNewCreditCardData"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/MSMe/MSMeController/MSBankVC/MSDepositCardController.m"
-            timestampString = "551967269.893597"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "-loadNewDepositData"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/MSMe/MSMeController/MSBankVC/MSDepositCardController.m"
-            timestampString = "551967269.893985"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-loadNewDepositData"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/Other/Public/YWRequestData.m"
-            timestampString = "552026734.86334"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "+publicDict:success:"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-liuShuiBtClick"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

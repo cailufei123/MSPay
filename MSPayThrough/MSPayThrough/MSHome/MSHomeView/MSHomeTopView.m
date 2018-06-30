@@ -12,6 +12,7 @@
 #import "MSBankController.h"
 #import "MSHuanKuanPlayViewController.h"
 #import "MSfastGiveMoneyViewController.h"
+#import "MSZhiHuiHuanKuanViewController.h"
 @implementation MSHomeTopView
 -(void)awakeFromNib{
     [super awakeFromNib];
@@ -34,6 +35,9 @@
     [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
 }
 - (IBAction)huankuanClick:(id)sender {
+    MSZhiHuiHuanKuanViewController * serviceAgreementVc = [[MSZhiHuiHuanKuanViewController alloc] init];
+    [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
+    
 }
 - (IBAction)xingyongkaClick:(id)sender {
     NSMutableDictionary * publicDict = diction;

@@ -34,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet UIView *controlView;
 @property (strong, nonatomic)  UICollectionView *collectionView;
 @property (strong, nonatomic)  NSMutableArray * titles;
+@property (weak, nonatomic) IBOutlet UIButton *liuShuiBt;
 @end
 static NSString * const cellid = @"MSTopCollectionViewCell";
 @implementation MSHomeTableTopView
@@ -45,7 +46,12 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
    
     self.pageControl.currentPageIndicatorTintColor = [UIColor redColor];
     self.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-   
+    [self.liuShuiBt addTarget:self action:@selector(liuShuiBtClick) forControlEvents:UIControlEventTouchUpInside];
+}
+-(void)liuShuiBtClick{
+    MSHuanKuanPlayViewController * serviceAgreementVc = [[MSHuanKuanPlayViewController alloc] init];
+    [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
+    
 }
 -(NSMutableArray *)titles{
     if (!_titles) {

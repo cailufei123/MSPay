@@ -12,6 +12,7 @@
 #import "MSDepositModel.h"
 #import "MSCreditCardController.h"
 #import "MSXunzeXinYongKaViewController.h"
+#import "MSLiuShuiViewController.h"
 @interface MSfastGiveMoneyViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *fuImageView;
 @property (weak, nonatomic) IBOutlet UILabel *fuLb;
@@ -41,7 +42,7 @@
           self.credit_card_id = bakMcp.mcp_id;
     };
     [self.navigationController pushViewController:Controller animated:YES];
-    [self.shoukuanBt addTarget:self action:@selector(shoukuanBtClick) forControlEvents:UIControlEventTouchUpInside];
+//    [self.shoukuanBt addTarget:self action:@selector(shoukuanBtClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewDidLoad {
@@ -133,6 +134,7 @@
     dic[@"channel_type"] = @"1";
     [YWRequestData publicDict:dic success:^(id responseObj) {
          [self.timer resumeTimer];
+     self.order_id = responseObj[@"body"][@"order_id"];
     }];
 
     
@@ -156,6 +158,11 @@
     
 }
 -(void)shoukuanBtClick{
+    
+    
+}
+
+- (IBAction)shoukuanClick:(id)sender {
     if (!self.tixiangLb.text.length) {
         [MBManager showBriefAlert:@"输入提现金额"]; return;
     }
@@ -166,11 +173,11 @@
     dic[@"command"] = @"2002";
     dic[@"order_id"] = self.order_id;
     dic[@"check_code"] = self.codeTf.text;
-   
-    [YWRequestData publicDict:dic success:^(id responseObj) {
-        [self.timer resumeTimer];
-    }];
     
+    [YWRequestData publicDict:dic success:^(id responseObj) {
+        [MBManager showBriefAlert:@"提现成功"];
+        MSLiuShuiViewController * liuShuiViewC = [[MSLiuShuiViewController alloc] init];
+        [self.navigationController pushViewController:liuShuiViewC animated:YES];
+    }];
 }
-
 @end

@@ -94,6 +94,25 @@
 @interface FeiLVModel : NSObject
 @property(nonatomic,strong)NSString * fee_value;//" = 0.55%+1,
 @property(nonatomic,strong)NSString * fee_name;//" = 快捷有积分,
-
 @end
+@interface MSBankMcpModel : NSObject
+@property (nonatomic,copy) NSString *mcp_id;
+/**有效期*/
+@property (nonatomic,copy) NSString *mcp_validity_date;
+/**银行卡号*/
+@property (nonatomic,copy) NSString *mcp_card_no;
+/**银行名称*/
+@property (nonatomic,copy) NSString *mcp_bank_name;
+/**用户名*/
+@property (nonatomic,copy) NSString *mcp_user_name;
+/**银行logo*/
+@property (nonatomic,copy) NSString *mcp_bank_ico;
+/*id*/
+@property (nonatomic,copy) NSString *mbi_id;
+
+
+@property (nonatomic,copy) NSString *mcp_bill_date;
+@property (nonatomic,copy) NSString *mcp_repayment_date;
+@end
+
 

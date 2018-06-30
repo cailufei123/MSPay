@@ -17,7 +17,7 @@
                 <outlet property="fuLb" destination="RVc-V9-eae" id="Rug-fB-hug"/>
                 <outlet property="getCodeBt" destination="4gP-40-Ah1" id="ODc-xf-aqO"/>
                 <outlet property="shouLb" destination="Jzy-YC-EQ7" id="q41-MO-5RY"/>
-                <outlet property="shoukuanBt" destination="eLD-m6-XSG" id="mwA-dj-nJN"/>
+                <outlet property="shoukuanBt" destination="eLD-m6-XSG" id="fpz-uA-gxj"/>
                 <outlet property="tixiangLb" destination="s19-IG-689" id="Sb6-4B-mTt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="zhifuFangshiLb" destination="XXz-Pi-YOL" id="ai5-Eh-l4V"/>
@@ -303,6 +303,9 @@
                                             <integer key="value" value="3"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="shoukuanClick:" destination="-1" eventType="touchUpInside" id="x5S-jY-fWa"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -60,6 +60,13 @@
     
     self.userNameLabel.text = [YCArchiveTool meModel].mci.mci_name;
     self.cardNumLabel.text = [YCArchiveTool meModel].mci.mci_id_card;
+    
+//    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+//        NSString *endStr = [[YCArchiveTool meModel].mci.mci_id_card substringWithRange:NSMakeRange(6,[YCArchiveTool meModel].mci.mci_id_card.length - 4)];
+//        self.cardNumLabel.text = [NSString stringWithFormat:@"********%@",endStr];
+//    }else{
+//        self.cardNumLabel.text = [YCArchiveTool meModel].mci.mci_id_card;
+//    }
    
 }
 

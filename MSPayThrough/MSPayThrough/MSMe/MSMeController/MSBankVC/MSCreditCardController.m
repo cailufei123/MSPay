@@ -145,7 +145,7 @@
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        LFLog(@"responseObj-%@",responseObj);
+//        LFLog(@"responseObj-%@",responseObj);
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
             [MBManager showBriefAlert:@"删除信用卡成功"];
 

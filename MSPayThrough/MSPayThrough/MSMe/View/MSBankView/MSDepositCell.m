@@ -65,11 +65,20 @@ static const int MSdepositCellMargin = 15;
 - (void)setDeposit:(MSDepositModel *)deposit{
     _deposit = deposit;
     
+    LFLog(@"银卡图片-%@",deposit.mcp_bank_ico);
+    LFLog(@"银卡名称-%@",deposit.mcp_bank_name);
+    LFLog(@"银卡号%@",deposit.mcp_card_no);
+    
     [self.bankImageView sd_setImageWithURL:[NSURL URLWithString:deposit.mcp_bank_ico] placeholderImage:[UIImage imageNamed:@""]];
     self.bankNameLabel.text = deposit.mcp_bank_name;
    
-    NSString *endStr = [deposit.mcp_card_no substringWithRange:NSMakeRange(deposit.mcp_card_no.length - 4,4)];
-    self.bankNumLabel.text = [NSString stringWithFormat:@"****  ****  ****  %@",endStr];
+    if (deposit.mcp_card_no.length >4) {
+        NSString *endStr = [deposit.mcp_card_no substringWithRange:NSMakeRange(deposit.mcp_card_no.length - 4,4)];
+        self.bankNumLabel.text = [NSString stringWithFormat:@"****  ****  ****  %@",endStr];
+    }else{
+        self.bankNumLabel.text = deposit.mcp_card_no;
+    }
+   
     self.userName.text = deposit.mcp_user_name;
     
 }

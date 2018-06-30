@@ -107,7 +107,7 @@
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        //        LFLog(@"银行卡-%@",responseObj);
+//        LFLog(@"获取银行卡列表-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
             NSArray *bankLists = [MSBankList mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"dict_bank_list"]];
@@ -118,6 +118,12 @@
             __weak typeof(self) weakSelf = self;
             [BRStringPickerView showStringPickerWithTitle:@"选择银行卡" dataSource:self.bankLists defaultSelValue:weakSelf.faBankNumTF.text resultBlock:^(id selectValue) {
                 weakSelf.faBankNumTF.text = selectValue;
+                
+                LFLog(@"selectValue-%@",selectValue);
+                if ([self.bankLists containsObject:selectValue]) {
+                    int index = (int)[self.bankLists indexOfObject:@"selectValue"];
+                    NSLog(@"index=%d",index);
+                }
                 
             }];
         }

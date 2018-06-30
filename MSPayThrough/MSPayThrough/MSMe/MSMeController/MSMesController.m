@@ -24,11 +24,20 @@
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *IDLabel;
 
+@property (nonatomic,strong) NSMutableArray *bankLists;
+
 //个人信息模型
 @property (nonatomic,strong) MSMeModel *meModel;
 @end
 
 @implementation MSMesController
+
+- (NSMutableArray *)bankLists{
+    if (!_bankLists) {
+        _bankLists = [NSMutableArray array];
+    }
+    return _bankLists;
+}
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
@@ -48,6 +57,31 @@
     //获取用户信息
     [self loadUserInfo];
     
+    //获取银行卡列表
+    [self loadBankList];
+    
+}
+
+- (void)loadBankList{
+    NSMutableDictionary * dict = diction;
+    dict[@"mcp_card_type"] = @"99";
+    dict[@"command"] = @"1006";
+    
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+        LFLog(@"银行卡列表-%@",responseObj);
+        
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [self.bankLists removeAllObjects];
+            NSArray *bankLists = responseObj[@"body"][@"mcp"];
+            [self.bankLists addObjectsFromArray:bankLists];
+        }
+        
+    } failure:^(NSError *error) {
+
+        [MBManager hideAlert];
+    }];
 }
 
 - (void)loadUserInfo{
@@ -58,7 +92,7 @@
         
     } success:^(id responseObj) {
         
-//        LFLog(@"个人信息-%@",responseObj);
+        LFLog(@"个人信息-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
            
@@ -83,7 +117,7 @@
 
 //点击头像
 - (IBAction)clicTopBtn {
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSUserController *userVC = [[MSUserController alloc] init];
         [self.navigationController pushViewController:userVC animated:YES];
     }else{
@@ -94,7 +128,7 @@
 }
 //点击费率
 - (IBAction)clickFeiLvBtn {
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSRateController *rateVc = [[MSRateController alloc] init];
         [self.navigationController pushViewController:rateVc animated:YES];
     }else{
@@ -106,7 +140,7 @@
 //点击银行卡
 - (IBAction)clickBankBtn {
     
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSBankController *bankVc = [[MSBankController alloc] init];
         [self.navigationController pushViewController:bankVc animated:YES];
     }else{
@@ -118,7 +152,7 @@
 //点击公告
 - (IBAction)clickGongGaoBtn {
     
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSNticeController *noticeVc = [[MSNticeController alloc] init];
         [self.navigationController pushViewController:noticeVc animated:YES];
     }else{
@@ -129,7 +163,7 @@
 }
 //点击分享
 - (IBAction)clickShareBtn {
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSShareController *sharVc = [[MSShareController alloc] init];
         [self.navigationController pushViewController:sharVc animated:YES];
     }else{
@@ -141,7 +175,7 @@
 //点击会员
 - (IBAction)clickVipBtn {
     
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSUserController *cardVc = [[MSUserController alloc] init];
         [self.navigationController pushViewController:cardVc animated:YES];
     }else{
@@ -153,7 +187,7 @@
 //点击客服
 - (IBAction)clickKeFuBtn {
    
-    if ([YCArchiveTool meModel].mci.mci_id_card.length) {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
         MSAboutController *aboutVc = [[MSAboutController alloc] init];
         [self.navigationController pushViewController:aboutVc animated:YES];
     }else{

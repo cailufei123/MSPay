@@ -10,6 +10,7 @@
 #import "MSCardController.h"
 
 @interface MSUserController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 
 /** 头像*/
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
@@ -29,6 +30,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 8;
+    }else{
+        self.topViewY.constant = 72;
+    }
     
     self.navigationItem.title = @"用户信息";
     

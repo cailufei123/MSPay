@@ -31,6 +31,7 @@
 //卡末三位
 @property (weak, nonatomic) IBOutlet UITextField *bankLastTF;
 @property (weak, nonatomic) IBOutlet UIButton *nextBtn;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 
 @property (nonatomic,strong) NSMutableArray *bankLists;
 @end
@@ -46,7 +47,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 15;
+    }else{
+        self.topViewY.constant = 79;
+    }
     self.navigationItem.title = @"添加信用卡";
     [self.nextBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     

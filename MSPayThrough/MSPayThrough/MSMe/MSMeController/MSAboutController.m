@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *companyLabel;
 //电话
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabe;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 
 @end
 
@@ -21,6 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 50;
+    }else{
+        self.topViewY.constant = 114;
+    }
      self.navigationItem.title = @"谊付通";
     
     //关于我们

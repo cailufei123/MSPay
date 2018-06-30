@@ -17,6 +17,7 @@
                 <outlet property="faBankNumTF" destination="22O-f2-xHT" id="uCz-XW-UEP"/>
                 <outlet property="nextBtn" destination="X2d-vk-kHw" id="w0D-Ca-M8d"/>
                 <outlet property="phoneTF" destination="zSK-Ki-yoT" id="CnN-th-k3b"/>
+                <outlet property="topViewY" destination="QZb-BN-UDH" id="qmn-Oj-PNl"/>
                 <outlet property="userNameLabel" destination="AWu-0v-FIv" id="jhO-rO-baX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

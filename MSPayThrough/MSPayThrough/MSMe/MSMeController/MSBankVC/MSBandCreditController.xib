@@ -15,6 +15,7 @@
                 <outlet property="addButton" destination="pEC-FJ-gGb" id="HXt-hQ-yYX"/>
                 <outlet property="huanKuanLabel" destination="qt1-5G-7O9" id="8a0-Jy-gGq"/>
                 <outlet property="phoneLabel" destination="VCM-fl-fap" id="qHo-Jh-Amj"/>
+                <outlet property="topViewY" destination="j9f-ON-KaP" id="HKN-WJ-KgZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="zhangdanLabel" destination="K8A-kl-7dS" id="5S2-J4-uiv"/>
             </connections>

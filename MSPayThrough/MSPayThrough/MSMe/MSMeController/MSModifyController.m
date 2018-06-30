@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *pwdTF;
 @property (weak, nonatomic) IBOutlet UIButton *getCodeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *finshBtn;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 
 @end
 
@@ -22,6 +23,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 0;
+    }else{
+        self.topViewY.constant = 64;
+    }
     
     self.navigationItem.title = @"修改密码";
      [self.finshBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];

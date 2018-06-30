@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *timeTF;
 //提交按钮
 @property (weak, nonatomic) IBOutlet UIButton *commteBtn;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 
 @end
 
@@ -41,26 +42,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 0;
+    }else{
+        self.topViewY.constant = 64;
+    }
+    
     self.navigationItem.title = @"身份验证";
     [self.commteBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     
     [[AipOcrService shardService] authWithAK:@"MBIvCmrvK2xNrk19M9LdV6wo" andSK:@"9XPe1bIA8EN7pO7Awhoxg1dVOckc0zIi"];
 }
-//点击持卡人相机
+//点击身份证正面相机
 - (IBAction)clickCardBtn {
+//    UIViewController * vc =
+//    [AipCaptureCardVC ViewControllerWithCardType:CardTypeIdCardFont
+//                                 andImageHandler:^(UIImage *image) {
+//
+//                                     [[AipOcrService shardService] detectIdCardFrontFromImage:image
+//                                                                                  withOptions:nil
+//                                                                               successHandler:_successHandler
+//                                                                                  failHandler:_failHandler];
+//                                 }];
+//
+//    [self presentViewController:vc animated:YES completion:nil];
     UIViewController * vc =
-    [AipCaptureCardVC ViewControllerWithCardType:CardTypeIdCardFont
-                                 andImageHandler:^(UIImage *image) {
-                                     
-                                     [[AipOcrService shardService] detectIdCardFrontFromImage:image
-                                                                                  withOptions:nil
-                                                                               successHandler:_successHandler
-                                                                                  failHandler:_failHandler];
-                                 }];
-    
+    [AipCaptureCardVC ViewControllerWithCardType:CardTypeLocalIdCardFont andImageHandler:^(UIImage *image) {
+        // 成功扫描出身份证
+        [[AipOcrService shardService] detectIdCardFrontFromImage:image
+                                                     withOptions:nil
+                                                  successHandler:^(id result){
+                                                      // 在成功回调中，保存图片到系统相册
+                                                      UIImageWriteToSavedPhotosAlbum(image, nil, nil, (__bridge void *)self);
+                                                      // 打印出识别结果
+                                                      NSLog(@"%@", result);
+                                                  }
+                                                     failHandler:_failHandler];
+    }];
+    // 展示ViewController
     [self presentViewController:vc animated:YES completion:nil];
 }
-//点击签发机关相机
+//点击身份证反面相机
 - (IBAction)clickBodyBtn {
     UIViewController * vc =
     [AipCaptureCardVC ViewControllerWithCardType:CardTypeIdCardBack

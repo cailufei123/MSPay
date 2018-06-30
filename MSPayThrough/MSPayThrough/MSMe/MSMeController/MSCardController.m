@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *cardNumBtn;
 @property (weak, nonatomic) IBOutlet UIButton *bankBtn;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 @end
 
 @implementation MSCardController
@@ -26,6 +27,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 0;
+    }else{
+        self.topViewY.constant = 64;
+    }
+    
     self.navigationItem.title = @"身份认证";
     [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     

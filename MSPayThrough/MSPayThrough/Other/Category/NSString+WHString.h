@@ -198,7 +198,7 @@
  */
 + (NSString *)toStringWithData:(NSData *)data;
 -(NSString *)replaceStringStartLocation:(NSInteger)startLocation lenght:(NSInteger)lenght;
-
+- (NSString *)hahmd5;
 - (unsigned long long)fileSize;
 @end
 
@@ -274,3 +274,4 @@
  *  首先是一个转义字符\(,它能出现0次或1次(?),然后是一个0，后面跟着2个数字(\d{2})，然后是)或-或空格中的一个，它出现1次或不出现(?)，
  *  最后是8个数字(\d{8})
  */
+

@@ -71,12 +71,7 @@
     dict[@"bank_acc_name"] = self.bankMcp.mcp_user_name;
     dict[@"bank_acc_no"] = self.bankMcp.mcp_card_no;
     [YWRequestData publicDict:dict success:^(id responseObj) {
-       
-      
         NSString *string =responseObj[@"body"][@"qrp_plan_cycle"];
-        
-        
-        
        self.dates =  [self nowTimedayTime:string setDateFormat:@"dd"];
         self.dates2 =  [self nowTimedayTime:string setDateFormat:@"yyyy-MM-dd"];
 //
@@ -186,7 +181,7 @@
      dict[@"bank_acc_name"] = self.bankMcp.mcp_user_name;
      dict[@"bank_acc_no"] = self.bankMcp.mcp_card_no;
      dict[@"repay_money_total"] = [NSString stringWithFormat:@"%@00",self.enterTf.text] ;
-     dict[@"qrp_plan_cycle"] = [NSString stringWithFormat:@"%@|",self.srepay_dates_text];
+     dict[@"qrp_plan_cycle"] = [NSString stringWithFormat:@"%@",self.srepay_dates_text];
      dict[@"qrp_repay_count"] =  [NSString stringWithFormat:@"%ld",(long)self.choseCount];
    
     LFLog(@"%@",dict);

@@ -104,9 +104,10 @@
     
     
     NSString * rrr = [NSString stringWithFormat:@"%@%@", [[LFHttpTool stringWithDict:params] stringByReplacingOccurrencesOfString:@"," withString:@""],loginMerchant_key];
-     headDict[@"sign"] =   [[rrr  stringByReplacingOccurrencesOfString:@"|" withString:@","] toMD5];
+     headDict[@"sign"] =   [[rrr  stringByReplacingOccurrencesOfString:@"|" withString:@","] hahmd5];
     
-    
+   
+  
     
     allDict[@"jsondata"] = [dict mj_JSONString];
     

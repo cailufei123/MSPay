@@ -101,7 +101,7 @@
     } success:^(id responseObj) {
         LFLog(@"%@",responseObj);
         
-        if ([responseObj[@"head"][@"status_code"] isEqual: @(000)]) {
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
               sucess(responseObj);
         }else{
             

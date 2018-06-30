@@ -27,6 +27,10 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 @property (nonatomic,strong) NSMutableArray *bankLists;
+
+@property (nonatomic,strong) NSMutableArray *allBankLists;
+
+@property (nonatomic,assign) NSInteger selectRow;
 @end
 
 @implementation MSAddDepositCardController{
@@ -34,6 +38,13 @@
     void (^_successHandler)(id);
     // 默认的识别失败的回调
     void (^_failHandler)(NSError *);
+}
+
+- (NSMutableArray *)allBankLists{
+    if (!_allBankLists) {
+        _allBankLists = [NSMutableArray array];
+    }
+    return _allBankLists;
 }
 - (NSMutableArray *)bankLists{
     if (!_bankLists) {
@@ -110,20 +121,18 @@
 //        LFLog(@"获取银行卡列表-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [self.allBankLists removeAllObjects];
+            
             NSArray *bankLists = [MSBankList mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"dict_bank_list"]];
+            [self.allBankLists addObjectsFromArray:bankLists];
             [self.bankLists removeAllObjects];
             for (MSBankList *bankList in bankLists) {
                 [self.bankLists addObject:bankList.db_name];
             }
             __weak typeof(self) weakSelf = self;
-            [BRStringPickerView showStringPickerWithTitle:@"选择银行卡" dataSource:self.bankLists defaultSelValue:weakSelf.faBankNumTF.text resultBlock:^(id selectValue) {
+            [BRStringPickerView showStringPickerWithTitle:@"选择银行卡" dataSource:self.bankLists defaultSelValue:weakSelf.faBankNumTF.text resultBlock:^(id selectValue,NSInteger selectRow) {
                 weakSelf.faBankNumTF.text = selectValue;
-                
-                LFLog(@"selectValue-%@",selectValue);
-                if ([self.bankLists containsObject:selectValue]) {
-                    int index = (int)[self.bankLists indexOfObject:@"selectValue"];
-                    NSLog(@"index=%d",index);
-                }
+                self.selectRow = selectRow;
                 
             }];
         }
@@ -135,6 +144,7 @@
 
 - (IBAction)clickNextBtn {
     
+    MSBankList *bankList = self.allBankLists[self.selectRow];
     
     if (self.bankNumTF.text.length==0) {
         [MBManager showBriefAlert:@"请输入卡号"];
@@ -169,7 +179,7 @@
     dict[@"mcp_user_id_card"] = @"999999";
     dict[@"mcp_bank_name"] = self.faBankNumTF.text;
     dict[@"mcp_bank_code"] = @"999999";
-    dict[@"mcp_bank_abbr"] = @"999999";
+    dict[@"mcp_bank_abbr"] = bankList.db_code_en;
     dict[@"mcp_bank_sub_no"] = @"999999";
     dict[@"mcp_province_code"] = @"999999";
     dict[@"mcp_city_code"] = @"999999";

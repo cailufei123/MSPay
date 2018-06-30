@@ -18,6 +18,7 @@
 #import "YCArchiveTool.h"
 #import "MSAboutController.h"
 #import "MSShareController.h"
+#import "WRNavigationBar.h"
 
 @interface MSMesController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -40,15 +41,15 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    // 设置初始导航栏透明度
+    [self wr_setNavBarBackgroundAlpha:0];
+    // 一行代码搞定导航栏底部分割线是否隐藏
+    [self wr_setNavBarShadowImageHidden:YES];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     
 }
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
-    
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
    

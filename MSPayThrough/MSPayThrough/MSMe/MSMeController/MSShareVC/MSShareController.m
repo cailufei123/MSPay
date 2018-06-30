@@ -13,6 +13,7 @@
 #import "SGQRCode.h"
 #import "MSShareNotice.h"
 #import "Util.h"
+#import "WRNavigationBar.h"
 
 @interface MSShareController ()<RBCShareViewDelegate>
 //二维码图片
@@ -42,6 +43,11 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+//
+    [self wr_setNavBarBackgroundAlpha:1];
+    // 一行代码搞定导航栏底部分割线是否隐藏
+    [self wr_setNavBarShadowImageHidden:NO];
+    
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     
 }

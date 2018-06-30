@@ -71,12 +71,18 @@ static const int MSdepositCellMargin = 15;
     NSString *endStr = [deposit.mcp_card_no substringWithRange:NSMakeRange(deposit.mcp_card_no.length - 4,4)];
     self.bankNumLabel.text = [NSString stringWithFormat:@"****  ****  ****  %@",endStr];
     self.userName.text = deposit.mcp_user_name;
-    self.bankCardType.text = @"主卡";
+    
 }
 - (void)setIndexpath:(NSIndexPath *)indexpath{
     _indexpath = indexpath;
     
+    if (indexpath.row == 0) {
+        self.bankCardType.text = @"主卡";
+    }else{
+        self.bankCardType.text = @"设置为主卡";
+    }
     if (indexpath.row % 2 == 0) {
+        
         [self.xuanRanVIew gradientFreme: CGRectMake(0, 0, LFscreenW-30, 172) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     }else{
         [self.xuanRanVIew gradientFreme: CGRectMake(0, 0, LFscreenW-30, 172) startColor:[SVGloble colorWithHexString:@"#1C86EE"] endColor:[SVGloble colorWithHexString:@"#00688B"]];

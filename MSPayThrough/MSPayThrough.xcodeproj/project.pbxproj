@@ -3211,7 +3211,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R2JCE89QA2;
+				DEVELOPMENT_TEAM = PSM9QJGHC3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",
@@ -3249,7 +3249,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R2JCE89QA2;
+				DEVELOPMENT_TEAM = PSM9QJGHC3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",

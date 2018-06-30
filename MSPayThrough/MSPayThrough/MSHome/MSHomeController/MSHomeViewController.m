@@ -63,9 +63,40 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
      registUserDict[@"size"] = @"3";
     registUserDict[@"command"] = @"3004";
      registUserDict[@"start"] = @"0";
-   
+
+
+
+
+
     [YWRequestData playRepaymentDict:registUserDict success:^(id responseObj) {
         self.playRepayments = [MSHomModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"qrp_list"]];
+        
+        if (self.playRepayments.count <= 0) {
+            [self.playRepayments removeAllObjects];
+            MSHomModel * homModel = [[MSHomModel alloc] init];
+            homModel.qrp_repay_money_finished =@"3860000";
+                 homModel.version=@"6";
+                 homModel.mbi_id=@"300117";
+                 homModel.qrp_repay_count=@"4";
+                 homModel.qrp_repay_date=@"2018-05-22,2018-05-23";
+                 homModel.qrp_repay_money_fee_total=@"30494";
+                 homModel.qrp_status=@"3";
+                 homModel.qrp_create_time=@"2018-05-19 19:22:15";
+                 homModel.qrp_repay_money_total=@" 3860000";
+                 homModel.qrp_repay_day_count=@"2";
+                 homModel.qrp_plan_cycle=@"2018-05-22~2018-05-23";
+                 homModel.qrp_id=@"100051";
+                 homModel.qrp_update_time=@"2018-05-23 13:00:00";
+                 homModel.qrp_repay_day=@"25";
+                 homModel.qrp_bill_day=@"07";
+                 homModel.mbi_code=@"M1805154690350651855";
+                 homModel.qrp_reserve_money=@"1111694";
+                 homModel.qrp_credit_card_no=@" 6225758308116622";
+                 homModel.qrp_repay_money_fee_pay_total=@"400";
+              [self.playRepayments addObject:homModel];
+              [self.playRepayments addObject:homModel];
+              [self.playRepayments addObject:homModel];
+        }
         self.homeTableTopView.playRepayments = self.playRepayments;
         [self.tableView.mj_header endRefreshing];
     }];
@@ -79,6 +110,47 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
     billListDict[@"command"] = @"1013";
     [YWRequestData billListDict:billListDict success:^(id responseObj) {
         self.billLists = [MSHomListModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"tm_list"]];
+        if (self.billLists.count <= 0) {
+            [self.billLists removeAllObjects];
+            MSHomListModel * homModel = [[MSHomListModel alloc] init];
+            
+            
+            
+            
+              homModel.tm_settlement_time=@"2018-05-23 11:10:00";
+              homModel.tm_transaction_money_amount=@"1080900";
+              homModel.tm_transaction_fee_01=@"8608";
+              homModel.tm_pwd_situation=@"1";
+              homModel.tm_cs_method=@"1";
+              homModel.tm_transaction_fee_02=@"0";
+              homModel.mbi_code=@"M1805154690350651855";
+              homModel.tm_transaction_money=@"1089508";
+              homModel.tm_create_time=@"2018-05-23 11:10:00";
+              homModel.tm_sign=@"300117";
+              homModel.tm_terminal_type=@"1";
+              homModel.mbi_name=@"300117";
+              homModel.tm_serial_no=@"101318051915267289359491";
+              homModel.version=@"300117";
+              homModel.tm_transaction_type_01=@"300117";
+              homModel.tcq_id=@"100004";
+              homModel.tm_transaction_type_02=@"300117";
+              homModel.tm_card_type=@"300117";
+              homModel.tm_trade_time=@"2018-05-23 11:10:00";
+              homModel.tiq_id=@"300117";
+              homModel.tm_remark=@"300117";
+              homModel.tm_terminal_num=@"300117";
+              homModel.tm_serial_no_bank=@"999125263649492994";
+              homModel.tm_card_no=@"6225758308116622";
+              homModel.tm_origin=@"150";
+              homModel.tm_bussiness_time=@"2018-05-23 11:10:00";
+              homModel.mbi_id=@"300117";
+              homModel.tm_transaction_status=
+              homModel.tm_update_time=@"2018-05-23 11:10:15";
+           
+            [self.billLists addObject:homModel];
+            [self.billLists addObject:homModel];
+          
+        }
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
     }];

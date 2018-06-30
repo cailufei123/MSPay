@@ -13,7 +13,7 @@
 #import "MSCollectionViewFlowLayout.h"
 #import "MSDetalsViewController.h"
 #import "MSHuanKuanPlayViewController.h"
-
+#import "MSLiuShuiSelectViewController.h"
 @interface MSHomeTableTopView()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate>
 {
     // 水平滚动的跑马灯
@@ -49,7 +49,7 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
     [self.liuShuiBt addTarget:self action:@selector(liuShuiBtClick) forControlEvents:UIControlEventTouchUpInside];
 }
 -(void)liuShuiBtClick{
-    MSHuanKuanPlayViewController * serviceAgreementVc = [[MSHuanKuanPlayViewController alloc] init];
+    MSLiuShuiSelectViewController * serviceAgreementVc = [[MSLiuShuiSelectViewController alloc] init];
     [[self viewController].navigationController pushViewController:serviceAgreementVc animated:YES];
     
 }

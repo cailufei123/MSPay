@@ -9,6 +9,7 @@
 #import "MSCardController.h"
 #import "MSVerifyCardController.h"
 #import "YCArchiveTool.h"
+#import "MSAddDepositCardController.h"
 
 @interface MSCardController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *cardNumBtn;
 @property (weak, nonatomic) IBOutlet UIButton *bankBtn;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 @end
 
 @implementation MSCardController
@@ -26,6 +28,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 0;
+    }else{
+        self.topViewY.constant = 64;
+    }
+    
     self.navigationItem.title = @"身份认证";
     [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     
@@ -47,6 +55,8 @@
 }
 //点击绑定储蓄卡
 - (IBAction)clickBankCardBtn {
+    MSAddDepositCardController *addDepositVc = [[MSAddDepositCardController alloc] init];
+    [self.navigationController pushViewController:addDepositVc animated:YES];
 }
 
 @end

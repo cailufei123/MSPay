@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSSetController">
             <connections>
                 <outlet property="commteBtn" destination="uWU-UX-yfe" id="seh-Ue-uyY"/>
+                <outlet property="topViewY" destination="Wkl-LM-Ey8" id="vie-7O-uJa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

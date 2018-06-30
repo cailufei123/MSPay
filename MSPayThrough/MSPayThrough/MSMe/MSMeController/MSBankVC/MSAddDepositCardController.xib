@@ -17,6 +17,7 @@
                 <outlet property="faBankNumTF" destination="22O-f2-xHT" id="uCz-XW-UEP"/>
                 <outlet property="nextBtn" destination="X2d-vk-kHw" id="w0D-Ca-M8d"/>
                 <outlet property="phoneTF" destination="zSK-Ki-yoT" id="CnN-th-k3b"/>
+                <outlet property="topViewY" destination="QZb-BN-UDH" id="qmn-Oj-PNl"/>
                 <outlet property="userNameLabel" destination="AWu-0v-FIv" id="jhO-rO-baX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,7 +27,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*请添加本人信用卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRO-KK-zKz">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*请添加本人储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRO-KK-zKz">
                     <rect key="frame" x="15" y="35" width="112" height="16"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>

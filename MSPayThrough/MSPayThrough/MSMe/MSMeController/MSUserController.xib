@@ -15,6 +15,7 @@
                 <outlet property="iconImageView" destination="hoG-5P-ZAs" id="1IH-iF-VdJ"/>
                 <outlet property="phoneLabel" destination="ueP-Bw-6vQ" id="6iW-SL-AJo"/>
                 <outlet property="renZhengLabel" destination="Se3-cn-U4b" id="NRu-oN-Ukr"/>
+                <outlet property="topViewY" destination="j2h-Rm-u4G" id="m2P-Pg-edj"/>
                 <outlet property="userIDLabel" destination="qca-0O-Lh7" id="Who-B6-haL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="vipTypeLabel" destination="6gg-v7-jBv" id="lxM-q8-8Df"/>

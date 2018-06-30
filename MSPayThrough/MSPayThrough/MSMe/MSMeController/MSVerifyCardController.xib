@@ -17,6 +17,7 @@
                 <outlet property="cardTF" destination="x3L-2B-57d" id="jVJ-lQ-KD8"/>
                 <outlet property="commteBtn" destination="kJM-BK-5Da" id="LCd-pa-eDH"/>
                 <outlet property="timeTF" destination="h2G-Hm-ngJ" id="tLE-8N-48b"/>
+                <outlet property="topViewY" destination="cNu-WP-OS6" id="huz-Lp-Ot4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -197,6 +198,6 @@
         </view>
     </objects>
     <resources>
-        <image name="pai_card" width="30" height="30"/>
+        <image name="pai_card" width="20" height="20"/>
     </resources>
 </document>

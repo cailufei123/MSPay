@@ -327,6 +327,12 @@
 		AF65D37320E635480016BAC3 /* SGQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36B20E635480016BAC3 /* SGQRCodeScanManager.m */; };
 		AF65D37420E635480016BAC3 /* SGQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D36D20E635480016BAC3 /* SGQRCodeScanningView.m */; };
 		AF65D37820E63AA30016BAC3 /* MSShareNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65D37720E63AA30016BAC3 /* MSShareNotice.m */; };
+		AF65D37C20E659AE0016BAC3 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37920E659AC0016BAC3 /* AipBase.framework */; };
+		AF65D37D20E659AE0016BAC3 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37920E659AC0016BAC3 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF65D37E20E659AE0016BAC3 /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37A20E659AD0016BAC3 /* AipOcrSdk.framework */; };
+		AF65D37F20E659AE0016BAC3 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37A20E659AD0016BAC3 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF65D38020E659AE0016BAC3 /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37B20E659AD0016BAC3 /* IdcardQuality.framework */; };
+		AF65D38120E659AE0016BAC3 /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37B20E659AD0016BAC3 /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -345,6 +351,22 @@
 			remoteInfo = MSPayThrough;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF65D38220E659AE0016BAC3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF65D37D20E659AE0016BAC3 /* AipBase.framework in Embed Frameworks */,
+				AF65D37F20E659AE0016BAC3 /* AipOcrSdk.framework in Embed Frameworks */,
+				AF65D38120E659AE0016BAC3 /* IdcardQuality.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD451C8520E7482200E26FFD /* MSLiuShuiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLiuShuiViewController.h; sourceTree = "<group>"; };
@@ -958,6 +980,9 @@
 		AF65D36D20E635480016BAC3 /* SGQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningView.m; sourceTree = "<group>"; };
 		AF65D37620E63AA30016BAC3 /* MSShareNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSShareNotice.h; sourceTree = "<group>"; };
 		AF65D37720E63AA30016BAC3 /* MSShareNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSShareNotice.m; sourceTree = "<group>"; };
+		AF65D37920E659AC0016BAC3 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		AF65D37A20E659AD0016BAC3 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
+		AF65D37B20E659AD0016BAC3 /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -970,12 +995,15 @@
 				AD62503220E09F9F0095F0E9 /* libc++abi.tbd in Frameworks */,
 				AD62503020E09F8C0095F0E9 /* libz.tbd in Frameworks */,
 				AD62502C20E09F6E0095F0E9 /* CoreTelephony.framework in Frameworks */,
+				AF65D38020E659AE0016BAC3 /* IdcardQuality.framework in Frameworks */,
 				AD62502A20E09F5C0095F0E9 /* SystemConfiguration.framework in Frameworks */,
 				AD624EA220E091460095F0E9 /* UMCommonLog.framework in Frameworks */,
 				AD624EAB20E091460095F0E9 /* UMShare.framework in Frameworks */,
 				AD624EAA20E091460095F0E9 /* UShareUI.framework in Frameworks */,
 				AD624EAE20E091460095F0E9 /* libSocialQQ.a in Frameworks */,
 				AD624EA720E091460095F0E9 /* UMCommon.framework in Frameworks */,
+				AF65D37E20E659AE0016BAC3 /* AipOcrSdk.framework in Frameworks */,
+				AF65D37C20E659AE0016BAC3 /* AipBase.framework in Frameworks */,
 				AD624EA420E091460095F0E9 /* UTDID.framework in Frameworks */,
 				AD624EA620E091460095F0E9 /* UMPush.framework in Frameworks */,
 				AD624EA520E091460095F0E9 /* SecurityEnvSDK.framework in Frameworks */,
@@ -1006,6 +1034,9 @@
 		AD624D2C20E087270095F0E9 = {
 			isa = PBXGroup;
 			children = (
+				AF65D37920E659AC0016BAC3 /* AipBase.framework */,
+				AF65D37A20E659AD0016BAC3 /* AipOcrSdk.framework */,
+				AF65D37B20E659AD0016BAC3 /* IdcardQuality.framework */,
 				AD624D3720E087270095F0E9 /* MSPayThrough */,
 				AD624D5020E0872A0095F0E9 /* MSPayThroughTests */,
 				AD624D5B20E0872B0095F0E9 /* MSPayThroughUITests */,
@@ -2550,6 +2581,7 @@
 				AD624D3120E087270095F0E9 /* Sources */,
 				AD624D3220E087270095F0E9 /* Frameworks */,
 				AD624D3320E087270095F0E9 /* Resources */,
+				AF65D38220E659AE0016BAC3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3137,7 +3169,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PSM9QJGHC3;
+				DEVELOPMENT_TEAM = R2JCE89QA2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",
@@ -3147,6 +3179,7 @@
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/analytics/analytics_ios_5.5.0",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/share/share_ios_6.9.2/UMSocialUI",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/share/share_ios_6.9.2",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MSPayThrough/Other/LF.pch";
 				INFOPLIST_FILE = MSPayThrough/Info.plist;
@@ -3174,7 +3207,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PSM9QJGHC3;
+				DEVELOPMENT_TEAM = R2JCE89QA2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",
@@ -3184,6 +3217,7 @@
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/analytics/analytics_ios_5.5.0",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/share/share_ios_6.9.2/UMSocialUI",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/share/share_ios_6.9.2",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MSPayThrough/Other/LF.pch";
 				INFOPLIST_FILE = MSPayThrough/Info.plist;

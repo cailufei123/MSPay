@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *kuaiJieLabel;
 @property (weak, nonatomic) IBOutlet UILabel *huanKuanLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 
 @end
 
@@ -23,7 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    if (ABOVE_IOS11) {
+        self.topViewY.constant = 15;
+    }else{
+        self.topViewY.constant = 79;
+    }
     self.navigationItem.title = @"费率";
     //请求费率接口
     [self loadFeiLvData];

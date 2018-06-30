@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="companyLabel" destination="tC9-zj-7Hm" id="ZaT-tu-f7e"/>
                 <outlet property="phoneLabe" destination="e1j-eq-Nhb" id="AcZ-hI-XLh"/>
+                <outlet property="topViewY" destination="fkd-Ah-GhK" id="acm-QA-WTO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

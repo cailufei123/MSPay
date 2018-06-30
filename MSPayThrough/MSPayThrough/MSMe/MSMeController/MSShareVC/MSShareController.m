@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
 @property (nonatomic,strong) UIImage *image;
 @property (nonatomic,copy) NSString *endString;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backBtnY;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *zhegaBtnY;
 
 @property (nonatomic,strong) MSShareNotice *shareNotice;
 @end
@@ -52,6 +54,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (ABOVE_IOS11) {
+        self.backBtnY.constant = 15;
+        self.zhegaBtnY.constant = 5;
+        
+    }else{
+        self.backBtnY.constant = 79;
+        self.zhegaBtnY.constant = 69;
+    }
+    
    //分享
     [self loadShareData];
     

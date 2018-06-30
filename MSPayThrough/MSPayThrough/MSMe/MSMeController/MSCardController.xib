@@ -17,6 +17,7 @@
                 <outlet property="bankLabel" destination="Dhm-so-HJF" id="9yr-EP-wbj"/>
                 <outlet property="cardNumBtn" destination="DwA-od-GaF" id="ynp-U2-GCP"/>
                 <outlet property="cardNumLabel" destination="N8l-3K-cuF" id="THc-Ia-PN3"/>
+                <outlet property="topViewY" destination="lCX-kz-VVD" id="pOn-Dc-P5L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -141,31 +142,31 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="①" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPE-os-nOi">
-                    <rect key="frame" x="119" y="81" width="20" height="27.5"/>
+                    <rect key="frame" x="109" y="81" width="30" height="27.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="20" id="tNr-AW-r2f"/>
+                        <constraint firstAttribute="width" constant="30" id="tNr-AW-r2f"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="②" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7M-Pa-RfU">
-                    <rect key="frame" x="236" y="81" width="20" height="27.5"/>
+                    <rect key="frame" x="236" y="81" width="30" height="27.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="20" id="fh8-J1-caR"/>
+                        <constraint firstAttribute="width" constant="30" id="fh8-J1-caR"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bo-qo-EZK">
-                    <rect key="frame" x="213" y="113.5" width="66.5" height="16"/>
+                    <rect key="frame" x="218" y="113.5" width="66.5" height="16"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身份证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-Eu-Tki">
-                    <rect key="frame" x="109.5" y="113.5" width="40" height="16"/>
+                    <rect key="frame" x="104.5" y="113.5" width="40" height="16"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -197,7 +198,7 @@
                 <constraint firstItem="MRp-Dy-gYx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="yJj-KW-mHZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="64.5" y="44.5"/>
+            <point key="canvasLocation" x="277" y="-13"/>
         </view>
     </objects>
     <resources>

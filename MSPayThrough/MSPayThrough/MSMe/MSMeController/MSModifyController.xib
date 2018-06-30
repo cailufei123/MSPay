@@ -17,6 +17,7 @@
                 <outlet property="getCodeBtn" destination="fbz-HW-vRg" id="7ei-v6-aLh"/>
                 <outlet property="phoneTF" destination="cwj-jr-3Os" id="qEp-NP-wBi"/>
                 <outlet property="pwdTF" destination="cMs-RJ-PW5" id="9K9-iB-MFe"/>
+                <outlet property="topViewY" destination="BTm-Wo-MWo" id="LD0-zV-aKe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

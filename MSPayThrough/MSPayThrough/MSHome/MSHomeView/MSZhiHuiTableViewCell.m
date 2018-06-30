@@ -40,10 +40,11 @@
 }
 -(void)zhidingJihuaBtClick{
     MSZhiDingJihuaViewController * huanKuanPlayV =  [[MSZhiDingJihuaViewController alloc] init];
+    huanKuanPlayV.bankMcp = _bankMcp;
     [[self viewController].navigationController pushViewController:huanKuanPlayV animated:YES];
 }
 -(void)chankanLiushuiBtClick{
-    MSZhiDingJihuaViewController * huanKuanPlayV =  [[MSZhiDingJihuaViewController alloc] init];
+    MSLiuShuiSelectViewController * huanKuanPlayV =  [[MSLiuShuiSelectViewController alloc] init];
     [[self viewController].navigationController pushViewController:huanKuanPlayV animated:YES];
 }
 -(void)chakanJIhuaBtClick{

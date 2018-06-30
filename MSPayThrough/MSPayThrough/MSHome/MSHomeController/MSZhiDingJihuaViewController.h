@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MSZhiDingJihuaViewController : UIViewController
-
+@property(nonatomic,strong)MSBankMcpModel *bankMcp;
 @end

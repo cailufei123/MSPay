@@ -55,32 +55,22 @@
 }
 //点击身份证正面相机
 - (IBAction)clickCardBtn {
+    
 //    UIViewController * vc =
-//    [AipCaptureCardVC ViewControllerWithCardType:CardTypeIdCardFont
-//                                 andImageHandler:^(UIImage *image) {
-//
-//                                     [[AipOcrService shardService] detectIdCardFrontFromImage:image
-//                                                                                  withOptions:nil
-//                                                                               successHandler:_successHandler
-//                                                                                  failHandler:_failHandler];
-//                                 }];
-//
+//    [AipCaptureCardVC ViewControllerWithCardType:CardTypeLocalIdCardFont andImageHandler:^(UIImage *image) {
+//        // 成功扫描出身份证
+//        [[AipOcrService shardService] detectIdCardFrontFromImage:image
+//                                                     withOptions:nil
+//                                                  successHandler:^(id result){
+//                                                      // 在成功回调中，保存图片到系统相册
+//                                                      UIImageWriteToSavedPhotosAlbum(image, nil, nil, (__bridge void *)self);
+//                                                      // 打印出识别结果
+//                                                      NSLog(@"%@", result);
+//                                                  }
+//                                                     failHandler:_failHandler];
+//    }];
+//    // 展示ViewController
 //    [self presentViewController:vc animated:YES completion:nil];
-    UIViewController * vc =
-    [AipCaptureCardVC ViewControllerWithCardType:CardTypeLocalIdCardFont andImageHandler:^(UIImage *image) {
-        // 成功扫描出身份证
-        [[AipOcrService shardService] detectIdCardFrontFromImage:image
-                                                     withOptions:nil
-                                                  successHandler:^(id result){
-                                                      // 在成功回调中，保存图片到系统相册
-                                                      UIImageWriteToSavedPhotosAlbum(image, nil, nil, (__bridge void *)self);
-                                                      // 打印出识别结果
-                                                      NSLog(@"%@", result);
-                                                  }
-                                                     failHandler:_failHandler];
-    }];
-    // 展示ViewController
-    [self presentViewController:vc animated:YES completion:nil];
 }
 //点击身份证反面相机
 - (IBAction)clickBodyBtn {

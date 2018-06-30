@@ -63,19 +63,20 @@
     dict[@"bank_acc_name"] = self.bankMcp.mcp_user_name;
     dict[@"bank_acc_no"] = self.bankMcp.mcp_card_no;
     [YWRequestData publicDict:dict success:^(id responseObj) {
-//        NSMutableArray *dates = [NSMutableArray array];
-//        long long nowTime = 1471491674, //开始时间
-//        endTime = 1472528474,//结束时间
-//        dayTime = 24*60*60,
-//        time = nowTime - nowTime%dayTime;
-//        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-//        [formatter setDateFormat:@"yyyy/MM/dd"];
-//        
-//        while (time < endTime) {
-//            NSString *showOldDate = [formatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:time]];
-//            [dates addObject:showOldDate];
-//            time += dayTime;
-//        }
+        NSMutableArray *dates = [NSMutableArray array];
+        long long nowTime = 1471491674, //开始时间
+        endTime = 1472528474,//结束时间
+        dayTime = 24*60*60,
+        time = nowTime - nowTime%dayTime;
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy/MM/dd"];
+
+        while (time < endTime) {
+            NSString *showOldDate = [formatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:time]];
+            [dates addObject:showOldDate];
+            time += dayTime;
+        }
+        LFLog(@"%@",dates);
     }];
   
 }

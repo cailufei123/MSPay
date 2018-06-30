@@ -3174,7 +3174,7 @@
 					"$(PROJECT_DIR)/MSPayThrough/Other/Tools/跑马灯/JhtMarqueeSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lg.b.MSPayThrough;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tendpay.business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3212,7 +3212,7 @@
 					"$(PROJECT_DIR)/MSPayThrough/Other/Tools/跑马灯/JhtMarqueeSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lg.b.MSPayThrough;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tendpay.business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

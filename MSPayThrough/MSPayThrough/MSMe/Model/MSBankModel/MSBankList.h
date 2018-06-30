@@ -10,4 +10,5 @@
 
 @interface MSBankList : NSObject
 @property (nonatomic,copy) NSString *db_name;
+@property (nonatomic,copy) NSString *db_code_en;
 @end

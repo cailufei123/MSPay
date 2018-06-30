@@ -10,8 +10,6 @@
 #import "MSVerifyCardController.h"
 #import "YCArchiveTool.h"
 #import "MSAddDepositCardController.h"
-#import "UIViewController+BarButton.h"
-#import "SANavigationController.h"
 #import "WRNavigationBar.h"
 
 @interface MSCardController ()
@@ -52,9 +50,7 @@
     }else{
         self.topViewY.constant = 64;
     }
-    if (self.fromClassVc == [SANavigationController class]) {
-        [self addLeftBarButtonWithImage:[UIImage imageNamed:@"icon_back"] action:@selector(back)];
-    }
+ 
     
     self.navigationItem.title = @"身份认证";
     [self.backImageView gradientFreme: CGRectMake(0, 0, LFscreenW, 150) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
@@ -99,11 +95,6 @@
         [MBManager hideAlert];
     }];
 }
-
-- (void)back{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
 
 //点击防范身份证
 - (IBAction)clickIdentityCardBtn {

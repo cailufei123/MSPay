@@ -336,9 +336,6 @@
 		AF65D37F20E659AE0016BAC3 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37A20E659AD0016BAC3 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF65D38020E659AE0016BAC3 /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37B20E659AD0016BAC3 /* IdcardQuality.framework */; };
 		AF65D38120E659AE0016BAC3 /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF65D37B20E659AD0016BAC3 /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AFD5E66720E771DF003A4B24 /* NSObject+SXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66220E771DE003A4B24 /* NSObject+SXRuntime.m */; };
-		AFD5E66820E771DF003A4B24 /* UINavigation+SXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66420E771DE003A4B24 /* UINavigation+SXFixSpace.m */; };
-		AFD5E66920E771DF003A4B24 /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66620E771DE003A4B24 /* UIViewController+BarButton.m */; };
 		AFD5E66F20E77AFE003A4B24 /* WRCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66C20E77AFE003A4B24 /* WRCustomNavigationBar.m */; };
 		AFD5E67020E77AFE003A4B24 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5E66E20E77AFE003A4B24 /* WRNavigationBar.m */; };
 /* End PBXBuildFile section */
@@ -996,12 +993,6 @@
 		AF65D37920E659AC0016BAC3 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
 		AF65D37A20E659AD0016BAC3 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
 		AF65D37B20E659AD0016BAC3 /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
-		AFD5E66120E771DE003A4B24 /* NSObject+SXRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SXRuntime.h"; sourceTree = "<group>"; };
-		AFD5E66220E771DE003A4B24 /* NSObject+SXRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SXRuntime.m"; sourceTree = "<group>"; };
-		AFD5E66320E771DE003A4B24 /* UINavigation+SXFixSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigation+SXFixSpace.h"; sourceTree = "<group>"; };
-		AFD5E66420E771DE003A4B24 /* UINavigation+SXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigation+SXFixSpace.m"; sourceTree = "<group>"; };
-		AFD5E66520E771DE003A4B24 /* UIViewController+BarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
-		AFD5E66620E771DE003A4B24 /* UIViewController+BarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
 		AFD5E66B20E77AFE003A4B24 /* WRCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRCustomNavigationBar.h; sourceTree = "<group>"; };
 		AFD5E66C20E77AFE003A4B24 /* WRCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRCustomNavigationBar.m; sourceTree = "<group>"; };
 		AFD5E66D20E77AFE003A4B24 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
@@ -1898,7 +1889,6 @@
 		AD624F9720E09B010095F0E9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				AFD5E66020E771DE003A4B24 /* UIViewController+UINavigation */,
 				AF61DA0920E4B260008AD123 /* YCArchiveTool.h */,
 				AF61DA0A20E4B260008AD123 /* YCArchiveTool.m */,
 				AD624F9820E09B010095F0E9 /* DWImagePicker */,
@@ -2601,19 +2591,6 @@
 			path = MSShareModel;
 			sourceTree = "<group>";
 		};
-		AFD5E66020E771DE003A4B24 /* UIViewController+UINavigation */ = {
-			isa = PBXGroup;
-			children = (
-				AFD5E66120E771DE003A4B24 /* NSObject+SXRuntime.h */,
-				AFD5E66220E771DE003A4B24 /* NSObject+SXRuntime.m */,
-				AFD5E66320E771DE003A4B24 /* UINavigation+SXFixSpace.h */,
-				AFD5E66420E771DE003A4B24 /* UINavigation+SXFixSpace.m */,
-				AFD5E66520E771DE003A4B24 /* UIViewController+BarButton.h */,
-				AFD5E66620E771DE003A4B24 /* UIViewController+BarButton.m */,
-			);
-			path = "UIViewController+UINavigation";
-			sourceTree = "<group>";
-		};
 		AFD5E66A20E77AFE003A4B24 /* WRNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -2852,7 +2829,6 @@
 				ADE06FD620E5D35F0067C9A9 /* MSHuanKuanPlayViewController.m in Sources */,
 				AD624EAF20E091460095F0E9 /* IQTextView.m in Sources */,
 				AD624FF020E09B020095F0E9 /* TADotView.m in Sources */,
-				AFD5E66920E771DF003A4B24 /* UIViewController+BarButton.m in Sources */,
 				AF421B7320E387C800A300BA /* MSBankController.m in Sources */,
 				AD62504520E0FF190095F0E9 /* BCCodeAlertView.m in Sources */,
 				AD624E9320E091460095F0E9 /* MJRefreshHeader.m in Sources */,
@@ -2927,7 +2903,6 @@
 				AD624ECA20E091460095F0E9 /* UIImage+WebP.m in Sources */,
 				AD624F7120E099FF0095F0E9 /* UILabel+WHLabel.m in Sources */,
 				AD62500020E09B020095F0E9 /* YYLRefreshNoNetworkView.m in Sources */,
-				AFD5E66720E771DF003A4B24 /* NSObject+SXRuntime.m in Sources */,
 				AD624F7E20E099FF0095F0E9 /* UIColor+WHColor.m in Sources */,
 				AF421B6C20E387AE00A300BA /* UIView+SGPagingView.m in Sources */,
 				AD624E9C20E091460095F0E9 /* NSArray+MASAdditions.m in Sources */,
@@ -2943,7 +2918,6 @@
 				AD624ECF20E091460095F0E9 /* UIImage+ForceDecode.m in Sources */,
 				AD624F8620E099FF0095F0E9 /* NSDateFormatter+Category.m in Sources */,
 				AD624F8820E099FF0095F0E9 /* UIBarButtonItem+LFExtension.m in Sources */,
-				AFD5E66820E771DF003A4B24 /* UINavigation+SXFixSpace.m in Sources */,
 				AD624FE620E09B020095F0E9 /* ATSkipTool.m in Sources */,
 				AD624F8920E099FF0095F0E9 /* NSFileManager+WHFileManager.m in Sources */,
 				ADE06FBC20E4B2F50067C9A9 /* MSDetailsTopView.m in Sources */,

@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MSCardController : UIViewController
-/** 哪个控制器 */
-@property (nonatomic,assign) Class fromClassVc;
+
 @end

@@ -73,12 +73,14 @@
 - (IBAction)clickLogOutBtn {
     
     NSString* filename = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"account.data"];
-    
-    //            NSString* filename = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"accountMe.data"];
-    
     NSFileManager *defaultManager = [NSFileManager defaultManager];
     if ([defaultManager isDeletableFileAtPath:filename]) {
         [defaultManager removeItemAtPath:filename error:nil];
+    }
+    
+    NSString* filenamePersonInfo = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"MSPersonInfo.data"];
+    if ([defaultManager isDeletableFileAtPath:filenamePersonInfo]) {
+        [defaultManager removeItemAtPath:filenamePersonInfo error:nil];
     }
     
     [LKControllerTool chooseRootViewController];

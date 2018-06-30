@@ -51,36 +51,86 @@
     self.navigationItem.title = @"身份验证";
     [self.commteBtn gradientFreme: CGRectMake(0, 0, LFscreenW - 90, 45) startColor:[SVGloble colorWithHexString:@"#ef6468"] endColor:[SVGloble colorWithHexString:@"#713d92"]];
     
-    [[AipOcrService shardService] authWithAK:@"MBIvCmrvK2xNrk19M9LdV6wo" andSK:@"9XPe1bIA8EN7pO7Awhoxg1dVOckc0zIi"];
+    [[AipOcrService shardService] authWithAK:@"DQTKbF9xL5UFGxLgeDEtwpTX" andSK:@"SME24jkuQ5X0xzBLarSTMln3iApIAkmP"];
+    [self configCallback];
 }
+
+- (void)configCallback {
+    __weak typeof(self) weakSelf = self;
+    
+    // 这是默认的识别成功的回调
+    _successHandler = ^(id result){
+//        LFLog(@"result-%@", result);
+  
+        if(result[@"words_result"]){
+            if ([result[@"words_result"][@"姓名"][@"words"] length] > 0) {
+                [weakSelf.cardTF becomeFirstResponder];
+                weakSelf.cardTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"姓名"][@"words"]];
+                
+            }
+            if ([result[@"words_result"][@"公民身份号码"][@"words"] length] > 0) {
+                [weakSelf.cardNumTF becomeFirstResponder];
+                weakSelf.cardNumTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"公民身份号码"][@"words"]];
+               
+            }
+            if ([result[@"words_result"][@"签发机关"][@"words"] length] > 0) {
+                [weakSelf.bodyTF becomeFirstResponder];
+                weakSelf.bodyTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"签发机关"][@"words"]];
+               
+            }
+            
+            if ([result[@"words_result"][@"失效日期"][@"words"] length] > 0) {
+                [weakSelf.timeTF becomeFirstResponder];
+                weakSelf.timeTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"失效日期"][@"words"]];
+            }
+           
+        }
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        }];
+    };
+    
+    _failHandler = ^(NSError *error){
+        NSLog(@"%@", error);
+        NSString *msg = [NSString stringWithFormat:@"%li:%@", (long)[error code], [error localizedDescription]];
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            [MBManager showBriefAlert:@"识别失败"];
+        }];
+    };
+}
+
 //点击身份证正面相机
 - (IBAction)clickCardBtn {
-    
-//    UIViewController * vc =
-//    [AipCaptureCardVC ViewControllerWithCardType:CardTypeLocalIdCardFont andImageHandler:^(UIImage *image) {
-//        // 成功扫描出身份证
-//        [[AipOcrService shardService] detectIdCardFrontFromImage:image
-//                                                     withOptions:nil
-//                                                  successHandler:^(id result){
-//                                                      // 在成功回调中，保存图片到系统相册
-//                                                      UIImageWriteToSavedPhotosAlbum(image, nil, nil, (__bridge void *)self);
-//                                                      // 打印出识别结果
-//                                                      NSLog(@"%@", result);
-//                                                  }
-//                                                     failHandler:_failHandler];
-//    }];
-//    // 展示ViewController
-//    [self presentViewController:vc animated:YES completion:nil];
+    UIViewController * vc =
+    [AipCaptureCardVC ViewControllerWithCardType:CardTypeLocalIdCardFont
+                                 andImageHandler:^(UIImage *image) {
+                                     
+                                     [[AipOcrService shardService] detectIdCardFrontFromImage:image
+                                                                                  withOptions:nil
+                                                                               successHandler:^(id result){
+                                                                                   _successHandler(result);
+                                                                                   // 这里可以存入相册
+                                                                                   //UIImageWriteToSavedPhotosAlbum(image, nil, nil, (__bridge void *)self);
+                                                                               }
+                                                                                  failHandler:_failHandler];
+                                 }];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 //点击身份证反面相机
 - (IBAction)clickBodyBtn {
+    
     UIViewController * vc =
-    [AipCaptureCardVC ViewControllerWithCardType:CardTypeIdCardBack
+    [AipCaptureCardVC ViewControllerWithCardType:CardTypeLocalIdCardBack
                                  andImageHandler:^(UIImage *image) {
                                      
                                      [[AipOcrService shardService] detectIdCardBackFromImage:image
                                                                                  withOptions:nil
-                                                                              successHandler:_successHandler
+                                                                              successHandler:^(id result){
+                                                                                  _successHandler(result);
+                                                                                  // 这里可以存入相册
+                                                                                  // UIImageWriteToSavedPhotosAlbum(image, nil, nil, (__bridge void *)self);
+                                                                              }
                                                                                  failHandler:_failHandler];
                                  }];
     [self presentViewController:vc animated:YES completion:nil];

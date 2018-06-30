@@ -108,7 +108,7 @@
                                     </constraints>
                                     <state key="normal" image="pai_card"/>
                                     <connections>
-                                        <action selector="clickCameraBtn" destination="-1" eventType="touchUpInside" id="6an-la-JHf"/>
+                                        <action selector="clickCameraBtn" destination="-1" eventType="touchUpInside" id="4Ws-sw-a8P"/>
                                     </connections>
                                 </button>
                             </subviews>

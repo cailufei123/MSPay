@@ -19,6 +19,7 @@
                 <outlet property="enterTf" destination="8DT-Af-OqP" id="gdF-3D-4n6"/>
                 <outlet property="haunkuanLB" destination="f1t-1D-p1o" id="ek0-B6-o2s"/>
                 <outlet property="logo" destination="Lx4-cQ-0Uz" id="elB-Jn-OPb"/>
+                <outlet property="sehgnchengiBt" destination="Te3-N9-T1o" id="Ghc-9Q-5fC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="zhngdanLb" destination="Xhq-Ro-x3D" id="62l-Dd-X8U"/>
             </connections>
@@ -239,6 +240,18 @@
                                         <constraint firstItem="1IQ-Lt-hIZ" firstAttribute="leading" secondItem="S7d-mD-b0j" secondAttribute="leading" id="zO7-aM-sVQ"/>
                                     </constraints>
                                 </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te3-N9-T1o">
+                                    <rect key="frame" x="20" y="527" width="335" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="99b-dB-S8u"/>
+                                    </constraints>
+                                    <state key="normal" title="生成计划">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="kdfkdfk:" destination="-1" eventType="touchUpInside" id="g4c-mC-xXo"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -254,15 +267,13 @@
                                 <constraint firstItem="k6K-Wl-hCK" firstAttribute="leading" secondItem="eA0-6c-TSM" secondAttribute="leading" constant="15" id="ayo-ke-wtz"/>
                                 <constraint firstItem="S7d-mD-b0j" firstAttribute="top" secondItem="ylX-ox-LaF" secondAttribute="bottom" id="g9g-4e-rcz"/>
                                 <constraint firstItem="ylX-ox-LaF" firstAttribute="leading" secondItem="eA0-6c-TSM" secondAttribute="leading" id="i4X-oK-LU9"/>
+                                <constraint firstAttribute="trailing" secondItem="Te3-N9-T1o" secondAttribute="trailing" constant="20" id="j8h-QX-xtp"/>
                                 <constraint firstAttribute="trailing" secondItem="Eww-Fo-wqk" secondAttribute="trailing" id="ogS-FJ-5aB"/>
                                 <constraint firstItem="S7d-mD-b0j" firstAttribute="leading" secondItem="eA0-6c-TSM" secondAttribute="leading" id="vm8-c4-LdJ"/>
+                                <constraint firstAttribute="bottom" secondItem="Te3-N9-T1o" secondAttribute="bottom" constant="100" id="wlg-js-Y2T"/>
+                                <constraint firstItem="Te3-N9-T1o" firstAttribute="leading" secondItem="eA0-6c-TSM" secondAttribute="leading" constant="20" id="xyQ-5W-gUf"/>
                                 <constraint firstItem="k6K-Wl-hCK" firstAttribute="top" secondItem="eA0-6c-TSM" secondAttribute="top" constant="100" id="zj6-AT-SyQ"/>
                             </constraints>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <integer key="value" value="10"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
                     <constraints>

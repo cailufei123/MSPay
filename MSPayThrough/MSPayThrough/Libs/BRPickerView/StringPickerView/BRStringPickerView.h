@@ -9,10 +9,12 @@
 
 #import "BRBaseView.h"
 
-typedef void(^BRStringResultBlock)(id selectValue);
+typedef void(^BRStringResultBlock)(id selectValue,NSInteger selectRow);
 typedef void(^BRStringCancelBlock)(void);
 
 @interface BRStringPickerView : BRBaseView
+
+@property (nonatomic,assign) NSInteger selectRow;
 
 /**
  *  1.显示自定义字符串选择器

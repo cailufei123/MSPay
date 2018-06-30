@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSBankList.h"
 
 @interface MSBandCreditController : UIViewController
 @property (nonatomic,copy) NSString *bankNumStr;
@@ -14,4 +15,5 @@
 @property (nonatomic,copy) NSString *bankLastStr;
 @property (nonatomic,copy) NSString *faBankNumStr;
 
+@property (nonatomic,strong) MSBankList *bankList;
 @end

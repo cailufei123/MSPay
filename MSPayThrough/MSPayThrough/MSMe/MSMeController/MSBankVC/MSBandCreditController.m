@@ -65,7 +65,7 @@
     dict[@"mcp_user_id_card"] = @"999999";
     dict[@"mcp_bank_name"] = self.faBankNumStr;
     dict[@"mcp_bank_code"] = @"999999";
-    dict[@"mcp_bank_abbr"] = @"999999";
+    dict[@"mcp_bank_abbr"] = self.bankList.db_code_en;
     dict[@"mcp_bank_sub_no"] = @"999999";
     dict[@"mcp_province_code"] = @"999999";
     dict[@"mcp_city_code"] = @"999999";

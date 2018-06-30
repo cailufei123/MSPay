@@ -34,9 +34,21 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewY;
 
 @property (nonatomic,strong) NSMutableArray *bankLists;
+
+
+@property (nonatomic,strong) NSMutableArray *allBankLists;
+
+@property (nonatomic,assign) NSInteger selectRow;
 @end
 
 @implementation MSAddCreditCardController
+
+- (NSMutableArray *)allBankLists{
+    if (!_allBankLists) {
+        _allBankLists = [NSMutableArray array];
+    }
+    return _allBankLists;
+}
 
 - (NSMutableArray *)bankLists{
     if (!_bankLists) {
@@ -107,14 +119,19 @@
 //        LFLog(@"银行卡-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [self.allBankLists removeAllObjects];
+            
             NSArray *bankLists = [MSBankList mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"dict_bank_list"]];
+            [self.allBankLists addObjectsFromArray:bankLists];
             [self.bankLists removeAllObjects];
             for (MSBankList *bankList in bankLists) {
                 [self.bankLists addObject:bankList.db_name];
             }
             __weak typeof(self) weakSelf = self;
-            [BRStringPickerView showStringPickerWithTitle:@"选择银行卡" dataSource:self.bankLists defaultSelValue:weakSelf.faBankNumTF.text resultBlock:^(id selectValue) {
+            [BRStringPickerView showStringPickerWithTitle:@"选择银行卡" dataSource:self.bankLists defaultSelValue:weakSelf.faBankNumTF.text resultBlock:^(id selectValue,NSInteger selectRow) {
                 weakSelf.faBankNumTF.text = selectValue;
+                
+                self.selectRow = selectRow;
                 
             }];
         }
@@ -160,12 +177,14 @@
         return;
     }
     
+    MSBankList *bnkList = self.allBankLists[self.selectRow];
     MSBandCreditController *bandVC = [[MSBandCreditController alloc] init];
 
     bandVC.bankNumStr = self.bankNumTF.text;
     bandVC.faBankNumStr = self.faBankNumTF.text;
     bandVC.bankZhengStr = self.bankZhengTF.text;
     bandVC.bankLastStr = self.bankLastTF.text;
+    bandVC.bankList = bnkList;
     [self.navigationController pushViewController:bandVC animated:YES];
 }
 

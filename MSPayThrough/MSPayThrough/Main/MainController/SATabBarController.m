@@ -12,14 +12,24 @@
 #import "MSMesController.h"
 #import "MSHomeViewController.h"
 #import "MSBillViewController.h"
+#import "MSMeModel.h"
+#import "MSCardController.h"
 
 
 @interface SATabBarController ()<UITabBarControllerDelegate,tabBaruDelegate>
 @property (nonatomic, assign)NSInteger oldSelectIndex; 
+@property (nonatomic,strong) NSMutableArray *bankLists;
 
+@property (nonatomic,strong) MSMeModel *meModel;
 @end
 
 @implementation SATabBarController
+- (NSMutableArray *)bankLists{
+    if (!_bankLists) {
+        _bankLists = [NSMutableArray array];
+    }
+    return _bankLists;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,6 +38,14 @@
     /**** 添加子控制器 ****/
     [self setupChildViewControllers];
     [self setupTabBar];
+    
+    //获取用户信息
+    [self loadUserInfo];
+    
+    //获取银行卡列表
+    [self loadBankList];
+    
+    
 //     [self computeReddot];
     self.delegate = self;
 //    ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO);
@@ -136,15 +154,74 @@
 
 -(void)tabBarController:(UITabBarController*)tabBarController didSelectViewController:(UIViewController*)viewController
 {
+    if ([YCArchiveTool meModel].mci.mci_id_card.length > 0 && self.bankLists.count > 0) {
+    }else{
+        MSCardController *cardVc = [[MSCardController alloc] init];
+        SANavigationController *nav = [[SANavigationController alloc] initWithRootViewController:cardVc];
+        cardVc.fromClassVc = [SANavigationController class];
+        [self presentViewController:nav animated:yellowBoderColor completion:nil];
+    }
+    
     if (tabBarController.selectedIndex == 0) {
-
+      
     }else if (tabBarController.selectedIndex == 1){
 //        if (!loginTokenlength) {
 //            tabBarController.selectedIndex = self.oldSelectIndex;
 //            [ATSKIPTOOl loginAction:self];return;
 //        }
+    }else{
+        
     }
 }
+- (void)loadBankList{
+    NSMutableDictionary * dict = diction;
+    dict[@"mcp_card_type"] = @"99";
+    dict[@"command"] = @"1006";
+    
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+    } success:^(id responseObj) {
+        
+        //        LFLog(@"银行卡列表-%@",responseObj);
+        
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            [self.bankLists removeAllObjects];
+            NSArray *bankLists = responseObj[@"body"][@"mcp"];
+            [self.bankLists addObjectsFromArray:bankLists];
+        }
+        
+    } failure:^(NSError *error) {
+        
+        [MBManager hideAlert];
+    }];
+}
+
+- (void)loadUserInfo{
+    NSMutableDictionary * dict = diction;
+    dict[@"command"] = @"1003";
+    
+    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+        
+    } success:^(id responseObj) {
+        
+        LFLog(@"个人信息-%@",responseObj);
+        
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            
+            self.meModel = [MSMeModel mj_objectWithKeyValues:responseObj[@"body"]];
+            [YCArchiveTool saveMeModel:self.meModel];
+            
+            
+        }else{
+            //            [MBManager showBriefAlert:@"绑定失败"];
+            
+        }
+        
+    } failure:^(NSError *error) {
+        //        [MBManager showBriefAlert:@"网络错误"];
+        [MBManager hideAlert];
+    }];
+}
+
 -(void)longinseccous{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
          self.selectedIndex = 3;

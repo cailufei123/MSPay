@@ -102,9 +102,16 @@
     
     headDict[@"sign"] =   [[NSString stringWithFormat:@"%@%@", [[LFHttpTool stringWithDict:params] stringByReplacingOccurrencesOfString:@"," withString:@""],loginMerchant_key] toMD5];
     
+    
+    NSString * rrr = [NSString stringWithFormat:@"%@%@", [[LFHttpTool stringWithDict:params] stringByReplacingOccurrencesOfString:@"," withString:@""],loginMerchant_key];
+     headDict[@"sign"] =   [[rrr  stringByReplacingOccurrencesOfString:@"|" withString:@","] hahmd5];
+    
+   
+  
+    
     allDict[@"jsondata"] = [dict mj_JSONString];
     
-    LFLog(@"%@",[NSString stringWithFormat:@"%@%@", [[LFHttpTool stringWithDict:params] stringByReplacingOccurrencesOfString:@"," withString:@""],loginMerchant_key]);
+    LFLog(@"%@",[rrr  stringByReplacingOccurrencesOfString:@"|" withString:@","]);
     [LFHttpTool stringWithDict:params];
     
     

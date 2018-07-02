@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/Other/Tools/LFHttpTool.m"
-            timestampString = "552054898.395256"
+            filePath = "MSPayThrough/MSMe/MSMeController/MSBankVC/MSAddCreditCardController.m"
+            timestampString = "552190732.246942"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "+post:params:progress:success:failure:"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-configCallback"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -35,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/Other/Tools/LFHttpTool.m"
-            timestampString = "552054898.395829"
+            filePath = "MSPayThrough/MSMe/MSMeController/MSBankVC/MSAddCreditCardController.m"
+            timestampString = "552190732.247281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "+post:params:progress:success:failure:"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-configCallback"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -51,61 +51,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MSPayThrough/Other/Tools/LFHttpTool.m"
-            timestampString = "552054898.395979"
+            filePath = "MSPayThrough/MSMe/MSMeController/MSBankVC/MSAddCreditCardController.m"
+            timestampString = "552190732.247342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "+post:params:progress:success:failure:"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-configCallback"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[LFHttpTool post:params:progress:success:failure:]"
-                  moduleName = "MSPayThrough"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cailufei/Desktop/MSPayNew/MSPayThrough/MSPayThrough/Other/Tools/LFHttpTool.m"
-                  timestampString = "552054102.973333"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
-                  offsetFromSymbolStart = "2592">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__51+[LFHttpTool post:params:progress:success:failure:]_block_invoke"
-                  moduleName = "MSPayThrough"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cailufei/Desktop/MSPayNew/MSPayThrough/MSPayThrough/Other/Tools/LFHttpTool.m"
-                  timestampString = "552054102.977263"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.134"
-                  moduleName = "MSPayThrough"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cailufei/Desktop/MSPayNew/MSPayThrough/MSPayThrough/Other/Tools/LFHttpTool.m"
-                  timestampString = "552054102.982372"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

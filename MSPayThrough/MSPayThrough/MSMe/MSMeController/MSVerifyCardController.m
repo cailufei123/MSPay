@@ -63,26 +63,30 @@
 //        LFLog(@"result-%@", result);
   
         if(result[@"words_result"]){
-            if ([result[@"words_result"][@"姓名"][@"words"] length] > 0) {
-                [weakSelf.cardTF becomeFirstResponder];
-                weakSelf.cardTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"姓名"][@"words"]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+               
+                if ([result[@"words_result"][@"姓名"][@"words"] length] > 0) {
+                    [weakSelf.cardTF becomeFirstResponder];
+                    weakSelf.cardTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"姓名"][@"words"]];
+                    
+                }
+                if ([result[@"words_result"][@"公民身份号码"][@"words"] length] > 0) {
+                    [weakSelf.cardNumTF becomeFirstResponder];
+                    weakSelf.cardNumTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"公民身份号码"][@"words"]];
+                    
+                }
+                if ([result[@"words_result"][@"签发机关"][@"words"] length] > 0) {
+                    [weakSelf.bodyTF becomeFirstResponder];
+                    weakSelf.bodyTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"签发机关"][@"words"]];
+                    
+                }
                 
-            }
-            if ([result[@"words_result"][@"公民身份号码"][@"words"] length] > 0) {
-                [weakSelf.cardNumTF becomeFirstResponder];
-                weakSelf.cardNumTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"公民身份号码"][@"words"]];
-               
-            }
-            if ([result[@"words_result"][@"签发机关"][@"words"] length] > 0) {
-                [weakSelf.bodyTF becomeFirstResponder];
-                weakSelf.bodyTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"签发机关"][@"words"]];
-               
-            }
+                if ([result[@"words_result"][@"失效日期"][@"words"] length] > 0) {
+                    [weakSelf.timeTF becomeFirstResponder];
+                    weakSelf.timeTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"失效日期"][@"words"]];
+                }
+            });
             
-            if ([result[@"words_result"][@"失效日期"][@"words"] length] > 0) {
-                [weakSelf.timeTF becomeFirstResponder];
-                weakSelf.timeTF.text = [NSString stringWithFormat:@"%@",result[@"words_result"][@"失效日期"][@"words"]];
-            }
            
         }
         

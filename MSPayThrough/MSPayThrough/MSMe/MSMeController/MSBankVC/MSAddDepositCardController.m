@@ -77,9 +77,12 @@
         LFLog(@"result-%@", result);
         
         if(result[@"result"]){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf.bankNumTF becomeFirstResponder];
+                weakSelf.bankNumTF.text = [NSString stringWithFormat:@"%@",result[@"result"][@"bank_card_number"]];
+            });
             
-            [weakSelf.bankNumTF becomeFirstResponder];
-            weakSelf.bankNumTF.text = [NSString stringWithFormat:@"%@",result[@"result"][@"bank_card_number"]];
+           
             
         }
         

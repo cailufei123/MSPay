@@ -75,7 +75,7 @@
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        LFLog(@"信用卡-%@",responseObj);
+//        LFLog(@"信用卡-%@",responseObj);
         
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
             [MBManager showBriefAlert:@"添加信用卡成功"];

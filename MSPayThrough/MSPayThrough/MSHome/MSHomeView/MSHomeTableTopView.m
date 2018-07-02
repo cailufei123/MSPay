@@ -7,24 +7,15 @@
 //
 
 #import "MSHomeTableTopView.h"
-#import "JhtVerticalMarquee.h"
-#import "JhtHorizontalMarquee.h"
+
 #import "MSTopCollectionViewCell.h"
 #import "MSCollectionViewFlowLayout.h"
 #import "MSDetalsViewController.h"
 #import "MSHuanKuanPlayViewController.h"
 #import "MSLiuShuiSelectViewController.h"
-@interface MSHomeTableTopView()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate>
-{
-    // 水平滚动的跑马灯
-    JhtHorizontalMarquee *_horizontalMarquee;
-    
-    // 上下滚动的跑马灯
-    JhtVerticalMarquee *_verticalMarquee;
-    // 是否暂停了上下滚动的跑马灯
-    BOOL _isPauseV;
-   
-}
+#import "SDCycleScrollView.h"
+@interface MSHomeTableTopView()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate,SDCycleScrollViewDelegate>
+
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
@@ -35,6 +26,7 @@
 @property (strong, nonatomic)  UICollectionView *collectionView;
 @property (strong, nonatomic)  NSMutableArray * titles;
 @property (weak, nonatomic) IBOutlet UIButton *liuShuiBt;
+@property (strong, nonatomic)SDCycleScrollView *cycleScrollView;
 @end
 static NSString * const cellid = @"MSTopCollectionViewCell";
 @implementation MSHomeTableTopView
@@ -65,58 +57,39 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
     for (GongGaoModel * gongGaoModel in arrar) {
         [self.titles addObject:gongGaoModel.cn_content];
     }
-    _verticalMarquee.sourceArray = self.titles;
+
+     self.cycleScrollView .titlesGroup = self.titles;
 }
 /** 添加上下滚动的跑马灯 */
 -(void)creaveHorseRaceLamp{
   
-    _verticalMarquee = [[JhtVerticalMarquee alloc]  initWithFrame:CGRectMake(35, 0, LFscreenW - 45, 30)];
-    [self.nitView addSubview:_verticalMarquee];
-    //    _verticalMarquee.backgroundColor = [UIColor clearColor];
-    [_verticalMarquee layercornerRadius:16];
-    _verticalMarquee.verticalTextColor = blackBColor;
-    _verticalMarquee.scrollDelay = 5;
-    _verticalMarquee.scrollDuration = 0;
-    _verticalMarquee.verticalNumberOfLines = 1;
-        _verticalMarquee.verticalTextFont = [UIFont systemFontOfSize:12];
-                NSArray *soureArray = @[@"1. 谁曾从谁的青春里走过，留下了笑靥",
-                                        @"2. 谁曾在谁的花季里停留，温暖了想念",
-                                        @"3. 谁又从谁的雨季里消失，泛滥了眼泪",
-                                        @"4. 人生路，路迢迢，谁道自古英雄多寂寥，若一朝，看透了，一身清风挣多少"
-                                        ];
-    
-    NSString *str = @"谁曾在谁的花季里停留，温暖了想念";
-    // 创建NSMutableAttributedString
-    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc]initWithString:str];
-    // 设置字体和设置字体的范围
-    [attrStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:30.0f] range:NSMakeRange(0, 3)];
-    // 添加文字颜色
-    [attrStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(4, 2)];
-    // 添加文字背景颜色
-    [attrStr addAttribute:NSBackgroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(7, 2)];
-    // 添加下划线
-    [attrStr addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(11, 5)];
     
     
-    
-    [_verticalMarquee scrollWithCallbackBlock:^(JhtVerticalMarquee *view, NSInteger currentIndex) {
-       
-    }];
-    
-    // 开始滚动
-    [_verticalMarquee marqueeOfSettingWithState:MarqueeStart_V];
-    //    WishWinListModel * winListModel = [_wishPoolModel.winDatas firstObject];
-    //    [iamgeView sd_setImageWithURL:[NSURL URLWithString:winListModel.icon] placeholderImage:[UIImage imageNamed:@""]];
-    // 给跑马灯添加点击手势
-    UITapGestureRecognizer *vtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(verticalMarqueeTapGes:)];
-    [_verticalMarquee addGestureRecognizer:vtap];
-}
+    // 网络加载 --- 创建只上下滚动展示文字的轮播器
+    // 由于模拟器的渲染问题，如果发现轮播时有一条线不必处理，模拟器放大到100%或者真机调试是不会出现那条线的
+    SDCycleScrollView *cycleScrollView4 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(35, 0, LFscreenW - 45, 30) delegate:self placeholderImage:nil];
+    cycleScrollView4.backgroundColor = [UIColor whiteColor];
+    self.cycleScrollView = cycleScrollView4;
+    cycleScrollView4.scrollDirection = UICollectionViewScrollDirectionVertical;
+    cycleScrollView4.onlyDisplayText = YES;
 
-- (void)verticalMarqueeTapGes:(UITapGestureRecognizer *)ges {
-    NSLog(@"点击第 %ld 条数据啦啊！！！", _verticalMarquee.currentIndex);
+    cycleScrollView4.titleLabelBackgroundColor = [UIColor whiteColor];
+     cycleScrollView4.titleLabelTextColor = blackBColor;
+    [cycleScrollView4 disableScrollGesture];
     
-  
+   
+//      [_verticalMarquee addGestureRecognizer: self.cycleScrollView ];
     
+     [self.nitView addSubview:cycleScrollView4];
+    
+    
+    
+    
+    
+    
+    
+    
+   
 }
 
 +(instancetype)loadNameHomeTableTopViewXib {

@@ -190,7 +190,6 @@
 		AD624FE720E09B020095F0E9 /* LFHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD624F9C20E09B010095F0E9 /* LFHttpTool.m */; };
 		AD624FE920E09B020095F0E9 /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD624F9E20E09B010095F0E9 /* MBManager.m */; };
 		AD624FEA20E09B020095F0E9 /* LFAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD624F9F20E09B010095F0E9 /* LFAccountTool.m */; };
-		AD624FEB20E09B020095F0E9 /* JhtMarqueeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD624FA520E09B010095F0E9 /* JhtMarqueeSDK.a */; };
 		AD624FEC20E09B020095F0E9 /* UITableView+Gzw.m in Sources */ = {isa = PBXBuildFile; fileRef = AD624FAB20E09B010095F0E9 /* UITableView+Gzw.m */; };
 		AD624FED20E09B020095F0E9 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD624FB220E09B010095F0E9 /* SDCycleScrollView.m */; };
 		AD624FEE20E09B020095F0E9 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD624FB320E09B010095F0E9 /* UIView+SDExtension.m */; };
@@ -737,10 +736,6 @@
 		AD624F9E20E09B010095F0E9 /* MBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBManager.m; sourceTree = "<group>"; };
 		AD624F9F20E09B010095F0E9 /* LFAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFAccountTool.m; sourceTree = "<group>"; };
 		AD624FA020E09B010095F0E9 /* LKControllerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKControllerTool.h; sourceTree = "<group>"; };
-		AD624FA320E09B010095F0E9 /* JhtHorizontalMarquee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtHorizontalMarquee.h; sourceTree = "<group>"; };
-		AD624FA420E09B010095F0E9 /* JhtVerticalMarquee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtVerticalMarquee.h; sourceTree = "<group>"; };
-		AD624FA520E09B010095F0E9 /* JhtMarqueeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JhtMarqueeSDK.a; sourceTree = "<group>"; };
-		AD624FA620E09B010095F0E9 /* JhtMarqueeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtMarqueeSDK.h; sourceTree = "<group>"; };
 		AD624FA720E09B010095F0E9 /* ATSkipTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSkipTool.h; sourceTree = "<group>"; };
 		AD624FA920E09B010095F0E9 /* LFHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFHttpTool.h; sourceTree = "<group>"; };
 		AD624FAB20E09B010095F0E9 /* UITableView+Gzw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Gzw.m"; sourceTree = "<group>"; };
@@ -1017,7 +1012,6 @@
 				AD624EA520E091460095F0E9 /* SecurityEnvSDK.framework in Frameworks */,
 				AD624EAD20E091460095F0E9 /* libSocialSina.a in Frameworks */,
 				AD624EAC20E091460095F0E9 /* libSocialWeChat.a in Frameworks */,
-				AD624FEB20E09B020095F0E9 /* JhtMarqueeSDK.a in Frameworks */,
 				AD624EA820E091460095F0E9 /* UMAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1889,7 +1883,6 @@
 				AD624F9E20E09B010095F0E9 /* MBManager.m */,
 				AD624F9F20E09B010095F0E9 /* LFAccountTool.m */,
 				AD624FA020E09B010095F0E9 /* LKControllerTool.h */,
-				AD624FA120E09B010095F0E9 /* 跑马灯 */,
 				AD624FA720E09B010095F0E9 /* ATSkipTool.h */,
 				AD624FA920E09B010095F0E9 /* LFHttpTool.h */,
 				AD624F9C20E09B010095F0E9 /* LFHttpTool.m */,
@@ -1914,25 +1907,6 @@
 				AD624F9A20E09B010095F0E9 /* ImagePicker.h */,
 			);
 			path = DWImagePicker;
-			sourceTree = "<group>";
-		};
-		AD624FA120E09B010095F0E9 /* 跑马灯 */ = {
-			isa = PBXGroup;
-			children = (
-				AD624FA220E09B010095F0E9 /* JhtMarqueeSDK */,
-			);
-			path = "跑马灯";
-			sourceTree = "<group>";
-		};
-		AD624FA220E09B010095F0E9 /* JhtMarqueeSDK */ = {
-			isa = PBXGroup;
-			children = (
-				AD624FA320E09B010095F0E9 /* JhtHorizontalMarquee.h */,
-				AD624FA420E09B010095F0E9 /* JhtVerticalMarquee.h */,
-				AD624FA520E09B010095F0E9 /* JhtMarqueeSDK.a */,
-				AD624FA620E09B010095F0E9 /* JhtMarqueeSDK.h */,
-			);
-			path = JhtMarqueeSDK;
 			sourceTree = "<group>";
 		};
 		AD624FAA20E09B010095F0E9 /* GzwScrollViewExtension */ = {
@@ -3175,6 +3149,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

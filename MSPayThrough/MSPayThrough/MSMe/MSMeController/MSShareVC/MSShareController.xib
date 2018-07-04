@@ -28,17 +28,17 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cim-4m-9Yu">
-                    <rect key="frame" x="87.5" y="437" width="200" height="200"/>
+                    <rect key="frame" x="87.5" y="387" width="200" height="250"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VXJ-PP-GQ6">
-                            <rect key="frame" x="40" y="15" width="120" height="120"/>
+                            <rect key="frame" x="10" y="15" width="180" height="200"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="120" id="KHq-cS-UO9"/>
-                                <constraint firstAttribute="height" constant="120" id="cIh-Ay-3fb"/>
+                                <constraint firstAttribute="width" constant="180" id="KHq-cS-UO9"/>
+                                <constraint firstAttribute="height" constant="200" id="cIh-Ay-3fb"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长按识别二维码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGP-bI-CWp">
-                            <rect key="frame" x="46.5" y="162" width="107.5" height="18"/>
+                            <rect key="frame" x="46.5" y="222" width="107.5" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" red="0.58823529409999997" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -48,10 +48,10 @@
                     <constraints>
                         <constraint firstItem="cGP-bI-CWp" firstAttribute="centerX" secondItem="VXJ-PP-GQ6" secondAttribute="centerX" id="EL6-ni-Y9W"/>
                         <constraint firstItem="VXJ-PP-GQ6" firstAttribute="top" secondItem="Cim-4m-9Yu" secondAttribute="top" constant="15" id="NXQ-3P-8av"/>
-                        <constraint firstAttribute="height" constant="200" id="aXu-VQ-9Fa"/>
+                        <constraint firstAttribute="height" constant="250" id="aXu-VQ-9Fa"/>
                         <constraint firstItem="VXJ-PP-GQ6" firstAttribute="centerX" secondItem="Cim-4m-9Yu" secondAttribute="centerX" id="dZw-PR-Yjb"/>
                         <constraint firstAttribute="width" constant="200" id="lJF-6v-S2O"/>
-                        <constraint firstAttribute="bottom" secondItem="cGP-bI-CWp" secondAttribute="bottom" constant="20" id="wMg-6G-YhD"/>
+                        <constraint firstAttribute="bottom" secondItem="cGP-bI-CWp" secondAttribute="bottom" constant="10" id="wMg-6G-YhD"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R4-r2-RFV" userLabel="返回按钮">

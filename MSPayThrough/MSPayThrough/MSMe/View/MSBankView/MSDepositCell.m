@@ -65,10 +65,6 @@ static const int MSdepositCellMargin = 15;
 - (void)setDeposit:(MSDepositModel *)deposit{
     _deposit = deposit;
     
-    LFLog(@"银卡图片-%@",deposit.mcp_bank_ico);
-    LFLog(@"银卡名称-%@",deposit.mcp_bank_name);
-    LFLog(@"银卡号%@",deposit.mcp_card_no);
-    
     [self.bankImageView sd_setImageWithURL:[NSURL URLWithString:deposit.mcp_bank_ico] placeholderImage:[UIImage imageNamed:@""]];
     self.bankNameLabel.text = deposit.mcp_bank_name;
    

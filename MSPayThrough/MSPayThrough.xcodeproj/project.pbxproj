@@ -259,6 +259,7 @@
 		ADE06FE620E611C50067C9A9 /* MSfastGiveMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE06FE420E611C50067C9A9 /* MSfastGiveMoneyViewController.xib */; };
 		ADE06FE920E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FE820E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m */; };
 		ADE06FEC20E6329A0067C9A9 /* MSselectChuxukaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE06FEB20E6329A0067C9A9 /* MSselectChuxukaViewController.m */; };
+		AF28C43D20ECAC15004D754C /* YCAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF28C43C20ECAC15004D754C /* YCAlertViewController.m */; };
 		AF421B4C20E3751E00A300BA /* MSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4B20E3751E00A300BA /* MSMeModel.m */; };
 		AF421B4F20E3762600A300BA /* MSMciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B4E20E3762600A300BA /* MSMciModel.m */; };
 		AF421B5220E3764500A300BA /* MSMbiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF421B5120E3764500A300BA /* MSMbiModel.m */; };
@@ -859,6 +860,8 @@
 		ADE06FE820E6324E0067C9A9 /* MSXunzeXinYongKaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSXunzeXinYongKaViewController.m; sourceTree = "<group>"; };
 		ADE06FEA20E6329A0067C9A9 /* MSselectChuxukaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSselectChuxukaViewController.h; sourceTree = "<group>"; };
 		ADE06FEB20E6329A0067C9A9 /* MSselectChuxukaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSselectChuxukaViewController.m; sourceTree = "<group>"; };
+		AF28C43B20ECAC15004D754C /* YCAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAlertViewController.h; sourceTree = "<group>"; };
+		AF28C43C20ECAC15004D754C /* YCAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAlertViewController.m; sourceTree = "<group>"; };
 		AF421B4A20E3751E00A300BA /* MSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMeModel.h; sourceTree = "<group>"; };
 		AF421B4B20E3751E00A300BA /* MSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMeModel.m; sourceTree = "<group>"; };
 		AF421B4D20E3762600A300BA /* MSMciModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMciModel.h; sourceTree = "<group>"; };
@@ -1876,6 +1879,7 @@
 		AD624F9720E09B010095F0E9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AF28C43A20ECAC15004D754C /* AlertViewController */,
 				AF61DA0920E4B260008AD123 /* YCArchiveTool.h */,
 				AF61DA0A20E4B260008AD123 /* YCArchiveTool.m */,
 				AD624F9820E09B010095F0E9 /* DWImagePicker */,
@@ -2243,6 +2247,15 @@
 				ADE06F9E20E3A0510067C9A9 /* MSHomModel.m */,
 			);
 			path = MSHomeModel;
+			sourceTree = "<group>";
+		};
+		AF28C43A20ECAC15004D754C /* AlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF28C43B20ECAC15004D754C /* YCAlertViewController.h */,
+				AF28C43C20ECAC15004D754C /* YCAlertViewController.m */,
+			);
+			path = AlertViewController;
 			sourceTree = "<group>";
 		};
 		AF421B4920E373F500A300BA /* Model */ = {
@@ -2864,6 +2877,7 @@
 				AD624F6E20E099FF0095F0E9 /* NSObject+WHObject.m in Sources */,
 				AD624EC220E091460095F0E9 /* AFSecurityPolicy.m in Sources */,
 				AD624F7520E099FF0095F0E9 /* WHMethods.m in Sources */,
+				AF28C43D20ECAC15004D754C /* YCAlertViewController.m in Sources */,
 				AF65D35220E61A680016BAC3 /* MSNoticeModel.m in Sources */,
 				AD624FF420E09B020095F0E9 /* WBAudioPlayerHelper.m in Sources */,
 				AF65D32F20E5F2D80016BAC3 /* MSDepositModel.m in Sources */,
@@ -3160,7 +3174,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PSM9QJGHC3;
+				DEVELOPMENT_TEAM = R2JCE89QA2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",
@@ -3198,7 +3212,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PSM9QJGHC3;
+				DEVELOPMENT_TEAM = R2JCE89QA2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MSPayThrough/Libs/iOS/umcommonlog/umcommonlog_ios_1.0.0",

@@ -10,6 +10,7 @@
 #import "MSCreditCell.h"
 #import "MSAddCreditCardController.h"
 #import "MSBankMcp.h"
+#import "YCAlertViewController.h"
 
 @interface MSCreditCardController ()<UITableViewDelegate,UITableViewDataSource,MSCreditCellDelegate>
 @property (nonatomic,weak) UITableView *tableView;
@@ -138,29 +139,40 @@
 #pragma mark - MSCreditCellDelegate
 - (void)clickDeleteButton:(MSCreditCell *)creditCell{
 //    LFLog(@"点击删除按钮");
-    NSMutableDictionary * dict = diction;
-    dict[@"mcp_id"] = creditCell.mcp.mcp_id;
-    dict[@"command"] = @"1008";
-    
-    [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
-    } success:^(id responseObj) {
-        
-//        LFLog(@"responseObj-%@",responseObj);
-        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
-            [MBManager showBriefAlert:@"删除信用卡成功"];
-
-            [self.tableView reloadData];
-            [self.tableView.mj_header beginRefreshing];
-            
-        }else{
-            
-        }
-        
-    } failure:^(NSError *error) {
-        //        [MBManager showBriefAlert:@"网络错误"];
-       
-        [MBManager hideAlert];
+    YCAlertViewController *alertVC = [YCAlertViewController alertControllerWithTitle:nil message:@"是否删除银行卡"];
+    YCAlertAction *cancel = [YCAlertAction actionWithTitle:@"取消" handler:^(YCAlertAction *action) {
     }];
+    YCAlertAction *sure = [YCAlertAction actionWithTitle:@"确定" handler:^(YCAlertAction *action) {
+        NSMutableDictionary * dict = diction;
+        dict[@"mcp_id"] = creditCell.mcp.mcp_id;
+        dict[@"command"] = @"1008";
+        
+        [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
+        } success:^(id responseObj) {
+            
+            //        LFLog(@"responseObj-%@",responseObj);
+            if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+                [MBManager showBriefAlert:@"删除信用卡成功"];
+                
+                [self.tableView reloadData];
+                [self.tableView.mj_header beginRefreshing];
+                
+            }else{
+                
+            }
+            
+        } failure:^(NSError *error) {
+            //        [MBManager showBriefAlert:@"网络错误"];
+            
+            [MBManager hideAlert];
+        }];
+    }];
+    
+    [alertVC addAction:cancel];
+    [alertVC addAction:sure];
+    
+    [self presentViewController:alertVC animated:NO completion:nil];
+ 
 }
 
 @end

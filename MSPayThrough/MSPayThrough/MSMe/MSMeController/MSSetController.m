@@ -87,14 +87,14 @@
 - (IBAction)clickCheckBtn {
     NSMutableDictionary * dict = diction;
     dict[@"mv_version_type"] = @"2";
-    dict[@"abi_code"] = @"999999";
+    dict[@"abi_code"] = @"n999999";
     dict[@"command"] = @"99006";
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
         
-        LFLog(@"版本检测-%@",responseObj);
+//        LFLog(@"版本检测-%@",responseObj);
         if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
-//            [MBManager showBriefAlert:@"密码修改成功"];
+            [MBManager showBriefAlert:@"已是最新版本"];
            
         }else{
             

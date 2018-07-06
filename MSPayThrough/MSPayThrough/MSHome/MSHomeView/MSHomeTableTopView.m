@@ -14,8 +14,18 @@
 #import "MSHuanKuanPlayViewController.h"
 #import "MSLiuShuiSelectViewController.h"
 #import "SDCycleScrollView.h"
+static CGFloat ScrollInterval = 3.0f;
 @interface MSHomeTableTopView()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate,SDCycleScrollViewDelegate>
-
+{
+    
+  
+  
+    
+    NSTimer *_timer;
+    
+ 
+    
+}
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
@@ -27,6 +37,7 @@
 @property (strong, nonatomic)  NSMutableArray * titles;
 @property (weak, nonatomic) IBOutlet UIButton *liuShuiBt;
 @property (strong, nonatomic)SDCycleScrollView *cycleScrollView;
+
 @end
 static NSString * const cellid = @"MSTopCollectionViewCell";
 @implementation MSHomeTableTopView
@@ -39,6 +50,7 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
     self.pageControl.currentPageIndicatorTintColor = [UIColor redColor];
     self.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     [self.liuShuiBt addTarget:self action:@selector(liuShuiBtClick) forControlEvents:UIControlEventTouchUpInside];
+      _timer = [NSTimer scheduledTimerWithTimeInterval:ScrollInterval target:self selector:@selector(showNext) userInfo:nil repeats:true];
 }
 -(void)liuShuiBtClick{
     MSLiuShuiSelectViewController * serviceAgreementVc = [[MSLiuShuiSelectViewController alloc] init];
@@ -111,7 +123,8 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
 }
 
 -(void)setPlayRepayments:(NSMutableArray *)playRepayments{
-    
+    [_collectionView setContentOffset:CGPointMake(_collectionView.bounds.size.width, 0)];
+    _pageControl.numberOfPages = playRepayments.count-2;
     _playRepayments = playRepayments;
     [self.collectionView reloadData];
 }
@@ -160,6 +173,50 @@ static NSString * const cellid = @"MSTopCollectionViewCell";
 //     _oldPoint = scrollView.contentOffset.x;
 //    self.collectionView.userInteractionEnabled = NO;
 //    if (!self._playRepayments.count) return; // 解决清除timer时偶尔会出现的问题
-    self.pageControl.currentPage = offsetX/LFscreenW;
+//    self.pageControl.currentPage = offsetX/LFscreenW;
 }
+
+//手动拖拽结束
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self cycleScroll];
+    //拖拽动作后间隔3s继续轮播
+    [_timer setFireDate:[NSDate dateWithTimeIntervalSinceNow:ScrollInterval]];
+}
+
+//自动轮播结束
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    [self cycleScroll];
+}
+
+//循环显示
+- (void)cycleScroll {
+    NSInteger page = _collectionView.contentOffset.x/_collectionView.bounds.size.width;
+    if (page == 0) {//滚动到左边
+        _collectionView.contentOffset = CGPointMake(_collectionView.bounds.size.width * (_playRepayments.count - 2), 0);
+        _pageControl.currentPage = _playRepayments.count - 2;
+    }else if (page == _playRepayments.count - 1){//滚动到右边
+        _collectionView.contentOffset = CGPointMake(_collectionView.bounds.size.width, 0);
+        _pageControl.currentPage = 0;
+    }else{
+        _pageControl.currentPage = page - 1;
+    }
+}
+
+
+
+#pragma mark -
+#pragma mark 轮播方法
+//自动显示下一个
+- (void)showNext {
+    //手指拖拽是禁止自动轮播
+    if (_collectionView.isDragging) {return;}
+    CGFloat targetX =  _collectionView.contentOffset.x + _collectionView.bounds.size.width;
+    [_collectionView setContentOffset:CGPointMake(targetX, 0) animated:true];
+}
+
+
+- (void)dealloc {
+    [_timer invalidate];
+}
+
 @end

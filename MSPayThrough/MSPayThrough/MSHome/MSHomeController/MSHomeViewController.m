@@ -70,7 +70,8 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
 
     [YWRequestData playRepaymentDict:registUserDict success:^(id responseObj) {
         self.playRepayments = [MSHomModel mj_objectArrayWithKeyValuesArray:responseObj[@"body"][@"qrp_list"]];
-        
+        [self.playRepayments addObject:self.playRepayments.firstObject];
+        [self.playRepayments insertObject:self.playRepayments.lastObject atIndex:0];
         if (self.playRepayments.count <= 0) {
             [self.playRepayments removeAllObjects];
             MSHomModel * homModel = [[MSHomModel alloc] init];
@@ -96,6 +97,9 @@ static NSString * const  cellidenfder = @"MSHomeTableViewCell";
               [self.playRepayments addObject:homModel];
               [self.playRepayments addObject:homModel];
               [self.playRepayments addObject:homModel];
+             [self.playRepayments addObject:homModel];
+             [self.playRepayments addObject:homModel];
+            
         }
         self.homeTableTopView.playRepayments = self.playRepayments;
         [self.tableView.mj_header endRefreshing];

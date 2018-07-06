@@ -92,16 +92,19 @@
     progressLayer.fillColor         = [UIColor clearColor].CGColor;
     progressLayer.strokeColor       = self.progressColor.CGColor;
     progressLayer.lineWidth         = radius / 10;
-    progressLayer.path              = path.CGPath;
+  
+   progressLayer.path              = path.CGPath;
+    progressLayer.strokeStart = 0;   // 路径起点
+    progressLayer.strokeEnd = self.proportion;    //  结束位置
     [self.layer addSublayer:progressLayer];
-    
-    CABasicAnimation * animation    = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animation.fromValue             = @(0);
-    animation.toValue               = @(self.proportion);
-    animation.duration              = 1;
-    animation.fillMode              = kCAFillModeForwards;
-    animation.removedOnCompletion   = NO;
-    [progressLayer addAnimation:animation forKey:nil];
+//
+//    CABasicAnimation * animation    = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+//    animation.fromValue             = @(0);
+//    animation.toValue               = @(self.proportion);
+//    animation.duration              = 0;
+//    animation.fillMode              = kCAFillModeForwards;
+//    animation.removedOnCompletion   = NO;
+//    [progressLayer addAnimation:animation forKey:nil];
 }
 
 -(void)showContentData{

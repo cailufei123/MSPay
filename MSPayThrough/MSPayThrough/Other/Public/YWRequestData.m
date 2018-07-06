@@ -31,9 +31,14 @@
     
     [LFHttpTool post:USER_LOGIN params:dict progress:^(id downloadProgress) {
     } success:^(id responseObj) {
-        LFLog(@"%@",responseObj);
+        if ([responseObj[@"head"][@"status_code"] isEqualToString:@"000"]) {
+            sucess(responseObj);
+        }else{
+            
+            [MBManager showBriefAlert:responseObj[@"head"][@"status_desc"]];
+        }
         [MBManager hideAlert];
-        sucess(responseObj);
+       
         
     } failure:^(NSError *error) {
         //        [MBManager showBriefAlert:@"网络错误"];
